@@ -19,4 +19,9 @@ Route::get('/about', function () {
     return view('about/index');
 });
 
+Route::get('/time', function () {
+    return view('time/index');
+});
+
+
 Route::get('/test', 'HomeController@index');
