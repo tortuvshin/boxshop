@@ -19,9 +19,15 @@
 	</script>
 
 	{{-- Bella CSS files --}}
-	@section('css')
-		{!! Html::style('/css/app.css') !!}
-	@show
+
+	@if(isset($styles))
+		@foreach($styles as $style)
+		{!! HTML::style(URL::asset('/css/'.$style)) !!}
+		@endforeach
+	@else
+		<link media="all" type="text/css" rel="stylesheet" href="./css/app.css">
+	@endif
+
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -59,10 +65,17 @@
 	</footer>
 @show
 
-{{-- Bella - Vue Components --}}
+{{-- Bella - Javascript --}}
 
-{!! Html::script('/js/app.js') !!}
-
+@if(isset($scripts['header']))
+	@foreach($scripts['header'] as $script)
+		@if (!preg_match("~^(?:f|ht)tps?://~i", $script))
+			{!! HTML::script(URL::asset('/js/'.$script)) !!}
+		@else
+			{!! HTML::script(URL::asset($script)) !!}
+		@endif
+	@endforeach
+@endif
 
 </body>
 </html>
