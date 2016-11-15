@@ -9,7 +9,7 @@
 			</button>
 			<div class="navbar-brand">
 				<a href="/home" class="navbar-brand">
-						Bella
+					Bella
 				</a>
 			</div>
 		</div>

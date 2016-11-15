@@ -11,17 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/about', function () {
-    return view('about/index');
-});
-
-Route::get('/time', function () {
-    return view('time/index');
+Route::get('/', function(){
+	return view('index');
 });
 
 
-Route::get('/test', 'HomeController@index');
+//Хэрэглэгч
+require __DIR__ . '/web/users.php';
+
+//Удирдлагын хэсэг
+require __DIR__ . '/web/dashboard.php';
+
+//бараа 
+require __DIR__ . '/web/products.php';
+
+//захиалга
+require __DIR__ . '/web/orders.php';
+
+//хуудасууд
+require __DIR__ . '/web/pages.php';
