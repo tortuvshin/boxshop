@@ -1,40 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img width="150"src="https://laravel.com/laravel.png"></a></p>
+## Цахим худалдааны системийн танилцуулга
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Энэхүү онлайн худалдааны платпормыг Laravel 5.3. хувилбар дээр хөгжүүлж байна.
 
-## About Laravel
+<a name="installation"></a>
+## Суулгах
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+Дараах коммандыг ажиллуулж энэхүү төслийг clone хийж авна:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+```
+git clone https://github.com/tortuvshin/ecommerce.git
+```
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+Дараа нь, энэхүү төслийг татаж авсан хавтаст орж composer update/install комманд ажиллуулна
 
-## Learning Laravel
+```
+composer update/install
+```
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+## Тохируулах
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Дараа нь .env-example файлыг өөрчилж .env болгон өөрийн өгөгдлийн сан болон серверийг тохируулна
 
-## Contributing
+Өгөгдлийн санг үүсгэж тохируулсаны дараа дараах коммандаар хүснэгтүүдийг үүсгэнэ:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+```
+php artisan migrate:refresh
+```
 
-## Security Vulnerabilities
+Туршилтын өгөгдөл дараах коммандаар оруулна:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+```
+php artisan migrate:refresh --seed
+```
+	
+Frontend хөгжүүлэлтэнд хамааралтай сангуудыг дараах командаар оруулна:
 
-## License
+```
+bower install
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+reChaptcha код авах: 
+
+```
+https://www.google.com/recaptcha/admin#list
+```
+
+```
+RECAPTCHA_PUBLIC_KEY, and RECAPTCHA_PRIVATE_KEY
+```
+
+reCaptcha кодуудаа .env файлд оруулна. Жишээ нь: 
+
+```
+RECAPTCHA_PUBLIC_KEY = ModuRecaptcahPublicKeyObtained
+
+RECAPTCHA_PRIVATE_KEY = ModuRecaptcahPrivateKeyObtained
+```
+
+***Note:*** ```APP_DEBUG == true```, reCaptcha will not be applied
+
+## Laravel Elixir ашиглах
+ 
+ Gulp суулгах:
+
+```
+npm install --global gulp
+```
+NPM сангууд суулгах:
+
+```
+npm install 
+```
+
+Хэрвээ Window үйлдлийн систем  болон VM ашиглаж хөгжүүлэлт хийж байгаа бол дараах коммандыг ажиллуулна: 
+```
+npm install --no-bin-links
+```
+Gulp ашиглах:
+
+```
+gulp
+```
+
