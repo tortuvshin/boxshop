@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProduct extends Migration
+class CreateProductTable extends Migration
 {
     /**
      * Run the migrations.
@@ -37,6 +37,7 @@ class CreateProduct extends Migration
             $table->integer('sale_counts')->unsigned();
             $table->integer('view_counts')->unsigned();
             $table->timestamps();
+
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('category_id')->references('id')->on('categories');
         });
@@ -50,5 +51,6 @@ class CreateProduct extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('products');
     }
 }

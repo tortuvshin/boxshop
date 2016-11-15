@@ -14,6 +14,17 @@ class CreateProductOffersTable extends Migration
     public function up()
     {
         //
+        Schema::create('product_offers', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('product_id')->unsigned();
+            $table->dateTime('day_start');
+            $table->dateTime('day_end');
+            $table->double('percentage', 2, 2);
+            $table->double('price')->default(0);
+            $table->integer('quantity')->default(0);
+            $table->foreign('product_id')->references('id')->on('products');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -24,5 +35,6 @@ class CreateProductOffersTable extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('product_offers');
     }
 }
