@@ -5,8 +5,7 @@
 @section('content')
 
     <section class="products_view">
-
-aaa
+    home
     </section> {{-- end products_view --}}
 
 @stop {{-- end content --}}
