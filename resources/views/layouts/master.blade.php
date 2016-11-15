@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="{{ App::getLocale() }}" ng-app="Bella">
 <head>
 	@section('metaLabels')
 		<meta charset="utf-8">
@@ -19,13 +20,14 @@
 	</script>
 
 	{{-- Bella CSS files --}}
-
 	@if(isset($styles))
+		{!! Html::style(URL::asset('/bella-bower/bootstrap/dist/css/bootstrap.css')) !!}
 		@foreach($styles as $style)
 		{!! HTML::style(URL::asset('/css/'.$style)) !!}
 		@endforeach
 	@else
-		<link media="all" type="text/css" rel="stylesheet" href="./css/app.css">
+		<link rel="stylesheet" href="/bella-bower/bootstrap/dist/css/bootstrap.css">
+	    <link rel="stylesheet" href="/css/app.css">
 	@endif
 
 
