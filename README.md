@@ -17,6 +17,12 @@ git clone https://github.com/tortuvshin/ecommerce.git
 composer update/install
 ```
 
+NPM сангууд татах
+```
+npm update/install
+```
+
+
 ## Тохируулах
 
 Дараа нь .env-example файлыг өөрчилж .env болгон өөрийн өгөгдлийн сан болон серверийг тохируулна
