@@ -1,3 +1,4 @@
+
 @extends('layouts.master')
 
 @section('title')@parent - Home }} @stop
