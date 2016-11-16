@@ -1,155 +1,43 @@
 @extends('layouts.master')
-
-@section('title')@parent - About }} @stop
-
+@section('page_class')@parent- {{ trans('about.contact_us') }}@endsection
+{{-- NAVBAR --}}
+@section('navigation')
+@include('partial.navigation_basic')
+@endsection
+{{-- CONTENT --}}
 @section('content')
-
-    <section>
-
-
-
-<div class="jumbotron">
-  <div class="container bg-3 text-center">
-     <div class="row">
-     	<div class="col-sm-7">
-     		<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-     	</div>
-     	<div class="col-sm-3">
-     		<p>Some text.....<p>
-     	</div>
-     </div>
-  </div>
-</div>
-  
-<div class="container-fluid bg-3 text-center">
-  <h2>Ажилчид</h2><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text1..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text2.</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br>
-
-<div class="container-fluid bg-3 text-center">
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br><br>
-
-<div class="container-fluid bg-2 text-center">
-	<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%; height: 50%" alt="Image">
-</div><br><br>
-
-<div class="container text-center">
-   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <div class="row">
-    <div class="col-sm-4">
-        <h2>Үйл ажиллагаа</h2>
-        <div class="panel-group" id="accordion">
-		    <div class="panel panel-default">
-		      <div class="panel-heading">
-		        <h4 class="panel-title">
-		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Үйлчилгээ 1</a>
-		        </h4>
-		      </div>
-		      <div id="collapse1" class="panel-collapse collapse in">
-		        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</div>
-		      </div>
-		    </div>
-		    <div class="panel panel-default">
-		      <div class="panel-heading">
-		        <h4 class="panel-title">
-		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Үйлчилгээ 2</a>
-		        </h4>
-		      </div>
-		      <div id="collapse2" class="panel-collapse collapse">
-		        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-		      </div>
-		    </div>
-		    <div class="panel panel-default">
-		      <div class="panel-heading">
-		        <h4 class="panel-title">
-		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Үйлчилгээ 3</a>
-		        </h4>
-		      </div>
-		      <div id="collapse3" class="panel-collapse collapse">
-		        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</div>
-		      </div>
-		    </div>
-		    <div class="panel panel-default">
-		      <div class="panel-heading">
-		        <h4 class="panel-title">
-		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Үйлчилгээ 4</a>
-		        </h4>
-		      </div>
-		      <div id="collapse4" class="panel-collapse collapse">
-		        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</div>
-		      </div>
-		    </div>
-		    <div class="panel panel-default">
-		      <div class="panel-heading">
-		        <h4 class="panel-title">
-		          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Үйлчилгээ 5</a>
-		        </h4>
-		      </div>
-		      <div id="collapse5" class="panel-collapse collapse">
-		        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</div>
-		      </div>
-		    </div>
-		  </div>
-    </div>
-    <div class="col-sm-4">
-      <h2>Бүтээгдэхүүн</h2>
-      <p>Some texts</p>
+<div class="container-fluid">
+	<div class="row jumbotron col-md-10 col-md-offset-1" style="min-height:600px;">
+		<ul class="nav nav-tabs">
+			<li class="{{ $tab=='about'?'active':'' }}"><a data-toggle="tab" href="#about_us">{{ trans('company.about_us')}}</a></li>
+			<li class="{{ $tab=='refund'?'active':'' }}"><a data-toggle="tab" href="#refund_policy">{{ trans('company.refund_policy')}}</a></li>
+			<li class="{{ $tab=='privacy'?'active':'' }}"><a data-toggle="tab" href="#privacy_policy">{{ trans('company.privacy_policy')}}</a></li>
+			<li class="{{ $tab=='terms'?'active':'' }}"><a data-toggle="tab" href="#terms_of_service">{{ trans('company.terms_of_service')}}</a></li>
+		</ul>
+		<div id="my-tab-content" class="tab-content">
+			<div class="tab-pane {{ $tab=='about'?'active':'' }}" id="about_us">
+				<div class="well">{{ $main_company['about_us'] }}</div>
+			</div>
+			<div class="tab-pane {{ $tab=='refund'?'active':'' }}" id="refund_policy">
+				<div class="well"><pre class="pre-scrollable">{{ $main_company['refund_policy'] }}</pre> </div>
+			</div>
+			<div class="tab-pane {{ $tab=='privacy'?'active':'' }}" id="privacy_policy">
+				<div class="well"><pre class="pre-scrollable">{{ $main_company['privacy_policy'] }}</pre></div>
+			</div>
+			<div class="tab-pane {{ $tab=='terms'?'active':'' }}" id="terms_of_service">
+				<div class="well"><pre class="pre-scrollable">{{ $main_company['terms_of_service'] }}</pre></div>
+			</div>
+		</div>
 	</div>
-    <div class="col-sm-4">
-      <h2>Үйлчилгээ</h2> 
-      <ul class="nav nav-tabs">
-	    <li class="active"><a href="">Сургалт</a></li>
-	    <li><a href="">Худалдаа</a></li>
-	    <li><a href="">Нүүр будаг</a></li>
-	  </ul>     
-    </div>
-  </div>
-</div><br><br>
-
-<div class="jumbotron">
-  <div class="container bg-3 text-center">
-     <div class="row">
-     	<h2> Үйлчлүүлэгчийн сэтгэгдэл</h2>
-     </div>
-  </div>
 </div>
-
-</section> 
-
-@stop {{-- end content --}}
+@endsection
+{{-- Pie de pagina --}}
+@section('footer')
+@parent
+@endsection
+{{-- Angular --}}
+@section('before.angular') @endsection
+{{-- Javascript --}}
+@section('scripts')
+@parent
+@endsection
