@@ -30,3 +30,6 @@ require __DIR__ . '/web/orders.php';
 
 //хуудасууд
 require __DIR__ . '/web/pages.php';
+
+//цагавах
+require __DIR__ . '/web/times.php';
