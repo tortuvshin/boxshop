@@ -33,3 +33,6 @@ require __DIR__ . '/web/pages.php';
 
 //цагавах
 require __DIR__ . '/web/times.php';
+
+//мэдээ лист
+require __DIR__ . '/web/blog_list.php';
