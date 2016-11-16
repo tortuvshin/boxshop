@@ -36,3 +36,6 @@ require __DIR__ . '/web/times.php';
 
 //мэдээ лист
 require __DIR__ . '/web/blog_list.php';
+
+//бидний тухай
+require __DIR__ . '/web/about.php';
