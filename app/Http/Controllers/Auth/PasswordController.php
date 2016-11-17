@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace app\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
-class ResetPasswordController extends Controller
+class PasswordController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -17,28 +17,16 @@ class ResetPasswordController extends Controller
     | explore this trait and override any methods you wish to tweak.
     |
     */
+
     use ResetsPasswords;
 
     /**
-     * Create a new controller instance.
+     * Create a new password controller instance.
      *
      * @return void
      */
     public function __construct()
     {
         $this->middleware('guest');
-    }
-
-    /**
-     * Show the reset password form.
-     *
-     * @param  string $token
-     * @return void
-     */
-    public function showResetForm($token)
-    {
-        return view('auth.reset', [
-            'token' => $token
-        ]);
     }
 }

@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Person;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
@@ -19,7 +20,6 @@ class RegisterController extends Controller
     | provide this functionality without requiring any additional code.
     |
     */
-
     use RegistersUsers;
 
     /**
@@ -27,7 +27,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -40,32 +40,92 @@ class RegisterController extends Controller
     }
 
     /**
-     * Get a validator for an incoming registration request.
+     * Show the registration form.
      *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
+     * @return void
      */
-    protected function validator(array $data)
+    protected function showRegistrationForm()
     {
-        return Validator::make($data, [
-            'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
+        return view('auth.register', [
+            'email' => session()->has('email') ? session()->get('email') : ''
         ]);
     }
 
     /**
-     * Create a new user instance after a valid registration.
+     * Process the user registration.
+     *
+     * @return void
+     */
+    protected function register(Request $request)
+    {
+        $this->validate($request, $this->rules());
+
+        $user = $this->createUser($request->all());
+
+        $this->sendRegistrationEmail($request->all());
+
+        auth()->login($user);
+
+        return redirect($this->redirectTo);
+    }
+
+    /**
+     * Return the registration validation rules
+     *
+     * @return array
+     */
+    protected function rules()
+    {
+        return [
+            'first_name' => 'required|max:20|min:3',
+            'last_name' => 'required|max:20|min:3',
+            'email' => 'required|email|max:255|unique:users',
+            'password' => 'required|min:6',
+        ];
+    }
+
+    /**
+     * Create a new user.
      *
      * @param  array  $data
      * @return User
      */
-    protected function create(array $data)
+    protected function createUser(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
+        $user = User::create([
+            'email'       => $data['email'],
+            'nickname'    => $data['email'],
+            'password'    => bcrypt($data['password']),
+            'role'        => 'person',
         ]);
+
+        Person::create([
+            'user_id'    => $user->id,
+            'first_name' => $data['first_name'],
+            'last_name'  => $data['last_name'],
+        ]);
+
+        return $user;
+    }
+
+    /**
+     * Send the registration email.
+     *
+     * @param  array  $data
+     * @return void
+     */
+    protected function sendRegistrationEmail(array $data)
+    {
+        $title = trans('user.emails.verification_account.subject');
+
+        $name = $data['first_name'].' '.$data['last_name'];
+
+        \Mail::queue('emails.accountVerification', ['data' => $data, 'title' => $title, 'name' => $name], function ($message) use ($data) {
+            $message->to($data['email'])->subject(trans('user.emails.verification_account.subject'));
+        });
+
+        session()->put('message', trans('user.signUp_message', ['_name' => $name]));
+
+        session()->save();
     }
 }
