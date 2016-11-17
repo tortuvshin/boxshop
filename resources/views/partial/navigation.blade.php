@@ -46,10 +46,14 @@
 		{!! Form::close() !!}
 		</nav>
 		<div id="navbar" class="navbar-collapse collapse">
+		<a href="/products"  role="button" aria-expanded="false">
+					
+						Барааны жагсаалт
+					</a>
 			<ul class="nav navbar-nav">
 
 				@include('user.partial.menu_top')
-
+						
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 						<span class="fui fui-heart"></span>
