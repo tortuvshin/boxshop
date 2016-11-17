@@ -88,11 +88,7 @@ return [
       'msg_help_custom_specific_data' => 'Values to be selected with special behavior or defined in the code for each data (minimum number of values = 2)',
       'msg_help_general'              => 'Values to select',
       'msg_help_specific_data'        => 'To select values for each data (minimum number of values = 2)',
-<<<<<<< HEAD
-      'msg_help_repeat_values'        => 'Анхны өгөгдөл мэдээлэл тодорхойгүй байна.',
-=======
       'msg_help_repeat_values'        => 'Default data for value No.',
->>>>>>> 8f8561d9a8adeee5b06b87403f0d3a05cee55038
    ],
    'help_messages_array' => [
       ''                   => '',

@@ -1,5 +1,50 @@
 
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import "themes/variables";
+@import "themes/card";
+@import "themes/category";
+@import "themes/color";
+@import "themes/filter";
+@import "themes/footer";
+@import "themes/header";
+@import "themes/item-list";
+@import "themes/login";
+@import "themes/product";
+@import "themes/search";
 
-@import 'mixin/time';
+
+html,body{
+	height: 100%;
+	font-weight: 300;
+	background-color: #fafafa;
+}
+
+footer{
+  background: white;
+  margin-top: 60px;
+  padding-top: 47px;
+  padding-bottom: 35px;
+  border-top: 1px solid #eee;
+}
+
+footer .menu {
+	text-align: center;
+}
+
+footer .menu h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer .menu ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+footer .menu ul li {
+	display: block;
+	margin-bottom: 9px;
+}
+

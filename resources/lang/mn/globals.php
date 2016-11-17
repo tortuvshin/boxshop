@@ -60,26 +60,6 @@ return [
         'order'                   => 'Захиалга',
         'free_product'            => 'free_product',
         'order_detail'            => 'Захиалгын мэдээлэл',
-<<<<<<< HEAD
-        'paypal'                  => 'Төлбөр',
-    ],
-    'product_features'        => [
-        'color'                 => 'Өнгө',
-        'weight'                => 'Өргөн',
-        'dimensions'            => 'Хэмжээ',
-        'volume'                => 'Дуу',
-        'video'                 => 'Ведио',
-        'brand'                 => 'Брэнд',
-        'model'                 => 'Модел',
-        'size'                  => 'Хэмжээ',
-    ],
-    'product_types'                => [
-        'item'                    => 'Төрөл',
-        'key'                     => 'key',
-        'software'                => 'Програм хангамж',
-        'software_key'            => 'software_key',
-        'gift_card'               => 'Бэлгийн карт',
-=======
         'paypal'                  => 'paypal',
     ],
     'product_features'        => [
@@ -98,7 +78,6 @@ return [
         'software'                => 'software',
         'software_key'            => 'software_key',
         'gift_card'               => 'gift_card',
->>>>>>> 8f8561d9a8adeee5b06b87403f0d3a05cee55038
         'freeproduct'             => 'freeproduct',
     ],
     'filters' => [

@@ -1,12 +1,10 @@
 {
-  "name": "bella.mn",
-  "description": "Bella online store",
-  "main": "",
+  "name": "An Laravel eCommerce",
+  "version": "1.0.1",
+  "homepage": "http://bella.mn",
   "authors": [
-    "Tortuvshin Byambaa <toroo.byamba@gmail.com>"
+    "toroo.byamba@gmail.com"
   ],
-  "license": "MIT",
-  "homepage": "https://github.com/tortuvshin/bella.mn",
   "moduleType": [
     "globals"
   ],

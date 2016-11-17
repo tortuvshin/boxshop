@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ App::getLocale() }}" ng-app="Bella">
+<html lang="{{ App::getLocale() }}" ng-app="AntVel">
 <head>
 	@section('metaLabels')
 		<meta charset="utf-8">
@@ -11,7 +11,7 @@
 	@show
 
 	<link rel="icon" href="favicon.ico">
-	<title>Bella</title>
+	<title>@section('title'){{ $main_company['website_name']}} @show</title>
 
 	<script type="text/javascript">
 	FileAPI = {
@@ -19,17 +19,15 @@
 	};
 	</script>
 
-	{{-- Bella CSS files --}}
-	@if(isset($styles))
-		{!! Html::style(URL::asset('/bella-bower/bootstrap/dist/css/bootstrap.css')) !!}
-		@foreach($styles as $style)
-		{!! HTML::style(URL::asset('/css/'.$style)) !!}
-		@endforeach
-	@else
-		<link rel="stylesheet" href="/bella-bower/bootstrap/dist/css/bootstrap.css">
-	    <link rel="stylesheet" href="/css/app.css">
-	@endif
-
+	{{-- Antvel CSS files --}}
+	{!! Html::style('/bella-bower/bootstrap/dist/css/bootstrap.css') !!}
+	@section('css')
+		{!! Html::style('/bella-bower/angular-notify/dist/angular-notify.min.css') !!}
+		{!! Html::style('/bella-bower/font-awesome/css/font-awesome.min.css') !!}
+		{!! Html::style('/css/carousel.css') !!}
+		{!! Html::style('/css/angucomplete-alt.css') !!}
+		{!! Html::style('/css/app.css') !!}
+	@show
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -45,6 +43,12 @@
 		@include('partial.navigation')
 	@show
 
+	{{-- Breadcrumbs section --}}
+	<div class="container">
+		@section('breadcrumbs')
+		@show
+	</div>
+
 	{{-- Content page --}}
 	@section('content')
 		@section('panels')
@@ -52,6 +56,31 @@
 			<div class="container">
 				<div class="row global-panels">
 
+					{{-- left panel --}}
+					@if (isset($panel['left']))
+						{{-- desktops validation --}}
+						<div class="col-sm-{{ $panel['left']['width'] or '2' }} col-md-{{ $panel['left']['width'] or '2' }} {{ $panel['left']['class'] or '' }}">
+							@section('panel_left_content')
+								Left content
+							@show
+						</div>
+					@endif
+
+					{{-- center content --}}
+					<div class="col-xs-12 col-sm-{{ $panel['center']['width'] or '10' }} col-md-{{ $panel['center']['width'] or '10' }}">
+						@section('center_content')
+							Center content
+						@show
+					</div>
+
+					{{-- right panel --}}
+					@if (isset($panel['right']))
+						<div class="hidden-xs col-sm-{{ $panel['right']['width'] or '2' }} col-md-{{ $panel['right']['width'] or '2' }} {{ $panel['right']['class'] or '' }}">
+							@section('panel_right_content')
+								Right content
+							@show
+						</div>
+					@endif
 
 				</div> {{-- globlas panels --}}
 			</div> {{-- container --}}
@@ -67,17 +96,61 @@
 	</footer>
 @show
 
-{{-- Bella - Javascript --}}
+{{-- Modu - Bower Components --}}
+{!! Html::script('/bella-bower/jquery/dist/jquery.min.js') !!}
+{!! Html::script('/bella-bower/angular/angular.min.js') !!}
+{!! Html::script('/bella-bower/angular-route/angular-route.min.js') !!}
+{!! Html::script('/bella-bower/angular-sanitize/angular-sanitize.min.js') !!}
+{!! Html::script('/bella-bower/angular-bootstrap/ui-bootstrap-tpls.min.js') !!}
+{!! Html::script('/bella-bower/angular-animate/angular-animate.min.js') !!}
+{!! Html::script('/bella-bower/angular-loading-bar/build/loading-bar.min.js') !!}
+{!! Html::script('/bella-bower/angular-mocks/angular-mocks.js') !!}
+{!! Html::script('/bella-bower/angular-touch/angular-touch.min.js') !!}
+{!! Html::script('/bella-bower/bootstrap/dist/js/bootstrap.min.js') !!}
 
-@if(isset($scripts['header']))
-	@foreach($scripts['header'] as $script)
-		@if (!preg_match("~^(?:f|ht)tps?://~i", $script))
-			{!! HTML::script(URL::asset('/js/'.$script)) !!}
-		@else
-			{!! HTML::script(URL::asset($script)) !!}
-		@endif
-	@endforeach
-@endif
+{!! Html::script('/js/vendor/xtForms/xtForm.js') !!}
+{!! Html::script('/js/vendor/xtForms/xtForm.tpl.min.js') !!}
+
+<script>
+
+	/**
+	 * ngModules
+	 * Angularjs modules requires by antvel
+	 * @type {Array}
+	 */
+	var ngModules = [
+		'ngRoute', 'ngSanitize', 'LocalStorageModule',
+		'ui.bootstrap', 'chieffancypants.loadingBar', 'xtForm',
+		'cgNotify', 'ngTouch', 'angucomplete-alt'
+	];
+
+	@section('before.angular') @show
+
+	(function(){
+		angular.module('AntVel',ngModules,
+		function($interpolateProvider){
+			$interpolateProvider.startSymbol('[[');
+			$interpolateProvider.endSymbol(']]');
+		}).config(function(localStorageServiceProvider, cfpLoadingBarProvider,$locationProvider){
+			cfpLoadingBarProvider.includeSpinner = false;
+			localStorageServiceProvider.setPrefix('tb');
+			$locationProvider.html5Mode({enabled:true,rewriteLinks:false});
+		});
+	})();
+
+</script>
+
+{{-- Antvel functions --}}
+{!! Html::script('/js/app.js') !!}
+
+@section('scripts')
+	{{-- Antvel angucomplete-alt.js version --}}
+	{!! Html::script('/js/vendor/angucomplete-alt.js') !!}
+
+	{{-- Antvel-bower components --}}
+	{!! Html::script('/bella-bower/angular-notify/dist/angular-notify.min.js') !!}
+	{!! Html::script('/bella-bower/angular-local-storage/dist/angular-local-storage.min.js') !!}
+@show
 
 </body>
 </html>
