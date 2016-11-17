@@ -1,9 +1,3 @@
-html,
-body {
-  height: 100%;
-  font-weight: 300;
-  background-color: #fafafa;
-}
 footer {
   background: white;
   margin-top: 60px;
@@ -28,6 +22,16 @@ footer .menu ul {
 footer .menu ul li {
   display: block;
   margin-bottom: 9px;
+}
+.product-img-box img {
+  width: 200px;
+  height: 200px;
+}
+html,
+body {
+  height: 100%;
+  font-weight: 300;
+  background-color: #fafafa;
 }
 
 /*# sourceMappingURL=app.css.map */

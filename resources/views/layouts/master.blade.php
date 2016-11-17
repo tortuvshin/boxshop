@@ -19,7 +19,7 @@
 	};
 	</script>
 
-	{{-- Antvel CSS files --}}
+	{{-- Bella CSS files --}}
 	{!! Html::style('/bella-bower/bootstrap/dist/css/bootstrap.css') !!}
 	@section('css')
 		{!! Html::style('/bella-bower/angular-notify/dist/angular-notify.min.css') !!}
@@ -96,7 +96,7 @@
 	</footer>
 @show
 
-{{-- Modu - Bower Components --}}
+{{-- Bella - Bower Components --}}
 {!! Html::script('/bella-bower/jquery/dist/jquery.min.js') !!}
 {!! Html::script('/bella-bower/angular/angular.min.js') !!}
 {!! Html::script('/bella-bower/angular-route/angular-route.min.js') !!}
@@ -144,10 +144,10 @@
 {!! Html::script('/js/app.js') !!}
 
 @section('scripts')
-	{{-- Antvel angucomplete-alt.js version --}}
+	{{-- Bella angucomplete-alt.js version --}}
 	{!! Html::script('/js/vendor/angucomplete-alt.js') !!}
 
-	{{-- Antvel-bower components --}}
+	{{-- Bella-bower components --}}
 	{!! Html::script('/bella-bower/angular-notify/dist/angular-notify.min.js') !!}
 	{!! Html::script('/bella-bower/angular-local-storage/dist/angular-local-storage.min.js') !!}
 @show
