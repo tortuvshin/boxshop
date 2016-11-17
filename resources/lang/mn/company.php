@@ -34,7 +34,7 @@ return [
    'google_maps_key_api'        => 'Google Maps Embed API',
    'powered_by'                 => 'Powered by',
    'powered_url'                => 'http://github.com',
-   'powered_brand'              => 'Modu eCommerce',
+   'powered_brand'              => 'Bella eCommerce',
    'email_title_sales'          => 'Худалдагчтай холбоо барих',
    'email_title_support'        => 'Лавлахтай холбоо барих',
    'email_title_contact'        => 'Холбоо барих',
