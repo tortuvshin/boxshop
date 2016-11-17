@@ -4,14 +4,14 @@ namespace app;
 
 use App\Eloquent\Model;
 
-class ProductOffer extends Model
+class UserPreference extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'product_offers';
+    protected $table = 'user_preferences';
 
     /**
      * The attributes that are mass assignable.
@@ -19,11 +19,8 @@ class ProductOffer extends Model
      * @var array
      */
     protected $fillable = [
-        'product_id',
-        'day_start',
-        'day_end',
-        'percentage',
-        'price',
-        'quantity',
+        'user_id',
+        'type_preference_id',
+        'value',
     ];
 }

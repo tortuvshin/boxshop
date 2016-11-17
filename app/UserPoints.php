@@ -2,16 +2,16 @@
 
 namespace app;
 
-use App\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 
-class ProductOffer extends Model
+class UserPoints extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'product_offers';
+    protected $table = 'user_points';
 
     /**
      * The attributes that are mass assignable.
@@ -19,11 +19,9 @@ class ProductOffer extends Model
      * @var array
      */
     protected $fillable = [
-        'product_id',
-        'day_start',
-        'day_end',
-        'percentage',
-        'price',
-        'quantity',
+        'user_id',
+        'action_type_id',
+        'source_id',
+        'points',
     ];
 }
