@@ -60,6 +60,7 @@ return [
         'order'                   => 'Захиалга',
         'free_product'            => 'free_product',
         'order_detail'            => 'Захиалгын мэдээлэл',
+<<<<<<< HEAD
         'paypal'                  => 'Төлбөр',
     ],
     'product_features'        => [
@@ -78,6 +79,26 @@ return [
         'software'                => 'Програм хангамж',
         'software_key'            => 'software_key',
         'gift_card'               => 'Бэлгийн карт',
+=======
+        'paypal'                  => 'paypal',
+    ],
+    'product_features'        => [
+        'color'                 => 'Өнгө',
+        'weight'                => 'weight',
+        'dimensions'            => 'dimensions',
+        'volume'                => 'volume',
+        'video'                 => 'video',
+        'brand'                 => 'brand',
+        'model'                 => 'model',
+        'size'                  => 'size',
+    ],
+    'product_types'                => [
+        'item'                    => 'item',
+        'key'                     => 'key',
+        'software'                => 'software',
+        'software_key'            => 'software_key',
+        'gift_card'               => 'gift_card',
+>>>>>>> 8f8561d9a8adeee5b06b87403f0d3a05cee55038
         'freeproduct'             => 'freeproduct',
     ],
     'filters' => [
