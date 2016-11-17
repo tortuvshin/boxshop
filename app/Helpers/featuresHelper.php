@@ -16,6 +16,13 @@ class featuresHelper
         $this->features = ProductDetail::get();
     }
 
+    /**
+     * get all features.
+     *
+     *   @param [boolean] $array returns features array or collection
+     *
+     *	@return array|collection
+     */
     public function getFeatures($array = true)
     {
         if ($array) {
@@ -25,11 +32,25 @@ class featuresHelper
         }
     }
 
+    /**
+     * set all features.
+     *
+     *   @param [collection] $features all features
+     *
+     *	@return void
+     */
     public function setFeatures($features)
     {
         return $this->features = $features;
     }
 
+    /**
+     * organize old data for the product form.
+     *
+     *   @param [array] $productFeatures	old product features or empty array
+     *
+     *	@return array
+     */
     public function oldFeatures($productFeatures)
     {
         $return = [];
@@ -68,6 +89,15 @@ class featuresHelper
         return $return;
     }
 
+    /**
+     * create the error message by taking the name feature, and validation rules.
+     *
+     * @param [string] $rules Validation rules
+     * @param [string] $index name feature without spaces
+     * @param [string] $name  name feature
+     *
+     * @return [array] $return
+     */
     private function validationMessagesFeatures($rules, $index, $name)
     {
         $return = [];
@@ -120,6 +150,13 @@ class featuresHelper
         return $return;
     }
 
+    /**
+     *	validate product feature, as specified in the table of product details.
+     *
+     *	@param [array] $data all inputs
+     *
+     *	@return [string|array]
+     */
     public function validateFeatures($data)
     {
         $features_rules = [];

@@ -10,6 +10,13 @@ use Illuminate\Support\Facades\Session;
 
 class productsHelper
 {
+    /**
+     * get the table product field evaluated by the time when it calls.
+     *
+     * @param [string] $key, preferences key
+     *
+     * @return [string] products field to be evaluated in queries
+     */
     public function getFieldToSuggestions($key)
     {
         switch ($key) {
@@ -23,6 +30,14 @@ class productsHelper
         }
     }
 
+    /**
+     * Build the not in id array to be evaluated in suggestions.
+     *
+     * @param [array]  $products, which is the real time query result
+     * @param [string] $field,    which is the validation reference point
+     *
+     * @return [array] $needle, that is the array to be evaluated in the where not in
+     */
     public function setToHaystack($products, $field = 'id')
     {
         if (empty(Session::get('suggest-listed'))) {
@@ -46,6 +61,13 @@ class productsHelper
         Session::save();
     }
 
+    /**
+     * manage the home section suggestions.
+     *
+     * @param [string] $type, which is the reference point to build the suggest
+     *
+     * @return [json] $suggest, that contain the products list to be displayed on home page
+     */
     public static function suggest($type, $limit = 4)
     {
         $data = [];
@@ -85,6 +107,15 @@ class productsHelper
         return $suggest;
     }
 
+    /**
+     * countingProductsByCategory
+     * Products total by category collection.
+     *
+     * @param [type] $all_products refine products
+     * @param [type] $categories   refine categories
+     *
+     * @return [array] filter used in the product list view menu
+     */
     public static function countingProductsByCategory($all_products, $categories)
     {
         $filters = ['category' => []];
@@ -117,6 +148,7 @@ class productsHelper
             }
         }
 
+        //Order by qty
         if (isset($filters['category'])) {
             $filters['category'] = collect($filters['category'])->sortByDesc('qty');
         }
@@ -128,6 +160,12 @@ class productsHelper
     {
         foreach ($array as $row) {
 
+            /**
+             * $level
+             * Contains the category tree.
+             *
+             * @var [type]
+             */
             $level = categoriesHelper::level($array, $row['category_id']);
 
             $s = '';

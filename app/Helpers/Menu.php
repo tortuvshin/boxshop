@@ -7,7 +7,15 @@ use App\Product;
 
 class Menu
 {
-   
+    /**
+     * [Menu Dashboard ].
+     *
+     * @param  bool para indicar el tipo de salida, json o array
+     *
+     * @return [json o array]
+     *               Nota: el contenido del array interno de contener al menos route y text lo demas es opcional
+     *               //[route,text,cont(para badge), divider, class, icon  ]
+     */
     public static function dashboard($returnArray = false)
     {
         $menu = [
@@ -48,16 +56,27 @@ class Menu
         return $returnArray ? $menu : json_encode($menu);
     }
 
+    /**
+     * [Menu Top ].
+     *
+     * @param  bool para indicar el tipo de salida, json o array
+     *
+     * @return [json o array]
+     *               Nota: el contenido del array interno de contener al menos route y text lo demas es opcional
+     *               //[route,text,cont(para badge), divider, class, icon  ]
+     *               Este menu carga el menu del Dashboard
+     */
     public static function top($returnArray = false)
     {
-        if (\Auth::guest()) { 
+        if (\Auth::guest()) { // invidados
             $menu = [
                 ['route' => '/login', 'text' => trans('user.login'), 'divider' => 1],
                 ['route' => '/register', 'text' => trans('user.register')],
             ];
-        } else {  
+        } else {  // logeado
             $menu = self::dashboard(true);
 
+            //-- Web Panel(Only for admim) --
             if (\Auth::check() && \Auth::user()->isAdmin()) {
                 $menu = array_merge($menu, [
                     ['route' => '/wpanel', 'text' => trans('user.wpanel'), 'icon' => 'glyphicon glyphicon-cog', 'divider' => 1],
@@ -68,6 +87,15 @@ class Menu
         return $returnArray ? $menu : json_encode($menu);
     }
 
+    /**
+     * [Menu backend ].
+     *
+     * @param  bool para indicar el tipo de salida, json o array
+     *
+     * @return [json o array]
+     *               Nota: el contenido del array interno de contener al menos route y text lo demas es opcional
+     *               //[route,text,cont(para badge), divider, class, icon  ]
+     */
     public static function backend($returnArray = false)
     {
         //Menu para empresas
@@ -83,8 +111,19 @@ class Menu
         return $returnArray ? $menu : json_encode($menu);
     }
 
+    /**
+     * [Menu help ].
+     *
+     * @param  bool para indicar el tipo de salida, json o array
+     *
+     * @return [json o array]
+     *               Nota: el contenido del array interno de contener al menos route y text lo demas es opcional
+     *               //[route,text,cont(para badge), divider, class, icon  ]
+     */
     public static function help($returnArray = false)
     {
+        //Menu para empresas
+
             $menu = [
                 // ['route' =>'#',      'text'=> trans('globals.faq'),   ],
                 ['route' => '/about', 'text' => trans('company.about_us')],

@@ -4,6 +4,13 @@ namespace app\Helpers;
 
 class Utility
 {
+    /**
+     * [Format Currency to Nearest Thousands such as Kilos, Millions, Billions, and Trillions].
+     *
+     * @param [Float] $num [value to convert]
+     *
+     * @return [String] [Formated number]
+     */
     public static function thousandSuffix($num)
     {
         if ($num < 999) {
@@ -20,6 +27,16 @@ class Utility
         return $x_display;
     }
 
+    /**
+     * [price description].
+     *
+     * @param [float or array] $arg [it could be float or an array, if its array you can put
+     *                              'amount' to display,'discount' that it already has, 'thousandSuffix' if you wanna use that format ]
+     *                              if you use 'discount' the return is gonna be something like that 'The final value is USD 7.50 (after a 25% discount)'
+     *                              this function works with config('app.payment_method') then there could be Points or Currency
+     *
+     * @return [String] [Formated number or explaint of discount]
+     */
     public static function showPrice($arg)
     {
         $options = ['amount' => '', 'discount' => 0, 'thousandSuffix' => 1];
@@ -55,11 +72,27 @@ class Utility
           }
     }
 
+    /**
+     * [active description].
+     *
+     * @param string $route  [Route to compare ]
+     * @param string $active [class]
+     *
+     * @return [string] [description]
+     */
     public static function active($route, $active = 'active')
     {
         return parse_url(\Request::url(), PHP_URL_PATH) == $route  ? $active : '';
     }
 
+    /**
+     * showRate
+     * it shows the rate score.
+     *
+     * @param [integer] $rate, rate value
+     *
+     * @return [string] html label which shows the user rate given
+     */
     public static function showRate($rate)
     {
         $rate_max = 5;
@@ -73,6 +106,16 @@ class Utility
         }
     }
 
+    /**
+     * codeMasked
+     * It is able to generate a mask for any string passed through it.
+     *
+     * @param [string]  $code   is the var to be masked
+     * @param [integer] $lenght is the mask lenght
+     * @param [char]    $char   is the character passed to build the string
+     *
+     * @return string masked
+     */
     public static function codeMasked($code, $lenght = 5, $char = '0')
     {
         $mask = '';
@@ -83,6 +126,14 @@ class Utility
         return $mask.$code;
     }
 
+    /**
+     * totalOrder
+     * It is able to return the order total, as items number and price total.
+     *
+     * @param [object] $items is the order details, which contains the purchase information
+     *
+     * @return [array]
+     */
     public static function totalOrder($items)
     {
         $data = [
@@ -98,6 +149,14 @@ class Utility
         return $data;
     }
 
+    /**
+     * totalByStatusOrder
+     * it stores all the orders totals by type to be used either in a reports view or a simple one.
+     *
+     * @param [object] $orders, contains the order informations
+     *
+     * @return [array] $summary
+     */
     public static function totalByStatusOrder($orders)
     {
         $summary = [
@@ -238,6 +297,14 @@ class Utility
         return $format;
     }
 
+    /**
+     * printBarCode
+     * it prints the barcode taking in account whether the barcode exists or not.
+     *
+     * @param [object] $product contains the product info row
+     *
+     * @return [html] a html label will be returned with the barcode information
+     */
     public static function printBarCode($product = null, $type = 'EAN8')
     {
         if ($product == null || !$product) {
@@ -247,6 +314,14 @@ class Utility
         }
     }
 
+    /**
+     * requestToArrayUnique
+     * this method is able to return a unique multidimensional array.
+     *
+     * @param [array] $request is the evaluated array
+     *
+     * @return [array] unique index array
+     */
     public static function requestToArrayUnique($request)
     {
         $refine = [];
@@ -266,6 +341,16 @@ class Utility
         return $refine;
     }
 
+    /**
+     * getUrlQueryString
+     * This method is able to return a complete url, including its GET variables, even if they have changes.
+     *
+     * @param [array]  $refine is the evaluated request array
+     * @param [string] $key    is the var to add in the url GET
+     * @param [string] $value  is the new GET var value
+     *
+     * @return [string] $query is the new url
+     */
     public static function getUrlQueryString($refine, $key, $value)
     {
         $query = '';
@@ -283,6 +368,9 @@ class Utility
             }
         }
 
+        /*
+         * if it is a new var to be added, it is added at the end
+         */
         if (!$passed) {
             $query .= $key.'='.urlencode($value).'&';
         }
@@ -290,6 +378,15 @@ class Utility
         return rtrim($query, '&');
     }
 
+    /**
+     * removeFromUrlQueryString
+     * removes a specific variable from the url query string.
+     *
+     * @param [type] $refine array which contains all the query string variables
+     * @param [type] $_key   is the variable to be removed from the query string
+     *
+     * @return [string] $url which is the query string filtered
+     */
     public static function removeFromUrlQueryString($refine, $_key)
     {
         $url = '';

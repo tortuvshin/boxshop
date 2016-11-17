@@ -126,40 +126,47 @@ class categoriesHelper
         return self::orderByParents($categories, $result);
     }
 
-    public static function printCategory($categories = [])
-    {
-        $url = \Request::fullUrl();
-        $printCategory = function ($row) use (&$printCategory, $categories, $url) {
-            if (count($categories) > 0 && $row['category_id']) {
-                foreach ($categories as $category) {
-                    if ($row['category_id'] == $category['id']) {
-                        $father = '<a href="'.$url.'#category'.$category['id'].'">'.$category['name'].'</a>';
-                        break;
+        /**
+         *	return function that return html to the list of categories in wpanel.
+         *
+         *	@param array|collection $categories All Categories
+         *
+         *	@return function
+         */
+        public static function printCategory($categories = [])
+        {
+            $url = \Request::fullUrl();
+            $printCategory = function ($row) use (&$printCategory, $categories, $url) {
+                if (count($categories) > 0 && $row['category_id']) {
+                    foreach ($categories as $category) {
+                        if ($row['category_id'] == $category['id']) {
+                            $father = '<a href="'.$url.'#category'.$category['id'].'">'.$category['name'].'</a>';
+                            break;
+                        }
+                    }
+                } else {
+                    $father = ''; //trans('globals.action')
+                }
+                echo '<li class="list-group-item" ng-init="str'.$row['id'].'=\''.$row['name'].'\'" ng-show="(search==\'\'||(str'.$row['id'].'.toLowerCase().indexOf(search.toLowerCase())>-1))?true:false">
+						<div class="row">
+							<div class="col-md-1"><span class="label label-default visible-xs-inline">#ID:</span>  '.$row['id'].'</div>
+		                    <div class="col-md-3"><span class="label label-default visible-xs-inline">'.trans('product.inputs_view.name').':</span>  <a name="category'.$row['id'].'">'.$row['name'].'</a></div>
+		                    <div class="col-md-2"><span class="label label-default visible-xs-inline">'.trans('globals.status').':</span>  '.($row['status'] == 1 ? '<span class="label label-success">'.trans('globals.active').'</span>' :
+                            '<span class="label label-danger">'.trans('globals.inactive').'</span>').'</div>
+		                    <div class="col-md-2"><span class="label label-default visible-xs-inline">'.trans('store.father').':</span>  '.$father.'</div>
+		                    <div class="col-md-2"><span class="label label-default visible-xs-inline">'.trans('globals.type').':</span>  '.$row['type'].'</div>
+		                    <div class="col-md-2"><a href="'.route('wpanel.category.edit', $row['id']).'">Edit</a></div>
+		                </div>
+					</li>';
+                if (isset($row['sub']) && (count($row['sub']) > 0)) {
+                    foreach ($row['sub'] as $subRow) {
+                        $printCategory($subRow);
                     }
                 }
-            } else {
-                $father = ''; //trans('globals.action')
-            }
-            echo '<li class="list-group-item" ng-init="str'.$row['id'].'=\''.$row['name'].'\'" ng-show="(search==\'\'||(str'.$row['id'].'.toLowerCase().indexOf(search.toLowerCase())>-1))?true:false">
-					<div class="row">
-						<div class="col-md-1"><span class="label label-default visible-xs-inline">#ID:</span>  '.$row['id'].'</div>
-	                    <div class="col-md-3"><span class="label label-default visible-xs-inline">'.trans('product.inputs_view.name').':</span>  <a name="category'.$row['id'].'">'.$row['name'].'</a></div>
-	                    <div class="col-md-2"><span class="label label-default visible-xs-inline">'.trans('globals.status').':</span>  '.($row['status'] == 1 ? '<span class="label label-success">'.trans('globals.active').'</span>' :
-                        '<span class="label label-danger">'.trans('globals.inactive').'</span>').'</div>
-	                    <div class="col-md-2"><span class="label label-default visible-xs-inline">'.trans('store.father').':</span>  '.$father.'</div>
-	                    <div class="col-md-2"><span class="label label-default visible-xs-inline">'.trans('globals.type').':</span>  '.$row['type'].'</div>
-	                    <div class="col-md-2"><a href="'.route('wpanel.category.edit', $row['id']).'">Edit</a></div>
-	                </div>
-				</li>';
-            if (isset($row['sub']) && (count($row['sub']) > 0)) {
-                foreach ($row['sub'] as $subRow) {
-                    $printCategory($subRow);
-                }
-            }
-        };
+            };
 
-        return $printCategory;
-    }
+            return $printCategory;
+        }
 
     public static function level($categories, $category_id)
     {
