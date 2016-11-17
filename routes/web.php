@@ -2,40 +2,36 @@
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Application Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| Here is where you can register all of the routes for an application.
+| It's a breeze. Simply tell Laravel the URIs it should respond to
+| and give it the controller to call when that URI is requested.
 |
 */
 
-Route::get('/', function(){
-	return view('index');
+Auth::routes();
+
+Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
+
+Route::group(['prefix' => 'home'], function () {
+    Route::get('/', 'HomeController@index');
 });
 
-
-//Хэрэглэгч
 require __DIR__ . '/web/users.php';
 
-//Удирдлагын хэсэг
+require __DIR__ . '/web/business.php';
+
 require __DIR__ . '/web/dashboard.php';
 
-//бараа 
 require __DIR__ . '/web/products.php';
 
-//захиалга
+require __DIR__ . '/web/wish_lists.php';
+
 require __DIR__ . '/web/orders.php';
 
-//хуудасууд
-require __DIR__ . '/web/pages.php';
-
-//цагавах
-require __DIR__ . '/web/times.php';
-
-//мэдээ лист
-require __DIR__ . '/web/blog_list.php';
-
-//бидний тухай
 require __DIR__ . '/web/about.php';
+
+require __DIR__ . '/web/utilities.php';
+
