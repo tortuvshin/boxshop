@@ -11,7 +11,7 @@
 	@show
 
 	<link rel="icon" href="favicon.ico">
-	<!-- <title>@section('title'){{ $main_company['website_name']}} @show</title> -->
+	<title>@section('title'){{ $main_company['website_name']}} @show</title>
 
 	<script type="text/javascript">
 	FileAPI = {
@@ -22,11 +22,11 @@
 	{{-- Antvel CSS files --}}
 	{!! Html::style('/modu-bower/bootstrap/dist/css/bootstrap.css') !!}
 	@section('css')
-		<!-- {!! Html::style('/modu-bower/angular-notify/dist/angular-notify.min.css') !!} -->
-		<!-- {!! Html::style('/modu-bower/font-awesome/css/font-awesome.min.css') !!} -->
+		{!! Html::style('/modu-bower/angular-notify/dist/angular-notify.min.css') !!}
+		{!! Html::style('/modu-bower/font-awesome/css/font-awesome.min.css') !!}
 		{!! Html::style('/css/carousel.css') !!}
-		<!-- {!! Html::style('/css/angucomplete-alt.css') !!} -->
-		<!-- {!! Html::style('/css/app.css') !!} -->
+		{!! Html::style('/css/angucomplete-alt.css') !!}
+		{!! Html::style('/css/app.css') !!}
 	@show
 
 	<!--[if lt IE 9]>
@@ -95,22 +95,22 @@
 		@include('partial.footer')
 	</footer>
 @show
-<!--
+
 {{-- Modu - Bower Components --}}
 {!! Html::script('/modu-bower/jquery/dist/jquery.min.js') !!}
-{!! Html::script('/modu-bower/angular/angular.min.js') !!} 
+{!! Html::script('/modu-bower/angular/angular.min.js') !!}
 {!! Html::script('/modu-bower/angular-route/angular-route.min.js') !!}
 {!! Html::script('/modu-bower/angular-sanitize/angular-sanitize.min.js') !!}
 {!! Html::script('/modu-bower/angular-bootstrap/ui-bootstrap-tpls.min.js') !!}
 {!! Html::script('/modu-bower/angular-animate/angular-animate.min.js') !!}
 {!! Html::script('/modu-bower/angular-loading-bar/build/loading-bar.min.js') !!}
 {!! Html::script('/modu-bower/angular-mocks/angular-mocks.js') !!}
-{!! Html::script('/modu-bower/angular-touch/angular-touch.min.js') !!} -->
-<!-- {!! Html::script('/modu-bower/bootstrap/dist/js/bootstrap.min.js') !!} -->
-<!-- 
+{!! Html::script('/modu-bower/angular-touch/angular-touch.min.js') !!}
+{!! Html::script('/modu-bower/bootstrap/dist/js/bootstrap.min.js') !!}
+
 {!! Html::script('/js/vendor/xtForms/xtForm.js') !!}
-{!! Html::script('/js/vendor/xtForms/xtForm.tpl.min.js') !!} -->
-<!-- 
+{!! Html::script('/js/vendor/xtForms/xtForm.tpl.min.js') !!}
+
 <script>
 
 	/**
@@ -151,6 +151,6 @@
 	{!! Html::script('/modu-bower/angular-notify/dist/angular-notify.min.js') !!}
 	{!! Html::script('/modu-bower/angular-local-storage/dist/angular-local-storage.min.js') !!}
 @show
- -->
+
 </body>
 </html>
