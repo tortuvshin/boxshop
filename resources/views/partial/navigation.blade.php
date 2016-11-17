@@ -1,5 +1,5 @@
 <div class="navbar-wrapper container">
-	<nav class="navbar navbar-inverse navbar-static-top">
+	<nav class="">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only">Toggle navigation</span>
