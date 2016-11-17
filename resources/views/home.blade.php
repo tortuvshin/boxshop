@@ -94,24 +94,6 @@
 
             </div> {{-- end carousel --}}
 
-
-            {{-- -------------------------------------------------- --}}
-            {{-- -------------------- info bar -------------------- --}}
-            {{-- -------------------------------------------------- --}}
-
-            <div class="home-info-bar clearfix">
-                {{-- contact info --}}
-                <div class="col-xs-12 col-md-12">
-                    <div class="col-md-1 home-info-bar-icon"><div class="glyphicon glyphicon-phone-alt"></div></div>
-                    <div class="col-md-3 home-info-bar-text">{{ $main_company['phone_number'] }}</div>
-                    <div class="col-md-1 home-info-bar-icon"><div class="glyphicon glyphicon-envelope"></div></div>
-                    <div class="col-md-3 home-info-bar-text"><a href="mailto:{{ $main_company['sales_email'] }}">{{ $main_company['sales_email'] }}</a></div>
-                    <div class="col-md-1 home-info-bar-icon"><div class="glyphicon glyphicon-plane"></div></div>
-                    <div class="col-md-3 home-info-bar-text"><a href="#">{{ trans('globals.delivery') }}</a></div>
-                </div>
-
-            </div> {{-- end info bar --}}
-
             {{-- -------------------------------------------------- --}}
             {{-- ------------------ Product List ------------------ --}}
             {{-- -------------------------------------------------- --}}
@@ -189,7 +171,7 @@
             @section('panel_left_content')
 
                 <div class="home-left-bar">
-
+<!-- 
                     {{-- rated products tag --}}
                     @if (count($tagsCloud)>0 || true)
                         <div class="panel panel-default">
@@ -207,7 +189,7 @@
                             </div>
                         </div>
                     @endif
-
+ -->
                     {{-- upcoming events --}}
 
                     @if (config('app.offering_free_products'))
