@@ -8,7 +8,7 @@
 
     <section class="products_view">
 
-        <div class="container">
+        <div>
 
             {{-- -------------------------------------------------- --}}
             {{-- -------------------- carousel -------------------- --}}
@@ -171,6 +171,26 @@
             @section('panel_left_content')
 
                 <div class="home-left-bar">
+
+                    <span class="input-group-btn categories-search">
+                    <button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span ng-bind="catSelected.name || '{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}'">
+                            {{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}
+                            </span> <span class="caret">
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        @foreach($categories_menu as $categorie_menu)
+                            <li >
+                                <a href="javascript:void(0)"
+                                   ng-click="setCategorie({{ $categorie_menu['id'] }},'{{ $categorie_menu['name'] }}')" >
+                                    {{ $categorie_menu['name'] }}
+                                </a>
+                            </li>
+                        @endforeach
+
+                    </ul>
+                </span>
 <!-- 
                     {{-- rated products tag --}}
                     @if (count($tagsCloud)>0 || true)

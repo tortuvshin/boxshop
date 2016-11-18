@@ -1,4 +1,4 @@
-<div class="navbar-wrapper container">
+<div class="navbar-wrapper	">
 	<nav class="">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">

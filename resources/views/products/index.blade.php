@@ -10,7 +10,7 @@
 
 @section('content')
 
-    <div id="menu-top-category" class="container">
+    <div id="menu-top-category">
          <div class="row">&nbsp;</div>
          <ol class="breadcrumb">
             <li class="total">

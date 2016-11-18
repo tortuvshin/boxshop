@@ -1,4 +1,4 @@
 <?php
-Route::get('admin', function () {
+Route::get('admins', function () {
     return view('admin/index');
 });

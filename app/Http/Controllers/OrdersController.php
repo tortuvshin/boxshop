@@ -1565,21 +1565,21 @@ class OrdersController extends Controller
      */
     private function addToCartVirtualsProduct($product, $email, $orderId, $quantity = 0)
     {
-        if ($product->type != 'item') {
-            $virtual = VirtualProduct::where('product_id', $product->id)->first();
-            switch ($product->type) {
-                case 'key':
-                    for ($i = 0; $i < $quantity; $i++) {
-                        $VirtualProductOrder = new VirtualProductOrder();
-                        $VirtualProductOrder->order_id = $orderId;
-                        $VirtualProductOrder->status = 1;
-                        $VirtualProductOrder->email = $email;
-                        $VirtualProductOrder->virtual_product_id = $virtual->id;
-                        $VirtualProductOrder->save();
-                    }
-                break;
-            }
-        }
+    //     if ($product->type != 'item') {
+    //         $virtual = VirtualProduct::where('product_id', $product->id)->first();
+    //         switch ($product->type) {
+    //             case 'key':
+    //                 for ($i = 0; $i < $quantity; $i++) {
+    //                     $VirtualProductOrder = new VirtualProductOrder();
+    //                     $VirtualProductOrder->order_id = $orderId;
+    //                     $VirtualProductOrder->status = 1;
+    //                     $VirtualProductOrder->email = $email;
+    //                     $VirtualProductOrder->virtual_product_id = $virtual->id;
+    //                     $VirtualProductOrder->save();
+    //                 }
+    //             break;
+    //         }
+    //     }
     }
 
     /**
