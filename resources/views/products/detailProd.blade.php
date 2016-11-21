@@ -69,10 +69,15 @@
 
 	@section('center_content')
 
-		<div class="page-header">
-            <h5>{{ $product->name }}</h5>
-        </div>
-
+	<div  style="background: url(http://glory.demo1.wpdance.com/supermarket/wp-content/themes/wp_glory/images/media/bg-breadcrumb.jpg);">
+	<div class="text-center" style="color:white;">
+	<br>
+            <h1>{{ $product->name }}</h1>
+            <br>
+        </div>		
+</div>
+<div class="container-fluid" style="background-color: white;">
+<br>
 		<div class="row">
 
 			{{-- Gallery --}}
@@ -98,9 +103,9 @@
 			</div>
 
 			{{-- Product Information --}}
-	        <div class="col-md-3">
+	        <div class="col-md-6">
 				<hr class="visible-xs visible-sm">
-				<h5 class="black_color">{{ \Utility::showPrice($product->price) }}</h5>
+				<h1  style="color:#ed764f;">{{ \Utility::showPrice($product->price) }}</h1>
 				<hr class="hidden-sm hidden-xs">
 				<ul class="list-unstyled">
 					<li><label class="black_color">{{ trans('store.condition') }}:</label>&nbsp;{{ ucwords($product->condition) }}</li>
@@ -122,7 +127,7 @@
 	        </div>
 
 			{{-- Purchase Box --}}
-	        <div class="col-md-3">
+	        <div class="col-md-6">
 
 	        	<div class="panel panel-default">
 		        	<div class="panel-body">
@@ -280,7 +285,7 @@
 
 	 @stop
 @stop
-
+</div>
 
 @section('scripts')
     @parent
