@@ -11,15 +11,27 @@
 git clone https://github.com/tortuvshin/ecommerce.git
 ```
 
+Composer татаж суулгана
+
+```
+https://getcomposer.org/download/
+```
+
 Дараа нь, энэхүү төслийг татаж авсан хавтаст орж composer update/install комманд ажиллуулна
 
 ```
-composer update/install
+composer install
+```
+
+Nodejs татаж суулгана 
+
+```
+https://nodejs.org/en/download/
 ```
 
 NPM сангууд татах
 ```
-npm update/install
+npm install
 ```
 
 ## Тохируулах
@@ -29,13 +41,13 @@ npm update/install
 Өгөгдлийн санг үүсгэж тохируулсаны дараа дараах коммандаар хүснэгтүүдийг үүсгэнэ:
 
 ```
-php artisan migrate:refresh
+php artisan migrate
 ```
 
 Туршилтын өгөгдөл дараах коммандаар оруулна:
 
 ```
-php artisan migrate:refresh --seed
+php artisan db:seed
 ```
 	
 ```
