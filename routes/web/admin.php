@@ -1,4 +1,4 @@
 <?php
-Route::get('bella', function () {
-    return view('admin/admin');
+Route::get('dashboard', function () {
+    return view('dashboard');
 });
