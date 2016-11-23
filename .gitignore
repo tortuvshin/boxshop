@@ -3,6 +3,7 @@
 /node_modules/*
 /storage/files/*
 /public/bella-bower/*
+/public/cook/*
 .env
 composer.lock
 .idea/
