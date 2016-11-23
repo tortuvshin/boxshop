@@ -314,7 +314,7 @@
             		return PassInfo.getProperty();
             	}
             });
-        })(angular.module("AntVel"));
+        })(angular.module("Bella"));
         //Social Buttons
         $(document).ready(function() {
 			$("#facebook").click(function() {

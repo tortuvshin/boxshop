@@ -66,7 +66,7 @@
 <script>
 
 	(function() {
-		var app = angular.module('AntVel');
+		var app = angular.module('Bella');
 		app.controller('DashboardController',function(){});
 
 	})();

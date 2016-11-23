@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ App::getLocale() }}" ng-app="AntVel">
+<html lang="{{ App::getLocale() }}" ng-app="Bella">
 <head>
 	@section('metaLabels')
 		<meta charset="utf-8">
@@ -115,7 +115,7 @@
 
 	/**
 	 * ngModules
-	 * Angularjs modules requires by antvel
+	 * Angularjs modules requires by bella
 	 * @type {Array}
 	 */
 	var ngModules = [
@@ -127,7 +127,7 @@
 	@section('before.angular') @show
 
 	(function(){
-		angular.module('AntVel',ngModules,
+		angular.module('Bella',ngModules,
 		function($interpolateProvider){
 			$interpolateProvider.startSymbol('[[');
 			$interpolateProvider.endSymbol(']]');
@@ -140,7 +140,7 @@
 
 </script>
 
-{{-- Antvel functions --}}
+{{-- bella functions --}}
 {!! Html::script('/js/app.js') !!}
 
 @section('scripts')

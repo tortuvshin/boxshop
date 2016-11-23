@@ -111,7 +111,7 @@
                                     @endif
                                 {!! Form::close() !!}
                             @elseif($product->status!=0)
-                                {{-- Acciones para cualquier usuario que desee comprar en AntVel, siempre y cuando el producto no este inactivo --}}
+                                {{-- Acciones para cualquier usuario que desee comprar en Bella, siempre y cuando el producto no este inactivo --}}
 
                                 {!! Form::open(array('url' => route('orders.add_to_order',['cart',$product->id]), 'method' => 'put')) !!}
                                 <div class="col-sm-12">
@@ -289,6 +289,6 @@
                     function ($animateProvider) {
                         $animateProvider.classNameFilter(/carousel/);
                     }]);
-        })(angular.module("AntVel"));
+        })(angular.module("Bella"));
     </script>
 @stop

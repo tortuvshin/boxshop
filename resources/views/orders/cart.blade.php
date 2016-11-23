@@ -315,7 +315,7 @@
 
             }]);
 
-        })(angular.module("AntVel"));
+        })(angular.module("Bella"));
     </script>
 @stop
 
