@@ -34,8 +34,8 @@
         </div>
 
 
-    <script src="/dist/js/vendors.js"></script>
-    <script src="/dist/js/widgets.bundle.js"></script>
+    <script src="dist/js/vendors.js"></script>
+    <script src="dist/js/widgets.bundle.js"></script>
 
 
     <!--Use this only in development, while using React Hot Loader -->

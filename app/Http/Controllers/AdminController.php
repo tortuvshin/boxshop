@@ -4,7 +4,7 @@ namespace app\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-class DashboardController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,12 +13,27 @@ class DashboardController extends Controller
      */
     public function index()
     {   
-        $panel = [
-            'left'   => ['width' => '2'],
-            'center' => ['width' => '10'],
-        ];
+        return view('admin.home', compact('panel'));
+    }
 
-        return view('dashboard.home', compact('panel'));
+    public function dashboard()
+    {
+        return view('admin.dashboard');
+    }
+
+    public function widgets()
+    {
+        return view('admin.widgets');
+    }
+
+    public function timeline()
+    {
+        return view('admin.timeline');
+    }
+
+    public function general()
+    {
+        return view('admin.general');
     }
 
     /**

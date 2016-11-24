@@ -59,9 +59,9 @@
     // <script src="dist/js/demo.js"></script> -->
 
         
-        <script src="/dist/js/vendors.js"></script>
-        <script src="/dist/js/chartVendors.bundle.js"></script>
-        <script src="/dist/js/dashboardV1.bundle.js"></script>
+        <script src="dist/js/vendors.js"></script>
+        <script src="dist/js/chartVendors.bundle.js"></script>
+        <script src="dist/js/dashboardV1.bundle.js"></script>
     
 
      <!--Use this only in development, while using React Hot Loader -->
