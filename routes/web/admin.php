@@ -11,5 +11,4 @@ Route::group(['prefix' => 'admin', 'roles' => 'admin', 'middleware' => ['auth', 
 	Route::get('widgets', ['as' => 'admin/widgets', 'uses' => 'AdminController@widgets']);
 	
 	Route::get('general', ['as' => 'admin/general', 'uses' => 'AdminController@general']);
-
 });

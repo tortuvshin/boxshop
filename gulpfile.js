@@ -13,6 +13,6 @@ const elixir = require('laravel-elixir');
 
 elixir(function(mix) {
 	mix.less('app.less', 'public/css/app.css');
-	mix.scripts(['app.js'], 'public/js/app.js');
+	mix.scripts(['app.js', 'custom.js'], 'public/js/app.js');
 
 });
