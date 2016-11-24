@@ -36,8 +36,8 @@
         
     </body>
 
-    <script src="/dist/js/vendors.js"></script>
-    <script src="/dist/js/timeline.bundle.js"></script>
+    <script src="dist/js/vendors.js"></script>
+    <script src="dist/js/timeline.bundle.js"></script>
 
 
 <!--Use this only in development, while using React Hot Loader -->
