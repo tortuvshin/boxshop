@@ -47,10 +47,10 @@
 
 
         <!--
-    <script>
-      $.widget.bridge('uibutton', $.ui.button);
-    </script>
--->
+            <script>
+              $.widget.bridge('uibutton', $.ui.button);
+            </script>
+        -->
 
         <!-- AdminLTE App -->
 

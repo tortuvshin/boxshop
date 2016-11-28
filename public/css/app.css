@@ -23,6 +23,12 @@ footer .menu ul li {
   display: block;
   margin-bottom: 9px;
 }
+.cat-controller-nav form .input-group button {
+  float: left;
+}
+.cat-controller-nav form .input-group div {
+  float: left;
+}
 .product-img-box img {
   width: 200px;
   height: 200px;
