@@ -29,14 +29,14 @@ return [
    //inputs                            
    'inputs_view' => [
       'amount'              => 'Нийт',
-      'bar_code'            => 'Баркод',
+      'bar_code'            => 'Бааркоде',
       'brand'               => 'Брэнд',
       'condition'           => 'Нөхцөл',
       'description'         => 'Тайлбар',
       'download_example'    => 'Татагдсан жишиг загвар',
       'gift_card_option'    => '',
       'key_option'          => 'Энэхүү сонголт түлхүүр жагсаалттай тект файлыг ачааллах боломжыг таньд олгоно.<br/> Түлхүүр бүр салангид худалдаалагдана.<br/> Ижил форматтай жишээг ашиглана.<br/>Бүтээгдэхүүнийг  хаах үед бүх түлхүүрүүдийг худалдсан байна.',
-      'low_stock'           => 'Хямдрал',
+      'low_stock'           => ' буурсан бүтээгдэхүүн',
       'name'                => 'Нэр',
       'software_key_option' => 'This option allows you to load a downloadable archive.<br/>For safety we provides safe routes downloads.<br/>Extensions allowed: .rar .zip<br/>Optionally must upload a text file with a list of keys.<br/>Each key is sold separately.<br/>Use the same format shown.<br/>The product will be disabled when all keys have been sold.',
       'software_option'     => 'This option allows you to load a downloadable archive.<br/>For safety we provides safe routes downloads.<br/>Extensions allowed: .rar .zip',

@@ -62,10 +62,6 @@
                             {!! Form::select('status',[1=>trans('globals.active'),0=>trans('globals.inactive')],null,['class'=>'form-control']) !!}
                         </div>
                         <div class="col-sm-3">
-                            {!! Form::label('condition',trans('product.inputs_view.condition')) !!}:&nbsp;
-                            {!! Form::select('condition',$condition,null,['class'=>'form-control',$disabled=>$disabled]) !!}
-                        </div>
-                        <div class="col-sm-3">
                             {!! Form::label('category_id',trans('product.globals.categories')) !!}:&nbsp;
                             {!! Form::select('category_id',$categories,null,['class'=>'form-control',$disabled=>$disabled,'required']) !!}
                         </div>
