@@ -78,7 +78,7 @@ RECAPTCHA_PUBLIC_KEY = ModuRecaptcahPublicKeyObtained
 RECAPTCHA_PRIVATE_KEY = ModuRecaptcahPrivateKeyObtained
 ```
 
-***Note:*** ```APP_DEBUG == true```, reCaptcha will not be applied
+***Тайлбар:*** ```APP_DEBUG == true``` буюу debug асаалттай байгаа үед reCaptcha хэрэглэхгүй
 
 ## Laravel Elixir ашиглах
  
