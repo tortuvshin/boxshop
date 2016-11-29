@@ -14,12 +14,12 @@ class HomeController extends Controller
     {
         $panel = [
             'center' => [
-                'width' => 10,
+                'width' => 12,
             ],
-            'left' => [
-                'width' => 2,
-                'class' => 'home-no-padding',
-            ],
+            // 'left' => [
+            //     'width' => 2,
+            //     'class' => 'home-no-padding',
+            // ],
         ];
 
         $helperProd = new productsHelper();

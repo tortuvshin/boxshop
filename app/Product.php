@@ -29,7 +29,7 @@ class Product extends Model
         'stock',
         'features',
         'barcode',
-        'condition',
+        // 'condition',
         'rate_val',
         'rate_count',
         'low_stock',
@@ -119,9 +119,9 @@ class Product extends Model
                     $query->whereIn('category_id', $children);
                 break;
 
-                case 'conditions':
-                    $query->where('condition', 'LIKE', $value);
-                break;
+                // case 'conditions':
+                //     $query->where('condition', 'LIKE', $value);
+                // break;
 
                 case 'brands':
                    $query->where('brand', 'LIKE', $value);

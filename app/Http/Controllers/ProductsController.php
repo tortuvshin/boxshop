@@ -27,7 +27,7 @@ class ProductsController extends Controller
         'amount'       => 'required|numeric|digits_between:1,11|min:0',
         'bar_code'     => 'max:255',
         'category_id'  => 'required',
-        'condition'    => 'required',
+        // 'condition'    => 'required',
         'description'  => 'required|max:500',
         'key'          => 'required',
         'key_software' => 'required',
@@ -74,7 +74,8 @@ class ProductsController extends Controller
          *
          * @var [type]
          */
-        $products = Product::select('id', 'category_id', 'name', 'price', 'description', 'condition', 'brand', 'rate_val', 'type', 'features', 'parent_id', 'tags')
+        // $products = Product::select('id', 'category_id', 'name', 'price', 'description', 'condition', 'brand', 'rate_val', 'type', 'features', 'parent_id', 'tags')
+        $products = Product::select('id', 'category_id', 'name', 'price', 'description',  'brand', 'rate_val', 'type', 'features', 'parent_id', 'tags')
             ->search($search)
             ->refine($refine)
             ->free()
@@ -117,7 +118,7 @@ class ProductsController extends Controller
         $filters = productsHelper::countingProductsByCategory($all_products, $categories);
 
         //condition
-        $filters['conditions'] = array_count_values($all_products->pluck('condition')->toArray());
+        // $filters['conditions'] = array_count_values($all_products->pluck('condition')->toArray());
 
         //brand filter
         $filters['brands'] = array_count_values($all_products->pluck('brand')->toArray());
@@ -212,11 +213,11 @@ class ProductsController extends Controller
             '' => trans('product.controller.select_category'),
         ];
 
-        $condition = [
-            'new'         => trans('product.controller.new'),
-            'refurbished' => trans('product.controller.refurbished'),
-            'used'        => trans('product.controller.used'),
-        ];
+        // $condition = [
+        //     'new'         => trans('product.controller.new'),
+        //     'refurbished' => trans('product.controller.refurbished'),
+        //     'used'        => trans('product.controller.used'),
+        // ];
 
         $typesProduct = [
             'item' => trans('product.controller.item'),
@@ -235,7 +236,8 @@ class ProductsController extends Controller
         $productsDetails = new featuresHelper();
 
         return view('products.form',
-                compact('product', 'panel', 'features', 'categories', 'condition', 'typeItem', 'typesProduct', 'disabled', 'edit', 'oldFeatures', 'productsDetails'));
+                // compact('product', 'panel', 'features', 'categories', 'condition', 'typeItem', 'typesProduct', 'disabled', 'edit', 'oldFeatures', 'productsDetails'));
+                compact('product', 'panel', 'features', 'categories', 'typeItem', 'typesProduct', 'disabled', 'edit', 'oldFeatures', 'productsDetails'));
     }
 
     /**
@@ -272,7 +274,7 @@ class ProductsController extends Controller
         $product->bar_code = $request->input('bar_code');
         $product->brand = $request->input('brand');
         $product->price = $request->input('price');
-        $product->condition = $request->input('condition');
+        // $product->condition = $request->input('condition');
         $product->features = $features;
         $product->type = $request->input('type');
         if ($request->input('type') == 'item') {
@@ -370,7 +372,7 @@ class ProductsController extends Controller
 
         $product = Product::select([
             'id', 'category_id', 'user_id', 'name', 'description',
-            'price', 'stock', 'features', 'condition', 'rate_val',
+            'price', 'stock', 'features', 'rate_val',
             'rate_count', 'low_stock', 'status', 'type', 'tags', 'products_group', 'brand',
         ])->with([
             'group' => function ($query) {
@@ -467,7 +469,7 @@ class ProductsController extends Controller
         //categories drop down formatted
         productsHelper::categoriesDropDownFormat($allCategoriesStore, $categories);
 
-        $condition = ['new' => trans('product.controller.new'), 'refurbished' => trans('product.controller.refurbished'), 'used' => trans('product.controller.used')];
+        // $condition = ['new' => trans('product.controller.new'), 'refurbished' => trans('product.controller.refurbished'), 'used' => trans('product.controller.used')];
 
         $edit = true;
         $panel = $this->panel;
@@ -476,7 +478,7 @@ class ProductsController extends Controller
 
         $productsDetails = new featuresHelper();
 
-        return view('products.form', compact('product', 'panel', 'features', 'categories', 'condition', 'typeItem', 'disabled', 'edit', 'oldFeatures', 'productsDetails'));
+        return view('products.form', compact('product', 'panel', 'features', 'categories', 'typeItem', 'disabled', 'edit', 'oldFeatures', 'productsDetails'));
     }
 
     /**
@@ -497,7 +499,7 @@ class ProductsController extends Controller
         if ($order) {
             unset($rules['name']);
             unset($rules['category_id']);
-            unset($rules['condition']);
+            // unset($rules['condition']);
         }
         $v = Validator::make($request->all(), $rules);
         if ($v->fails()) {
@@ -516,7 +518,7 @@ class ProductsController extends Controller
         if (!$order) {
             $product->name = $request->input('name');
             $product->category_id = $request->input('category_id');
-            $product->condition = $request->input('condition');
+            // $product->condition = $request->input('condition');
         }
         $product->status = $request->input('status');
         $product->description = $request->input('description');

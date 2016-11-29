@@ -57,18 +57,18 @@ if (isset($productSuggestion)) {
 
         </div>
         {{-- actions end --}}
-
-    </div>
-    {{-- product box end --}}
-    <h6 class="product-name">
+        <h6 class="product-name">
             <a href = "{{ route('products.show',[$product['id']]) }}">
                 {{ $product['name'] }}
             </a>
-    </h6>
+        </h6>
 
-    <div class="product-price">
+        <div class="product-price">
             {!! \Utility::showPrice($product['price']) !!}
         </div>
+
+    </div>
+    {{-- product box end --}}
 
 
 </div>
