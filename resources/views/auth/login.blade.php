@@ -9,6 +9,7 @@
 @include('partial.message')
 
 @section('content')
+
 	<div class="login-page">
 	  <div class="login" ng-controller="LoginController">
 
