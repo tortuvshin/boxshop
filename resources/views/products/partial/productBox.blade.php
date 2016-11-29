@@ -10,9 +10,6 @@ if (isset($productSuggestion)) {
     {{-- product box begin --}}
     <div class="thumbnail clearfix product-overflow" ng-controller = "ProductBox">
 
-        <div class="product-price">
-            {!! \Utility::showPrice($product['price']) !!}
-        </div>
 
         <div class="product-reviews @if (!$product['rate_val']) hide @endif">
             {!! \Utility::thousandSuffix($product['rate_val']) !!}
@@ -32,12 +29,6 @@ if (isset($productSuggestion)) {
                 <img  src='/img/no-image.jpg'  alt="{{ $product['name'] }}">
             @endif
         </div>
-
-        <h6 class="product-name">
-            <a href = "{{ route('products.show',[$product['id']]) }}">
-                {{ $product['name'] }}
-            </a>
-        </h6>
 
         <p class="product-description">{{ str_limit($product['description'], 100,'...') }}</p>
 
@@ -69,6 +60,16 @@ if (isset($productSuggestion)) {
 
     </div>
     {{-- product box end --}}
+    <h6 class="product-name">
+            <a href = "{{ route('products.show',[$product['id']]) }}">
+                {{ $product['name'] }}
+            </a>
+    </h6>
+
+    <div class="product-price">
+            {!! \Utility::showPrice($product['price']) !!}
+        </div>
+
 
 </div>
 {{-- col end   --}}
