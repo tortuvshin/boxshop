@@ -25,7 +25,7 @@
 			
 		<!-- <input ng-disabled="!havePassword" type="checkbox" name="remember"> {{ trans('user.remember_me') }} -->
 					
-	    <p class="message"><a href="{{ url('/password/reset') }}">{{ trans('user.forgot_your_password') }}?</a></p>
+	    <p class="message"><a href="{{ url('/register') }}">{{ trans('user.register') }}</a> | <a href="{{ url('/password/reset') }}">{{ trans('user.forgot_your_password') }}?</a></p>
 	    </form>
 
 		{!! Form::close() !!}
