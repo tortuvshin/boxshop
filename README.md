@@ -73,9 +73,9 @@ RECAPTCHA_PUBLIC_KEY, and RECAPTCHA_PRIVATE_KEY
 reCaptcha кодуудаа .env файлд оруулна. Жишээ нь: 
 
 ```
-RECAPTCHA_PUBLIC_KEY = ModuRecaptcahPublicKeyObtained
+RECAPTCHA_PUBLIC_KEY = ModuRecaptchaPublicKeyObtained
 
-RECAPTCHA_PRIVATE_KEY = ModuRecaptcahPrivateKeyObtained
+RECAPTCHA_PRIVATE_KEY = ModuRecaptchaPrivateKeyObtained
 ```
 
 ***Тайлбар:*** ```APP_DEBUG == true``` буюу debug асаалттай байгаа үед reCaptcha хэрэглэхгүй
