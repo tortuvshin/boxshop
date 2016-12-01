@@ -69,14 +69,14 @@
 
 	@section('center_content')
 
-	<div  style="background: url(http://glory.demo1.wpdance.com/supermarket/wp-content/themes/wp_glory/images/media/bg-breadcrumb.jpg);">
-	<div class="text-center" style="color:white;">
+	<div class="producttitle"  >
+	<div class="titlecolor text-center" >
 	<br>
             <h1>{{ $product->name }}</h1>
             <br>
         </div>		
 </div>
-<div class="container-fluid" style="background-color: white;">
+<div class="container-fluid" >
 <br>
 		<div class="row">
 
@@ -104,11 +104,32 @@
 
 			{{-- Product Information --}}
 	        <div class="col-md-6">
-				<hr class="visible-xs visible-sm">
-				<h1  style="color:#ed764f;">{{ \Utility::showPrice($product->price) }}</h1>
-				<hr class="hidden-sm hidden-xs">
+				
+	        <div>
+	        	<h1 class="price">{{ \Utility::showPrice($product->price) }}</h1>
+	        </div>
+				
+				<div class="social">
+				<button type="button" id="facebook" class="btn btn-primary btn-sm full-width">
+									<span class="fa fa-facebook-square"></span>&nbsp;
+									{{ trans('globals.share_on_facebook') }}
+								</button>
+	                  
+	                
+	                 
+	                   
+	                    
+	                    		<a id="twitter" href="https://twitter.com/intent/tweet?hashtags=antvel&text={{ urlencode($product->name) }}&url={{ Request::url() }}&via=_antvel" class="btn btn-success btn-sm full-width">
+									<span class="fa fa-twitter-square"></span>&nbsp;
+									{{ trans('globals.share_on_twitter') }}
+								</a>
+				</div>
+				
+
+				<div class="col-md-12" >
+				<hr>
 				<ul class="list-unstyled">
-					<li><label class="black_color">{{ trans('store.condition') }}:</label>&nbsp;{{ ucwords($product->condition) }}</li>
+					
 					<li><label class="black_color">{{ trans('globals.brand') }}:</label>&nbsp;{{ ucwords($product->brand) }}</li>
 					@foreach ($product->features as $key => $feature)
 						@if ($key != 'images')
@@ -123,14 +144,15 @@
 						@endif
 					</li>
 				</ul>
+				</div>
 				<hr class="visible-xs visible-sm">
 	        </div>
 
 			{{-- Purchase Box --}}
 	        <div class="col-md-6">
 
-	        	<div class="panel panel-default">
-		        	<div class="panel-body">
+	        	
+		        	
 
 	                    {!! Form::open(array('url' => route('orders.add_to_order',['cart',$product->id]), 'method' => 'put')) !!}
 	                    <div class="row">
@@ -198,24 +220,10 @@
 	                    </div>
 
 						<hr>
-	                    <div class="row">
-	                    	<div class="col-lg-12">
-	                    		<button type="button" id="facebook" class="btn btn-primary btn-sm full-width">
-									<span class="fa fa-facebook-square"></span>&nbsp;
-									{{ trans('globals.share_on_facebook') }}
-								</button>
-	                    	</div>
-	                    </div>
-	                    <div class="row">&nbsp;</div>
-	                    <div class="row">
-	                    	<div class="col-lg-12">
-	                    		<a id="twitter" href="https://twitter.com/intent/tweet?hashtags=antvel&text={{ urlencode($product->name) }}&url={{ Request::url() }}&via=_antvel" class="btn btn-success btn-sm full-width">
-									<span class="fa fa-twitter-square"></span>&nbsp;
-									{{ trans('globals.share_on_twitter') }}
-								</a>
-	                    	</div>
-	                    </div>
-
+	                    
+	                    		
+	                    
+	                   
 						{{-- Virtual Products --}}
 	                    @if ($product->type=='key')
 	                    	<hr>
@@ -225,8 +233,8 @@
 
 	                    {!! Form::close() !!}
 
-					</div> {{-- panel-body --}}
-				</div>
+					 {{-- panel-body --}}
+				
 	        </div>
 		</div>
 
