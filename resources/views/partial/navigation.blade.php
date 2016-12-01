@@ -147,7 +147,7 @@
                     </li>
                 @endif
                 @endforeach
-                    <li><a class="btn btn-default" href="{{ route('orders.show_cart') }}" role="button">{{ trans('store.view_cart') }}</a></li>
+                <li><a class="btn btn-default" href="{{ route('orders.show_cart') }}" role="button">{{ trans('store.view_cart') }}</a></li>
                 </ul>
             @endif
 		</li>

@@ -10,7 +10,6 @@ if (isset($productSuggestion)) {
     {{-- product box begin --}}
     <div class="thumbnail clearfix product-overflow" ng-controller = "ProductBox">
 
-
         <div class="product-reviews @if (!$product['rate_val']) hide @endif">
             {!! \Utility::thousandSuffix($product['rate_val']) !!}
             <small>

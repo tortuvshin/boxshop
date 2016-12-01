@@ -14,7 +14,7 @@ git clone https://github.com/tortuvshin/ecommerce.git
 Composer татаж суулгана
 
 ```
-https://getcomposer.org/download/
+[Composer татах](https://getcomposer.org/download/)
 ```
 
 Дараа нь, энэхүү төслийг татаж авсан хавтаст орж composer update/install комманд ажиллуулна
@@ -102,4 +102,8 @@ Gulp ашиглах:
 ```
 gulp
 ```
+
+[NODEJS]: https://nodejs.org/en/download/
+[COMPOSER]: https://getcomposer.org/download/
+[RECAPTCHA]: https://www.google.com/recaptcha/admin#list
 

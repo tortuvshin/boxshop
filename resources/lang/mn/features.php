@@ -1,10 +1,10 @@
 <?php
 
 return [
-   'one_is_required'           => '(-аас нэг зураг шаардлагатай)',
+   'one_is_required'           => '(-аас нэг зураг оруулна уу)',
    'default_values'            => 'үндсэн утга',
    'defaults_method_not_exist' => 'Байхгүй',
-   'defaults_required'         => 'Анхдагч утга шаардлагатай',
+   'defaults_required'         => 'Анхдагч утга оруулна уу',
    'help_message'              => 'Тусламж',
    'help_messages'             => 'Тусламж',
    'helper_method'             => '(Энэ аргыг өмнө нь програмчлагдсан байх ёстой) туслагч аргын нэрийг зааж өгнө',
@@ -57,10 +57,10 @@ return [
       ''                => '',
       'all_required'    => 'Бүгдийг нь бөглөнө үү',
       'one_required'    => 'Ядаж нэгийг оруулна уу',
-      'required_number' => 'Хамгаалалтанд шаардлагатай тоо',
+      'required_number' => 'Хамгаалалтанд оруулна уу тоо',
    ],
    'validation_rules__msg_help_array' => [
-      'msg_help_all_required'       => 'Энэ онцлогт бүх утга шаардлагатай',
+      'msg_help_all_required'       => 'Энэ онцлогт бүх утга оруулна уу',
       'msg_help_alphanumeric'       => 'Бүх утгууд Тэмдэгт байна',
       'msg_help_character_range'    => 'Тэмдэгтийн хязгаарыг заана',
       'msg_help_letters'            => 'Бүх утга зөвхөн Үсэг байна',
@@ -72,7 +72,7 @@ return [
       'msg_help_one_required'       => 'Энэ боломж хамгийн багадаа нэг утга байна',
       'msg_help_personalized_value' => '  ',
       'msg_help_range_values'       => 'Боломжит утгын хүрээг заана.',
-      'msg_help_required_number'    => 'Дараагийн утгыг заасан бол, Энд утга шаардлагатай',
+      'msg_help_required_number'    => 'Дараагийн утгыг заасан бол, Энд утга оруулна уу',
    ],
    'default_values_array' => [
       ''                     => '',
@@ -102,7 +102,7 @@ return [
       'specific_selection' => 'Сонголт',
    ],
    'help_messages_msg_help_array' => [
-      'msg_help_general'             => 'Шинж чанарын хувьд нь өвөрмөц зурвас шаардлагатай',                                
+      'msg_help_general'             => 'Шинж чанарын хувьд нь өвөрмөц зурвас оруулна уу',                                
       'msg_help_general_selection'   => 'Хэрэглэгч өөрийнхөө шинж чанарыг сонгож баараар - "|" тусгаарлагдсан хэсгийг оруулна уу.',
                                        
                                       
@@ -112,27 +112,27 @@ return [
       'msg_help_specific_selection'  => 'Хэрэглэгч шинж чанар, утга бүрийг сонгож болох ба эдгээр сонголт нь "|" баар мессежний бүртгэлийн бүлэг тусгаарлагдсан байна.',
 
                                         
-      'msg_help_type_message'        => '   Бүтээгдэхүүний төрөл, бусад харагдах хэсгүүдэд, туслах мессежийг харуулах өөр аргуудыг төлөөлдөг.',
+      'msg_help_type_message'        => 'Бүтээгдэхүүний төрөл, бусад харагдах хэсгүүдэд, туслах мессежийг харуулах өөр аргуудыг төлөөлдөг.',
 
       'msg_help_repeat_values'       => 'Мессеж тодорхойгүй байна.',
    ],
    'validation_messages' => [
       'status.in'                        => 'Хүчингүй байна',
-      'name.required'                    => 'Нэр шаардлагатай',
-      'input_type.required'              => 'Оролтын төрөл шаардлагатай',
-      'type_products.required'           => 'Бүтээгдэхүүний төрөл шаардлагатай',
-      'default.required_if'              => 'Хэрэв оролтын төрлийг сонговол үндсэн талбар шаардлагатай.',
-      'default2.required_if'             => 'Хэрэв оролтын төрлийг сонговол үндсэн талбар шаардлагатай.',
+      'name.required'                    => 'Нэр оруулна уу',
+      'input_type.required'              => 'Оролтын төрөл оруулна уу',
+      'type_products.required'           => 'Бүтээгдэхүүний төрөл оруулна уу',
+      'default.required_if'              => 'Хэрэв оролтын төрлийг сонговол үндсэн талбар оруулна уу.',
+      'default2.required_if'             => 'Хэрэв оролтын төрлийг сонговол үндсэн талбар оруулна уу.',
       'condition.in'                     => 'Үндсэн нөхцөлүүд хүчингүй байна.',
       'type_data.in'                     => 'Өгөгдлийн төрөл хүчингүй байна.',
       'numerical_validation.in'          => 'Тоон баталгаажуулалтын нөхцөл хүчин төгөлдөржөөгүй байна',                                             
       'number_characters.in'             => 'Тэмдэгтэн баталгаажуулалтын нөхцөл хүчин төгөлдөржөөгүй байна',
       'start_value_number.numeric'       => 'Зөвшөөрөгдсөн утга нь тоон байх ёстой.',
-      'end_value_number.required_if'     => 'Зөвшөөрөгдсөн утгад хамгийн их тоон утга шаардлагатай',
-      'end_value_number.numeric'         => 'Зөвшөөрөгдсөн тоо хамгийн их тоо байх шаардлагатай.',
-      'start_value_characters.numeric'   => 'Тэмдэгт тоо тоон байх шаардлагатай',
-      'end_value_characters.required_if' => 'Тэмдэгт нь хамгийн их тоо байх шаардлагатай',
-      'end_value_characters.numeric'     => 'Тэмдэгтийн хамгийн урт тоо байх шаардлагатай',
+      'end_value_number.required_if'     => 'Зөвшөөрөгдсөн утгад хамгийн их тоон утга оруулна уу',
+      'end_value_number.numeric'         => 'Зөвшөөрөгдсөн тоо хамгийн их тоо байх оруулна уу.',
+      'start_value_characters.numeric'   => 'Тэмдэгт тоо тоон байх оруулна уу',
+      'end_value_characters.required_if' => 'Тэмдэгт нь хамгийн их тоо байх оруулна уу',
+      'end_value_characters.numeric'     => 'Тэмдэгтийн хамгийн урт тоо байх оруулна уу',
       'type_message.in'                  => 'Санал алдаатай байна',
    ],
 ];
