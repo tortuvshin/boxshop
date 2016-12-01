@@ -157,6 +157,26 @@ h6 {
 .product-actions .wrapper .glyphicon {
   color: #bbbfc7;
 }
+.producttitle {
+  background: url(http://glory.demo1.wpdance.com/supermarket/wp-content/themes/wp_glory/images/media/bg-breadcrumb.jpg);
+  background-position: center center!important;
+  background-size: cover !important;
+  position: relative;
+  z-index: 0;
+  padding: 77px 0;
+}
+.titlecolor {
+  color: white;
+}
+.container-fluid {
+  background-color: white;
+}
+.price {
+  color: #ed764f;
+}
+.social {
+  float: right;
+}
 html,
 body {
   height: 100%;
