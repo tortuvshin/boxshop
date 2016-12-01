@@ -90,6 +90,9 @@ return [
         'do_you_have'                  => 'Нууц үг',
         ],
 
+
+
+
         //emails wrapper
         'emails' => [
                 'verification_account' => [
