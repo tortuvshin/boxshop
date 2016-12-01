@@ -4,6 +4,7 @@
 /storage/files/*
 /public/bella-bower/*
 /public/cook/*
+/public/shop2016/*
 .env
 composer.lock
 .idea/
