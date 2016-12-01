@@ -1,4 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+html,
+body {
+  height: 100%;
+  font-weight: 300;
+  background-color: #fafafa;
+}
+a {
+  color: black;
+}
 footer {
   background: white;
   margin-top: 60px;
@@ -176,12 +185,6 @@ h6 {
 }
 .social {
   float: right;
-}
-html,
-body {
-  height: 100%;
-  font-weight: 300;
-  background-color: #fafafa;
 }
 
 /*# sourceMappingURL=app.css.map */
