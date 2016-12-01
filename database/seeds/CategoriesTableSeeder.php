@@ -8,7 +8,7 @@ class CategoriesTableSeeder extends Seeder
 {
     public function run()
     {
-        $this->market();
+        $this->bella();
     }
 
     public function bella () {
