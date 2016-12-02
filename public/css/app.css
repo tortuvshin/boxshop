@@ -38,6 +38,7 @@ footer .menu ul li {
 }
 .search-nav {
   border-bottom: 1px solid #e3e3e3;
+  height: 140px;
 }
 .glyphicon {
   top: 0 !important;
@@ -64,6 +65,17 @@ footer .menu ul li {
 }
 #search_value {
   margin-top: 8px;
+}
+.input-group-btn {
+  vertical-align: inherit !important;
+}
+.dropdown-menu {
+  top: 50%;
+}
+.navbar-collapse.collapse {
+  background-color: steelblue;
+  border: 1px;
+  border-radius: 5px;
 }
 .login-page {
   width: 360px;
