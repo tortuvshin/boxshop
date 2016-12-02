@@ -8,6 +8,10 @@ body {
 a {
   color: black;
 }
+.header-top-right-area .dropdown-menu li {
+  width: 100%;
+  line-height: 20px !important;
+}
 footer {
   background: white;
   margin-top: 60px;
