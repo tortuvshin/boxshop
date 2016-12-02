@@ -23,7 +23,7 @@ return [
         'logout'                       => 'Гарах',
         'myemail'                      => 'Миний и-мэйл хаяг',
         'email_address'                => 'Мэйл хаяг',
-        'nickname'                     => 'Хоч нэр',
+        'nickname'                     => 'Хэрэглэгчийн нэр',
         'orders'                       => 'Захиалга',
         'password'                     => 'Нууц үг',
         'password_confirmation'        => 'Нууц үг ',

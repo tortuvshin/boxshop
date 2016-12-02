@@ -1,4 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+html,
+body {
+  height: 100%;
+  font-weight: 300;
+  background-color: #fafafa;
+}
+a {
+  color: black;
+}
+.header-top-right-area .dropdown-menu li {
+  width: 100%;
+  line-height: 20px !important;
+}
 footer {
   background: white;
   margin-top: 60px;
@@ -177,6 +190,7 @@ h6 {
 .social {
   float: right;
 }
+<<<<<<< HEAD
 .quantity {
   width: auto;
   margin: 0 1px;
@@ -220,5 +234,7 @@ body {
   font-weight: 300;
   background-color: #fafafa;
 }
+=======
+>>>>>>> 1c60d7f9983611a6b004e7dcaadd4c47f84ccf70
 
 /*# sourceMappingURL=app.css.map */

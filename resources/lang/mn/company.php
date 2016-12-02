@@ -8,7 +8,7 @@ return [
    'company_name'               => 'Байгууллагын нэр',
    'cell_phone'                 => 'Утас',
    'phone'                      => 'Утас',
-   'slogan'                     => 'Slogan',
+   'slogan'                     => 'Холбоос',
    'logo'                       => 'Лого',
    'theme'                      => 'Загвар',
    'contact_email'              => 'Холбоо барих мэйл',

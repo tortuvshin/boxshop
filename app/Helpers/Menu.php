@@ -79,7 +79,7 @@ class Menu
             //-- Web Panel(Only for admim) --
             if (\Auth::check() && \Auth::user()->isAdmin()) {
                 $menu = array_merge($menu, [
-                    ['route' => '/wpanel', 'text' => trans('user.wpanel'), 'icon' => 'glyphicon glyphicon-cog', 'divider' => 1],
+                    ['route' => '/admin/dashboard', 'text' => trans('user.wpanel'), 'icon' => 'glyphicon glyphicon-cog', 'divider' => 1],
                 ]);
             }
         }
@@ -101,10 +101,10 @@ class Menu
         //Menu para empresas
         if (\Auth::user()->hasRole(['business', 'admin'])) {
             $menu = [
-                ['route' => '/wpanel',            'text' => trans('user.dashboard'),              'icon' => 'glyphicon glyphicon-dashboard'],
-                ['route' => '/wpanel/profile',    'text' => trans('company.store_config'),        'icon' => 'glyphicon glyphicon-cog'],
-                ['route' => '/wpanel/categories', 'text' => trans('categories.product_category'), 'icon' => 'glyphicon glyphicon-tasks'],
-                ['route' => '/wpanel/features',   'text' => trans('features.product_features'),   'icon' => 'glyphicon glyphicon-th-list'],
+                ['route' => '/admin',            'text' => trans('user.dashboard'),              'icon' => 'glyphicon glyphicon-dashboard'],
+                ['route' => '/admin/profile',    'text' => trans('company.store_config'),        'icon' => 'glyphicon glyphicon-cog'],
+                ['route' => '/admin/categories', 'text' => trans('categories.product_category'), 'icon' => 'glyphicon glyphicon-tasks'],
+                ['route' => '/admin/features',   'text' => trans('features.product_features'),   'icon' => 'glyphicon glyphicon-th-list'],
             ];
         }
 
@@ -115,7 +115,7 @@ class Menu
      * [Menu help ].
      *
      * @param  bool para indicar el tipo de salida, json o array
-     *
+     **
      * @return [json o array]
      *               Nota: el contenido del array interno de contener al menos route y text lo demas es opcional
      *               //[route,text,cont(para badge), divider, class, icon  ]
