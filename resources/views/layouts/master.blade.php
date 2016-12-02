@@ -108,6 +108,9 @@
 {!! Html::script('/bella-bower/angular-touch/angular-touch.min.js') !!}
 {!! Html::script('/bella-bower/bootstrap/dist/js/bootstrap.min.js') !!}
 
+
+
+
 {!! Html::script('/js/vendor/xtForms/xtForm.js') !!}
 {!! Html::script('/js/vendor/xtForms/xtForm.tpl.min.js') !!}
 

@@ -593,7 +593,10 @@ app.controller('DataPickerCtrl', function($scope)
 
 })(); //modules
 
-$( document ).ready(function() {
-    console.log( "хаха!" );
-});
+   $('#zoom_01').elevateZoom({
+    zoomType: "inner",
+cursor: "crosshair",
+zoomWindowFadeIn: 500,
+zoomWindowFadeOut: 750
+   }); 
 //# sourceMappingURL=app.js.map
