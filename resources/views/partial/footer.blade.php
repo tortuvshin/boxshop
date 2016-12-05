@@ -61,11 +61,6 @@
 
 	</div>
 
-	<div class="row credits">
-		<div class="col-md-12">
-			{{ trans('globals.power_by_label') }}&nbsp;<a href="http://github.com/tortuvshin/ecommerce">{{ trans('globals.antvel_eCommerce') }}</a>
-		</div>
-	</div>
 
 </div>
 @section('scripts')
@@ -93,7 +88,8 @@
 <div class="rows">
   <div class="copy col-sm-8">
 
-  </div>  <span style="color: white;">© 2014 Glory Fashion Store . All Rights Reserved.</span>
+  </div>  <span style="color: white;">	{{ trans('globals.power_by_label') }}&nbsp;<a href="http://github.com/tortuvshin/ecommerce">{{ trans('globals.antvel_eCommerce') }}</a>
+		.</span>
 
   <div class="col-sm-4"></div>
 </div>
