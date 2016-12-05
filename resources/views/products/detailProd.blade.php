@@ -277,8 +277,9 @@
 
 		<div class="row">&nbsp;</div>
 
-		<div class="page-header">
+		<div class="page-headers">
             <h5>{{ trans('store.suggestions.product') }}</h5>
+            <div class="titlelines"></div>
         </div>
 		<div class="row">
 			<div class="col-md-12">
@@ -290,6 +291,7 @@
 	            <section class="products_view">
                     <div class="container-fluid marketing">
                         <div class="row">
+                        
                             @foreach ($suggestions as $productSuggestion)
                                 @include('products.partial.productBox', $productSuggestion)
                             @endforeach
