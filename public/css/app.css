@@ -12,6 +12,25 @@ a {
   width: 100%;
   line-height: 20px !important;
 }
+.li {
+  padding: 10px 0 0;
+}
+#menu-left-category ul li {
+  width: 100%;
+}
+#menu-left-category ul li a {
+  padding: 0 0 10px 0 !important;
+  text-transform: uppercase;
+}
+#menu-left-category ul li small {
+  float: right;
+}
+#menu-left-category ul li span {
+  float: right;
+}
+#menu-left-category ul small {
+  font-size: 17px;
+}
 footer {
   background: #3c3b48;
   margin-top: 60px;
