@@ -59,7 +59,7 @@
 					{{-- left panel --}}
 					@if (isset($panel['left']))
 						{{-- desktops validation --}}
-						<div class="col-sm-{{ $panel['left']['width'] or '2' }} col-md-{{ $panel['left']['width'] or '2' }} {{ $panel['left']['class'] or '' }}">
+						<div class="col-sm-{{ $panel['left']['width'] or '3' }} col-md-{{ $panel['left']['width'] or '3' }} {{ $panel['left']['class'] or '' }}">
 							@section('panel_left_content')
 								Left content
 							@show
@@ -67,7 +67,7 @@
 					@endif
 
 					{{-- center content --}}
-					<div class="col-xs-12 col-sm-{{ $panel['center']['width'] or '10' }} col-md-{{ $panel['center']['width'] or '10' }}">
+					<div class="col-xs-12 col-sm-{{ $panel['center']['width'] or '9' }} col-md-{{ $panel['center']['width'] or '9' }}">
 						@section('center_content')
 							Center content
 						@show
