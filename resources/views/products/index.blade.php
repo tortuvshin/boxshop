@@ -209,7 +209,7 @@
     @stop
 
     @section('center_content')
-        <div class="container-fluid marketing">
+        <div class="marketing">
             @if (count($products) > 0)
                 <div class="row">
                     @foreach ($products->toArray()['data'] as $product)

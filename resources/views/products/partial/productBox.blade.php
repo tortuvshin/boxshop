@@ -8,7 +8,7 @@ if (isset($productSuggestion)) {
 <div class="col-xs-6 col-sm-6 col-md-3 clearfix product-overflow">
 
     {{-- product box begin --}}
-    <div class="thumbnail clearfix product-overflow" ng-controller = "ProductBox">
+    <div class="product-box clearfix product-overflow" ng-controller = "ProductBox">
 
         <div class="product-reviews @if (!$product['rate_val']) hide @endif">
             {!! \Utility::thousandSuffix($product['rate_val']) !!}
@@ -33,9 +33,9 @@ if (isset($productSuggestion)) {
                 <img  src='/img/no-image.jpg'  alt="{{ $product['name'] }}">
             @endif
         </div>
-
+<!-- 
         <p class="product-description">{{ str_limit($product['description'], 100,'...') }}</p>
-
+ -->
         {{-- actions begin --}}
         <div class="product-actions actions">
 
@@ -47,18 +47,18 @@ if (isset($productSuggestion)) {
                         {!! Form::close() !!}
                     @endif
                 </div>
-                <span id="card_text">Add to card</span>
+                <span id="card_text">Сагс</span>
             </div>
 
             {{-- wish list (only products not free) --}}
-                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart"  ng-click = "goTo('{{ route('orders.add_to_order',['wishlist', $product[($product['type']=='freeproduct')?'parent_id':'id']]) }}')">
-                    <div class="glyphicon glyphicon-heart option"></div>
-                </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart"  ng-click = "goTo('{{ route('orders.add_to_order',['wishlist', $product[($product['type']=='freeproduct')?'parent_id':'id']]) }}')">
+                <div class="glyphicon glyphicon-heart option"></div>
+            </div>
 
-                {{-- view --}}
-                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
-                    <div class="glyphicon glyphicon-eye-open option"></div>
-                </div>
+            {{-- view --}}
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
+                <div class="glyphicon glyphicon-eye-open option"></div>
+            </div>
             
 
         </div>
