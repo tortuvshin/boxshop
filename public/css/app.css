@@ -8,6 +8,10 @@ body {
 a {
   color: black;
 }
+.header-top-right-area .dropdown-menu li {
+  width: 100%;
+  line-height: 20px !important;
+}
 footer {
   background: white;
   margin-top: 60px;
@@ -42,6 +46,7 @@ footer .menu ul li {
 }
 .glyphicon {
   top: 0 !important;
+  color: black;
 }
 .header-top {
   width: 100%;
@@ -73,9 +78,14 @@ footer .menu ul li {
   top: 50%;
 }
 .navbar-collapse.collapse {
-  background-color: steelblue;
-  border: 1px;
-  border-radius: 5px;
+  background-color: #ec1f1f;
+  box-shadow: 3px 1px 2px #ea4d4d;
+}
+.input-group .form-control {
+  width: 80%;
+}
+.dada {
+  color: white;
 }
 .login-page {
   width: 360px;
@@ -132,8 +142,8 @@ footer .menu ul li {
   text-decoration: none;
 }
 .product-img-box img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
 .pd-image {
   width: 100px;
@@ -184,7 +194,7 @@ h6 {
   background-size: cover !important;
   position: relative;
   z-index: 0;
-  padding: 77px 0;
+  padding: 35px 0;
 }
 .titlecolor {
   color: white;
@@ -197,6 +207,43 @@ h6 {
 }
 .social {
   float: right;
+}
+.quantity {
+  width: auto;
+  margin: 0 1px;
+}
+.breadcrumbstext .breadcrumb {
+  background-color: transparent !important;
+}
+.breadcrumbstext .breadcrumb a {
+  color: white;
+}
+.breadcrumb > .active {
+  color: white;
+}
+.pdimage {
+  width: 400px;
+}
+.return-shipping {
+  border-top: 1px solid #ebebeb;
+  padding-top: 30px;
+  margin-top: 24px;
+}
+.return-shipping .content-quick {
+  border: 1px dashed #ed7952;
+  padding: 29px 19px 29px 78px;
+}
+.btn-info2 {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #000;
+  background-color: #ddd;
+}
+.twitter {
+  color: #000;
+  background-color: #dddddd;
 }
 
 /*# sourceMappingURL=app.css.map */

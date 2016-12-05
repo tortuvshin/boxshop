@@ -123,7 +123,7 @@ margin-left: 90px;">
 				<span class="badge badge-cart">{{ array_sum(Session::get('user.cart_content')) }} </span>
 				@endif
 
-				<span class="glyphicon glyphicon-shopping-cart"></span>
+				<span class="dada glyphicon glyphicon-shopping-cart"></span>
 
 			</a>
 

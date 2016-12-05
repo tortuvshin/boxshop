@@ -593,7 +593,5 @@ app.controller('DataPickerCtrl', function($scope)
 
 })(); //modules
 
-$( document ).ready(function() {
-    console.log( "хаха!" );
-});
+//
 //# sourceMappingURL=app.js.map
