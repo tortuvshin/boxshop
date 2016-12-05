@@ -205,7 +205,7 @@ footer .menu ul li {
   color: white;
 }
 .pdimage {
-  width: 400px;
+  width: 450px;
 }
 .return-shipping {
   border-top: 1px solid #ebebeb;
@@ -227,6 +227,16 @@ footer .menu ul li {
 .twitter {
   color: #000;
   background-color: #dddddd;
+}
+.titlelines {
+  background-color: #f90000;
+  height: 2px;
+  display: block;
+  margin: 6px 0 30px;
+  width: 30px;
+}
+.page-headers {
+  margin: 40px 40px 20px;
 }
 .product-img-box img {
   width: 100%;
@@ -265,11 +275,37 @@ h6 {
   font-style: normal;
   text-align: center;
 }
-.product-actions .wrapper .glyphicon:hover {
-  color: orange;
+.product-actions .wrapper:hover .glyphicon {
+  color: #ed764f;
 }
-.product-actions .wrapper .glyphicon {
+.product-actions .wrapper:hover #card_text {
+  color: #ed764f;
+}
+.product-actions .wrapper {
   color: #bbbfc7;
+}
+.add_to_card {
+  color: #dadada;
+}
+.glyphicon-shopping-cart {
+  color: #ed764f;
+}
+.glyphicon-heart,
+.glyphicon-eye-open {
+  color: #bbbfc7;
+}
+.product-label {
+  position: absolute;
+  margin-left: 72%;
+  border-bottom: 70px solid transparent;
+  border-right: 70px solid #ff5733;
+}
+.product-type {
+  color: white;
+  -moz-transform: rotate(45deg);
+  margin-left: 25px;
+  margin-top: 14px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=app.css.map */

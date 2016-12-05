@@ -22,6 +22,11 @@ if (isset($productSuggestion)) {
         @endif
 
         <div class="product-img-box" ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
+        <div class="product-label">
+            <span class="product-type">
+            NEW
+            </span>
+        </div>
             @if (isset($product["features"]["images"][0]))
                 <img  src='{{ $product["features"]["images"][0] }}?h=250' alt="{{ $product['name'] }}">
             @else
@@ -32,27 +37,29 @@ if (isset($productSuggestion)) {
         <p class="product-description">{{ str_limit($product['description'], 100,'...') }}</p>
 
         {{-- actions begin --}}
-        <div class="product-actions">
+        <div class="product-actions actions">
 
             {{-- add to cart (only products not free)  --}}
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 wrapper" ng-click="submit('#add-{{ $product['id'] }}')">
-                <div class = "glyphicon glyphicon-shopping-cart option" >
+            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-{{ $product['id'] }}')">
+                <div class = "glyphicon glyphicon-shopping-cart option " >
                     @if ($product['type'] != 'freeproduct')
                         {!! Form::open(['method' => 'put', 'route' => ['orders.add_to_order','cart', $product['id']], 'id' => 'add-'.$product['id'] ]) !!}
                         {!! Form::close() !!}
                     @endif
                 </div>
+                <span id="card_text">Add to card</span>
             </div>
 
             {{-- wish list (only products not free) --}}
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 wrapper"  ng-click = "goTo('{{ route('orders.add_to_order',['wishlist', $product[($product['type']=='freeproduct')?'parent_id':'id']]) }}')">
-                <div class="glyphicon glyphicon-heart option"></div>
-            </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart"  ng-click = "goTo('{{ route('orders.add_to_order',['wishlist', $product[($product['type']=='freeproduct')?'parent_id':'id']]) }}')">
+                    <div class="glyphicon glyphicon-heart option"></div>
+                </div>
 
-            {{-- view --}}
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 wrapper" ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
-                <div class="glyphicon glyphicon-eye-open option"></div>
-            </div>
+                {{-- view --}}
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
+                    <div class="glyphicon glyphicon-eye-open option"></div>
+                </div>
+            
 
         </div>
         {{-- actions end --}}

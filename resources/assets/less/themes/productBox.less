@@ -39,9 +39,41 @@ h6{
 	font-style: normal;
 	text-align: center;
 }
-.product-actions .wrapper .glyphicon:hover{
-	color:orange;
-}
-.product-actions .wrapper .glyphicon{
+.product-actions .wrapper {
+	&:hover {
+		.glyphicon{
+			color:#ed764f;
+		}
+		#card_text{
+			color:#ed764f;
+		}
+	}
+} 
+
+.product-actions .wrapper {
 	color:#bbbfc7;
+}
+
+.add_to_card {
+	color:#dadada;
+}
+.glyphicon-shopping-cart{
+	color:#ed764f;
+	}
+
+.glyphicon-heart, .glyphicon-eye-open{
+	color:#bbbfc7;
+}
+.product-label{
+	position:absolute;
+	margin-left:72%;
+	border-bottom: 70px solid transparent;
+	border-right: 70px solid #ff5733;
+}
+.product-type{
+	color:white;
+	-moz-transform: rotate(45deg);
+	margin-left: 25px;
+margin-top: 14px;
+position:absolute;
 }
