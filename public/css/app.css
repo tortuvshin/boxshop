@@ -42,9 +42,11 @@ footer .menu ul li {
 }
 .search-nav {
   border-bottom: 1px solid #e3e3e3;
+  height: 140px;
 }
 .glyphicon {
   top: 0 !important;
+  color: black;
 }
 .header-top {
   width: 100%;
@@ -68,6 +70,22 @@ footer .menu ul li {
 }
 #search_value {
   margin-top: 8px;
+}
+.input-group-btn {
+  vertical-align: inherit !important;
+}
+.dropdown-menu {
+  top: 50%;
+}
+.navbar-collapse.collapse {
+  background-color: #ec1f1f;
+  box-shadow: 3px 1px 2px #ea4d4d;
+}
+.input-group .form-control {
+  width: 80%;
+}
+.dada {
+  color: white;
 }
 .login-page {
   width: 360px;
@@ -123,13 +141,72 @@ footer .menu ul li {
   color: #4CAF50;
   text-decoration: none;
 }
-.product-img-box img {
-  width: 100%;
-  height: auto;
-}
 .pd-image {
   width: 100px;
   height: 100px;
+}
+.producttitle {
+  background: url(http://glory.demo1.wpdance.com/supermarket/wp-content/themes/wp_glory/images/media/bg-breadcrumb.jpg);
+  background-position: center center!important;
+  background-size: cover !important;
+  position: relative;
+  z-index: 0;
+  padding: 35px 0;
+}
+.titlecolor {
+  color: white;
+}
+.container-fluid {
+  background-color: white;
+}
+.price {
+  color: #ed764f;
+}
+.social {
+  float: right;
+}
+.quantity {
+  width: auto;
+  margin: 0 1px;
+}
+.breadcrumbstext .breadcrumb {
+  background-color: transparent !important;
+}
+.breadcrumbstext .breadcrumb a {
+  color: white;
+}
+.breadcrumb > .active {
+  color: white;
+}
+.pdimage {
+  width: 400px;
+}
+.return-shipping {
+  border-top: 1px solid #ebebeb;
+  padding-top: 30px;
+  margin-top: 24px;
+}
+.return-shipping .content-quick {
+  border: 1px dashed #ed7952;
+  padding: 29px 19px 29px 78px;
+}
+.btn-info2 {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #000;
+  background-color: #ddd;
+}
+.twitter {
+  color: #000;
+  background-color: #dddddd;
+}
+<<<<<<< HEAD
+=======
+.product-img-box img {
+  width: 100%;
+  height: auto;
 }
 .thumbnail {
   border: 0px;
@@ -170,71 +247,6 @@ h6 {
 .product-actions .wrapper .glyphicon {
   color: #bbbfc7;
 }
-.producttitle {
-  background: url(http://glory.demo1.wpdance.com/supermarket/wp-content/themes/wp_glory/images/media/bg-breadcrumb.jpg);
-  background-position: center center!important;
-  background-size: cover !important;
-  position: relative;
-  z-index: 0;
-  padding: 35px 0;
-}
-.titlecolor {
-  color: white;
-}
-.container-fluid {
-  background-color: white;
-}
-.price {
-  color: #ed764f;
-}
-.social {
-  float: right;
-}
-<<<<<<< HEAD
-.quantity {
-  width: auto;
-  margin: 0 1px;
-}
-.breadcrumbstext .breadcrumb {
-  background-color: transparent !important;
-}
-.breadcrumbstext .breadcrumb a {
-  color: white;
-}
-.breadcrumb > .active {
-  color: white;
-}
-.pdimage {
-  width: 400px;
-}
-.return-shipping {
-  border-top: 1px solid #ebebeb;
-  padding-top: 30px;
-  margin-top: 24px;
-}
-.return-shipping .content-quick {
-  border: 1px dashed #ed7952;
-  padding: 29px 19px 29px 78px;
-}
-.btn-info2 {
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-  color: #000;
-  background-color: #ddd;
-}
-.twitter {
-  color: #000;
-  background-color: #dddddd;
-}
-html,
-body {
-  height: 100%;
-  font-weight: 300;
-  background-color: #fafafa;
-}
-=======
->>>>>>> 1c60d7f9983611a6b004e7dcaadd4c47f84ccf70
+>>>>>>> 6b2e7e555fc5bb187092d74d9c8383abda8a6ff1
 
 /*# sourceMappingURL=app.css.map */

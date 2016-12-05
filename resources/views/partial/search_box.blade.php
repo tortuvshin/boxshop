@@ -1,3 +1,4 @@
+
 <div ng-controller="{{ $angularController }}">
 
 		<angucomplete-alt

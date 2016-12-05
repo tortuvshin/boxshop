@@ -27,7 +27,7 @@
 				
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-					<span class="glyphicon glyphicon-heart"></span>
+					<span class="">{{ trans('store.productsInWishList') }}(0)</span>
 				</a>
 				<ul class="dropdown-menu" role="menu">
 					<li><a href="{{ route('orders.show_wish_list') }}">{{ trans('store.wish_list') }}</a></li>
@@ -73,9 +73,16 @@
 		</ul>
 	</div>
 </div>
-<nav ng-controller="CategoriesController" class="cat-controller-nav">
+<div class="row">
+
+
+
+<nav ng-controller="CategoriesController" class="cat-controller-nav col-md-12">
 {!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
 <div class="input-group search-nav">
+<img src="img/logo-1.jpg" style="width: 200px; height: 100px; margin-top: 20px; margin-bottom: 20px; margin-right: 20px;
+margin-left: 90px;">
+
 	<span class="input-group-btn categories-search">
 		<button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 			<span ng-bind="catSelected.name || '{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}'">
@@ -102,6 +109,9 @@
 	<span class="input-group-btn">
 		<button class="btn btn-default glyphicon glyphicon-search" type="submit"></button>
 	</span>
+
+
+
 	<div id="navbar" class="navbar-collapse collapse">
 
 	<ul class="nav navbar-nav">
@@ -113,7 +123,7 @@
 				<span class="badge badge-cart">{{ array_sum(Session::get('user.cart_content')) }} </span>
 				@endif
 
-				<span class="glyphicon glyphicon-shopping-cart"></span>
+				<span class="dada glyphicon glyphicon-shopping-cart"></span>
 
 			</a>
 
@@ -147,7 +157,7 @@
                     </li>
                 @endif
                 @endforeach
-                <li><a class="btn btn-default" href="{{ route('orders.show_cart') }}" role="button">{{ trans('store.view_cart') }}</a></li>
+                <li><a class="btn btn-default" href="{{ route('orders.show_cart') }}" role="button" >{{ trans('store.view_cart') }}</a></li>
                 </ul>
             @endif
 		</li>
@@ -157,3 +167,4 @@
 </div>
 {!! Form::close() !!}
 </nav>
+</div>
