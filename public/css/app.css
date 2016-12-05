@@ -13,14 +13,13 @@ a {
   line-height: 20px !important;
 }
 footer {
-  background: white;
+  background: #3c3b48;
   margin-top: 60px;
   padding-top: 47px;
-  padding-bottom: 35px;
   border-top: 1px solid #eee;
 }
 footer .menu {
-  text-align: center;
+  text-align: initial;
 }
 footer .menu h3 {
   margin-top: 0;
@@ -36,6 +35,31 @@ footer .menu ul {
 footer .menu ul li {
   display: block;
   margin-bottom: 9px;
+}
+.footertext {
+  color: #c5c5c5;
+}
+.line {
+  background: #ed764f;
+  height: 2px;
+  display: block;
+  margin: 6px 0 30px;
+}
+.line-30 {
+  width: 30px;
+}
+.fa {
+  color: white;
+}
+.logo-jpg {
+  vertical-align: inherit;
+}
+.rows {
+  background-color: #2d2c33;
+  height: 50px;
+}
+.col-sm-4 {
+  color: white;
 }
 .cat-controller-nav form .input-group button {
   float: left;
@@ -80,9 +104,11 @@ footer .menu ul li {
 .navbar-collapse.collapse {
   background-color: #ec1f1f;
   box-shadow: 3px 1px 2px #ea4d4d;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .input-group .form-control {
-  width: 80%;
+  width: 100%;
 }
 .dada {
   color: white;
@@ -202,8 +228,6 @@ footer .menu ul li {
   color: #000;
   background-color: #dddddd;
 }
-<<<<<<< HEAD
-=======
 .product-img-box img {
   width: 100%;
   height: auto;
@@ -247,6 +271,5 @@ h6 {
 .product-actions .wrapper .glyphicon {
   color: #bbbfc7;
 }
->>>>>>> 6b2e7e555fc5bb187092d74d9c8383abda8a6ff1
 
 /*# sourceMappingURL=app.css.map */
