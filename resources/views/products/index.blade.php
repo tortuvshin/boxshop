@@ -78,7 +78,9 @@
                    @foreach ($filters as $key => $filter)
                         {{-- filter menu --}}
                         <ul class="nav navbar-nav {{ $key }}" >
-                            <h3 class=" breadcrumb @if($key=='categories') no_margin_top @endif">{{ trans('globals.filters.'.$key) }}</h3>
+                            <h3 class="  @if($key=='categories') no_margin_top @endif">{{ trans('globals.filters.'.$key) }}</h3>
+                         
+                            <div class="titlelines"></div>
                             <?php $i=0; ?>
                             @if($key=='category')
                                 @foreach ($filter as $id => $item)
