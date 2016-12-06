@@ -178,3 +178,5 @@
 {!! Form::close() !!}
 </nav>
 </div>
+
+@include('partial.navigation_bottom')
