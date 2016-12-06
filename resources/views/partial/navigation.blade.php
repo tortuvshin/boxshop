@@ -84,7 +84,7 @@
 	<a href="/home">
 		@if($main_company['logo'])
 			<span class="navbar-brand-text">
-				<img src="{{$main_company['logo']}}" alt="">
+				<img class="logo-img" src="{{$main_company['logo']}}" alt="">
 			</span>
 		@else
 			<span class="navbar-brand-text">
