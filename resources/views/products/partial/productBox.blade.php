@@ -22,11 +22,7 @@ if (isset($productSuggestion)) {
         @endif
 
         <div class="product-img-box" ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
-        <div class="product-label">
-            <span class="product-type">
-            NEW
-            </span>
-        </div>
+       
             @if (isset($product["features"]["images"][0]))
                 <img  src='{{ $product["features"]["images"][0] }}?h=250' alt="{{ $product['name'] }}">
             @else
