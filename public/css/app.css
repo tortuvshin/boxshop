@@ -1,12 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+* {
+  font-family: 'Roboto', sans-serif;
+}
 html,
 body {
   height: 100%;
   font-weight: 300;
-  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
 }
 a {
-  color: black;
+  color: #666666;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 700;
 }
 .header-top-right-area .dropdown-menu li {
   width: 100%;
@@ -15,6 +23,9 @@ a {
 .row {
   margin-right: 0;
   margin-left: 0;
+}
+.breadcrumb {
+  background-color: white;
 }
 .li {
   padding: 10px 0 0;
@@ -34,6 +45,12 @@ a {
 }
 #menu-left-category ul small {
   font-size: 17px;
+}
+.categories-panel {
+  max-width: 250px;
+}
+.left-filter {
+  padding-left: 30px;
 }
 footer {
   background: #3c3b48;
@@ -200,6 +217,11 @@ footer .menu ul li {
 .search-input {
   margin-top: 60px;
 }
+.logo-img {
+  width: 200px;
+  height: 117px;
+  margin-bottom: 10px;
+}
 .login-page {
   width: 360px;
   padding: 8% 0 0;
@@ -254,6 +276,10 @@ footer .menu ul li {
   color: #4CAF50;
   text-decoration: none;
 }
+.global-panels {
+  margin-left: 4%;
+  margin-right: 4%;
+}
 .pd-image {
   width: 100px;
   height: 100px;
@@ -303,6 +329,11 @@ footer .menu ul li {
   border: 1px dashed #ed7952;
   padding: 29px 19px 29px 78px;
 }
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: white;
+}
 .btn-info2 {
   padding: 5px 10px;
   font-size: 12px;
@@ -319,11 +350,14 @@ footer .menu ul li {
   background-color: #f90000;
   height: 2px;
   display: block;
-  margin: 6px 0 30px;
+  margin: 6px 0 20px;
   width: 30px;
 }
 .page-headers {
   margin: 40px 40px 20px;
+}
+.product-img-box {
+  position: relative;
 }
 .product-img-box img {
   width: 100%;
@@ -354,8 +388,8 @@ h6 {
   visibility: visible;
   margin-top: -40px;
 }
-.product-box:hover img {
-  opacity: 0.8;
+.product-box:hover .product-image-hover {
+  background: rgba(0, 0, 0, 0.15);
 }
 .product-price {
   font-size: 100%;
@@ -379,10 +413,10 @@ h6 {
 .product-actions .wrapper {
   color: #bbbfc7;
   padding: 4%;
-  border: 1px solid #fff;
   cursor: pointer;
-  background-color: #F2F2F2;
+  background-color: #Fff;
   height: 40px;
+  border: 1px #f2f2f2 solid;
 }
 .product-actions .wrapper:hover .glyphicon {
   color: #ed764f;
@@ -390,15 +424,15 @@ h6 {
 .product-actions .wrapper:hover #card_text {
   color: #ed764f;
 }
-.add_to_card {
-  color: #dadada;
-}
 .glyphicon-shopping-cart {
-  color: white;
+  color: #ed764f;
+  margin-right: 5%;
 }
 .glyphicon-heart,
 .glyphicon-eye-open {
   color: #bbbfc7;
+  width: 100%;
+  text-align: center;
 }
 .product-type {
   color: white;
@@ -406,6 +440,14 @@ h6 {
   margin-left: 25px;
   margin-top: 14px;
   position: absolute;
+}
+.product-image-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease 0s;
+  background: rgba(0, 0, 0, 0.08);
 }
 
 /*# sourceMappingURL=app.css.map */
