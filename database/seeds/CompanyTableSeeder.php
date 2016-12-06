@@ -27,7 +27,7 @@ class CompanyTableSeeder extends Seeder
                 'name'                 => $companyName,
                 'website_name'         => $companyName,
                 'slogan'               => 'bella',
-                'logo'                 => '/img/pt-default/logo.jpg',
+                'logo'                 => '/img/pt-default/logo.PNG',
                 'theme'                => '',
                 'phone_number'         => $faker->e164PhoneNumber,
                 'cell_phone'           => $faker->e164PhoneNumber,

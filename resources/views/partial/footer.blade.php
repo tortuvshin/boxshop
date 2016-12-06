@@ -79,14 +79,11 @@
 
 	</div>
 
-<<<<<<< HEAD
 	<div class="row credits">
 		<div class="col-md-12" style="color: #c5c5c5;">
 			{{ trans('globals.power_by_label') }}&nbsp;<a href="http://github.com/tortuvshin/ecommerce">{{ trans('globals.antvel_eCommerce') }}</a>
 		</div>
 	</div>
-=======
->>>>>>> fab01b63f9a4cf11e41cf6ed2594d7122da51886
 
 </div>
 @section('scripts')
@@ -114,7 +111,6 @@
 <div class="rows">
   <div class="copy col-sm-8">
 
-<<<<<<< HEAD
   </div>  <span style="color: white;">© 2016 Bella Make Up Studio . All Rights Reserved.</span>
 
   <div class="col-sm-4">
@@ -124,10 +120,6 @@
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
 </ul>
-=======
-  </div>  <span style="color: white;">	{{ trans('globals.power_by_label') }}&nbsp;<a href="http://github.com/tortuvshin/ecommerce">{{ trans('globals.antvel_eCommerce') }}</a>
-		.</span>
->>>>>>> fab01b63f9a4cf11e41cf6ed2594d7122da51886
 
   </div>
 </div>

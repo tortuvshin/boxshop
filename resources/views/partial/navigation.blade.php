@@ -80,10 +80,7 @@
 <nav ng-controller="CategoriesController" class="cat-controller-nav col-md-12">
 {!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
 <div class="input-group search-nav">
-<<<<<<< HEAD
-<img src="img/logo-1.png" style="width: 241.4px; height: 150.6px; margin-right: 20px;
-margin-left: 90px;">
-=======
+
 	<a href="/home">
 		@if($main_company['logo'])
 			<span class="navbar-brand-text">
@@ -91,10 +88,9 @@ margin-left: 90px;">
 			</span>
 		@else
 			<span class="navbar-brand-text">
-				<img src="img/logo-1.jpg" >
+				<img src="img/logo-1.png" >
 			</span>
 		@endif
->>>>>>> fab01b63f9a4cf11e41cf6ed2594d7122da51886
 
 	</a>
 	<span class="input-group-btn categories-search">
