@@ -80,9 +80,23 @@
 <nav ng-controller="CategoriesController" class="cat-controller-nav col-md-12">
 {!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
 <div class="input-group search-nav">
+<<<<<<< HEAD
 <img src="img/logo-1.png" style="width: 241.4px; height: 150.6px; margin-right: 20px;
 margin-left: 90px;">
+=======
+	<a href="/home">
+		@if($main_company['logo'])
+			<span class="navbar-brand-text">
+				<img src="{{$main_company['logo']}}" alt="">
+			</span>
+		@else
+			<span class="navbar-brand-text">
+				<img src="img/logo-1.jpg" >
+			</span>
+		@endif
+>>>>>>> fab01b63f9a4cf11e41cf6ed2594d7122da51886
 
+	</a>
 	<span class="input-group-btn categories-search">
 		<button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 			<span ng-bind="catSelected.name || '{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}'">
@@ -112,7 +126,7 @@ margin-left: 90px;">
 
 
 
-	<div id="navbar" class="navbar-collapse collapse">
+	<div class="cart">
 
 	<ul class="nav navbar-nav">
 		<li class="dropdown">
@@ -123,7 +137,7 @@ margin-left: 90px;">
 				<span class="badge badge-cart">{{ array_sum(Session::get('user.cart_content')) }} </span>
 				@endif
 
-				<span class="dada glyphicon glyphicon-shopping-cart" style="font-size: 10px;"> 0ITEM ₮0.00</span>
+				<span class="glyphicon glyphicon-shopping-cart" style="font-size: 10px;"> 0ITEM ₮0.00</span>
 
 			</a>
 

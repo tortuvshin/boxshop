@@ -40,8 +40,8 @@ class ProductsController extends Controller
         'stock'        => 'required|numeric|digits_between:1,11|min:0',
     ];
     private $panel = [
-        'left'   => ['width' => '2'],
-        'center' => ['width' => '10'],
+        'left'   => ['width' => '3'],
+        'center' => ['width' => '9'],
     ];
 
     /**

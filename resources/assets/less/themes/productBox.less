@@ -12,13 +12,6 @@
 }
 
 
-.wrapper{
-	padding:4%;
-	border: 1px solid #fff;
-	cursor:pointer;
-	background-color:#F2F2F2;
-	    height: 7%;
-}
 h6 a{
 	color: #3c3b48;
 	font-size: 14px;
@@ -30,6 +23,23 @@ h6 a{
 h6{
 	text-align:center;
 }
+
+.product-box {
+	position: relative;
+	margin-bottom: 30px;
+
+	&:hover {
+		.product-actions {
+			visibility:visible;
+			margin-top: -40px;
+		}
+
+		img {
+			opacity: 0.8;
+		}
+	}
+}
+
 .product-price{
 	font-size: 100%;
 	font-weight: 700;
@@ -39,9 +49,50 @@ h6{
 	font-style: normal;
 	text-align: center;
 }
-.product-actions .wrapper .glyphicon:hover{
-	color:orange;
+
+.product-actions {
+	width: 100%;
+    height: 40px;
+    position: absolute;
+	visibility: hidden;
+	margin-top: 0px;
+	z-index: 0;
+    transition: all 200ms ease 0s;
+
+	.wrapper {
+		color:#bbbfc7;
+		padding:4%;
+		border: 1px solid #fff;
+		cursor:pointer;
+		background-color:#F2F2F2;
+		height: 40px;
+		
+		&:hover {
+			.glyphicon{
+				color:#ed764f;
+			}
+			#card_text{
+				color:#ed764f;
+			}
+		}
+	}
+} 
+
+.add_to_card {
+	color:#dadada;
 }
-.product-actions .wrapper .glyphicon{
+.glyphicon-shopping-cart{
+	color:white;
+}
+
+.glyphicon-heart, .glyphicon-eye-open{
 	color:#bbbfc7;
+}
+
+.product-type{
+	color:white;
+	-moz-transform: rotate(45deg);
+	margin-left: 25px;
+	margin-top: 14px;
+	position:absolute;
 }
