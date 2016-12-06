@@ -37,6 +37,7 @@ footer .menu ul li {
   margin-bottom: 9px;
 }
 .footertext {
+  line-height: 1.65;
   color: #c5c5c5;
 }
 .line {
@@ -60,6 +61,35 @@ footer .menu ul li {
 }
 .col-sm-4 {
   color: white;
+}
+.subscribe_widget form {
+  position: relative;
+  height: 40px;
+  padding: 5px;
+  background: #2d2c33;
+  border: 1px solid transparent;
+  margin-bottom: 35px;
+  display: inline-block;
+  width: 100%;
+  max-width: 630px;
+  border-color: #2d2c33;
+  background-color: #2d2c33;
+}
+.subscribe_widget .subscribe-email {
+  float: left;
+  width: 70%;
+  margin-bottom: 0;
+}
+.subscribe_widget .subscribe-email > input {
+  background: none;
+  border: none;
+  height: 27px;
+}
+.dada {
+  background: transparent;
+  border: none;
+  float: right;
+  margin-top: 5px;
 }
 .cat-controller-nav form .input-group button {
   float: left;
@@ -205,7 +235,7 @@ footer .menu ul li {
   color: white;
 }
 .pdimage {
-  width: 400px;
+  width: 450px;
 }
 .return-shipping {
   border-top: 1px solid #ebebeb;
@@ -227,6 +257,16 @@ footer .menu ul li {
 .twitter {
   color: #000;
   background-color: #dddddd;
+}
+.titlelines {
+  background-color: #f90000;
+  height: 2px;
+  display: block;
+  margin: 6px 0 30px;
+  width: 30px;
+}
+.page-headers {
+  margin: 40px 40px 20px;
 }
 .product-img-box img {
   width: 100%;

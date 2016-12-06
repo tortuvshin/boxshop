@@ -1,18 +1,21 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xs-4 col-sm-4 col-md-4 menu">
-			<img class="logo-jpg" src="img/logo-1.jpg"><br>
+			<img class="logo-jpg" src="img/logo-1.png" style="width: 241.4px; height: 150.6px;"><br>
 			<ul>
-			<ul> <span class="footertext">Skort Maison Martin Margiela knot ponytail cami texture tucked t-shirt. Black skirt razor pleats plaited gold collar. Crop 90s spearmint indigo seam luxe washed out. Prada Saffiano cashmere crop sneaker chignon cami clutch. </span> </ul><br><br>
+			<ul> <span class="footertext">Mongolian professional makeup artists PERFECT BEAUTY ACADEMY'S "BELLA MAKE UP STUDIO"
+Манай салон нь өдөр тутмын будалт гоёлын, хуримын будалтыг хийнэ. </span> </ul><br><br>
 			<li><i class="fa fa-map-marker"></i> <span class="footertext">  249 Ung Van Khiem St., Binh ThanhDist, HCMC</span></li>
-			<li><i class="fa fa-phone"></i> <span class="footertext">  +084 0123 456 999</span></li>
+			<li><i class="fa fa-phone"></i> <span class="footertext">  +976 8999 2681</span></li>
 			<li><i class="fa fa-envelope"> </i><span class="footertext">  info@bella.mn</span></li>
 			</ul>
 		</div>
 
 		<div class="col-xs-4 col-sm-4 col-md-4 enu">
-			<h3 class="widget-title heading-title" style="color:white;">Recent posts</h3>
+			<h3 class="widget-title heading-title" style="color:white;">Instagram posts</h3>
 			<div class="line line-30"></div>
+
+			<blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BNXH7vPj42C/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A photo posted by b e l l a m a k e u p (@bella__makeup)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-11-28T16:56:13+00:00">Nov 28, 2016 at 8:56am PST</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 			
 		</div>
 
@@ -26,10 +29,17 @@
 			@else
 				<div class="signup clearfix">
 					<p>{{ trans('user.newsletter_sign_up') }}</p>
-					<form>
-						<input type="text" ng-model = "newsEmail"  class = "form-control input-sm" placeholder = "{{ trans('user.your_email_address_label') }}">
-						<input type="button" ng-click = "save()" value = "{{ trans('user.sign_up_label') }}">
-					</form>
+				<div class="subscribe_widget style-1 text-left">
+
+				<form method="post" target="_blank"  >
+					<p class="subscribe-email">
+					<input type="text" name="email" class="subscribe_email" placeholder="Емайл хаягаа оруулна уу...">
+					</p>
+					
+					<button class="dada fa fa-paper-plane fa-lg" type="submit" title="Subscribe"><span></span></button>
+					
+				</form>
+			</div>
 				</div>
 			@endif
 			<div class="footer-bot-right-area">
@@ -39,19 +49,27 @@
 		<ul>
 			<li style=" list-style: none; list-style-position: initial;" >						
 				<div class="social-icons">
-					<ul >
-						<li class="icon-facebook"><a href="http://www.facebook.com/#" target="_blank" title="Become our fan"><i class="fa fa-facebook"></i></a></li>				
+					<ul style="
+    padding-left: 0px;
+" >
+						<li class="icon-facebook fa-lg" style="border: 1px solid #f8f8f8;width: 12%;
+    text-align: center;"><a href="http://www.facebook.com/#" target="_blank" title="Become our fan"><i class="fa fa-facebook"></i></a></li>				
 						
-						<li class="icon-twitter"><a href="http://twitter.com/#" target="_blank" title="Follow us"><i class="fa fa-twitter"></i></a></li>
+						<li class="icon-twitter fa-lg" style="border: 1px solid #f8f8f8;width: 12%;
+    text-align: center;"><a href="http://twitter.com/#" target="_blank" title="Follow us"><i class="fa fa-twitter"></i></a></li>
 						
-						<li class="icon-google"><a href="https://plus.google.com/u/0/#" target="_blank" title="Get updates"><i class="fa fa-google-plus"></i></a></li>
+						<li class="icon-google fa-lg" style="border: 1px solid #f8f8f8;width: 12%;
+    text-align: center;"><a href="https://plus.google.com/u/0/#" target="_blank" title="Get updates"><i class="fa fa-google-plus"></i></a></li>
 						
-						<li class="icon-pin"><a href="http://www.pinterest.com/#" target="_blank" title="See Us"><i class="fa fa-pinterest"></i></a></li>
+						<li class="icon-pin fa-lg" style="border: 1px solid #f8f8f8;width: 12%;
+    text-align: center;"><a href="http://www.pinterest.com/#" target="_blank" title="See Us"><i class="fa fa-pinterest"></i></a></li>
 						
-						<li class="icon-instagram"><a href="http://instagram.com/#" target="_blank" title="Follow us"><i class="fa fa-instagram"></i></a></li>
+						<li class="icon-instagram fa-lg" style="border: 1px solid #f8f8f8;width: 12%;
+    text-align: center;"><a href="http://instagram.com/#" target="_blank" title="Follow us"><i class="fa fa-instagram"></i></a></li>
 						
 						
-						<li class="icon-linkedin"><a href="https://www.linkedin.com/pub/#" target="_blank" title="See us"><i class="fa fa-linkedin"></i></a></li>
+						<li class="icon-linkedin fa-lg" style="border: 1px solid #f8f8f8;width: 12%;
+    text-align: center;"><a href="https://www.linkedin.com/pub/#" target="_blank" title="See us"><i class="fa fa-linkedin"></i></a></li>
 					</ul>
 				</div>
 			</li>
@@ -62,7 +80,7 @@
 	</div>
 
 	<div class="row credits">
-		<div class="col-md-12">
+		<div class="col-md-12" style="color: #c5c5c5;">
 			{{ trans('globals.power_by_label') }}&nbsp;<a href="http://github.com/tortuvshin/ecommerce">{{ trans('globals.antvel_eCommerce') }}</a>
 		</div>
 	</div>
@@ -93,7 +111,15 @@
 <div class="rows">
   <div class="copy col-sm-8">
 
-  </div>  <span style="color: white;">© 2014 Glory Fashion Store . All Rights Reserved.</span>
+  </div>  <span style="color: white;">© 2016 Bella Make Up Studio . All Rights Reserved.</span>
 
-  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+  </div>
 </div>

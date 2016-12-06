@@ -4,18 +4,18 @@
 			<li id="ew_social-4" class="widget-container widget_social">						
 				<div class="social-icons">
 					<ul>
-						<li class="icon-facebook"><a href="http://www.facebook.com/#" target="_blank" title="Become our fan"><i class="fa fa-facebook"></i></a></li>				
+						<li class="icon-facebook"><a href="http://www.facebook.com/#" target="_blank" title="Become our fan"><i class="fa fa-facebook" style="color:black;    font-size: inherit;"></i></a></li>				
 						
-						<li class="icon-twitter"><a href="http://twitter.com/#" target="_blank" title="Follow us"><i class="fa fa-twitter"></i></a></li>
+						<li class="icon-twitter"><a href="http://twitter.com/#" target="_blank" title="Follow us"><i class="fa fa-twitter" style="color:black;    font-size: inherit;"></i></a></li>
 						
-						<li class="icon-google"><a href="https://plus.google.com/u/0/#" target="_blank" title="Get updates"><i class="fa fa-google-plus"></i></a></li>
+						<li class="icon-google"><a href="https://plus.google.com/u/0/#" target="_blank" title="Get updates"><i class="fa fa-google-plus" style="color:black;    font-size: inherit;"></i></a></li>
 						
-						<li class="icon-pin"><a href="http://www.pinterest.com/#" target="_blank" title="See Us"><i class="fa fa-pinterest"></i></a></li>
+						<li class="icon-pin"><a href="http://www.pinterest.com/#" target="_blank" title="See Us"><i class="fa fa-pinterest" style="color:black;    font-size: inherit;"></i></a></li>
 						
-						<li class="icon-instagram"><a href="http://instagram.com/#" target="_blank" title="Follow us"><i class="fa fa-instagram"></i></a></li>
+						<li class="icon-instagram"><a href="http://instagram.com/#" target="_blank" title="Follow us"><i class="fa fa-instagram" style="color:black;    font-size: inherit;"></i></a></li>
 						
 						
-						<li class="icon-linkedin"><a href="https://www.linkedin.com/pub/#" target="_blank" title="See us"><i class="fa fa-linkedin"></i></a></li>
+						<li class="icon-linkedin"><a href="https://www.linkedin.com/pub/#" target="_blank" title="See us"><i class="fa fa-linkedin" style="color:black;    font-size: inherit;"></i></a></li>
 					</ul>
 				</div>
 			</li>
@@ -26,8 +26,8 @@
 			@include('user.partial.menu_top')
 				
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-					<span class="">{{ trans('store.productsInWishList') }}(0)</span>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="">
+					<span style="text-transform: uppercase;font-size: 10px;font-weight: 500;">{{ trans('store.productsInWishList') }}(0)</span>
 				</a>
 				<ul class="dropdown-menu" role="menu">
 					<li><a href="{{ route('orders.show_wish_list') }}">{{ trans('store.wish_list') }}</a></li>
@@ -80,7 +80,7 @@
 <nav ng-controller="CategoriesController" class="cat-controller-nav col-md-12">
 {!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
 <div class="input-group search-nav">
-<img src="img/logo-1.jpg" style="width: 200px; height: 100px; margin-top: 20px; margin-bottom: 20px; margin-right: 20px;
+<img src="img/logo-1.png" style="width: 241.4px; height: 150.6px; margin-right: 20px;
 margin-left: 90px;">
 
 	<span class="input-group-btn categories-search">
