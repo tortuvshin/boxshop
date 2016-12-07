@@ -52,7 +52,7 @@
     @section('panel_left_content')
         <div  class="vertical-nav">
 
-            <div class="navbar navbar-default" role="navigation">
+            <div class="" role="navigation">
 
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
@@ -64,7 +64,7 @@
                     <span class="visible-xs-block navbar-brand">{{ trans('globals.refine') }}</span>
                 </div>
 
-                <div id="menu-left-category" class="navbar-collapse collapse sidebar-navbar-collapse" ng-cloak>
+                <div id="menu-left-category" class="sidebar-navbar-collapse" ng-cloak>
 
                     <div class="filters-applied ng-cloak visible-xs" ng-show="filters" >
                         <span ng-repeat="filter in filters">
@@ -87,7 +87,7 @@
                                     <?php if (5<$i++){ break; } ?>
                                     <li>
                                         <a href="/products?{{ \Utility::getUrlQueryString($refine, 'category', urlencode($item['id'].'|'.$item['name'])) }}">
-                                            {{ ucfirst($item['name']) }} <small><span class="badge">{{ $item['qty'] }}</span></small>
+                                            {{ ucfirst($item['name']) }} <small><span class="">({{ $item['qty'] }})</span></small>
                                         </a>
                                     </li>
                                 @endforeach
@@ -98,7 +98,7 @@
                                     <?php if (5<$i++){ break; } ?>
                                     <li>
                                         <a href="/products?{{ \Utility::getUrlQueryString($refine, $key, urlencode($item)) }}">
-                                          {{ ucfirst($item) }} <span class="badge">{{ $count }}</span>
+                                          {{ ucfirst($item) }} <span class="">({{ $count }})</span>
                                         </a>
                                     </li>
                                 @endforeach

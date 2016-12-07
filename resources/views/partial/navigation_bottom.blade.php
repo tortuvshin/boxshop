@@ -9,17 +9,17 @@
             <div class="col-md-10 col-sm-10 col-xs-12">
                 <div class="row">
                     <ul class="line-menu">
-                        <li><a class="kk-1" href="http://mimico.mn/featured/product">Онцлох бараа</a></li>
-                        <li><a class="kk-1" href="http://mimico.mn/new/product">Шинэ</a></li>
-                        <li><a class="kk-1" href="http://mimico.mn/best/product">Шилдэг</a></li>
-                        <li><a class="kk-1" href="http://mimico.mn/brand">Брэнд</a></li>
+                        <li><a class="kk-1" href="http://localhost/products">Онцлох бараа</a></li>
+                        <li><a class="kk-1" href="http://localhost/products">Шинэ</a></li>
+                        <li><a class="kk-1" href="http://localhost/products">Шилдэг</a></li>
+                        <li><a class="kk-1" href="http://localhost/products">Брэнд</a></li>
                     </ul>
                 </div>
             </div>
             <div id="full-category-box" class="full-category-box hidden">
                 <div class="col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <h3><a href="http://mimico.mn/category/ars-archilgaa">Арьс арчилгаа</a></h3>
+                        <h3><a href="http://localhost">Арьс арчилгаа</a></h3>
                         <ul class="full-category-child list-unstyled">
 
                         </ul>
@@ -27,14 +27,14 @@
                 </div>
                 <div class="col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <h3><a href="http://mimico.mn/category/nuur-budalt">Нүүр будалт</a></h3>
+                        <h3><a href="http://localhost">Нүүр будалт</a></h3>
                         <ul class="full-category-child list-unstyled">
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <h3><a href="http://mimico.mn/category/us-bie-archilgaa">Үс / бие арчилгаа</a></h3>
+                        <h3><a href="http://localhost">Үс / бие арчилгаа</a></h3>
                         <ul class="full-category-child list-unstyled">
 
                         </ul>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <h3><a href="http://mimico.mn/category/unertei-us">Үнэртэй ус</a></h3>
+                        <h3><a href="http://localhost">Үнэртэй ус</a></h3>
                         <ul class="full-category-child list-unstyled">
                         </ul>
                     </div>
@@ -50,22 +50,14 @@
                 <div class="clr"></div>
                 <div class="col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <h3><a href="http://mimico.mn/category/bagc">Багц</a></h3>
+                        <h3><a href="http://localhost">Багц</a></h3>
                         <ul class="full-category-child list-unstyled">
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <h3><a href="http://mimico.mn/category/eruul-mend">Эрүүл мэнд</a></h3>
-                        <ul class="full-category-child list-unstyled">
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <div class="row">
-                        <h3><a href="http://mimico.mn/category/dijital-baraa">Дижитал бараа</a></h3>
+                        <h3><a href="http://localhost">Эрүүл мэнд</a></h3>
                         <ul class="full-category-child list-unstyled">
 
                         </ul>
@@ -73,7 +65,15 @@
                 </div>
                 <div class="col-md-3 col-sm-4 col-xs-12">
                     <div class="row">
-                        <h3><a href="http://mimico.mn/category/hyamdraltai-baraa">Хямдралтай бараа</a></h3>
+                        <h3><a href="http://localhost">Дижитал бараа</a></h3>
+                        <ul class="full-category-child list-unstyled">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="row">
+                        <h3><a href="http://localhost">Хямдралтай бараа</a></h3>
                         <ul class="full-category-child list-unstyled">
 
                         </ul>

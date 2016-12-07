@@ -103,9 +103,6 @@ Gulp ашиглах:
 gulp
 ```
 
-Нэвтрэх нэр нууц үг
-admin@admin.com pass admin
-
 [NODEJS]: https://nodejs.org/en/download/
 [COMPOSER]: https://getcomposer.org/download/
 [RECAPTCHA]: https://www.google.com/recaptcha/admin#list
