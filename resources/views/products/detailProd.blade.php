@@ -72,6 +72,8 @@
              <div class="breadcrumbstext">{!! Breadcrumbs::render('productDetail', $product) !!}</div>
             <br>
         </div>		
+
+        
 </div>
 <div class="container-fluid" >
 <br>

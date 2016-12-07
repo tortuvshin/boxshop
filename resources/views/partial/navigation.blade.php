@@ -77,7 +77,7 @@
 
 
 
-<nav ng-controller="CategoriesController" class="cat-controller-nav">
+<nav ng-controller="CategoriesController" class="cat-controller-nav col-md-12">
 {!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
 <div class="input-group search-nav">
 
@@ -178,5 +178,3 @@
 {!! Form::close() !!}
 </nav>
 </div>
-
-@include('partial.navigation_bottom')

@@ -1,7 +1,10 @@
-@extends('layouts.master')
+@extends('layouts/master')
 
 @section('page_class') wrapper-page @stop
 
+@section('navigation')
+	&nbsp;
+@stop
 
 @include('partial.message')
 
@@ -33,6 +36,5 @@
 @endsection
 
 @section('footer')
-
+	&nbsp;
 @endsection
-
