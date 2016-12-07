@@ -3,7 +3,6 @@
     width: 100%;
     height: auto;
     }
-    position:relative;
 }
 .thumbnail{
 	border:0px;
@@ -34,11 +33,10 @@ h6{
 			visibility:visible;
 			margin-top: -40px;
 		}
-		.product-image-hover {
-			background: rgba(0,0,0,0.15);
+
+		img {
+			opacity: 0.8;
 		}
-
-
 	}
 }
 
@@ -64,11 +62,11 @@ h6{
 	.wrapper {
 		color:#bbbfc7;
 		padding:4%;
+		border: 1px solid #fff;
 		cursor:pointer;
-		background-color:#Fff;
+		background-color:#F2F2F2;
 		height: 40px;
-		border: 1px #f2f2f2 solid;
-
+		
 		&:hover {
 			.glyphicon{
 				color:#ed764f;
@@ -78,19 +76,18 @@ h6{
 			}
 		}
 	}
-
-	.glyphicon-shopping-cart{
-		color:#ed764f;
-		margin-right:5%;
-
-	}
-
-	.glyphicon-heart, .glyphicon-eye-open{
-		color:#bbbfc7;
-		width:100%;
-		text-align:center;
-	}
 } 
+
+.add_to_card {
+	color:#dadada;
+}
+.glyphicon-shopping-cart{
+	color:white;
+}
+
+.glyphicon-heart, .glyphicon-eye-open{
+	color:#bbbfc7;
+}
 
 .product-type{
 	color:white;
@@ -98,13 +95,4 @@ h6{
 	margin-left: 25px;
 	margin-top: 14px;
 	position:absolute;
-}
-
-.product-image-hover{
-	position:absolute;
-	width:100%;
-	height:100%;
-	opacity:1;
-	-webkit-transition: all 0.4s ease 0s;
-	background: rgba(0,0,0,0.08);
 }
