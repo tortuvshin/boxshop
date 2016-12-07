@@ -107,3 +107,8 @@ gulp
 [COMPOSER]: https://getcomposer.org/download/
 [RECAPTCHA]: https://www.google.com/recaptcha/admin#list
 
+
+Туршилтын хэрэглэгчийн мэдээлэл
+
+	Хэрэглэгчийн нэр: admin@admin.com
+	Нууц үг: admin
