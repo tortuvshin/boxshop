@@ -115,12 +115,12 @@ footer .menu ul li {
   float: right;
   margin-top: 5px;
 }
-.copyright {
-  color: white;
-  float: right;
-}
-.menu-footer {
-  list-style: none;
+.copy-right {
+  padding: 15px 0;
+  overflow: hidden;
+  position: relative;
+  color: #666;
+  font-size: 11px;
 }
 .cat-controller-nav form .input-group button {
   float: left;
@@ -199,11 +199,6 @@ footer .menu ul li {
 }
 .search-input {
   margin-top: 60px;
-}
-.logo-img {
-  width: 200px;
-  height: 117px;
-  margin-bottom: 10px;
 }
 .login-page {
   width: 360px;
