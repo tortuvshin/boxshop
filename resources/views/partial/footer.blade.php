@@ -109,17 +109,12 @@
 
 
 <div class="rows">
-  <div class="copy col-sm-8">
 
-  </div>  <span style="color: white;">© 2016 Bella Make Up Studio . All Rights Reserved.</span>
 
-  <div class="col-sm-4">
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
 
-  </div>
+  <div class="col-sm-12">
+<span class="copyright" >© 2016 Bella Make Up Studio . All Rights Reserved.</span>
+  </div>  
+
+
 </div>
