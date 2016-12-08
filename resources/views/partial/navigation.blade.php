@@ -77,7 +77,7 @@
 
 
 
-<nav ng-controller="CategoriesController" class="cat-controller-nav col-md-12">
+<nav ng-controller="CategoriesController" class="cat-controller-nav">
 {!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
 <div class="input-group search-nav">
 
@@ -133,7 +133,7 @@
 				<span class="badge badge-cart">{{ array_sum(Session::get('user.cart_content')) }} </span>
 				@endif
 
-				<span class="glyphicon glyphicon-shopping-cart" style="font-size: 10px;"> 0ITEM ₮0.00</span>
+				<span class="glyphicon glyphicon-shopping-cart" style="font-size: 10px; color: white;"> 0ITEM ₮0.00</span>
 
 			</a>
 
@@ -178,3 +178,5 @@
 {!! Form::close() !!}
 </nav>
 </div>
+
+@include('partial.navigation_bottom')

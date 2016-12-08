@@ -1,12 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+* {
+  font-family: 'Roboto', sans-serif;
+}
 html,
 body {
   height: 100%;
   font-weight: 300;
-  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
 }
 a {
-  color: black;
+  color: #666666;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 700;
 }
 .header-top-right-area .dropdown-menu li {
   width: 100%;
@@ -16,6 +24,7 @@ a {
   margin-right: 0;
   margin-left: 0;
 }
+<<<<<<< HEAD
 .cart {
   margin-right: 0px;
   margin-left: 0px;
@@ -79,6 +88,10 @@ a.remove {
 }
 a.remove:hover {
   color: #ed764f;
+=======
+.breadcrumb {
+  background-color: white;
+>>>>>>> 3ef31daf16107c9bb7584f74e85fbf544909b5bb
 }
 .li {
   padding: 10px 0 0;
@@ -98,6 +111,12 @@ a.remove:hover {
 }
 #menu-left-category ul small {
   font-size: 17px;
+}
+.categories-panel {
+  max-width: 250px;
+}
+.left-filter {
+  padding-left: 30px;
 }
 footer {
   background: #3c3b48;
@@ -179,12 +198,27 @@ footer .menu ul li {
   float: right;
   margin-top: 5px;
 }
+.f-footer-area {
+  background-color: #3c3b48;
+}
+.fourth-footer-area {
+  background-color: #2d2c33;
+  margin-left: -15px;
+  margin-right: -15px;
+}
 .copy-right {
   padding: 15px 0;
   overflow: hidden;
   position: relative;
   color: #666;
   font-size: 11px;
+}
+#menu-footer-page li,
+.payment li {
+  list-style: none;
+  width: initial;
+  float: left;
+  margin-left: 5px;
 }
 .cat-controller-nav form .input-group button {
   float: left;
@@ -198,9 +232,12 @@ footer .menu ul li {
   height: 40px;
   border-radius: 0;
 }
-.glyphicon {
-  top: 0 !important;
-  color: black;
+.header-top-right-area ul li a span {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  color: #666666;
 }
 .header-top {
   width: 100%;
@@ -236,7 +273,7 @@ footer .menu ul li {
 }
 .cart .nav {
   height: 40px;
-  background-color: #ec1f1f;
+  background-color: #ed764f;
   border-radius: 0;
 }
 .cart .nav li {
@@ -269,6 +306,110 @@ footer .menu ul li {
   height: 117px;
   margin-bottom: 10px;
 }
+<<<<<<< HEAD
+=======
+.header-bottom-content {
+  width: 100%;
+  height: 40px;
+  float: left;
+  background-color: #3c3b48;
+  position: relative;
+}
+.full-category {
+  background-color: #ed764f;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  padding: 13px 1px;
+  text-transform: uppercase;
+}
+.product-items-box .item-box .title h3 a:hover {
+  text-decoration: -moz-anchor-decoration;
+}
+.product-item {
+  margin: 0 -6px 0 0px !important;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.full-category i {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 21px;
+  float: left;
+  line-height: 1;
+  margin-top: -3px;
+  color: white;
+}
+.line-menu {
+  display: -webkit-box;
+  display: flex;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.line-menu li {
+  margin-left: 12px;
+  padding: 11px 18px;
+  position: relative;
+  text-transform: uppercase;
+}
+.mobile_ {
+  margin-left: -15px;
+  margin-right: 15px;
+}
+.home-carousel-box {
+  height: 400px;
+  box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3);
+}
+.line-menu li a {
+  color: white;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 120%;
+  font-weight: 800;
+}
+.line-menu li a:hover,
+.line-menu li a.active {
+  color: white;
+}
+.bella-cat {
+  position: relative;
+}
+.bella-cat .vert-category {
+  z-index: 10;
+  height: 100%;
+}
+.bella-cat .vert-category ul {
+  padding: 0;
+  list-style: none;
+  color: black;
+  background-color: white;
+  height: 100%;
+}
+.bella-cat .vert-category ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.bella-cat .vert-category ul li a {
+  color: black;
+  display: block;
+  font-size: 13px;
+  padding: 15px 0 15px 22px;
+}
+.bella-cat .vert-category:hover ul {
+  background-color: #f9f9fa;
+}
+.bella-cat .vert-category:hover ul li a {
+  color: #555 !important;
+}
+.bella-cat .vert-category ul li:hover a {
+  color: #f84cb9;
+  background: #fff;
+}
+>>>>>>> 3ef31daf16107c9bb7584f74e85fbf544909b5bb
 .login-page {
   width: 360px;
   padding: 8% 0 0;
@@ -299,7 +440,7 @@ footer .menu ul li {
   font-family: "Roboto", sans-serif;
   text-translogin: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: #3c3b48;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -312,7 +453,7 @@ footer .menu ul li {
 .login button:hover,
 .login button:active,
 .login button:focus {
-  background: #43A047;
+  background: #ed764f;
 }
 .login .message {
   margin: 15px 0 0;
@@ -320,8 +461,12 @@ footer .menu ul li {
   font-size: 12px;
 }
 .login .message a {
-  color: #4CAF50;
+  color: #3c3b48;
   text-decoration: none;
+}
+.global-panels {
+  margin-left: 4%;
+  margin-right: 4%;
 }
 .pd-image {
   width: 100px;
@@ -372,6 +517,11 @@ footer .menu ul li {
   border: 1px dashed #ed7952;
   padding: 29px 19px 29px 78px;
 }
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: white;
+}
 .btn-info2 {
   padding: 5px 10px;
   font-size: 12px;
@@ -388,7 +538,7 @@ footer .menu ul li {
   background-color: #f90000;
   height: 2px;
   display: block;
-  margin: 6px 0 30px;
+  margin: 6px 0 20px;
   width: 30px;
 }
 .page-headers {
@@ -485,7 +635,11 @@ h6 {
   height: 100%;
   opacity: 1;
   -webkit-transition: all 0.4s ease 0s;
+<<<<<<< HEAD
   background: rgba(0, 0, 0, 0.03);
+=======
+  background: rgba(0, 0, 0, 0.08);
+>>>>>>> 3ef31daf16107c9bb7584f74e85fbf544909b5bb
 }
 
 /*# sourceMappingURL=app.css.map */
