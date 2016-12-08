@@ -132,12 +132,27 @@ footer .menu ul li {
   float: right;
   margin-top: 5px;
 }
+.f-footer-area {
+  background-color: #3c3b48;
+}
+.fourth-footer-area {
+  background-color: #2d2c33;
+  margin-left: -15px;
+  margin-right: -15px;
+}
 .copy-right {
   padding: 15px 0;
   overflow: hidden;
   position: relative;
   color: #666;
   font-size: 11px;
+}
+#menu-footer-page li,
+.payment li {
+  list-style: none;
+  width: initial;
+  float: left;
+  margin-left: 5px;
 }
 .cat-controller-nav form .input-group button {
   float: left;
