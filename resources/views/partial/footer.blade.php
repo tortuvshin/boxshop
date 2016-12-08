@@ -1,28 +1,5 @@
 <div class="col-md-12 f-footer-area">
-<<<<<<< HEAD
-	<div class="row ">
-		<div class="col-sm-4  menu">
-			<img class="logo-jpg" src="img/logo-1.png" style="width: 241.4px; height: 150.6px;"><br>
-			<ul>
-			<ul> <span class="footertext">Mongolian professional makeup artists PERFECT BEAUTY ACADEMY'S "BELLA MAKE UP STUDIO"
-Манай салон нь өдөр тутмын будалт гоёлын, хуримын будалтыг хийнэ. </span> </ul><br><br>
-			<li><i class="fa fa-map-marker"></i> <span class="footertext">  249 Ung Van Khiem St., Binh ThanhDist, HCMC</span></li>
-			<li><i class="fa fa-phone"></i> <span class="footertext">  +976 8999 2681</span></li>
-			<li><i class="fa fa-envelope"> </i><span class="footertext">  info@bella.mn</span></li>
-			</ul>
-		</div>
 
-		<div class=" col-sm-4 enu">
-			<h3 class="widget-title heading-title" style="color:white;">Instagram posts</h3>
-			<div class="line line-30"></div>
-			<div class="col-sm-12">
-			<blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BNXH7vPj42C/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A photo posted by b e l l a m a k e u p (@bella__makeup)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-11-28T16:56:13+00:00">Nov 28, 2016 at 8:56am PST</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-			</div>
-		</div>
-
-		<div class=" col-sm-4  newsletter" ng-controller = "NewslettersCtrl">
-		<h3 class="widget-title heading-title" style="color: white;">
-=======
     <div class="row ">
         <div class="col-xs-4 col-sm-4 col-md-4 menu">
             <img class="logo-jpg" src="img/logo-1.png" style="width: 241.4px; height: 150.6px;">
@@ -61,7 +38,7 @@
 
         <div class="col-xs-4 col-sm-4 col-md-4 newsletter" ng-controller="NewslettersCtrl">
             <h3 class="widget-title heading-title" style="color: white;">
->>>>>>> ad89ab6d984952ea03dde8e2d8d91daa760b7c13
+
 						Мэдээлэл авах					</h3>
             <div class="line line-30"></div>
             @if (\Auth::user())
