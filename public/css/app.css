@@ -151,9 +151,12 @@ footer .menu ul li {
   height: 40px;
   border-radius: 0;
 }
-.glyphicon {
-  top: 0 !important;
-  color: black;
+.header-top-right-area ul li a span {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  color: #666666;
 }
 .header-top {
   width: 100%;
@@ -189,7 +192,7 @@ footer .menu ul li {
 }
 .cart .nav {
   height: 40px;
-  background-color: #ec1f1f;
+  background-color: #ed764f;
   border-radius: 0;
 }
 .cart .nav li {
@@ -353,7 +356,7 @@ footer .menu ul li {
   font-family: "Roboto", sans-serif;
   text-translogin: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: #3c3b48;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -366,7 +369,7 @@ footer .menu ul li {
 .login button:hover,
 .login button:active,
 .login button:focus {
-  background: #43A047;
+  background: #ed764f;
 }
 .login .message {
   margin: 15px 0 0;
@@ -374,7 +377,7 @@ footer .menu ul li {
   font-size: 12px;
 }
 .login .message a {
-  color: #4CAF50;
+  color: #3c3b48;
   text-decoration: none;
 }
 .global-panels {
