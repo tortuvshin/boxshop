@@ -1,5 +1,5 @@
-<div class="container">
-	<div class="row">
+<div class="col-md-12 f-footer-area">
+	<div class="row ">
 		<div class="col-xs-4 col-sm-4 col-md-4 menu">
 			<img class="logo-jpg" src="img/logo-1.png" style="width: 241.4px; height: 150.6px;"><br>
 			<ul>
@@ -85,6 +85,46 @@
 		</div>
 	</div>
 
+
+
+
+<div class="fourth-footer-area row ">
+				
+					
+
+							
+					<div id="copy-right" class="copy-right col-sm-12">
+						<div class="col-sm-2">
+						© 2014 Glory Fashion Store . All Rights Reserved. 
+					</div>
+																		<div class="copyright col-sm-6">
+							<div class="col-sm-12"><ul id="menu-footer-page" class="menu"><li id="menu-item-3943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3943"><a href="http://glory.demo1.wpdance.com/supermarket2/about-us/">About</a></li>
+<li id="menu-item-3944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3944"><a href="http://glory.demo1.wpdance.com/supermarket2/blog/">Blog</a></li>
+<li id="menu-item-3945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3945"><a href="http://glory.demo1.wpdance.com/supermarket2/contact-template/">Contact</a></li>
+<li id="menu-item-3947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3947"><a href="http://glory.demo1.wpdance.com/supermarket2/wishlist/">Wishlist</a></li>
+<li id="menu-item-3948" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3948"><a href="http://glory.demo1.wpdance.com/supermarket2/my-account/">My Account</a></li>
+<li id="menu-item-3949" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3949"><a href="#">Eng</a></li>
+</ul></div>
+				</div>
+						
+						<div class="payment col-sm-4">
+							<ul>
+																<li><a href="#"><img alt="payment 1" title="payment 1" src="http://glory.demo1.wpdance.com/supermarket2/wp-content/themes/wp_glory/images/media/paypal.jpg"></a></li>
+																								<li><a href="#"><img alt="payment 2" title="payment 2" src="http://glory.demo1.wpdance.com/supermarket2/wp-content/themes/wp_glory/images/media/mastercard.jpg"></a></li>
+																								<li><a href="#"><img alt="payment 3" title="payment 3" src="http://glory.demo1.wpdance.com/supermarket2/wp-content/themes/wp_glory/images/media/american.jpg"></a></li>
+																								<li><a href="#"><img alt="payment 4" title="payment 4" src="http://glory.demo1.wpdance.com/supermarket2/wp-content/themes/wp_glory/images/media/visa.jpg"></a></li>
+																								<li><a href="#"><img alt="payment 5" title="payment 5" src="http://glory.demo1.wpdance.com/supermarket2/wp-content/themes/wp_glory/images/media/dhl.jpg"></a></li>
+															</ul>
+						</div>
+												
+						
+					</div><!-- end #copyright -->
+				
+			
+			</div>
+
+
+
 </div>
 @section('scripts')
     @parent
@@ -107,19 +147,3 @@
     @stop
 
 
-
-<div class="rows">
-  <div class="copy col-sm-8">
-
-  </div>  <span style="color: white;">© 2016 Bella Make Up Studio . All Rights Reserved.</span>
-
-  <div class="col-sm-4">
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-
-  </div>
-</div>
