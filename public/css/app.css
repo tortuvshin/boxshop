@@ -565,5 +565,49 @@ h6 {
   -webkit-transition: all 0.4s ease 0s;
   background: rgba(0, 0, 0, 0.08);
 }
+.wpb_tour.wd_prod_style.wpb_content_element .wpb_tour_tabs_wrapper {
+  min-height: 250px;
+  border: 1px solid #ebebeb;
+  padding: 0;
+  border-top: 0;
+  position: relative;
+  overflow: hidden;
+}
+.wd_prod_style .vc_tours_heading_box {
+  height: 92px;
+  overflow: hidden;
+  padding: 15px 20px;
+  width: 18%;
+  max-width: 218px;
+}
+.wd_prod_style .vc_tours_heading_box h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.wd_prod_style.wpb_content_element .wpb_tabs_nav {
+  width: 18%;
+  /* max-width: 218px; */
+  border: none;
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 147px;
+}
+.wd_prod_style.wpb_tour .wpb_tour_tabs_wrapper .wpb_tab {
+  width: 82%;
+  margin-top: -90px;
+  padding: 25px 30px;
+  background: #fff;
+  position: relative;
+}
+.demo ul li {
+  border: 1px solid transparent;
+  border-width: 1px 0;
+  white-space: inherit;
+  list-style: none;
+  padding-left: 20px;
+}
 
 /*# sourceMappingURL=app.css.map */
