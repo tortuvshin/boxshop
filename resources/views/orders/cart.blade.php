@@ -26,6 +26,8 @@
 
     <div class=" cart_panel  panel-default" ng-controller = "ShoppingCart" >
        {{-- cart details --}}
+
+        @if (count($cart['details']) != 0)
             <div class="row">
                 <table class="shop_table_cart" cellspacing="0">
                 <thead>
@@ -37,7 +39,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($cart['details'] as $item)
+                @foreach ($cart['details'] as $item)
                     <tr class="cart_table_item">
 
                         <!-- The thumbnail -->
@@ -120,6 +122,8 @@
                 </tbody>
             </table>
         </div>
+        @endif
+
 
 
         <div class="panel-body cart-resume">
@@ -127,38 +131,42 @@
 
             {{-- check out summary --}}
             @if(isset($isResume))
-                <div class="alert alert-warning text-center text-small">
-                    <h6><span class="fa fa-exclamation"></span>&nbsp;{{ trans('store.reviewOrder') }}</h6>
+                <div class="alert  text-small">
+                    <h5><span class="fa fa-exclamation"></span>&nbsp;{{ trans('store.reviewOrder') }}</h5>
                 </div>
             @endif
 
             @if (count($cart['details']) == 0)
-                <div class="alert alert-warning text-center text-small">
-                    <h6>{{ trans('store.noCart') }}</h6>
+
+                <div class="alert  text-small">
+                    <h5>{{ trans('store.noCart') }}</h5>
                     @if(!$user)
                         <small>{{ trans('store.cart_view.not_logged_disclaimer') }}</small>
                     @endif
                     <p>&nbsp;</p>
-                    <a class="btn btn-primary" href="{{ route('products') }}">{{trans('store.continue_shopping')}}</a>
+                    <a class="btn btn-primary cart-btn-white" href="{{ route('products') }}">{{trans('store.continue_shopping')}}</a>
                 </div>
             @endif
 
             {{-- Cart Totals --}}
             @if (count($cart['details']) > 0)
                 <div class="row">
+                    <h3>Сагсны нийт дүн </h3>
+                    <div class="titlelines"></div>
                     <div class="col-xs-12 col-md-7 col-lg-8 text-left text-small">
                        {{ trans('store.productsInCart') }} <span class="ng-cloak">[[totalItems]]</span> {{ trans('store.items') }}: <strong class="ng-cloak">[[ totalAmount | currency:"{{ config('app.payment_method') }} " ]]</strong>
                     </div>
                     <div class="col-xs-12 col-md-5 col-lg-4 text-center">
                         <div class="form-inline clearfix">
-                            <div class="btn-group pull-right">
+                            <div class="btn-group pull-right ">
                                 @if(isset($isResume))
-                                    <a class="btn btn-info" href="{{ route('orders.place_order','cart') }}">
+                                    <a class="btn btn-info cart-btn-white" href="{{ route('orders.place_order','cart') }}">
                                         <span class="fa fa-check-square-o"></span>&nbsp;
                                         {{ trans('store.placeYourOrder') }}
                                     </a>
                                 @else
-                                    <a class="btn btn-info" href="{{ route('orders.check_out') }}">
+
+                                    <a class="btn btn-info cart-btn-white" href="{{ route('orders.check_out') }}">
                                         <span class="fa fa-credit-card"></span>&nbsp;
                                         {{ trans('store.checkOutCart') }}
                                     </a>
@@ -283,10 +291,10 @@
 
     @if(isset($suggestions) && is_array($suggestions))
         <div class="row">&nbsp;</div>
-        <div class="page-header">
-            <h5>{{ trans('store.suggestions.cart') }}</h5>
-        </div>
+        
         <section class="products_view">
+            <h3>{{ trans('store.suggestions.cart') }}</h3>
+            <div class= "titlelines"></div>
             <div class="container-fluid marketing">
                 <div class="row">
                     @foreach ($suggestions as $productSuggestion)
