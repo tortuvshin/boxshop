@@ -293,7 +293,15 @@
                     </div>
                     <div class="col-lg-10" style="border-top: 2px solid #3face3; padding: 20px">
 
-                    <div class="col-lg-5" ><img alt="Big title goes here" title="Big title goes here" style="    width: 100%;" src="http://demo2.wpdance.com/imgs/wd_glory/supermarket2/banner/supermarket2_product_group7_content.jpg"></div>
+                    <div class="col-lg-5 " >
+                         <div class="box foo ">   
+                            
+                    <img alt="Big title goes here" title="Big title goes here" style="    width: 100%;" src="http://demo2.wpdance.com/imgs/wd_glory/supermarket2/banner/supermarket2_product_group7_content.jpg">
+                          
+                        </div>
+                       
+
+                    </div>
                     <div class="col-lg-7" style="padding-left: 0px;
     padding-right: 0px;">
                         <div class="col-lg-4 clearfix product-overflow">
