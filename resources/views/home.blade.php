@@ -172,11 +172,13 @@
 
   
 <br>
-<ul class="nav nav-pills nav-justified">
-  <li class="active"><a href="#tab_a" data-toggle="pill">Pill A</a></li>
-  <li><a href="#tab_b" data-toggle="pill">Pill B</a></li>
+
+<ul class="nav testtab nav-justified">
+  <li class="active"><a href="#tab_a" data-toggle="pill">DAYLY DEALS</a></li>
+  <li><a href="#tab_b" data-toggle="pill">WEEKLY DEALS</a></li>
   
 </ul>
+
   <div class="tab-content">
     <div id="tab_a" class="tab-pane fade in active topongo">
       <h3>HOME</h3>
