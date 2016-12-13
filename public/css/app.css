@@ -91,6 +91,35 @@ a.remove {
 a.remove:hover {
   color: #ed764f;
 }
+.cart-btn-black {
+  background: #3c3b48;
+  border-color: #3c3b48;
+  border-radius: 0px;
+  color: white;
+  text-transform: uppercase;
+}
+.cart-btn-black:hover {
+  background: white;
+  color: #3c3b48;
+  border-color: #3c3b48;
+}
+.cart-btn-black:hover .fa {
+  background: #3c3b48;
+}
+.cart-btn-white {
+  background: white;
+  border-color: #3c3b48;
+  border-radius: 0px;
+  color: #3c3b48;
+  text-transform: uppercase;
+}
+.cart-btn-white .fa {
+  background: white;
+}
+.cart-btn-white:hover {
+  background: #3c3b48;
+  color: white;
+}
 .li {
   padding: 10px 0 0;
 }
@@ -473,6 +502,8 @@ footer .menu ul li {
   position: relative;
   z-index: 0;
   padding: 35px 0;
+  margin-left: -6%;
+  margin-right: -6%;
 }
 .titlecolor {
   color: white;
