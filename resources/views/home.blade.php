@@ -69,7 +69,7 @@
             </div>
 
 
-            <div class="col-md-10 home-carousel-box">
+            <div class="col-md-6 home-carousel-box">
 
 
 
@@ -149,7 +149,47 @@
 
                 </div>
 
-            </div> {{-- end carousel --}}
+            </div>
+            <div class="col-md-4 home-carousel-box">
+                <div class="row">
+                    sdaasdsa
+                </div>
+                <div class="row">
+                    sdaasdsa
+                </div>
+                <div class="row">
+                    sdaasdsa
+                </div>
+                
+            </div>
+
+
+             {{-- end carousel --}}
+<div class="row"><br></div>
+
+<div class="row">
+ 
+
+  
+<br>
+<ul class="nav nav-pills nav-justified">
+  <li class="active"><a href="#tab_a" data-toggle="pill">Pill A</a></li>
+  <li><a href="#tab_b" data-toggle="pill">Pill B</a></li>
+  
+</ul>
+  <div class="tab-content">
+    <div id="tab_a" class="tab-pane fade in active topongo">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="tab_b" class="tab-pane fade topongo">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  
+  </div>
+</div>
+
 
             {{-- -------------------------------------------------- --}}
             {{-- ------------------ Product List ------------------ --}}
