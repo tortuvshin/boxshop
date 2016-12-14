@@ -1,14 +1,15 @@
 <div class="header-bottom-content">
-    <div class="">
-        <div class="row" style="position: relative">
-            <div class="col-md-2 col-sm-2 col-xs-12">
+    <div class="container">
+        <div class="row " style="position: relative">
+            <div class="col-md-3 col-sm-2 col-xs-12">
                 <div class="row">
-                    <h3 class="full-category" id="full-category"><i class="fa fa-navicon"></i>Бүх ангилал</h3>
+                    <h3 class="full-category" id="full-category">Бүх ангилал<i class="fa fa-navicon"></i></h3>
                 </div>
             </div>
-            <div class="col-md-10 col-sm-10 col-xs-12">
+            <div class="col-md-9 col-sm-10 col-xs-12">
                 <div class="row">
                     <ul class="line-menu">
+                        <li><a class="kk-1" href="http://localhost/products">Нүүр</a></li>
                         <li><a class="kk-1" href="http://localhost/products">Онцлох бараа</a></li>
                         <li><a class="kk-1" href="http://localhost/products">Шинэ</a></li>
                         <li><a class="kk-1" href="http://localhost/products">Шилдэг</a></li>

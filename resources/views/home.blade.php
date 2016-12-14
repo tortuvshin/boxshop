@@ -7,14 +7,14 @@
 @section('content')
 
     <section class="products_view">
-
-        <div>
+    <div class="container">
+        <div class="row">
 
             {{-- -------------------------------------------------- --}}
             {{-- -------------------- carousel -------------------- --}}
             {{-- -------------------------------------------------- --}}
 
-            <div class="col-md-2 bella-cat mobile">
+            <div class="col-md-3 bella-cat mobile">
                 <script>
                     $(function() {
                         var demo1 = $("#demo1").slippry({
@@ -68,106 +68,63 @@
                 </div>
             </div>
 
+            <div class="col-md-9 home-carousel-box">
 
-            <div class="col-md-6 home-carousel-box">
+                        <div id="store-home-carousel" class="carousel slide" data-ride="carousel">
 
+                            {{-- indicators --}}
+                            <ol class="carousel-indicators">
+                                @for ($s=0; $s<count($suggestion['carousel']); $s++)
+                                    <li data-target="#store-home-carousel" data-slide-to="{{ $s }}" @if ($s==0) class="active" @endif ></li>
+                                @endfor
+                            </ol>
 
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
 
-                <div id="store-home-carousel" class="carousel slide" data-ride="carousel">
+                            <?php $pos = 0; ?>
+                            @foreach ($suggestion['carousel'] as $product)
 
-                    {{-- indicators --}}
-                    <ol class="carousel-indicators">
-                        @for ($s=0; $s<count($suggestion['carousel']); $s++)
-                            <li data-target="#store-home-carousel" data-slide-to="{{ $s }}" @if ($s==0) class="active" @endif ></li>
-                        @endfor
-                    </ol>
+                                {{-- slide items --}}
+                                <div class="item @if ($i++==0) active @endif">
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-
-                    <?php $pos = 0; ?>
-                    @foreach ($suggestion['carousel'] as $product)
-
-                        {{-- slide items --}}
-                        <div class="item @if ($i++==0) active @endif">
-
-                            @if (isset($banner[$pos]))
-                                <img src= "{{ $banner[$pos++] }}" alt="{{ $product['name'] }}">
-                            @else
-                                <img src="/img/no-image.jpg" alt="{{ $product['name'] }}">
-                            @endif
-                            {{-- panel --}}
-                            <div class="jumbotron {{ $jumbotronClasses[mt_rand(0,1)] }} ">
-
-                                <h5>{{ $product['name'] }}</h5>
-
-                                <p class = "description">{{ str_limit($product['description'], 200,'...') }}</p>
-
-                                @if ($product['price'] > 0)
-                                    <p class = "price">
-                                        <strong>{!! \Utility::showPrice($product['price']) !!}</strong>
-                                    </p>
-                                @endif
-
-                                <hr>
-
-                                <div class="btn-group" role="group" aria-label="...">
-
-                                    <a href="{{ route('products.show',[$product['id']]) }}" class="btn btn-default btn-sm">
-                                         <div class = "glyphicon glyphicon-shopping-cart"></div>&nbsp;{{ trans('store.add_to_cart') }}
-                                    </a>
-
-                                    @if(Auth::user())
-
-                                        <a href="{{ route('orders.add_to_order',['wishlist', $product[($product['type']=='freeproduct')?'parent_id':'id']]) }}" class="btn btn-default btn-sm">
-                                            <div class = "glyphicon glyphicon-heart"></div>&nbsp;{{ trans('store.add_to_wish_list') }}
-                                        </a>
-
+                                    @if (isset($banner[$pos]))
+                                        <img src= "{{ $banner[$pos++] }}" alt="{{ $product['name'] }}">
                                     @else
-
-                                        <a href="/login" class="btn btn-default btn-sm">
-                                            <div class = "glyphicon glyphicon-heart"></div>&nbsp;{{ trans('store.add_to_wish_list') }}
-                                        </a>
-
+                                        <img src="/img/no-image.jpg" alt="{{ $product['name'] }}">
                                     @endif
+                                    {{-- panel --}}
+                                    <div class="jumbotron {{ $jumbotronClasses[mt_rand(0,1)] }} ">
 
-                                    <a href="{{ route('products.show',[$product['id']]) }}" class="btn btn-default btn-sm">
+                                        <h5>{{ $product['name'] }}</h5>
 
-                                        <div class = "glyphicon glyphicon-eye-open"></div>&nbsp;{{ trans('store.viewDetails') }}
+                                        <p class = "description">{{ str_limit($product['description'], 200,'...') }}</p>
 
-                                    </a>
+                                        @if ($product['price'] > 0)
+                                            <p class = "price">
+                                                <strong>{!! \Utility::showPrice($product['price']) !!}</strong>
+                                            </p>
+                                        @endif
 
-                                </div>
+                                        <hr>
 
-                            </div>
+                                        f
+                                    </div>
 
-                        </div> {{-- end item --}}
+                                </div> {{-- end item --}}
 
-                    @endforeach
+                            @endforeach
 
-                    </div> {{-- end carousel-inner --}}
+                            </div> {{-- end carousel-inner --}}
 
-                </div>
+                        </div>
 
-            </div>
-            <div class="col-md-4 home-carousel-box">
-                <div class="row">
-                    sdaasdsa
-                </div>
-                <div class="row">
-                    sdaasdsa
-                </div>
-                <div class="row">
-                    sdaasdsa
-                </div>
+                    </div>
                 
-            </div>
-
-
              {{-- end carousel --}}
 <div class="row"><br></div>
 
-<div class="container">
+
  
 
   

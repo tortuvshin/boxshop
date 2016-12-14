@@ -334,7 +334,7 @@ footer .menu ul li {
 }
 .header-bottom-content {
   width: 100%;
-  height: 40px;
+  height: auto;
   float: left;
   background-color: #3c3b48;
   position: relative;
@@ -759,6 +759,29 @@ h6 {
   border-top-color: #ed764f;
   color: #000;
   background-color: transparent;
+}
+.bella-cat .vert-category ul {
+  border: 1px solid #ebebeb;
+  background-color: #f8f8f8;
+  background: #f8f8f8;
+}
+.bella-cat .vert-category ul li {
+  border-bottom: 1px solid #ebebeb;
+  text-transform: uppercase;
+}
+.home-carousel-box {
+  box-shadow: none;
+}
+.carousel,
+.carousel-inner {
+  height: 100%;
+}
+.carousel .item,
+.carousel-inner .item {
+  height: 100%;
+}
+.carousel-inner > .item > img {
+  height: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */
