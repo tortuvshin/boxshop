@@ -9,7 +9,7 @@
 @stop
 
 @section('content')
-
+<div class="container">
     <div id="menu-top-category">
          <div class="row">&nbsp;</div>
          <ol class="breadcrumb">
@@ -263,5 +263,6 @@
             </div>
         </div>
     @stop
+    </div>
 @stop
 

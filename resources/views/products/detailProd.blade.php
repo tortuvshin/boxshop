@@ -73,7 +73,7 @@
             <br>
         </div>		
 </div>
-<div class="container-fluid" >
+<div class="container container-fluid" >
 <br>
 		<div class="row">
 
