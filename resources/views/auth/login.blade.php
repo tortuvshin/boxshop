@@ -1,9 +1,12 @@
-@extends('layouts.master')
-
+@extends('layouts/master')
 @section('page_class') wrapper-page @stop
 
+@section('navigation')
+	&nbsp;
+@stop
 
 @include('partial.message')
+
 
 @section('content')
 
@@ -33,6 +36,10 @@
 @endsection
 
 @section('footer')
+	&nbsp;
+@stop
 
-@endsection
+@section('scripts')
+@parent
 
+@stop

@@ -129,109 +129,103 @@
 
   
 <br>
-
+<div class="container" style="box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3); margin-bottom: 20px;">
 <ul class="nav testtab nav-justified">
   <li class="active"><a href="#tab_a" data-toggle="pill">DAYLY DEALS</a></li>
   <li><a href="#tab_b" data-toggle="pill">WEEKLY DEALS</a></li>
   
 </ul>
 
-  <div class="tab-content">
+
     <div id="tab_a" class="tab-pane fade in active topongo">
-      <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+     
+          <div class="col-md-8" style="padding-left: 0px; padding-right: 0px;">
+              <div class="col-md-6 box foo" style="padding-left: 0px; padding-right: 0px;">
+               
+                    <img  src="http://glory.demo1.wpdance.com/supermarket2/wp-content/uploads/2014/09/34-278x328.jpg" >
+              
+              </div>
+              <div class="col-md-6" style="padding-left: 0px; padding-right: 0px;">
+                <div >
+                    <h4  style="margin-top: 0px;">
+                        SANDER VASARI WHITE SHIRT
+                    </h4>
+                 <h3> <b>  <del> £400.00 </del>  £310.00 </b></h3>
+                 <hr>
+                  <p>
+                      Paragraph text Nam tristique porta ligula, vel viverra sem eleifend nec. Nulla sed purus augue, eu euismod tellus. Nam mattis eros nec mi sagittis sagittis. Vestibulum suscipit cursus bibendum. Integer at justo eget sem auctor…
+                  </p>
+                </div>
+                  
+              </div>
+          </div>
+
+          <div class="col-md-4">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="box foo">
+                  <img src="http://glory.demo1.wpdance.com/supermarket2/wp-content/uploads/2014/09/20-150x178.jpg" >
+                  </div>
+              </div>
+              <div class="col-md-6">
+                   <div >
+                    <h4  style="margin-top: 0px;">
+                        SANDER VASARI WHITE SHIRT
+                    </h4>
+                 <h3> <b>  <del> £400.00 </del>  £310.00 </b></h3>
+                
+                
+                </div>
+              </div>
+          </div>
+             <div class="row">
+              <div class="col-md-6">
+                  <div class="box foo">
+                  <img  src="http://glory.demo1.wpdance.com/supermarket2/wp-content/uploads/2014/09/20-150x178.jpg" >
+                  </div>
+              </div>
+              <div class="col-md-6">
+                    <div >
+                    <h4  style="margin-top: 0px;">
+                        SANDER VASARI WHITE SHIRT
+                    </h4>
+                 <h3> <b>  <del> £400.00 </del>  £310.00 </b></h3>
+                 
+                </div>
+              </div>
+          </div>
+              
+          </div>
+    
     </div>
     <div id="tab_b" class="tab-pane fade topongo">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+          <div class="col-md-8">
+              <div class="col-md-8">
+                  a
+              </div>
+              <div class="col-md-4">
+                  b
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="col-md-6">
+                  a
+              </div>
+              <div class="col-md-6">
+                  b
+              </div>
+          </div>
+   
     </div>
+
   
-  </div>
 </div>
 
-
-            {{-- -------------------------------------------------- --}}
-            {{-- ------------------ Product List ------------------ --}}
-            {{-- -------------------------------------------------- --}}
-
-            @parent
-
-            @section('center_content')
-
-                {{-- viewed suggestions --}}
-                <div class="clearfix home-products-wrapper">
-
-                    <div class="col-lg-12">
-                        @if (Auth::check())
-                            <h4 class="home-title-section">{{ trans('store.suggestions.viewed') }}</h4>
-                        @else
-                            <h4 class="home-title-section">{{ trans('store.suggestions.viewed_unlogged') }}</h4>
-                        @endif
-                    </div>
-
-                    <div class="container-fluid marketing">
-                        <div class="row">
-                            @foreach ($suggestion['viewed'] as $product)
-                                @include('products.partial.productBox', $product)
-                            @endforeach
-                        </div>
-                    </div>
-
-                </div>
-
-                {{-- categories suggestions --}}
-                <div class="clearfix home-products-wrapper">
-
-                    <div class="col-lg-12">
-                        <h4 class="home-title-section">{{ trans('store.suggestions.categories') }}</h4>
-                    </div>
-
-                    <div class="container-fluid marketing">
-                        <div class="row">
-                            @foreach ($suggestion['categories'] as $product)
-                                @include('products.partial.productBox', $product)
-                            @endforeach
-                        </div>
-                    </div>
-
-                </div>
-
-                {{-- trending suggestions --}}
-                <div class="clearfix home-products-wrapper">
-
-                    <div class="col-lg-12">
-                        @if (Auth::check())
-                            <h4 class="home-title-section">{{ trans('store.suggestions.trends') }}</h4>
-                        @else
-                            <h4 class="home-title-section">{{ trans('store.suggestions.trends_unlogged') }}</h4>
-                        @endif
-                    </div>
-
-                    <div class="container-fluid marketing">
-                        <div class="row">
-                            @foreach ($suggestion['purchased'] as $product)
-                                @include('products.partial.productBox', $product)
-                            @endforeach
-                        </div>
-                    </div>
-
-                </div>
-
-            @stop {{-- end center_content --}}
-
-
-            {{-- -------------------------------------------------- --}}
-            {{-- -------------------- Left Bar -------------------- --}}
-            {{-- -------------------------------------------------- --}}
-
-            
-        </div> {{-- end container-fluid --}}
-
-    </section> {{-- end products_view --}}
-
-      <!-- product section start-->
+  <!-- product section start-->
               <section>
-                <div class="container" style="padding-left: 0px;
+                <div class="container" style="padding-left: 0px;     margin-bottom: 20px;
     padding-right: 0px;
     box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3);">
                       
@@ -676,5 +670,87 @@
                 </div>
               </section>
                 <!-- product section end-->
+
+
+            {{-- -------------------------------------------------- --}}
+            {{-- ------------------ Product List ------------------ --}}
+            {{-- -------------------------------------------------- --}}
+
+            @parent
+
+            @section('center_content')
+
+                {{-- viewed suggestions --}}
+                <div class="clearfix home-products-wrapper">
+
+                    <div class="col-lg-12">
+                        @if (Auth::check())
+                            <h4 class="home-title-section">{{ trans('store.suggestions.viewed') }}</h4>
+                        @else
+                            <h4 class="home-title-section">{{ trans('store.suggestions.viewed_unlogged') }}</h4>
+                        @endif
+                    </div>
+
+                    <div class="container-fluid marketing">
+                        <div class="row">
+                            @foreach ($suggestion['viewed'] as $product)
+                                @include('products.partial.productBox', $product)
+                            @endforeach
+                        </div>
+                    </div>
+
+                </div>
+
+                {{-- categories suggestions --}}
+                <div class="clearfix home-products-wrapper">
+
+                    <div class="col-lg-12">
+                        <h4 class="home-title-section">{{ trans('store.suggestions.categories') }}</h4>
+                    </div>
+
+                    <div class="container-fluid marketing">
+                        <div class="row">
+                            @foreach ($suggestion['categories'] as $product)
+                                @include('products.partial.productBox', $product)
+                            @endforeach
+                        </div>
+                    </div>
+
+                </div>
+
+                {{-- trending suggestions --}}
+                <div class="clearfix home-products-wrapper">
+
+                    <div class="col-lg-12">
+                        @if (Auth::check())
+                            <h4 class="home-title-section">{{ trans('store.suggestions.trends') }}</h4>
+                        @else
+                            <h4 class="home-title-section">{{ trans('store.suggestions.trends_unlogged') }}</h4>
+                        @endif
+                    </div>
+
+                    <div class="container-fluid marketing">
+                        <div class="row">
+                            @foreach ($suggestion['purchased'] as $product)
+                                @include('products.partial.productBox', $product)
+                            @endforeach
+                        </div>
+                    </div>
+
+                </div>
+
+            @stop {{-- end center_content --}}
+
+
+            {{-- -------------------------------------------------- --}}
+            {{-- -------------------- Left Bar -------------------- --}}
+            {{-- -------------------------------------------------- --}}
+
+            
+        </div> {{-- end container-fluid --}}
+
+    </section> {{-- end products_view --}}
+
+    
 
 @stop {{-- end content --}}
