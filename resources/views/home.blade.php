@@ -7,8 +7,19 @@
 @section('content')
 
     <section class="products_view">
+
+ <div class="dadasa">
+<ul>
+  <li><a class="active glyphicon glyphicon-menu-hamburger glyphicontest" href="#home"> </a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</div>
     <div class="container">
+
         <div class="row">
+
 
             {{-- -------------------------------------------------- --}}
             {{-- -------------------- carousel -------------------- --}}
@@ -125,9 +136,7 @@
 <div class="row"><br></div>
 
 
- 
 
-  
 <br>
 <div class="container" style="box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3); margin-bottom: 20px;">
 <ul class="nav testtab nav-justified">
