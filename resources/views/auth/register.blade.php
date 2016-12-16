@@ -21,6 +21,8 @@
 
       <!-- {!! Recaptcha::render() !!} -->
       <button type="submit"> {{ trans('user.create_my_account') }}</button>
+      <button class="btn-back">Буцах</button>
+      <!-- нүүр хуудаслуу буцах товч-->
 	  <p class="message"><a href="/login">{{  trans('user.sign_in_my_account') }}</a></p>
     </form>
     {!! Form::close() !!}

@@ -21,6 +21,8 @@
 	      <input type="email" placeholder="{{ trans('user.email_address') }}" name="email" value="{{ old('email') }}" required/>
 	      <input type="password" placeholder="{{ trans('user.password_message.do_you_have') }}" ng-disabled="!havePassword" name="password"/>
 	      <button>{{ trans('user.sign_in_my_account') }}</button>
+	      <button class="btn-back">Буцах</button>
+	      <!-- нүүр хуудаслуу буцах товч-->
 
 		<!-- {!! Recaptcha::render() !!} -->
 			
