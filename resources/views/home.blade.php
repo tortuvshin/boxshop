@@ -27,51 +27,51 @@
 
             <div class="col-md-3 bella-cat mobile">
                 <script>
-                    $(function() {
-                        var demo1 = $("#demo1").slippry({
-                            transition: 'fade',
-                            //useCSS: false,
-                            speed: 300,
-                            //pause: 3000,
-                            auto: true,
-                            //preload: 'visible',
-                            autoHover: false
-                        });
-                    });
+                    // $(function() {
+                    //     var demo1 = $("#demo1").slippry({
+                    //         transition: 'fade',
+                    //         //useCSS: false,
+                    //         speed: 300,
+                    //         //pause: 3000,
+                    //         auto: true,
+                    //         //preload: 'visible',
+                    //         autoHover: false
+                    //     });
+                    // });
                 </script>
                 <div class="vert-category">
                     <div class="row">
                         <ul>
                             <li>
-                                <a href="http://mimico.mn/category/ars-archilgaa">Арьс арчилгаа</a>
+                                <a href="http://localhost/products">Арьс арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/nuur-budalt">Нүүр будалт</a>
+                                <a href="http://localhost/products">Нүүр будалт</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/us-bie-archilgaa">Үс / бие арчилгаа</a>
+                                <a href="http://localhost/products">Үс / бие арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/unertei-us">Үнэртэй ус</a>
+                                <a href="http://localhost/products">Үнэртэй ус</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/bagc">Багц</a>
+                                <a href="http://localhost/products">Багц</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/eruul-mend">Эрүүл мэнд</a>
+                                <a href="http://localhost/products">Эрүүл мэнд</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/dijital-baraa">Дижитал бараа</a>
+                                <a href="http://localhost/products">Дижитал бараа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/hyamdraltai-baraa">Хямдралтай бараа</a>
+                                <a href="http://localhost/products">Хямдралтай бараа</a>
                                 
                             </li>
                         </ul>
@@ -259,35 +259,35 @@
                         <li style="border-color: #ebebeb; ">Tops</li>
 
                             <li>
-                                <a href="http://mimico.mn/category/ars-archilgaa">Арьс арчилгаа</a>
+                                <a href="http://localhost/products">Арьс арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/nuur-budalt">Нүүр будалт</a>
+                                <a href="http://localhost/products">Нүүр будалт</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/us-bie-archilgaa">Үс / бие арчилгаа</a>
+                                <a href="http://localhost/products">Үс / бие арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/unertei-us">Үнэртэй ус</a>
+                                <a href="http://localhost/products">Үнэртэй ус</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/bagc">Багц</a>
+                                <a href="http://localhost/products">Багц</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/eruul-mend">Эрүүл мэнд</a>
+                                <a href="http://localhost/products">Эрүүл мэнд</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/dijital-baraa">Дижитал бараа</a>
+                                <a href="http://localhost/products">Дижитал бараа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://mimico.mn/category/hyamdraltai-baraa">Хямдралтай бараа</a>
+                                <a href="http://localhost/products">Хямдралтай бараа</a>
                                 
                             </li>
                         </ul>

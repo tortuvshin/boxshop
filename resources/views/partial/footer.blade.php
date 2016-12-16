@@ -39,7 +39,7 @@
         <div class="col-xs-4 col-sm-4 col-md-4 newsletter" ng-controller="NewslettersCtrl">
             <h3 class="widget-title heading-title" style="color: white;">
 
-						Мэдээлэл авах					</h3>
+                        Мэдээлэл авах                   </h3>
             <div class="line line-30"></div>
             @if (\Auth::user())
             <p>{{ trans('globals.reach_us_msg') }}</p>
@@ -64,7 +64,7 @@
             @endif
             <div class="footer-bot-right-area">
                 <h3 class="widget-title heading-title" style="color: white;">
-						Сошиал					</h3>
+                        Сошиал                  </h3>
                 <div class="line line-30"></div>
                 <ul>
                     <li style=" list-style: none; list-style-position: initial;">
@@ -92,7 +92,6 @@
     text-align: center;"><a href="http://instagram.com/#" target="_blank" title="Follow us"><i class="fa fa-instagram"></i></a>
                                 </li>
 
-
                                 <li class="icon-linkedin fa-lg" style="border: 1px solid #f8f8f8;width: 12%;
     text-align: center;"><a href="https://www.linkedin.com/pub/#" target="_blank" title="See us"><i class="fa fa-linkedin"></i></a>
                                 </li>
@@ -111,13 +110,7 @@
         </div>
     </div>
 
-
-
-
     <div class="fourth-footer-area row ">
-
-
-
 
         <div id="copy-right" class="copy-right col-sm-12">
             <div class="col-sm-2">
@@ -168,14 +161,10 @@
                 </ul>
             </div>
 
-
         </div>
         <!-- end #copyright -->
 
-
     </div>
-
-
 
 </div>
 @section('scripts') @parent

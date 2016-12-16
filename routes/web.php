@@ -37,3 +37,5 @@ require __DIR__ . '/web/utilities.php';
 
 require __DIR__ . '/web/admin.php';
 
+require __DIR__ . '/web/globals.php';
+
