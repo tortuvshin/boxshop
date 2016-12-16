@@ -93,12 +93,20 @@
   -webkit-transform: scale(1);
 }
 
-.testtab > li.active > a, .testtab > li.active > a:hover, .testtab > li.active > a:focus {
+.testtab > li{
+  background: #f8f8f8;
+  border-right: 1px solid #ebebeb;
+}
+
+.testtab > li.active > a, .testtab > li >a:hover, .testtab > li.active > a:hover, 
+.testtab > li.active > a:focus {
         border-top-style: solid;
     border-top-color: #ed764f;
-        margin: -15px;
         color: #000;
-    background-color: transparent;
+    background-color: white;
+    border-bottom:none;
+
+
 }
 
 .bella-cat .vert-category ul{
@@ -168,3 +176,7 @@
     font-size: 25px;
 }
 
+.container-tab{
+  padding-right:0px;
+  padding-left:0px;
+}

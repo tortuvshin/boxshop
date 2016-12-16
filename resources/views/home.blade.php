@@ -138,10 +138,10 @@
 
 
 <br>
-<div class="container" style="box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3); margin-bottom: 20px;">
+<div class="container container-tab" style="box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3); margin-bottom: 20px;">
 <ul class="nav testtab nav-justified">
-  <li class="active"><a href="#tab_a" data-toggle="pill">DAYLY DEALS</a></li>
-  <li><a href="#tab_b" data-toggle="pill">WEEKLY DEALS</a></li>
+  <li style="border-left: none" class="active"><a href="#tab_a" data-toggle="pill">DAYLY DEALS</a></li>
+  <li style="border-right: none"><a href="#tab_b" data-toggle="pill">WEEKLY DEALS</a></li>
   
 </ul>
 
