@@ -710,6 +710,10 @@
 
                 </div>
 
+
+
+
+
                 {{-- categories suggestions --}}
                 <div class="clearfix home-products-wrapper">
 
@@ -726,6 +730,9 @@
                     </div>
 
                 </div>
+
+
+
 
                 {{-- trending suggestions --}}
                 <div class="clearfix home-products-wrapper">
