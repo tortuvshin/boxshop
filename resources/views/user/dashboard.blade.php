@@ -19,7 +19,7 @@
 
 			<div class="row">
 				<div class="col-md-12">
-					<a class="btn btn-info btn-sm pull-right" ng-href="{{route('products.create')}}"><span class="glyphicon glyphicon-plus"></span>&nbsp;{{ trans('product.globals.add') }}</a>
+					<a class="btn btn-info btn-sm pull-right product-add" ng-href="{{route('products.create')}}"><span class="glyphicon glyphicon-plus"></span>&nbsp;{{ trans('product.globals.add') }}</a>
 				</div>
 			</div>
 
