@@ -27,6 +27,15 @@ h3 {
 .breadcrumb {
   background-color: white;
 }
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #3c3b48;
+  border-color: #3c3b48;
+}
 .cart {
   margin-right: 0px;
   margin-left: 0px;
@@ -972,6 +981,14 @@ a:focus {
 .btn-primary {
   background-color: #ed764f;
   border-color: #ed764f;
+}
+.wishpanel > .panel-heading {
+  color: #000;
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+}
+.wishpanel {
+  border-color: #f5f5f5;
 }
 
 /*# sourceMappingURL=app.css.map */
