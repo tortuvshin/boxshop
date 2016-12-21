@@ -144,15 +144,15 @@
           <div class="col-md-8" style="padding-left: 0px; padding-right: 0px;">
               <div class="col-md-6 box foo" style="padding-left: 0px; padding-right: 0px;">
                
-                    <img  src="http://glory.demo1.wpdance.com/supermarket2/wp-content/uploads/2014/09/34-278x328.jpg" >
+                    <img  src="img/product/baraa.png" >
               
               </div>
               <div class="col-md-6" style="padding-left: 0px; padding-right: 0px;">
                 <div >
                     <h4  style="margin-top: 0px;">
-                        PINK TONE UP
+                       FOAM
                     </h4>
-                 <h3> <b>  £310.00 </b></h3>
+                 <h3> <b>  30,000₮</b></h3>
                  <hr>
                   <p>
                       Paragraph text Nam tristique porta ligula, vel viverra sem eleifend nec. Nulla sed purus augue, eu euismod tellus. Nam mattis eros nec mi sagittis sagittis. Vestibulum suscipit cursus bibendum. Integer at justo eget sem auctor…
@@ -166,15 +166,15 @@
           <div class="row">
               <div class="col-md-6">
                   <div class="box foo">
-                  <img src="http://glory.demo1.wpdance.com/supermarket2/wp-content/uploads/2014/09/20-150x178.jpg" >
+                  <img src="img/product/baraa2.png" >
                   </div>
               </div>
               <div class="col-md-6">
                    <div >
                     <h4  style="margin-top: 0px;">
-                        PINK TONE UP
+                        FOAM
                     </h4>
-                 <h3> <b>    £310.00 </b></h3>
+                 <h3> <b>    30,000₮</b></h3>
                 
                 
                 </div>
@@ -183,15 +183,15 @@
              <div class="row">
               <div class="col-md-6">
                   <div class="box foo">
-                  <img  src="http://glory.demo1.wpdance.com/supermarket2/wp-content/uploads/2014/09/20-150x178.jpg" >
+                  <img  src="img/product/baraa2.png" >
                   </div>
               </div>
               <div class="col-md-6">
                     <div >
                     <h4  style="margin-top: 0px;">
-                        PINK TONE UP
+                         FOAM
                     </h4>
-                 <h3> <b>    £310.00 </b></h3>
+                 <h3> <b>    30,000₮</b></h3>
                  
                 </div>
               </div>
@@ -240,9 +240,9 @@
     color: #fff;
     margin-bottom: 0;
     padding: 15px 20px;
-    word-wrap: break-word;">COSMETIC</p>
+    word-wrap: break-word;">COSMETIC & Tools</p>
                         </div>
-                        <div class="row demo" style="background: url(http://demo2.wpdance.com/imgs/wd_glory/supermarket2/supermarket2_product_group5_head.png) bottom left no-repeat;">
+                        <div class="row demo" style="background: url(http://demo2.wpdance.com/imgs/wd_glory/supermarket2/supermarket2_product_group4_head.png) bottom left no-repeat;">
                         <ul style=" padding-top: 14px;
     padding-left: 0px;
     margin-bottom: 0;
@@ -283,6 +283,10 @@
                                 <a href="http://localhost/products">Хямдралтай бараа</a>
                                 
                             </li>
+                            <li>
+                                <a href="http://localhost/products">Үнэртэй ус</a>
+                                
+                            </li>
                         </ul>
                         </div>
                     </div>
@@ -291,7 +295,7 @@
                     <div class="col-lg-5 " >
                          <div class="box foo ">   
                             
-                    <img alt="Big title goes here" title="Big title goes here" style="    width: 100%;" src="http://demo2.wpdance.com/imgs/wd_glory/supermarket2/banner/supermarket2_product_group7_content.jpg">
+                    <img alt="Big title goes here" title="Big title goes here" style="    width: 100%;" src="img/product/slidema.png">
                           
                         </div>
                        
@@ -315,7 +319,7 @@
         <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
 
                 <span class="product-image-hover"></span>       
-                            <img src="/img/pt-default/6.jpg?h=250" alt="PINK TONE UP">
+                            <img src="img/product/baraa3.png?h=250" alt="PINK TONE UP">
                     </div>
 <!-- 
         <p class="product-description"></p>
@@ -352,7 +356,7 @@
         </h6>
 
         <div class="product-price">
-            USD95.00
+            80,000₮
         </div>
 
     </div>
@@ -376,7 +380,7 @@
         <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
 
                 <span class="product-image-hover"></span>       
-                            <img src="/img/pt-default/6.jpg?h=250" alt="PINK TONE UP">
+                            <img src="img/product/baraa4.png?h=250" alt="PINK TONE UP">
                     </div>
 <!-- 
         <p class="product-description"></p>
@@ -413,7 +417,7 @@
         </h6>
 
         <div class="product-price">
-            USD95.00
+            70,000₮
         </div>
 
     </div>
@@ -437,7 +441,7 @@
         <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
 
                 <span class="product-image-hover"></span>       
-                            <img src="/img/pt-default/6.jpg?h=250" alt="PINK TONE UP">
+                            <img src="img/product/baraa5.png?h=250" alt="PINK TONE UP">
                     </div>
 <!-- 
         <p class="product-description"></p>
@@ -474,7 +478,7 @@
         </h6>
 
         <div class="product-price">
-            USD95.00
+            60,000₮
         </div>
 
     </div>
@@ -498,7 +502,7 @@
         <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
 
                 <span class="product-image-hover"></span>       
-                            <img src="/img/pt-default/6.jpg?h=250" alt="PINK TONE UP">
+                            <img src="img/product/baraa2.png?h=250" alt="PINK TONE UP">
                     </div>
 <!-- 
         <p class="product-description"></p>
@@ -535,7 +539,7 @@
         </h6>
 
         <div class="product-price">
-            USD95.00
+           45,000₮
         </div>
 
     </div>
@@ -559,7 +563,7 @@
         <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
 
                 <span class="product-image-hover"></span>       
-                            <img src="/img/pt-default/6.jpg?h=250" alt="PINK TONE UP">
+                            <img src="img/product/baraa5.png?h=250" alt="PINK TONE UP">
                     </div>
 <!-- 
         <p class="product-description"></p>
@@ -596,7 +600,7 @@
         </h6>
 
         <div class="product-price">
-            USD95.00
+           35,000₮
         </div>
 
     </div>
@@ -620,7 +624,7 @@
         <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
 
                 <span class="product-image-hover"></span>       
-                            <img src="/img/pt-default/6.jpg?h=250" alt="PINK TONE UP">
+                            <img src="img/product/baraa4.png?h=250" alt="PINK TONE UP">
                     </div>
 <!-- 
         <p class="product-description"></p>
@@ -657,7 +661,7 @@
         </h6>
 
         <div class="product-price">
-            USD95.00
+           36,000₮
         </div>
 
     </div>
