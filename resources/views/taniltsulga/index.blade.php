@@ -11,7 +11,7 @@
 
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner bella-slider" role="listbox">
 
             <div class="item active">
                 <img src="http://html.crunchpress.com/big-salon/images/banner/banner-img-03.jpg">

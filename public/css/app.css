@@ -1032,6 +1032,9 @@ a:focus {
   z-index: 99;
   border-color: #d00009;
 }
+.bella-slider .item img {
+  position: relative !important;
+}
 .cp-heding-style1:after {
   content: '';
   position: absolute;
