@@ -140,8 +140,8 @@
 <br>
 <div class="container container-tab" style="box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3); margin-bottom: 20px;">
 <ul class="nav testtab nav-justified">
-  <li style="border-left: none" class="active"><a href="#tab_a" data-toggle="pill">DAYLY DEALS</a></li>
-  <li style="border-right: none"><a href="#tab_b" data-toggle="pill">WEEKLY DEALS</a></li>
+  <li style="border-left: none" class="active"><a href="#tab_a" data-toggle="pill">Өнөөдөр их зарагдсан</a></li>
+  <li style="border-right: none"><a href="#tab_b" data-toggle="pill">7 хоног их зарагдсан </a></li>
   
 </ul>
 
@@ -157,9 +157,9 @@
               <div class="col-md-6" style="padding-left: 0px; padding-right: 0px;">
                 <div >
                     <h4  style="margin-top: 0px;">
-                        SANDER VASARI WHITE SHIRT
+                        PINK TONE UP
                     </h4>
-                 <h3> <b>  <del> £400.00 </del>  £310.00 </b></h3>
+                 <h3> <b>  £310.00 </b></h3>
                  <hr>
                   <p>
                       Paragraph text Nam tristique porta ligula, vel viverra sem eleifend nec. Nulla sed purus augue, eu euismod tellus. Nam mattis eros nec mi sagittis sagittis. Vestibulum suscipit cursus bibendum. Integer at justo eget sem auctor…
@@ -179,9 +179,9 @@
               <div class="col-md-6">
                    <div >
                     <h4  style="margin-top: 0px;">
-                        SANDER VASARI WHITE SHIRT
+                        PINK TONE UP
                     </h4>
-                 <h3> <b>  <del> £400.00 </del>  £310.00 </b></h3>
+                 <h3> <b>    £310.00 </b></h3>
                 
                 
                 </div>
@@ -196,9 +196,9 @@
               <div class="col-md-6">
                     <div >
                     <h4  style="margin-top: 0px;">
-                        SANDER VASARI WHITE SHIRT
+                        PINK TONE UP
                     </h4>
-                 <h3> <b>  <del> £400.00 </del>  £310.00 </b></h3>
+                 <h3> <b>    £310.00 </b></h3>
                  
                 </div>
               </div>
@@ -247,7 +247,7 @@
     color: #fff;
     margin-bottom: 0;
     padding: 15px 20px;
-    word-wrap: break-word;">COMPUTER & ELECTRONICS</p>
+    word-wrap: break-word;">COSMETIC</p>
                         </div>
                         <div class="row demo" style="background: url(http://demo2.wpdance.com/imgs/wd_glory/supermarket2/supermarket2_product_group5_head.png) bottom left no-repeat;">
                         <ul style=" padding-top: 14px;
