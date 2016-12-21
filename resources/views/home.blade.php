@@ -685,7 +685,12 @@
             @parent
 
             @section('center_content')
-                <div class="container">
+                <div class="container" style="     padding-left: 0px;
+    margin-bottom: 20px;
+    padding-right: 0px;
+    box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3);
+    margin-right: -15px;
+    margin-left: -15px;">
                 {{-- viewed suggestions --}}
                 <div class="clearfix home-products-wrapper">
                
