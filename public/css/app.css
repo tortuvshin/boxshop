@@ -813,38 +813,6 @@ h6 {
 .carousel-inner > .item > img {
   height: 100%;
 }
-/*vertical menu */
-.dadasa {
-  text-align: center;
-  position: fixed;
-  left: 10px;
-  z-index: 999;
-}
-.dadasa > ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 2px 6px;
-  overflow: hidden;
-  background-color: white;
-  border: 1px solid #ebebeb;
-}
-.dadasa > li {
-  width: 100%;
-  border-bottom: 1px solid #ebebeb;
-}
-.dadasa > li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 4px 6px;
-  text-decoration: none;
-}
-.dadasa > li a:hover:not(.active) {
-  background-color: #e99999;
-}
-.dadasa > li > active {
-  background-color: #e94444;
-}
 .glyphicontest {
   font-size: 25px;
 }
