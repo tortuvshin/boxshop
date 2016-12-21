@@ -8,14 +8,7 @@
 
     <section class="products_view">
 
- <div class="dadasa">
-<ul>
-  <li><a class="active glyphicon glyphicon-menu-hamburger glyphicontest" href="#home"> </a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-</div>
+ 
     <div class="container">
 
         <div class="row">
@@ -240,7 +233,7 @@
                       
                     <div class="col-lg-2" style="       padding-right: 0;
     padding-left: 0px;">
-                        <div class="" style="background-color: #3face3;">
+                        <div class="" style="    background-color: #ed764f;">
                             <p style="text-transform: uppercase;
     font-size: 25px;
     line-height: 30px;
@@ -293,7 +286,7 @@
                         </ul>
                         </div>
                     </div>
-                    <div class="col-lg-10" style="border-top: 2px solid #3face3; padding: 20px">
+                    <div class="col-lg-10" style="border-top: 2px solid #ed764f; padding: 20px">
 
                     <div class="col-lg-5 " >
                          <div class="box foo ">   
