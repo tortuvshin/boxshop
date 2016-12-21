@@ -4,25 +4,39 @@
 
 @section('page_class')products_view @stop
 
-@section('breadcrumbs')
-    @parent
 
-    @if (isset($isResume))
-
-        {!! Breadcrumbs::render('shoppingCartResume', $cartAddress->id) !!}
-
-    @else
-
-        {!! Breadcrumbs::render('shoppingCart') !!}
-
-    @endif
-
-@stop
 
 @section('content')
     @parent
 
     @section('center_content')
+
+ @if (isset($isResume))
+
+      
+             <div class="producttitle"  >
+    <div class="titlecolor text-center" >
+    <br>
+          
+             <div class="breadcrumbstext"> {!! Breadcrumbs::render('shoppingCartResume', $cartAddress->id) !!}</div>
+            <br>
+        </div>      
+</div>
+
+    @else
+
+       
+            <div class="producttitle"  >
+    <div class="titlecolor text-center" >
+    <br>
+          
+             <div class="breadcrumbstext"> {!! Breadcrumbs::render('shoppingCart') !!}</div>
+            <br>
+        </div>      
+</div>
+<br>
+
+    @endif
 
     <div class=" cart_panel  panel-default" ng-controller = "ShoppingCart" >
        {{-- cart details --}}
