@@ -166,15 +166,15 @@
           <div class="row">
               <div class="col-md-6">
                   <div class="box foo">
-                  <img src="img/product/baraa2.png" >
+                  <img src="img/product/baraa32.png" >
                   </div>
               </div>
               <div class="col-md-6">
                    <div >
                     <h4  style="margin-top: 0px;">
-                        FOAM
+                      DR.VITA
                     </h4>
-                 <h3> <b>    30,000₮</b></h3>
+                 <h3> <b>    25,000₮</b></h3>
                 
                 
                 </div>
@@ -183,15 +183,15 @@
              <div class="row">
               <div class="col-md-6">
                   <div class="box foo">
-                  <img  src="img/product/baraa2.png" >
+                  <img  src="img/product/baraa42.png" >
                   </div>
               </div>
               <div class="col-md-6">
                     <div >
                     <h4  style="margin-top: 0px;">
-                         FOAM
+                        SNOW PACK
                     </h4>
-                 <h3> <b>    30,000₮</b></h3>
+                 <h3> <b>   15,000₮</b></h3>
                  
                 </div>
               </div>
@@ -685,10 +685,10 @@
             @parent
 
             @section('center_content')
-
+                <div class="container">
                 {{-- viewed suggestions --}}
                 <div class="clearfix home-products-wrapper">
-
+               
                     <div class="col-lg-12">
                         @if (Auth::check())
                             <h4 class="home-title-section">{{ trans('store.suggestions.viewed') }}</h4>
@@ -751,7 +751,7 @@
                     </div>
 
                 </div>
-
+                </div>
             @stop {{-- end center_content --}}
 
 
