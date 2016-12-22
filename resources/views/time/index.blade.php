@@ -13,31 +13,20 @@
 					<h3>Цаг авах</h3>
 				</div><br>		  		
 		  		<div class="col-sm-4">
-			      	<div class="form-group">			      		
+			      	<div class="form-group">	
+			      		<select class="form-control" id="" placeholder="Үйлчилгээ">
+						    <option>Салбар</option>
+						    <option>2</option>
+						    <option>3</option>
+						    <option>4</option>
+						</select><br>			      		
 						<select class="form-control" id="service" placeholder="Үйлчилгээ">
 						    <option>Үйлчилгээ</option>
 						    <option>2</option>
 						    <option>3</option>
 						    <option>4</option>
-						</select><br>					  
-					  	
-					 	 <input type="text" class="form-control" id="user-name" placeholder="Нэрээ оруулна уу."><br>
-
-					 	 <input type="number" class="form-control" id="user-phone" data-bind="value:replyNumber" placeholder="Дугаараа оруулна уу." /><br>
-					</div>
-			    </div>
-			    <div class="col-sm-4"> 
-			        <div class="form-group">			      		
-						<select class="form-control" id="" placeholder="Үйлчилгээ">
-						    <option>Салбар</option>
-						    <option>2</option>
-						    <option>3</option>
-						    <option>4</option>
-						</select><br>					  
-					  	
-					 	 <input type="text" class="form-control" id="service-addition" placeholder="Нэмэлт"><br>
-
-					 	 <div class='input-group date' id='datetimepicker1'>
+						</select><br>
+						<div class='input-group date' id='datetimepicker1'>
 		                    <input type='text' class="form-control" placeholder="Он сар өдөр" />
 		                    <span class="input-group-addon">
 		                        <span class="glyphicon glyphicon-calendar"></span>
@@ -47,7 +36,19 @@
 				            $(function () {
 				                $('#datetimepicker1').datetimepicker();
 				            });
-				        </script>
+				        </script>					  
+					  	
+					</div>
+			    </div>
+			    <div class="col-sm-4"> 
+			        <div class="form-group">			      		
+										  
+					  	<input type="text" class="form-control" id="user-name" placeholder="Нэрээ оруулна уу."><br>
+
+					 	 <input type="number" class="form-control" id="user-phone" data-bind="value:replyNumber" placeholder="Дугаараа оруулна уу." /><br>
+					 	 <input type="text" class="form-control" id="service-addition" placeholder="Нэмэлт"><br>
+
+					 	 
 					</div>
 			    </div>
 			    <div class="col-sm-4">

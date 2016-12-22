@@ -13,7 +13,17 @@ class CreateTimeTable extends Migration
      */
     public function up()
     {
-        //
+        //sdf
+        Schema::create('userTime', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('sector');
+            $table->string('service');
+            $table->timestamp('service_date');
+            $table->string('userName',25);
+            $table->string('userNumber',8)->nullable();
+            $table->string('addition',225);
+            $table->string('description',225)->nullable();
+        });
     }
 
     /**
@@ -23,6 +33,7 @@ class CreateTimeTable extends Migration
      */
     public function down()
     {
+        Schema::drop('userTime');
         //
     }
 }
