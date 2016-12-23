@@ -2,6 +2,17 @@
 
 Энэхүү онлайн худалдааны платпормыг Laravel 5.3. хувилбар дээр хөгжүүлж байна.
 
+## Сэрвэрийн үзүүлэлт
+
+	PHP >= 5.6.4
+	MySQL >= 5.7
+	OpenSSL PHP Extension
+	PDO PHP Extension
+	Mbstring PHP Extension
+	Tokenizer PHP Extension
+	XML PHP Extension
+
+
 <a name="installation"></a>
 ## Суулгах
 
