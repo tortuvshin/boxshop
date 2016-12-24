@@ -108,4 +108,5 @@ return [
         'account_verified_ok_message'    => '<strong>Баталгаажуулсан!</strong><br/><br/>Баяр хүргэе [name]!, таны бүртгэл амжилттай баталгаажлаа.',
         'account_verified_error_message' => '<strong>Алдаа!</strong><br/><br/>Таны баталгаажуулах холбоос идэвхгүй байна.<br/><br/>Дахин оролдоно уу!',
         'signUp_message'                 => '<strong>Баярлалаа :_name!<br>Та амжилттай бүртгүүллээ!</strong><br><br>Бүртгэлээ баталгаажуулах холбоос дээр дарна уу.',
+        'credentials_do_not_match_our_records' => 'Таны оруулсан мэдээлэл буруу байна.',
 ];

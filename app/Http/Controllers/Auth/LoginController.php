@@ -108,4 +108,9 @@ class LoginController extends Controller
             'password' => $request->password
         ];
     }
+
+    public function getFailedLoginMessage()
+    {
+        return trans('user.credentials_do_not_match_our_records');
+    }
 }
