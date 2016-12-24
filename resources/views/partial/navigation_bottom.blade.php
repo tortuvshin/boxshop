@@ -9,12 +9,10 @@
             <div class="col-md-9 col-sm-10 col-xs-12">
                 <div class="row">
                     <ul class="line-menu">
-                        <li><a class="kk-1" href="http://localhost/">Нүүр</a></li>
-                        <li><a class="kk-1" href="http://localhost/products">Онцлох бараа</a></li>
-                        <li><a class="kk-1" href="http://localhost/products">Шинэ</a></li>
-                        <li><a class="kk-1" href="http://localhost/products">Брэнд</a></li>
-                        <li><a class="kk-1" href="http://localhost/mycompany">Танилцуулга</a></li>
-                        <li><a class="kk-1" href="http://localhost/time">Цаг авах</a></li>
+                        <li><a class="kk-1" href="{{ route('home') }}">Нүүр</a></li>
+                        <li><a class="kk-1" href="{{ route('products') }}">Онцлох бараа</a></li>
+                        <li><a class="kk-1" href="{{ route('mycompany') }}">Танилцуулга</a></li>
+                        <li><a class="kk-1" href="{{ route('time') }}">Цаг авах</a></li>
                     </ul>
                 </div>
             </div>

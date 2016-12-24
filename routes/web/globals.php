@@ -1,7 +1,6 @@
 <?php
 
-Route::get('time', 'TimeController@index');
-Route::get('mycompany', function () {
-    return view('taniltsulga/index');
-});
+Route::get('time', ['uses' => 'TimeController@index', 'as' => 'time']);
+
+Route::get('mycompany', ['uses' => 'AboutController@mycompany', 'as' => 'mycompany']);
 
