@@ -17,7 +17,7 @@ class TimeController extends Controller
     {
         $this->validate($request, $this->rules());
 
-        $user = $this->createTime($request->all());
+        $time = $this->createTime($request->all());
 
         return redirect($this->index());
     }
@@ -52,7 +52,7 @@ class TimeController extends Controller
             'sector'       => $data['sector'],
             'service'      => $data['service'],
             'service_date' => $data['service_date'],
-            'userName'     => $data['person'],
+            'userName'     => $data['userName'],
             'userNumber'   => $data['userNumber'],
             'addition'     => $data['addition'],
             'description'  => $data['description'],
