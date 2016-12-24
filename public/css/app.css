@@ -592,7 +592,7 @@ footer .menu ul li {
 }
 .product-img-box img {
   width: 100%;
-  height: auto;
+  height: 210px;
 }
 .thumbnail {
   border: 0px;
@@ -790,6 +790,10 @@ h6 {
   background-color: white;
   border-bottom: none;
 }
+.bella-cat {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
 .bella-cat .vert-category ul {
   border: 1px solid #ebebeb;
   background-color: #f8f8f8;
@@ -819,6 +823,10 @@ h6 {
 .container-tab {
   padding-right: 0px;
   padding-left: 0px;
+}
+.home-carousel-box {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 .description {
   width: 100%;
