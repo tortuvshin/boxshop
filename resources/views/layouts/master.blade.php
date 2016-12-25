@@ -20,12 +20,12 @@
 	</script>
 
 	{{-- Bella CSS files --}}
-	{!! Html::style('/bella-bower/bootstrap/dist/css/bootstrap.css') !!}
+	{!! Html::style('/css/lib/bootstrap.min.css') !!}
 	@section('css')
-		{!! Html::style('/bella-bower/angular-notify/dist/angular-notify.min.css') !!}
-		{!! Html::style('/bella-bower/font-awesome/css/font-awesome.min.css') !!}
-		{!! Html::style('/css/carousel.css') !!}
-		{!! Html::style('/css/angucomplete-alt.css') !!}
+		{!! Html::style('/css/lib/angular-notify.min.css') !!}
+		{!! Html::style('/css/lib/font-awesome.min.css') !!}
+		{!! Html::style('/css/lib/carousel.css') !!}
+		{!! Html::style('/css/lib/angucomplete-alt.css') !!}
 		{!! Html::style('/css/app.css') !!}
 	@show
 
@@ -96,23 +96,18 @@
 	</footer>
 @show
 
-{{-- Bella - Bower Components --}}
-{!! Html::script('/bella-bower/jquery/dist/jquery.min.js') !!}
-{!! Html::script('/bella-bower/angular/angular.min.js') !!}
-{!! Html::script('/bella-bower/angular-route/angular-route.min.js') !!}
-{!! Html::script('/bella-bower/angular-sanitize/angular-sanitize.min.js') !!}
-{!! Html::script('/bella-bower/angular-bootstrap/ui-bootstrap-tpls.min.js') !!}
-{!! Html::script('/bella-bower/angular-animate/angular-animate.min.js') !!}
-{!! Html::script('/bella-bower/angular-loading-bar/build/loading-bar.min.js') !!}
-{!! Html::script('/bella-bower/angular-mocks/angular-mocks.js') !!}
-{!! Html::script('/bella-bower/angular-touch/angular-touch.min.js') !!}
-{!! Html::script('/bella-bower/bootstrap/dist/js/bootstrap.min.js') !!}
-
-
-
-
-{!! Html::script('/js/vendor/xtForms/xtForm.js') !!}
-{!! Html::script('/js/vendor/xtForms/xtForm.tpl.min.js') !!}
+{!! Html::script('/js/lib/jquery.min.js') !!}
+{!! Html::script('/js/lib/angular.min.js') !!}
+{!! Html::script('/js/lib/angular-route.min.js') !!}
+{!! Html::script('/js/lib/angular-sanitize.min.js') !!}
+{!! Html::script('/js/lib/ui-bootstrap-tpls.min.js') !!}
+{!! Html::script('/js/lib/angular-animate.min.js') !!}
+{!! Html::script('/js/lib/loading-bar.min.js') !!}
+{!! Html::script('/js/lib/angular-mocks.js') !!}
+{!! Html::script('/js/lib/angular-touch.min.js') !!}
+{!! Html::script('/js/lib/bootstrap.min.js') !!}
+{!! Html::script('/js/lib/xtForms/xtForm.js') !!}
+{!! Html::script('/js/lib/xtForms/xtForm.tpl.min.js') !!}
 
 <script>
 
@@ -148,11 +143,11 @@
 
 @section('scripts')
 	{{-- Bella angucomplete-alt.js version --}}
-	{!! Html::script('/js/vendor/angucomplete-alt.js') !!}
+	{!! Html::script('/js/lib/angucomplete-alt.js') !!}
 
 	{{-- Bella-bower components --}}
-	{!! Html::script('/bella-bower/angular-notify/dist/angular-notify.min.js') !!}
-	{!! Html::script('/bella-bower/angular-local-storage/dist/angular-local-storage.min.js') !!}
+	{!! Html::script('/js/lib/angular-notify.min.js') !!}
+	{!! Html::script('/js/lib/angular-local-storage.min.js') !!}
 @show
 
 </body>
