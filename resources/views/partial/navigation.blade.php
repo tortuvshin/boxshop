@@ -1,5 +1,5 @@
 <div class="navbar-header header-top">
-	<div class="header-top-left-area col-sm-8 col-xs-0">
+	<div class="header-top-left col-sm-8 col-xs-0">
 		<ul>
 			<li id="ew_social-4" class="widget-container widget_social">						
 				<div class="social-icons">
@@ -20,13 +20,13 @@
 			</li>
 		</ul>
 	</div>
-	<div class="header-top-right-area col-sm-4 col-xs-12">
+	<div class="header-top-right col-sm-4 col-xs-12">
 		<ul>
 			@include('user.partial.menu_top')
 				
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="">
-					<span style="text-transform: uppercase;font-size: 10px;font-weight: 500;">{{ trans('store.productsInWishList') }}(0)</span>
+					<span>{{ trans('store.productsInWishList') }}(0)</span>
 				</a>
 				<ul class="dropdown-menu" role="menu">
 					<li><a href="{{ route('orders.show_wish_list') }}">{{ trans('store.wish_list') }}</a></li>

@@ -1,42 +1,7 @@
-.header-search-row {
-    width: 100%;
-    float: left;
-    height: 120px;
-    position: relative;
-}
-
-.cat-controller-nav {
-    height: 100%;
-    form {
-        height: 100%;
-    }
-}
-
-
-.search-nav {
-    height: 100%;
-    border-bottom: 1px solid #e3e3e3;
-
-    a, .categories-search, input, .search-input, span, div {
-        float: left;
-    }
-}
-
-
-
-.header-top-right-area {
-    ul li a span {
-        font-family: @font-family-sans-serif;
-        text-transform: uppercase;
-        font-size: 10px;
-        font-weight: 500;
-    }
-}
-
 .header-top {
-	width: 100%;
-	height: 40px;
-	float: left;
+    width: 100%;
+    height: 40px;
+    float: left;
     position: relative;
     background: #fff;
     border-bottom: 1px solid #e3e3e3;
@@ -57,18 +22,63 @@
     }
 }
 
+.header-top-right {
+    height: 100%;
+    ul li a span {
+        font-family: @font-family-sans-serif;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 500;
+    }
 
-.social-icons {
-	ul {
-		li {
-			display: inline-block;
-		    margin-right: 10px;
-		    line-height: 40px;
-		    float: none;
-		}
-	}
+    .dropdown-menu {
+        li {
+            display: block;
+            margin-right: 0;
+            padding: 0 0;
+        }
+    }
 }
 
+.header-top-left {
+    height: 100%
+}
+
+.social-icons {
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            line-height: 40px;
+            float: none;
+        }
+    }
+}
+
+
+.header-search-row {
+    width: 100%;
+    float: left;
+    height: 120px;
+    position: relative;
+}
+
+.cat-controller-nav {
+    height: 100%;
+    form {
+        height: 100%;
+    }
+}
+
+
+.search-nav {
+    height: 100%;
+    border-bottom: 1px solid @dark-color;
+
+    a, .categories-search, input, .search-input, span, div {
+        float: left;
+    }
+}
 
 #search_value {
     height: 40px;
@@ -76,8 +86,9 @@
 }
 
 .dropdown-menu{
-    top: 61%;
     border-radius: 0;
+    margin: 0;
+    padding: 0 0;
 }
 
 .cart{
@@ -239,4 +250,6 @@
     background: #fff;
 }
 
-
+.icon-facebook {
+    color: @social-facebook !important;
+}

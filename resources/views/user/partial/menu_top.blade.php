@@ -19,11 +19,9 @@
 					@endif
 				</a>
 			</li>
-			@if(isset($item['divider']))<li class="divider"></li>@endif
 		@endforeach
 
 		@if (auth()->check())
-			<li class="divider"></li>
 			<li>
 				<form action="/logout" method="POST">
 					{{ csrf_field() }}

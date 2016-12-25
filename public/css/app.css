@@ -36,6 +36,12 @@ h3 {
   background-color: #3c3b48;
   border-color: #3c3b48;
 }
+.glyphicon {
+  font-family: 'Glyphicons Halflings' !important;
+}
+.btn {
+  border-radius: 0;
+}
 .cart {
   margin-right: 0px;
   margin-left: 0px;
@@ -256,36 +262,6 @@ footer .menu ul li {
   float: left;
   margin-left: 5px;
 }
-.header-search-row {
-  width: 100%;
-  float: left;
-  height: 120px;
-  position: relative;
-}
-.cat-controller-nav {
-  height: 100%;
-}
-.cat-controller-nav form {
-  height: 100%;
-}
-.search-nav {
-  height: 100%;
-  border-bottom: 1px solid #e3e3e3;
-}
-.search-nav a,
-.search-nav .categories-search,
-.search-nav input,
-.search-nav .search-input,
-.search-nav span,
-.search-nav div {
-  float: left;
-}
-.header-top-right-area ul li a span {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 500;
-}
 .header-top {
   width: 100%;
   height: 40px;
@@ -305,19 +281,61 @@ footer .menu ul li {
   color: black;
   font-size: inherit;
 }
+.header-top-right {
+  height: 100%;
+}
+.header-top-right ul li a span {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
+.header-top-right .dropdown-menu li {
+  display: block;
+  margin-right: 0;
+  padding: 0 0;
+}
+.header-top-left {
+  height: 100%;
+}
 .social-icons ul li {
   display: inline-block;
   margin-right: 10px;
   line-height: 40px;
   float: none;
 }
+.header-search-row {
+  width: 100%;
+  float: left;
+  height: 120px;
+  position: relative;
+}
+.cat-controller-nav {
+  height: 100%;
+}
+.cat-controller-nav form {
+  height: 100%;
+}
+.search-nav {
+  height: 100%;
+  border-bottom: 1px solid #3c3b48;
+}
+.search-nav a,
+.search-nav .categories-search,
+.search-nav input,
+.search-nav .search-input,
+.search-nav span,
+.search-nav div {
+  float: left;
+}
 #search_value {
   height: 40px;
   border-radius: 0;
 }
 .dropdown-menu {
-  top: 61%;
   border-radius: 0;
+  margin: 0;
+  padding: 0 0;
 }
 .cart {
   margin-right: 20px;
@@ -456,6 +474,9 @@ footer .menu ul li {
 .bella-cat .vert-category ul li:hover a {
   color: #f84cb9;
   background: #fff;
+}
+.icon-facebook {
+  color: #2f4b93 !important;
 }
 .login-page {
   width: 360px;
