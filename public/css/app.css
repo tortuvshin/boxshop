@@ -256,17 +256,29 @@ footer .menu ul li {
   float: left;
   margin-left: 5px;
 }
-.cat-controller-nav form .input-group button {
+.header-search-row {
+  width: 100%;
   float: left;
+  height: 120px;
+  position: relative;
+}
+.cat-controller-nav {
+  height: 100%;
+}
+.cat-controller-nav form {
+  height: 100%;
 }
 .search-nav {
+  height: 100%;
   border-bottom: 1px solid #e3e3e3;
-  height: 140px;
-  margin-top: -20px;
 }
-.search-nav button {
-  height: 40px;
-  border-radius: 0;
+.search-nav a,
+.search-nav .categories-search,
+.search-nav input,
+.search-nav .search-input,
+.search-nav span,
+.search-nav div {
+  float: left;
 }
 .header-top-right-area ul li a span {
   font-family: 'Roboto', sans-serif;
@@ -278,6 +290,7 @@ footer .menu ul li {
   width: 100%;
   height: 40px;
   float: left;
+  position: relative;
   background: #fff;
   border-bottom: 1px solid #e3e3e3;
 }
@@ -287,6 +300,10 @@ footer .menu ul li {
   margin-right: 10px;
   line-height: 40px;
   float: none;
+}
+.header-top ul li i {
+  color: black;
+  font-size: inherit;
 }
 .social-icons ul li {
   display: inline-block;
@@ -327,7 +344,6 @@ footer .menu ul li {
 .navbar-brand-text {
   width: 200px;
   height: 100px;
-  margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 90px;
@@ -335,9 +351,6 @@ footer .menu ul li {
 .categories-search button {
   height: 40px;
   border-radius: 0;
-}
-.search-input {
-  margin-top: 60px;
 }
 .logo-img {
   width: 200px;
@@ -375,7 +388,6 @@ footer .menu ul li {
   font-size: 21px;
   float: left;
   line-height: 1;
-  margin-top: -3px;
   color: white;
 }
 .line-menu {
@@ -1710,6 +1722,16 @@ ul.cp-listed li {
   margin: 0 5px;
   outline: 0;
   border-radius: 5px;
+}
+@media (max-width: 720px) {
+  .navbar-brand-text {
+    display: none;
+  }
+  .line-menu,
+  .cart,
+  .header-top-left-area {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

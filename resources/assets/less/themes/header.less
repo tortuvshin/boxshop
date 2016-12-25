@@ -1,25 +1,27 @@
-.cat-controller-nav {
-	form {
-		.input-group {
-			button {
-				float: left;
-			}
-
-		}
-	}
+.header-search-row {
+    width: 100%;
+    float: left;
+    height: 120px;
+    position: relative;
 }
+
+.cat-controller-nav {
+    height: 100%;
+    form {
+        height: 100%;
+    }
+}
+
 
 .search-nav {
+    height: 100%;
     border-bottom: 1px solid #e3e3e3;
-   	height: 140px;
-   	margin-top: -20px;
 
-   	button {
-   		height: 40px;
-   		border-radius: 0;
-   	}
-
+    a, .categories-search, input, .search-input, span, div {
+        float: left;
+    }
 }
+
 
 
 .header-top-right-area {
@@ -30,25 +32,31 @@
         font-weight: 500;
     }
 }
+
 .header-top {
 	width: 100%;
 	height: 40px;
 	float: left;
+    position: relative;
     background: #fff;
     border-bottom: 1px solid #e3e3e3;
+    
+    ul {    
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 10px;
+            line-height: 40px;
+            float: none;
+
+            i {
+                color:black;
+                font-size: inherit;
+            }
+        }
+    }
 }
 
-.header-top {
-	ul {
-		li {
-			list-style: none;
-			display: inline-block;
-		    margin-right: 10px;
-		    line-height: 40px;
-		    float: none;
-		}
-	}
-}
 
 .social-icons {
 	ul {
@@ -104,7 +112,6 @@
 .navbar-brand-text {
 	width: 200px;
 	height: 100px; 
-	margin-top: 20px; 
 	margin-bottom: 20px; 
 	margin-right: 20px;
 	margin-left: 90px;
@@ -120,7 +127,6 @@
 }
 
 .search-input {
-    margin-top: 60px;
 }
 
 .logo-img{
@@ -162,7 +168,6 @@
     font-size: 21px;
     float: left;
     line-height: 1;
-    margin-top: -3px;
     color: white;
 }
 .line-menu{

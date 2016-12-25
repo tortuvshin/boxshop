@@ -1,27 +1,26 @@
 <div class="navbar-header header-top">
-	<div class="header-top-left-area col-sm-8">
+	<div class="header-top-left-area col-sm-8 col-xs-0">
 		<ul>
 			<li id="ew_social-4" class="widget-container widget_social">						
 				<div class="social-icons">
 					<ul>
-						<li class="icon-facebook"><a href="http://www.facebook.com/#" target="_blank" title="Become our fan"><i class="fa fa-facebook" style="color:black;    font-size: inherit;"></i></a></li>				
+						<li class="icon-facebook"><a href="http://www.facebook.com/#" target="_blank" title="Become our fan"><i class="fa fa-facebook"></i></a></li>				
 						
-						<li class="icon-twitter"><a href="http://twitter.com/#" target="_blank" title="Follow us"><i class="fa fa-twitter" style="color:black;    font-size: inherit;"></i></a></li>
+						<li class="icon-twitter"><a href="http://twitter.com/#" target="_blank" title="Follow us"><i class="fa fa-twitter"></i></a></li>
 						
-						<li class="icon-google"><a href="https://plus.google.com/u/0/#" target="_blank" title="Get updates"><i class="fa fa-google-plus" style="color:black;    font-size: inherit;"></i></a></li>
+						<li class="icon-google"><a href="https://plus.google.com/u/0/#" target="_blank" title="Get updates"><i class="fa fa-google-plus"></i></a></li>
 						
-						<li class="icon-pin"><a href="http://www.pinterest.com/#" target="_blank" title="See Us"><i class="fa fa-pinterest" style="color:black;    font-size: inherit;"></i></a></li>
+						<li class="icon-pin"><a href="http://www.pinterest.com/#" target="_blank" title="See Us"><i class="fa fa-pinterest"></i></a></li>
 						
-						<li class="icon-instagram"><a href="http://instagram.com/#" target="_blank" title="Follow us"><i class="fa fa-instagram" style="color:black;    font-size: inherit;"></i></a></li>
+						<li class="icon-instagram"><a href="http://instagram.com/#" target="_blank" title="Follow us"><i class="fa fa-instagram"></i></a></li>
 						
-						
-						<li class="icon-linkedin"><a href="https://www.linkedin.com/pub/#" target="_blank" title="See us"><i class="fa fa-linkedin" style="color:black;    font-size: inherit;"></i></a></li>
+						<li class="icon-linkedin"><a href="https://www.linkedin.com/pub/#" target="_blank" title="See us"><i class="fa fa-linkedin"></i></a></li>
 					</ul>
 				</div>
 			</li>
 		</ul>
 	</div>
-	<div class="header-top-right-area col-sm-4">
+	<div class="header-top-right-area col-sm-4 col-xs-12">
 		<ul>
 			@include('user.partial.menu_top')
 				
@@ -73,106 +72,103 @@
 		</ul>
 	</div>
 </div>
-<div class="row">
+<div class="header-search-row">
+	<nav ng-controller="CategoriesController" class="cat-controller-nav">
+	{!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
+	<div class="search-nav">
+
+		<a href="/home">
+			@if($main_company['logo'])
+				<span class="navbar-brand-text">
+					<img class="logo-img" src="{{$main_company['logo']}}" alt="">
+				</span>
+			@else
+				<span class="navbar-brand-text">
+					<img src="img/logo-1.png" >
+				</span>
+			@endif
+
+		</a>
+		<span class="categories-search">
+			<button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+				<span ng-bind="catSelected.name || '{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}'">
+					{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}
+					</span> <span class="caret">
+				</span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				@foreach($categories_menu as $categorie_menu)
+					<li >
+						<a href="javascript:void(0)"
+						   ng-click="setCategorie({{ $categorie_menu['id'] }},'{{ $categorie_menu['name'] }}')" >
+							{{ $categorie_menu['name'] }}
+						</a>
+					</li>
+				@endforeach
+
+			</ul>
+		</span>
+		<input type="hidden" name="category" value="[[refine() || '{{Request::get('category')}}']]"/>
+
+		@include('partial.search_box',['angularController' => 'AutoCompleteCtrl', 'idSearch'=>'search'])
+
+		<span class="search-btn">
+			<button class="btn btn-default glyphicon glyphicon-search" type="submit"></button>
+		</span>
 
 
 
-<nav ng-controller="CategoriesController" class="cat-controller-nav">
-{!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
-<div class="input-group search-nav">
+		<div class="cart">
 
-	<a href="/home">
-		@if($main_company['logo'])
-			<span class="navbar-brand-text">
-				<img class="logo-img" src="{{$main_company['logo']}}" alt="">
-			</span>
-		@else
-			<span class="navbar-brand-text">
-				<img src="img/logo-1.png" >
-			</span>
-		@endif
+		<ul class="nav navbar-nav">
+			<li class="dropdown">
+				<a href="#cart" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+					@if(Auth::user()&&Auth::user()->getCartCount())
+					<span class="badge badge-cart">{{ Auth::user()->getCartCount() }} </span>
+					@elseif(!Auth::user() && is_array(Session::get('user.cart_content')) && array_sum(Session::get('user.cart_content')))
+					<span class="badge badge-cart">{{ array_sum(Session::get('user.cart_content')) }} </span>
+					@endif
 
-	</a>
-	<span class="input-group-btn categories-search">
-		<button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-			<span ng-bind="catSelected.name || '{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}'">
-				{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}
-				</span> <span class="caret">
-			</span>
-		</button>
-		<ul class="dropdown-menu" role="menu">
-			@foreach($categories_menu as $categorie_menu)
-				<li >
-					<a href="javascript:void(0)"
-					   ng-click="setCategorie({{ $categorie_menu['id'] }},'{{ $categorie_menu['name'] }}')" >
-						{{ $categorie_menu['name'] }}
-					</a>
-				</li>
-			@endforeach
+					<span class="glyphicon glyphicon-shopping-cart" style="font-size: 10px; color: white;"> 0ITEM ₮0.00</span>
 
+				</a>
+
+	            @if(Auth::user() && Auth::user()->getCartCount() > 0)
+	                <ul class="dropdown-menu cart" role="menu">
+	                    @foreach(Auth::user()->getCartContent() as $orderDetail)
+	                        <li>
+	                            <a href="{{ route('products.show',[$orderDetail->product->id]) }}" >
+
+	                                    <img src="{{ $orderDetail->product->FirstImage }}" alt="{{ $orderDetail->product->name }}" width="32" height="32" style="float: left; margin-right: 2px"/>
+	                                    {{ $orderDetail->product->name }}
+	                                     - {{ trans('store.quantity') }}: {{ $orderDetail->quantity }}
+
+	                            </a>
+	                        </li>
+	                    @endforeach
+	                    <li><a class="btn btn-default" href="{{ route('orders.show_cart') }}" role="button">{{ trans('store.view_cart') }}</a></li>
+	                </ul>
+	            @elseif(!Auth::user() && is_array(Session::get('user.cart_content')))
+	                <ul class="dropdown-menu cart" role="menu">
+	                @foreach(Session::get('user.cart_content') as $product_id => $quantity)
+	                @if($product=\App\Product::find($product_id))
+	                    <li>
+	                        <a href="{{ route('products.show',[$product_id]) }}" >
+
+	                                <img src="{{ $product->first_image }}" width="32" height="32" style="float: left; margin-right: 2px"/>
+	                                {{ $product->name }}
+	                                 - {{ trans('store.quantity') }}: {{ $quantity }}
+
+	                        </a>
+	                    </li>
+	                @endif
+	                @endforeach
+	                <li><a class="btn btn-default" href="{{ route('orders.show_cart') }}" role="button" >{{ trans('store.view_cart') }}</a></li>
+	                </ul>
+	            @endif
+			</li>
 		</ul>
-	</span>
-	<input type="hidden" name="category" value="[[refine() || '{{Request::get('category')}}']]"/>
-
-	@include('partial.search_box',['angularController' => 'AutoCompleteCtrl', 'idSearch'=>'search'])
-
-	<span class="input-group-btn">
-		<button class="btn btn-default glyphicon glyphicon-search" type="submit"></button>
-	</span>
-
-
-
-	<div class="cart">
-
-	<ul class="nav navbar-nav">
-		<li class="dropdown">
-			<a href="#cart" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				@if(Auth::user()&&Auth::user()->getCartCount())
-				<span class="badge badge-cart">{{ Auth::user()->getCartCount() }} </span>
-				@elseif(!Auth::user() && is_array(Session::get('user.cart_content')) && array_sum(Session::get('user.cart_content')))
-				<span class="badge badge-cart">{{ array_sum(Session::get('user.cart_content')) }} </span>
-				@endif
-
-				<span class="glyphicon glyphicon-shopping-cart" style="font-size: 10px; color: white;"> 0ITEM ₮0.00</span>
-
-			</a>
-
-            @if(Auth::user() && Auth::user()->getCartCount() > 0)
-                <ul class="dropdown-menu cart" role="menu">
-                    @foreach(Auth::user()->getCartContent() as $orderDetail)
-                        <li>
-                            <a href="{{ route('products.show',[$orderDetail->product->id]) }}" >
-
-                                    <img src="{{ $orderDetail->product->FirstImage }}" alt="{{ $orderDetail->product->name }}" width="32" height="32" style="float: left; margin-right: 2px"/>
-                                    {{ $orderDetail->product->name }}
-                                     - {{ trans('store.quantity') }}: {{ $orderDetail->quantity }}
-
-                            </a>
-                        </li>
-                    @endforeach
-                    <li><a class="btn btn-default" href="{{ route('orders.show_cart') }}" role="button">{{ trans('store.view_cart') }}</a></li>
-                </ul>
-            @elseif(!Auth::user() && is_array(Session::get('user.cart_content')))
-                <ul class="dropdown-menu cart" role="menu">
-                @foreach(Session::get('user.cart_content') as $product_id => $quantity)
-                @if($product=\App\Product::find($product_id))
-                    <li>
-                        <a href="{{ route('products.show',[$product_id]) }}" >
-
-                                <img src="{{ $product->first_image }}" width="32" height="32" style="float: left; margin-right: 2px"/>
-                                {{ $product->name }}
-                                 - {{ trans('store.quantity') }}: {{ $quantity }}
-
-                        </a>
-                    </li>
-                @endif
-                @endforeach
-                <li><a class="btn btn-default" href="{{ route('orders.show_cart') }}" role="button" >{{ trans('store.view_cart') }}</a></li>
-                </ul>
-            @endif
-		</li>
-	</ul>
-</div>
+	</div>
 
 </div>
 {!! Form::close() !!}
