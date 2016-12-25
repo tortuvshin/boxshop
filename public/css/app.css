@@ -98,7 +98,7 @@ a.remove {
   font-weight: bold;
 }
 a.remove:hover {
-  color: #ed764f;
+  color: #e94444;
 }
 .cart-btn-black {
   background: #3c3b48;
@@ -183,7 +183,7 @@ footer .menu ul li {
   color: #c5c5c5;
 }
 .line {
-  background: #ed764f;
+  background: #e94444;
   height: 2px;
   display: block;
   margin: 6px 0 30px;
@@ -325,7 +325,7 @@ footer .menu ul li {
 }
 .cart .nav {
   height: 40px;
-  background-color: #ed764f;
+  background-color: #e94444;
   border-radius: 0;
 }
 .cart .nav li {
@@ -336,7 +336,7 @@ footer .menu ul li {
   color: black ;
 }
 .cart .nav li a:hover {
-  background: #ed764f;
+  background: #e94444;
 }
 .input-group .form-control {
   width: 100%;
@@ -365,7 +365,7 @@ footer .menu ul li {
   position: relative;
 }
 .full-category {
-  background-color: #ed764f;
+  background-color: #e94444;
   color: white;
   cursor: pointer;
   font-size: 14px;
@@ -500,7 +500,7 @@ footer .menu ul li {
 .login button:hover,
 .login button:active,
 .login button:focus {
-  background: #ed764f;
+  background: #e94444;
 }
 .login .message {
   margin: 15px 0 0;
@@ -539,7 +539,7 @@ footer .menu ul li {
   background-color: white;
 }
 .price {
-  color: #ed764f;
+  color: #e94444;
 }
 .social {
   float: right;
@@ -664,18 +664,18 @@ h6 {
   border: 1px #f2f2f2 solid;
 }
 .product-actions .wrapper:hover .glyphicon {
-  color: #fb5f00;
+  color: #e94444;
 }
 .product-actions .wrapper:hover #card_text {
-  color: #e64916;
+  color: #e94444;
 }
 .product-actions .glyphicon-shopping-cart {
-  color: #ed764f;
+  color: #e94444;
   margin-right: 5%;
 }
 .product-actions .glyphicon-heart,
 .product-actions .glyphicon-eye-open {
-  color: #bbbfc7;
+  color: #e94444;
   width: 100%;
   text-align: center;
 }
@@ -797,7 +797,7 @@ h6 {
 .testtab > li.active > a:hover,
 .testtab > li.active > a:focus {
   border-top-style: solid;
-  border-top-color: #ed764f;
+  border-top-color: #e94444;
   color: #000;
   background-color: white;
   border-bottom: none;
@@ -850,7 +850,7 @@ h6 {
   font-size: 25px;
 }
 .get-time-btn {
-  background: #ed764f;
+  background: #e94444;
   border-radius: 0px;
   border: none;
   padding: 10% 35%;
@@ -862,9 +862,9 @@ h6 {
   background: #3c3b48;
 }
 .sidebar-navbar-collapse .list-group .list-group-item {
+  width: 100%;
   position: relative;
   display: block;
-  width: 100%;
 }
 .list-group-item.active {
   background-color: #e7e7e7;
@@ -875,47 +875,47 @@ h6 {
   background: #b3b3b3;
 }
 .product-add {
-  background-color: #ed764f !important;
-  border-color: #ed764f !important;
+  background-color: #e94444 !important;
+  border-color: #e94444 !important;
 }
 .product-add .btn-info:hover {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-success {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-success:hover {
-  background-color: #ed764f !important;
-  border-color: #ed764f !important;
+  background-color: #e94444 !important;
+  border-color: #e94444 !important;
 }
 .btn-info:hover {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-info {
   color: #fff;
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-primary {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 a:hover,
 a:focus {
-  color: #ed764f;
+  color: #e94444;
 }
 .btn-primary:hover {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-info:active:hover,
 .btn-info.active:hover,
@@ -926,24 +926,24 @@ a:focus {
 .btn-info:active.focus,
 .btn-info.active.focus,
 .open > .dropdown-toggle.btn-info.focus {
-  background-color: #ed764f !important;
-  border-color: #ed764f !important;
+  background-color: #e94444 !important;
+  border-color: #e94444 !important;
 }
 .btn-primary:hover {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-primary {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn btn-primary btn-sm {
-  background-color: #ed764f !important;
-  border-color: #ed764f !important;
+  background-color: #e94444 !important;
+  border-color: #e94444 !important;
 }
 .btn-primary:hover {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -954,28 +954,28 @@ a:focus {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-primary:hover {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-primary:hover {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-primary:hover {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-primary:hover {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-primary {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .wishpanel > .panel-heading {
   color: #000;
@@ -986,15 +986,15 @@ a:focus {
   border-color: #f5f5f5;
 }
 .btn-info {
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #fff;
-  background-color: #ed764f;
-  border-color: #ed764f;
+  background-color: #e94444;
+  border-color: #e94444;
 }
 .cp_about-section {
   float: left;
