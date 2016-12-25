@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 html,
 body {
   height: 100%;
   font-weight: 300;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: white;
 }
 a {
@@ -149,7 +149,7 @@ a.remove:hover {
   font-size: 17px;
 }
 .categories-panel {
-  max-width: 250px;
+  max-width: 350px;
 }
 .left-filter {
   padding-left: 30px;
@@ -281,7 +281,7 @@ footer .menu ul li {
   float: left;
 }
 .header-top-right-area ul li a span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 500;
@@ -514,10 +514,6 @@ footer .menu ul li {
 .btn-back {
   margin-top: 1%;
 }
-.global-panels {
-  margin-left: 4%;
-  margin-right: 4%;
-}
 .pd-image {
   width: 100px;
   height: 100px;
@@ -597,7 +593,8 @@ footer .menu ul li {
   margin: 40px 40px 20px;
 }
 .global-panels {
-  margin-left: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .product-img-box {
   position: relative;
@@ -617,8 +614,7 @@ h6 a {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  src: url(https://fonts.googleapis.com/css?family=Lato|Raleway) format("truetype");
+  font-family: "Roboto", sans-serif;
 }
 h6 {
   text-align: center;

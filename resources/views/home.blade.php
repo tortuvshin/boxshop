@@ -9,7 +9,7 @@
     <section class="products_view">
 
  
-    <div class="container">
+    <div class="home-layout">
 
         <div class="row">
 
@@ -126,12 +126,7 @@
                     </div>
                 
              {{-- end carousel --}}
-<div class="row"><br></div>
-
-
-
-<br>
-<div class="container container-tab" style="box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3); margin-bottom: 20px;">
+<div class="product-features" style="box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3); margin-bottom: 20px;">
 <ul class="nav testtab nav-justified">
   <li style="border-left: none" class="active"><a href="#tab_a" data-toggle="pill">Өнөөдөр их зарагдсан</a></li>
   <li style="border-right: none"><a href="#tab_b" data-toggle="pill">7 хоног их зарагдсан </a></li>
@@ -233,7 +228,7 @@
                       
                     <div class="col-lg-2" style="       padding-right: 0;
     padding-left: 0px;">
-                        <div class="" style="    background-color: #ed764f;">
+                        <div class="" style="    background-color: #e94444;">
                             <p style="text-transform: uppercase;
     font-size: 25px;
     line-height: 30px;
@@ -290,7 +285,7 @@
                         </ul>
                         </div>
                     </div>
-                    <div class="col-lg-10" style="border-top: 2px solid #ed764f; padding: 20px">
+                    <div class="col-lg-10" style="border-top: 2px solid #e94444; padding: 20px">
 
                     <div class="col-lg-5 " >
                          <div class="box foo ">   
@@ -685,7 +680,7 @@
             @parent
 
             @section('center_content')
-                <div class="container" style="     padding-left: 0px;
+                <div class="product-trend" style="     padding-left: 0px;
     margin-bottom: 20px;
     padding-right: 0px;
     box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3);

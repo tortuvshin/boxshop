@@ -9,7 +9,7 @@
 @stop
 
 @section('content')
-<div class="container">
+<div class="products-list">
     <div id="menu-top-category">
          <div class="row">&nbsp;</div>
          <ol class="breadcrumb">

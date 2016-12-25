@@ -70,11 +70,10 @@ a.remove{
 	color: #dcdcdc;
 	font-size:25px;
 	font-weight:bold;
+	&:hover{
+		color:@bella-red;
+	}
 }
-a.remove:hover{
-	color:@bella-red;
-}
-
 
 .cart-btn-black{
 	background:@dark-color;
@@ -82,14 +81,13 @@ a.remove:hover{
 	border-radius:0px;
 	color:white;
 	text-transform: uppercase;
-}
-
-.cart-btn-black:hover{
-	background: white;
-	color:@dark-color;
-	border-color:@dark-color;
-	.fa{
-		background:@dark-color;
+	&:hover{
+		background: white;
+		color:@dark-color;
+		border-color:@dark-color;
+		.fa{
+			background:@dark-color;
+		}
 	}
 }
 
@@ -102,10 +100,8 @@ a.remove:hover{
 	.fa{
 		background:white;
 	}
-
-}
-
-.cart-btn-white:hover{
-	background:@dark-color;
-	color:white;
+	&:hover{
+		background:@dark-color;
+		color:white;
+	}
 }
