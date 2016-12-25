@@ -36,7 +36,7 @@
 
         </div>
 
-        <div class="col-xs-4 col-sm-4 col-md-4 newsletter" ng-controller="NewslettersCtrl">
+        <div class="col-xs-4 col-sm-4 col-md-4 newsletter">
             <h3 class="widget-title heading-title" style="color: white;">
 
                         Мэдээлэл авах                   </h3>
