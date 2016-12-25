@@ -38,9 +38,13 @@ h3 {
 }
 .glyphicon {
   font-family: 'Glyphicons Halflings' !important;
+  top: 0;
 }
 .btn {
   border-radius: 0;
+}
+footer {
+  float: left;
 }
 .cart {
   margin-right: 0px;
@@ -157,9 +161,6 @@ a.remove:hover {
 .categories-panel {
   max-width: 350px;
 }
-.left-filter {
-  padding-left: 30px;
-}
 footer {
   background: #3c3b48;
   margin-top: 60px;
@@ -270,6 +271,9 @@ footer .menu ul li {
   background: #fff;
   border-bottom: 1px solid #e3e3e3;
 }
+.header-top ul {
+  padding-left: 0;
+}
 .header-top ul li {
   list-style: none;
   display: inline-block;
@@ -304,14 +308,30 @@ footer .menu ul li {
   line-height: 40px;
   float: none;
 }
+.categories-search {
+  position: relative;
+}
+#menu-top-category {
+  width: 100%;
+  float: left;
+}
 .header-search-row {
   width: 100%;
   float: left;
   height: 120px;
   position: relative;
 }
-.cat-controller-nav {
+.logo {
+  width: 30%;
   height: 100%;
+  float: left;
+}
+.cat-controller-nav {
+  width: 70%;
+  height: 100%;
+  float: right;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .cat-controller-nav form {
   height: 100%;
@@ -320,13 +340,21 @@ footer .menu ul li {
   height: 100%;
   border-bottom: 1px solid #3c3b48;
 }
-.search-nav a,
-.search-nav .categories-search,
-.search-nav input,
-.search-nav .search-input,
-.search-nav span,
-.search-nav div {
+.search-nav a {
   float: left;
+}
+.search-nav .categories-search,
+.search-nav .search-input,
+.search-nav .search-btn,
+.search-nav .cart {
+  float: left;
+  margin-top: 40px;
+}
+.search-nav .search-input {
+  width: 50%;
+}
+.search-nav .search-btn button {
+  height: 40px;
 }
 #search_value {
   height: 40px;
@@ -554,6 +582,16 @@ footer .menu ul li {
 }
 .container-fluid {
   background-color: white;
+}
+.products-list {
+  float: left;
+}
+.product-features {
+  float: left;
+}
+.products_view {
+  width: 100%;
+  height: 100%;
 }
 .price {
   color: #e94444;
@@ -856,6 +894,9 @@ h6 {
 .home-carousel-box {
   padding-right: 0 !important;
   padding-left: 0 !important;
+}
+.left-filter {
+  padding-left: 30px;
 }
 .description {
   width: 100%;

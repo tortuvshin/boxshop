@@ -2,11 +2,13 @@
     width: 100%;
     height: 40px;
     float: left;
+    padding-left: 15px;
     position: relative;
     background: #fff;
     border-bottom: 1px solid #e3e3e3;
     
     ul {    
+        padding-left: 0;
         li {
             list-style: none;
             display: inline-block;
@@ -55,6 +57,14 @@
     }
 }
 
+.categories-search {
+    position: relative;
+}
+
+#menu-top-category {
+    width: 100%;
+    float: left;
+}
 
 .header-search-row {
     width: 100%;
@@ -63,8 +73,18 @@
     position: relative;
 }
 
-.cat-controller-nav {
+.logo {
+    width: 30%;
     height: 100%;
+    float: left;
+}
+
+.cat-controller-nav {
+    width: 70%;
+    height: 100%;
+    float: right;
+    padding-right: 30px;
+    padding-left: 30px;
     form {
         height: 100%;
     }
@@ -75,8 +95,21 @@
     height: 100%;
     border-bottom: 1px solid @dark-color;
 
-    a, .categories-search, input, .search-input, span, div {
+    a {
         float: left;
+    }
+    .categories-search, .search-input, .search-btn, .cart {
+        float: left;
+        margin-top: 40px;
+    }
+
+    .search-input {
+        width: 50%;
+    }
+    .search-btn {
+        button {
+            height: 40px;
+        }
     }
 }
 

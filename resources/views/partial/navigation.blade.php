@@ -73,22 +73,22 @@
 	</div>
 </div>
 <div class="header-search-row">
+	<a class="logo" href="/home">
+		@if($main_company['logo'])
+			<span class="navbar-brand-text">
+				<img class="logo-img" src="{{$main_company['logo']}}" alt="">
+			</span>
+		@else
+			<span class="navbar-brand-text">
+				<img src="img/logo-1.png" >
+			</span>
+		@endif
+
+	</a>
 	<nav ng-controller="CategoriesController" class="cat-controller-nav">
 	{!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
 	<div class="search-nav">
 
-		<a href="/home">
-			@if($main_company['logo'])
-				<span class="navbar-brand-text">
-					<img class="logo-img" src="{{$main_company['logo']}}" alt="">
-				</span>
-			@else
-				<span class="navbar-brand-text">
-					<img src="img/logo-1.png" >
-				</span>
-			@endif
-
-		</a>
 		<span class="categories-search">
 			<button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 				<span ng-bind="catSelected.name || '{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}'">
@@ -134,12 +134,12 @@
 				</a>
 
 	            @if(Auth::user() && Auth::user()->getCartCount() > 0)
-	                <ul class="dropdown-menu cart" role="menu">
+	                <ul class="dropdown-menu" role="menu">
 	                    @foreach(Auth::user()->getCartContent() as $orderDetail)
 	                        <li>
 	                            <a href="{{ route('products.show',[$orderDetail->product->id]) }}" >
 
-	                                    <img src="{{ $orderDetail->product->FirstImage }}" alt="{{ $orderDetail->product->name }}" width="32" height="32" style="float: left; margin-right: 2px"/>
+	                                    <img src="{{ $orderDetail->product->FirstImage }}" alt="{{ $orderDetail->product->name }}" width="32" height="32"/>
 	                                    {{ $orderDetail->product->name }}
 	                                     - {{ trans('store.quantity') }}: {{ $orderDetail->quantity }}
 
@@ -155,7 +155,7 @@
 	                    <li>
 	                        <a href="{{ route('products.show',[$product_id]) }}" >
 
-	                                <img src="{{ $product->first_image }}" width="32" height="32" style="float: left; margin-right: 2px"/>
+	                                <img src="{{ $product->first_image }}" width="32" height="32"/>
 	                                {{ $product->name }}
 	                                 - {{ trans('store.quantity') }}: {{ $quantity }}
 
