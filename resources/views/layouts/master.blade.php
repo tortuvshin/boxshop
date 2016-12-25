@@ -54,7 +54,7 @@
 		@section('panels')
 
 			<div>
-				<div class="row global-panels">
+				<div class="global-panels">
 
 					{{-- left panel --}}
 					@if (isset($panel['left']))

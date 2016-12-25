@@ -11,14 +11,12 @@
  
     <div class="home-layout">
 
-        <div class="row">
-
 
             {{-- -------------------------------------------------- --}}
             {{-- -------------------- carousel -------------------- --}}
             {{-- -------------------------------------------------- --}}
 
-            <div class="col-md-3 bella-cat mobile">
+            <div class="col-md-3 col-sm-2 bella-cat mobile">
                 <script>
                     // $(function() {
                     //     var demo1 = $("#demo1").slippry({
@@ -72,58 +70,58 @@
                 </div>
             </div>
 
-            <div class="col-md-9 home-carousel-box">
+            <div class="col-md-9 col-sm-10 home-carousel-box">
 
-                        <div id="store-home-carousel" class="carousel slide" data-ride="carousel">
+                <div id="store-home-carousel" class="carousel slide" data-ride="carousel">
 
-                            {{-- indicators --}}
-                            <ol class="carousel-indicators">
-                                @for ($s=0; $s<count($suggestion['carousel']); $s++)
-                                    <li data-target="#store-home-carousel" data-slide-to="{{ $s }}" @if ($s==0) class="active" @endif ></li>
-                                @endfor
-                            </ol>
+                    {{-- indicators --}}
+                    <ol class="carousel-indicators">
+                        @for ($s=0; $s<count($suggestion['carousel']); $s++)
+                            <li data-target="#store-home-carousel" data-slide-to="{{ $s }}" @if ($s==0) class="active" @endif ></li>
+                        @endfor
+                    </ol>
 
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
 
-                            <?php $pos = 0; ?>
-                            @foreach ($suggestion['carousel'] as $product)
+                    <?php $pos = 0; ?>
+                    @foreach ($suggestion['carousel'] as $product)
 
-                                {{-- slide items --}}
-                                <div class="item @if ($i++==0) active @endif">
+                        {{-- slide items --}}
+                        <div class="item @if ($i++==0) active @endif">
 
-                                    @if (isset($banner[$pos]))
-                                        <img src= "{{ $banner[$pos++] }}" alt="{{ $product['name'] }}">
-                                    @else
-                                        <img src="/img/no-image.jpg" alt="{{ $product['name'] }}">
-                                    @endif
-                                    {{-- panel --}}
-                                    <div class="jumbotron {{ $jumbotronClasses[mt_rand(0,1)] }} ">
+                            @if (isset($banner[$pos]))
+                                <img src= "{{ $banner[$pos++] }}" alt="{{ $product['name'] }}">
+                            @else
+                                <img src="/img/no-image.jpg" alt="{{ $product['name'] }}">
+                            @endif
+                            {{-- panel --}}
+                            <div class="jumbotron {{ $jumbotronClasses[mt_rand(0,1)] }} ">
 
-                                        <h5>{{ $product['name'] }}</h5>
+                                <h5>{{ $product['name'] }}</h5>
 
-                                        <p class = "description">{{ str_limit($product['description'], 200,'...') }}</p>
+                                <p class = "description">{{ str_limit($product['description'], 200,'...') }}</p>
 
-                                        @if ($product['price'] > 0)
-                                            <p class = "price">
-                                                <strong>{!! \Utility::showPrice($product['price']) !!}</strong>
-                                            </p>
-                                        @endif
+                                @if ($product['price'] > 0)
+                                    <p class = "price">
+                                        <strong>{!! \Utility::showPrice($product['price']) !!}</strong>
+                                    </p>
+                                @endif
 
-                                        <hr>
+                                <hr>
 
-                                        f
-                                    </div>
+                                f
+                            </div>
 
-                                </div> {{-- end item --}}
+                        </div> {{-- end item --}}
 
-                            @endforeach
+                    @endforeach
 
-                            </div> {{-- end carousel-inner --}}
+                    </div> {{-- end carousel-inner --}}
 
-                        </div>
+                </div>
 
-                    </div>
+            </div>
                 
              {{-- end carousel --}}
 <div class="product-features" style="box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3); margin-bottom: 20px;">
@@ -222,9 +220,7 @@
 
   <!-- product section start-->
               <section>
-                <div class="container" style="padding-left: 0px;     margin-bottom: 20px;
-    padding-right: 0px;
-    box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3);">
+                <div class="home-cat-trend">
                       
                     <div class="col-lg-2" style="       padding-right: 0;
     padding-left: 0px;">
@@ -680,12 +676,7 @@
             @parent
 
             @section('center_content')
-                <div class="product-trend" style="     padding-left: 0px;
-    margin-bottom: 20px;
-    padding-right: 0px;
-    box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3);
-    margin-right: -15px;
-    margin-left: -15px;">
+                <div class="product-trend" style="">
                 {{-- viewed suggestions --}}
                 <div class="clearfix home-products-wrapper">
                
@@ -758,10 +749,6 @@
             {{-- -------------------------------------------------- --}}
             {{-- -------------------- Left Bar -------------------- --}}
             {{-- -------------------------------------------------- --}}
-
-            
-        </div> {{-- end container-fluid --}}
-
     </section> {{-- end products_view --}}
 
     

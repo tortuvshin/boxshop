@@ -73,7 +73,7 @@
 	</div>
 </div>
 <div class="header-search-row">
-	<a class="logo" href="/home">
+	<a class="logo col-md-3" href="/home">
 		@if($main_company['logo'])
 			<span class="navbar-brand-text">
 				<img class="logo-img" src="{{$main_company['logo']}}" alt="">
@@ -85,7 +85,7 @@
 		@endif
 
 	</a>
-	<nav ng-controller="CategoriesController" class="cat-controller-nav">
+	<nav ng-controller="CategoriesController" class="cat-controller-nav col-md-9">
 	{!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
 	<div class="search-nav">
 

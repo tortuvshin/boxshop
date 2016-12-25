@@ -322,12 +322,10 @@ footer .menu ul li {
   position: relative;
 }
 .logo {
-  width: 30%;
   height: 100%;
   float: left;
 }
 .cat-controller-nav {
-  width: 70%;
   height: 100%;
   float: right;
   padding-right: 30px;
@@ -338,7 +336,6 @@ footer .menu ul li {
 }
 .search-nav {
   height: 100%;
-  border-bottom: 1px solid #3c3b48;
 }
 .search-nav a {
   float: left;
@@ -389,10 +386,7 @@ footer .menu ul li {
 }
 .navbar-brand-text {
   width: 200px;
-  height: 100px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 90px;
+  height: 100%;
 }
 .categories-search button {
   height: 40px;
@@ -400,8 +394,10 @@ footer .menu ul li {
 }
 .logo-img {
   width: 200px;
-  height: 117px;
-  margin-bottom: 10px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .header-bottom-content {
   width: 100%;
@@ -410,6 +406,10 @@ footer .menu ul li {
   background-color: #3c3b48;
   position: relative;
 }
+.header-bottom-content div {
+  padding-right: 0;
+  padding-left: 0;
+}
 .full-category {
   background-color: #e94444;
   color: white;
@@ -417,8 +417,16 @@ footer .menu ul li {
   font-size: 14px;
   font-weight: normal;
   margin: 0;
-  padding: 13px 1px;
+  padding: 14px 0;
   text-transform: uppercase;
+}
+.full-category i {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 21px;
+  float: left;
+  line-height: 0.8;
+  color: white;
 }
 .product-items-box .item-box .title h3 a:hover {
   text-decoration: -moz-anchor-decoration;
@@ -427,14 +435,6 @@ footer .menu ul li {
   margin: 0 -6px 0 0px !important;
   padding-left: 12px;
   padding-right: 12px;
-}
-.full-category i {
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 21px;
-  float: left;
-  line-height: 1;
-  color: white;
 }
 .line-menu {
   display: -webkit-box;
@@ -652,8 +652,7 @@ footer .menu ul li {
   margin: 40px 40px 20px;
 }
 .global-panels {
-  margin-left: 20px;
-  margin-right: 20px;
+  float: left;
 }
 .product-img-box {
   position: relative;
@@ -897,6 +896,30 @@ h6 {
 }
 .left-filter {
   padding-left: 30px;
+}
+.home-cat-trend {
+  float: left;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  padding-right: 0px;
+  box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3);
+}
+.product-trend {
+  float: left;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  padding-right: 0px;
+  box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3);
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.product-features {
+  float: left;
+  box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3);
+  margin-bottom: 20px;
+}
+.home-layout {
+  float: left;
 }
 .description {
   width: 100%;
