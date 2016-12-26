@@ -109,7 +109,7 @@
 	        	<h1 class="price">{{ \Utility::showPrice($product->price) }}</h1>
 	        </div>
 				
-				<div class="social icon">
+				<div class="social ">
 				<button type="button" id="facebook" class="btn btn-sm full-width">
 									<span class="fa fa-facebook-square "></span>&nbsp;
 									{{ trans('globals.share_on_facebook') }}
