@@ -109,20 +109,17 @@
 	        	<h1 class="price">{{ \Utility::showPrice($product->price) }}</h1>
 	        </div>
 				
-				<div class="social ">
+				<div class="social icon">
 				<button type="button" id="facebook" class="btn btn-sm full-width">
-									<span class="fa fa-facebook-square"></span>&nbsp;
+									<span class="fa fa-facebook-square "></span>&nbsp;
 									{{ trans('globals.share_on_facebook') }}
 								</button>
 	                  
-	                
-	                 
-	                   
-	                    
-	                    		<a id="twitter" href="https://twitter.com/intent/tweet?hashtags=antvel&text={{ urlencode($product->name) }}&url={{ Request::url() }}&via=_antvel" class="btn twitter btn-sm full-width">
-									<span class="fa fa-twitter-square"></span>&nbsp;
+	      
+	             <a id="twitter" href="https://twitter.com/intent/tweet?hashtags=antvel&text={{ urlencode($product->name) }}&url={{ Request::url() }}&via=_antvel" class="btn twitter btn-sm full-width">
+					<span class="fa fa-twitter-square "></span>&nbsp;
 									{{ trans('globals.share_on_twitter') }}
-								</a>
+			      </a>
 				</div>
 				
 
