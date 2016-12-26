@@ -753,6 +753,18 @@ h6 {
   font-size: 14px;
   height: 30px !important;
 }
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  width: 100%;
+}
+.btn.focus,
+.btn:focus,
+.btn:hover {
+  color: #e94444;
+  text-decoration: none;
+}
 .wpb_tour.wd_prod_style.wpb_content_element .wpb_tour_tabs_wrapper {
   min-height: 250px;
   border: 1px solid #ebebeb;
