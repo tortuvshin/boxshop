@@ -501,9 +501,9 @@
         </div>
         <div class="testimonial-slider-holder">
             <div class="bx-wrapper" style="max-width: 100%;">
-                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 376px;">
+                <div class="bx-viewport" style="text-align: center; width: 100%; overflow: hidden; position: relative; height: 376px;">
                     <ul class="bxslider" id="testimonial-slider" style="width: auto; position: relative;">
-                        <li style="float: none; list-style: none; position: absolute; width: 1130px; z-index: 0; display: block; opacity: 0.918764;">
+                        <li style="float: none; list-style: none; position: absolute;  z-index: 0; display: block; opacity: 0.918764;">
                             <div class="testimonial-holder">
                                 <span class="icon-holder">
 <i class="fa fa-quote-right"></i>
@@ -512,7 +512,7 @@
                                 <strong class="name">“John Doe”</strong>
                             </div>
                         </li>
-                        <li style="float: none; list-style: none; position: absolute; width: 1130px; z-index: 51; display: list-item; opacity: 0.081236;">
+                        <li style="float: none; list-style: none; position: absolute;  z-index: 51; display: list-item; opacity: 0.081236;">
                             <div class="testimonial-holder">
                                 <span class="icon-holder">
 <i class="fa fa-quote-right"></i>

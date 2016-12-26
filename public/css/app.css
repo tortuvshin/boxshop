@@ -605,6 +605,12 @@ footer .menu ul li {
 .social {
   float: right;
 }
+.social button {
+  background-color: blue;
+}
+.social a {
+  background-color: #5ad6e8;
+}
 .quantity {
   width: auto;
   margin: 0 1px;
