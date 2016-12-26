@@ -42,16 +42,16 @@
     <section class="cp_promotion-section pd-b80">
         <div class="row">
             <div class="cp-heding-style1">
-                <h2>Our Promotions</h2>
+                <h2>Шинэ урамшуулал</h2>
             </div>
             <div class="row">
                 <div class="col-md-6">
 
                     <div class="promotion-item">
                         <div class="text">
-                            <h3><a href="product-detail.html">Only Until December </a></h3>
-                            <p>Duisac turpis. Integer rutrum ante eu lacue. Mauris fermeum dictum magn. Saliquam leote llus dolor dapibus eget elementu elfend elit.</p>
-                            <span class="item-discount"><b>20%</b>Discount</span>
+                            <h3><a href="product-detail.html">Шинэ жилийн урамшуулал </a></h3>
+                            <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академи.</p>
+                            <span class="item-discount"><b>20%</b>Хямд</span>
                         </div>
                         <div class="thumb">
                             <img src="http://html.crunchpress.com/big-salon/images/promotion-img-01.jpg" alt="">
@@ -62,9 +62,9 @@
 
                     <div class="promotion-item">
                         <div class="text">
-                            <h3><a href="product-detail.html">Only Until July </a></h3>
-                            <p>Duisac turpis. Integer rutrum ante eu lacue. Mauris fermeum dictum magn. Saliquam leote llus dolor dapibus eget elementu elfend elit.</p>
-                            <span class="item-discount"><b>20%</b>Discount</span>
+                            <h3><a href="product-detail.html">Мартын 8 урамшуулал</a></h3>
+                            <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академи</p>
+                            <span class="item-discount"><b>20%</b>Хямд</span>
                         </div>
                         <div class="thumb">
                             <img src="http://html.crunchpress.com/big-salon/images/promotion-img-02.jpg" alt="">
@@ -83,32 +83,32 @@
                     <div class="col-md-6 col-sm-6">
                         <div class="text-holder left">
                             <div class="info-hold">
-                                <h4>Woman’s Haircut</h4>
-                                <span><b>$40</b>First Length</span>
+                                <h4>Эмэгтэй үс засалт</h4>
+                                <span><b>$40</b></span>
                             </div>
                             <div class="info-hold">
-                                <h4>Woman’s Haircut</h4>
-                                <span><b>$60</b>Second Length</span>
+                                <h4>Эмэгтэй үс засалт</h4>
+                                <span><b>$60</b></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <div class="text-holder right">
                             <div class="info-hold">
-                                <h4>Woman’s Haircut</h4>
-                                <span><b>$70</b>Third Length</span>
+                                <h4>Эмэгтэй үс засалт</h4>
+                                <span><b>$70</b></span>
                             </div>
                             <div class="info-hold">
-                                <h4>Woman’s Haircut</h4>
-                                <span><b>$90</b>Fourth Length</span>
+                                <h4>Эмэгтэй үс засалт</h4>
+                                <span><b>$90</b></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="bottom">
-                <p>Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas. Mellentesque habitant morbi tristique et malesuada famesac turpis egestas habitant morbi tristique senectus et netus et malesuada famesac turpis egestas.</p>
-                <a href="services.html" >More Services</a>
+                <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академитай хамтран ажиллах, туршлага солилцох, сургалт семинар уулзалт зохион байгуулах, дэмжлэг туслалцаа үзүүлэх, мэргэжлийн байгууллага тэдгээрийн уялдаа холбоог нэгтгэх энэ чиглэлээр нийгмийн эмзэг бүлгийн иргэдэд  дэмжлэг туслалцаа үзүүлэх, сургалт зөвлөгөөг нээлттэй хүртээмжтэй хүргэх зорилготойгоор үйл ажиллагаа явуулж буй нийгэмд үйлчилдэг төрийн бус байгууллага юм.</p>
+                <a href="services.html" >Бусад үйлчилгээ</a>
             </div>
         </div>
     </section>
@@ -175,7 +175,7 @@
 <section class="cp_equipment-section pd-tb80">
     <div class="container">
         <div class="cp-heding-style1">
-            <h2>Our Equipment</h2>
+            <h2>Тоног төхөөрөмж</h2>
         </div>
         <div class="row pretty-gallery">
             <div class="col-md-3 col-sm-6">
@@ -497,7 +497,7 @@
 <section class="cp_testimonial-section pd-tb80">
     <div class="container">
         <div class="cp-heding-style1">
-            <h2>What Customers Say</h2>
+            <h2></h2>
         </div>
         <div class="testimonial-slider-holder">
             <div class="bx-wrapper" style="max-width: 100%;">
@@ -508,7 +508,7 @@
                                 <span class="icon-holder">
 <i class="fa fa-quote-right"></i>
 </span>
-                                <p>Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas.Mellentesque habitant morbi tristique et Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas.</p>
+                                <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академитай хамтран ажиллах, туршлага солилцох, сургалт семинар уулзалт зохион байгуулах, дэмжлэг туслалцаа үзүүлэх, мэргэжлийн байгууллага тэдгээрийн уялдаа холбоог нэгтгэх энэ чиглэлээр нийгмийн эмзэг бүлгийн иргэдэд  дэмжлэг туслалцаа үзүүлэх, сургалт зөвлөгөөг нээлттэй хүртээмжтэй хүргэх зорилготойгоор үйл ажиллагаа явуулж буй нийгэмд үйлчилдэг төрийн бус байгууллага юм.</p>
                                 <strong class="name">“John Doe”</strong>
                             </div>
                         </li>
@@ -517,7 +517,7 @@
                                 <span class="icon-holder">
 <i class="fa fa-quote-right"></i>
 </span>
-                                <p>Famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas.Mellentesque habitant morbi tristique et Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada .</p>
+                                <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академитай хамтран ажиллах, туршлага солилцох, сургалт семинар уулзалт зохион байгуулах, дэмжлэг туслалцаа үзүүлэх, мэргэжлийн байгууллага тэдгээрийн уялдаа холбоог нэгтгэх энэ чиглэлээр нийгмийн эмзэг бүлгийн иргэдэд  дэмжлэг туслалцаа үзүүлэх, сургалт зөвлөгөөг нээлттэй хүртээмжтэй хүргэх зорилготойгоор үйл ажиллагаа явуулж буй нийгэмд үйлчилдэг төрийн бус байгууллага юм .</p>
                                 <strong class="name">“Britney Doe”</strong>
                             </div>
                         </li>
