@@ -770,7 +770,11 @@ footer .menu ul li {
   cursor: pointer;
   background-color: #7d85b9;
 }
-.thumbnail .social button {
+.thumbnail #menu-top-category .breadcrumb {
+  padding: 20px 0 !important;
+  margin-bottom: 0 !important;
+}
+.social button {
   background: #3B5997 ;
   -moz-user-select: none;
   background: #2A49A5;
@@ -781,27 +785,35 @@ footer .menu ul li {
   text-decoration: none;
   text-shadow: 0 -1px 0 #2A49A5;
   font: 12px Verdana, sans-serif;
+  cursor: pointer;
 }
-.thumbnail .social a {
+.social fa {
+  background: #3B5997 ;
   -moz-user-select: none;
-  background: #1CA9E2;
-  border: 1px solid #1CA9E2;
-  box-shadow: 0 1px #1CA9E2 inset;
+  background: #2A49A5;
+  border: 1px solid #2A49A5;
+  box-shadow: 0 1px #2A49A5 inset;
   color: white;
   padding: 3px 5px;
   text-decoration: none;
-  text-shadow: 0 -1px 0 #1CA9E2;
+  text-shadow: 0 -1px 0 #2A49A5;
   font: 12px Verdana, sans-serif;
+  cursor: pointer;
 }
-.thumbnail .btn.focus,
-.thumbnail .btn:focus,
-.thumbnail .btn:hover {
-  color: #fff;
+.btn.focus,
+.btn:focus,
+.btn:hover {
+  color: #fdfdfd;
   text-decoration: none;
 }
-.thumbnail #menu-top-category .breadcrumb {
-  padding: 20px 0 !important;
-  margin-bottom: 0 !important;
+.product-image-hover {
+  cursor: pointer;
+}
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+  cursor: pointer;
 }
 .home {
   float: left;
