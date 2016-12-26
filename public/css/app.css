@@ -657,6 +657,7 @@ footer .menu ul li {
   margin: 40px 40px 20px;
 }
 .global-panels {
+  width: 100%;
   float: left;
 }
 .product-img-box {
