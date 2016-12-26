@@ -223,7 +223,7 @@
                 <div class="home-cat-trend">
                       
 
-                    <div class="col-lg-2 prodsec"  >
+                    <div class="col-md-2 prodsec"  >
                         <div  class="prodsectobgcolor">
                             <p class="prodsecto">COSMETIC & Tools</p>
 
@@ -273,7 +273,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-10" class="sectionprodborder">
+                    <div class="col-md-10" class="sectionprodborder">
 
 
                     <div class="col-md-5 " >
@@ -286,8 +286,8 @@
 
                     </div>
 
-                    <div class="col-lg-7 prodpadding">
-                        <div class="col-lg-4 clearfix product-overflow">
+                    <div class="col-md-7 prodpadding">
+                        <div class="col-md-4 clearfix product-overflow">
 
 
     
