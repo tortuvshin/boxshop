@@ -160,6 +160,7 @@ a.remove:hover {
 }
 .categories-panel {
   max-width: 350px;
+  padding-left: 0 !important;
 }
 footer {
   background: #3c3b48;
@@ -269,6 +270,7 @@ footer .menu ul li {
   float: left;
   position: relative;
   background: #fff;
+  padding: 0 3% 0 3%;
   border-bottom: 1px solid #e3e3e3;
 }
 .header-top ul {
@@ -301,6 +303,7 @@ footer .menu ul li {
 }
 .header-top-left {
   height: 100%;
+  padding-left: 0;
 }
 .social-icons ul li {
   display: inline-block;
@@ -319,11 +322,13 @@ footer .menu ul li {
   width: 100%;
   float: left;
   height: 120px;
+  padding: 0 3% 0 3%;
   position: relative;
 }
 .logo {
   height: 100%;
   float: left;
+  padding-left: 0px;
 }
 .cat-controller-nav {
   height: 100%;
@@ -395,9 +400,7 @@ footer .menu ul li {
 .logo-img {
   width: 200px;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  float: left;
 }
 .header-bottom-content {
   width: 100%;
@@ -405,6 +408,7 @@ footer .menu ul li {
   float: left;
   background-color: #3c3b48;
   position: relative;
+  padding: 0 3% 0 3%;
 }
 .header-bottom-content div {
   padding-right: 0;
@@ -765,6 +769,10 @@ h6 {
   color: #e94444;
   text-decoration: none;
 }
+.home {
+  float: left;
+  position: relative;
+}
 .wpb_tour.wd_prod_style.wpb_content_element .wpb_tour_tabs_wrapper {
   min-height: 250px;
   border: 1px solid #ebebeb;
@@ -932,6 +940,7 @@ h6 {
 }
 .home-layout {
   float: left;
+  padding: 0 3% 0 3%;
 }
 .description {
   width: 100%;
