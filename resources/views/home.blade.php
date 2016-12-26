@@ -222,7 +222,7 @@
               <section>
                 <div class="home-cat-trend">
                       
-                    <div class="col-lg-2" style="       padding-right: 0;
+                    <div class="col-md-2" style="       padding-right: 0;
     padding-left: 0px;">
                         <div class="" style="    background-color: #e94444;">
                             <p style="text-transform: uppercase;
@@ -281,9 +281,9 @@
                         </ul>
                         </div>
                     </div>
-                    <div class="col-lg-10" style="border-top: 2px solid #e94444; padding: 20px">
+                    <div class="col-md-10" style="border-top: 2px solid #e94444; padding: 20px">
 
-                    <div class="col-lg-5 " >
+                    <div class="col-md-5 " >
                          <div class="box foo ">   
                             
                     <img alt="Big title goes here" title="Big title goes here" style="    width: 100%;" src="img/product/slidema.png">
@@ -292,9 +292,9 @@
                        
 
                     </div>
-                    <div class="col-lg-7" style="padding-left: 0px;
+                    <div class="col-md-7" style="padding-left: 0px;
     padding-right: 0px;">
-                        <div class="col-lg-4 clearfix product-overflow">
+                        <div class="col-md-4 clearfix product-overflow">
 
     
     <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
@@ -319,7 +319,7 @@
         <div class="product-actions actions">
 
             
-            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
+            <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
                 <div class="glyphicon glyphicon-shopping-cart option ">
                                             <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
                         </form>
@@ -328,12 +328,12 @@
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
                 <div class="glyphicon glyphicon-heart option"></div>
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
             
@@ -355,7 +355,7 @@
 
 
 </div>
-<div class="col-lg-4 clearfix product-overflow">
+<div class="col-md-4 clearfix product-overflow">
 
     
     <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
@@ -380,7 +380,7 @@
         <div class="product-actions actions">
 
             
-            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
+            <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
                 <div class="glyphicon glyphicon-shopping-cart option ">
                                             <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
                         </form>
@@ -389,12 +389,12 @@
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
                 <div class="glyphicon glyphicon-heart option"></div>
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
             
@@ -416,7 +416,7 @@
 
 
 </div>
-<div class="col-lg-4 clearfix product-overflow">
+<div class="col-md-4 clearfix product-overflow">
 
     
     <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
@@ -441,7 +441,7 @@
         <div class="product-actions actions">
 
             
-            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
+            <div class="col-md-6 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
                 <div class="glyphicon glyphicon-shopping-cart option ">
                                             <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
                         </form>
@@ -450,12 +450,12 @@
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
                 <div class="glyphicon glyphicon-heart option"></div>
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
             
@@ -477,7 +477,7 @@
 
 
 </div>
-<div class="col-lg-4 clearfix product-overflow">
+<div class="col-md-4 clearfix product-overflow">
 
     
     <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
@@ -502,7 +502,7 @@
         <div class="product-actions actions">
 
             
-            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
+            <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
                 <div class="glyphicon glyphicon-shopping-cart option ">
                                             <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
                         </form>
@@ -511,12 +511,12 @@
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
                 <div class="glyphicon glyphicon-heart option"></div>
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
             
@@ -538,7 +538,7 @@
 
 
 </div>
-<div class="col-lg-4 clearfix product-overflow">
+<div class="col-md-4 clearfix product-overflow">
 
     
     <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
@@ -563,7 +563,7 @@
         <div class="product-actions actions">
 
             
-            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
+            <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
                 <div class="glyphicon glyphicon-shopping-cart option ">
                                             <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
                         </form>
@@ -572,12 +572,12 @@
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
                 <div class="glyphicon glyphicon-heart option"></div>
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
             
@@ -599,7 +599,7 @@
 
 
 </div>
-<div class="col-lg-4 clearfix product-overflow">
+<div class="col-md-4 clearfix product-overflow">
 
     
     <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
@@ -624,7 +624,7 @@
         <div class="product-actions actions">
 
             
-            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
+            <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
                 <div class="glyphicon glyphicon-shopping-cart option ">
                                             <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
                         </form>
@@ -633,12 +633,12 @@
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
                 <div class="glyphicon glyphicon-heart option"></div>
             </div>
 
             
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
             
@@ -680,7 +680,7 @@
                 {{-- viewed suggestions --}}
                 <div class="clearfix home-products-wrapper">
                
-                    <div class="col-lg-12">
+                    <div class="col-md-12">
                         @if (Auth::check())
                             <h4 class="home-title-section">{{ trans('store.suggestions.viewed') }}</h4>
                         @else
@@ -705,7 +705,7 @@
                 {{-- categories suggestions --}}
                 <div class="clearfix home-products-wrapper">
 
-                    <div class="col-lg-12">
+                    <div class="col-md-12">
                         <h4 class="home-title-section">{{ trans('store.suggestions.categories') }}</h4>
                     </div>
 
@@ -725,7 +725,7 @@
                 {{-- trending suggestions --}}
                 <div class="clearfix home-products-wrapper">
 
-                    <div class="col-lg-12">
+                    <div class="col-md-12">
                         @if (Auth::check())
                             <h4 class="home-title-section">{{ trans('store.suggestions.trends') }}</h4>
                         @else
