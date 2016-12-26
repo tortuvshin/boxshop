@@ -34,35 +34,35 @@
                     <div class="row">
                         <ul>
                             <li>
-                                <a href="http://localhost/products">Арьс арчилгаа</a>
+                                <a href="http://www.bella.mn/products">Арьс арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Нүүр будалт</a>
+                                <a href="http://www.bella.mn/products">Нүүр будалт</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Үс / бие арчилгаа</a>
+                                <a href="http://www.bella.mn/products">Үс / бие арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Үнэртэй ус</a>
+                                <a href="http://www.bella.mn/products">Үнэртэй ус</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Багц</a>
+                                <a href="http://www.bella.mn/products">Багц</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Эрүүл мэнд</a>
+                                <a href="http://www.bella.mn/products">Эрүүл мэнд</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Дижитал бараа</a>
+                                <a href="http://www.bella.mn/products">Дижитал бараа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Хямдралтай бараа</a>
+                                <a href="http://www.bella.mn/products">Хямдралтай бараа</a>
                                 
                             </li>
                         </ul>
@@ -223,7 +223,7 @@
                 <div class="home-cat-trend">
                       
 
-                    <div class="col-lg-2 prodsec"  >
+                    <div class="col-lg-3 prodsec"  >
                         <div  class="prodsectobgcolor">
                             <p class="prodsecto">COSMETIC & Tools</p>
 
@@ -234,46 +234,46 @@
                         <li class="prodsectoborder">Tops</li>
 
                             <li>
-                                <a href="http://localhost/products">Арьс арчилгаа</a>
+                                <a href="http://www.bella.mn/products">Арьс арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Нүүр будалт</a>
+                                <a href="http://www.bella.mn/products">Нүүр будалт</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Үс / бие арчилгаа</a>
+                                <a href="http://www.bella.mn/products">Үс / бие арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Үнэртэй ус</a>
+                                <a href="http://www.bella.mn/products">Үнэртэй ус</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Багц</a>
+                                <a href="http://www.bella.mn/products">Багц</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Эрүүл мэнд</a>
+                                <a href="http://www.bella.mn/products">Эрүүл мэнд</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Дижитал бараа</a>
+                                <a href="http://www.bella.mn/products">Дижитал бараа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Хямдралтай бараа</a>
+                                <a href="http://www.bella.mn/products">Хямдралтай бараа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://localhost/products">Үнэртэй ус</a>
+                                <a href="http://www.bella.mn/products">Үнэртэй ус</a>
                                 
                             </li>
                         </ul>
                         </div>
                     </div>
 
-                    <div class="col-lg-10" class="sectionprodborder">
+                    <div class="col-lg-9" class="sectionprodborder">
 
 
                     <div class="col-md-5 " >
@@ -287,7 +287,7 @@
                     </div>
 
                     <div class="col-lg-7 prodpadding">
-                        <div class="col-lg-4 clearfix product-overflow">
+                        <div class="col-md-6 clearfix product-overflow prodpadding">
 
 
     
@@ -301,7 +301,7 @@
         </div>
 
         
-        <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
+        <div class="product-img-box" ng-click="goTo('http://www.bella.mn/products/30')">
 
                 <span class="product-image-hover"></span>       
                             <img src="img/product/baraa3.png?h=250" alt="PINK TONE UP">
@@ -315,19 +315,19 @@
             
             <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
                 <div class="glyphicon glyphicon-shopping-cart option ">
-                                            <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
+                                            <form method="POST" action="http://www.bella.mn/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
                         </form>
                                     </div>
                 <span id="card_text">Сагс</span>
             </div>
 
             
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://www.bella.mn/user/orders/addTo/wishlist/30')">
                 <div class="glyphicon glyphicon-heart option"></div>
             </div>
 
             
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://www.bella.mn/products/30')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
             
@@ -335,7 +335,7 @@
         </div>
         
         <h6 class="product-name">
-            <a href="http://localhost/products/30">
+            <a href="http://www.bella.mn/products/30">
                 PINK TONE UP
             </a>
         </h6>
@@ -349,7 +349,7 @@
 
 
 </div>
-<div class="col-md-4 clearfix product-overflow">
+<div class="col-md-6 clearfix product-overflow prodpadding">
 
     
     <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
@@ -362,7 +362,7 @@
         </div>
 
         
-        <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
+        <div class="product-img-box" ng-click="goTo('http://www.bella.mn/products/30')">
 
                 <span class="product-image-hover"></span>       
                             <img src="img/product/baraa4.png?h=250" alt="PINK TONE UP">
@@ -376,19 +376,19 @@
             
             <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
                 <div class="glyphicon glyphicon-shopping-cart option ">
-                                            <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
+                                            <form method="POST" action="http://www.bella.mn/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
                         </form>
                                     </div>
                 <span id="card_text">Сагс</span>
             </div>
 
             
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://www.bella.mn/user/orders/addTo/wishlist/30')">
                 <div class="glyphicon glyphicon-heart option"></div>
             </div>
 
             
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://www.bella.mn/products/30')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
             
@@ -396,7 +396,7 @@
         </div>
         
         <h6 class="product-name">
-            <a href="http://localhost/products/30">
+            <a href="http://www.bella.mn/products/30">
                 PINK TONE UP
             </a>
         </h6>
@@ -410,7 +410,7 @@
 
 
 </div>
-<div class="col-md-4 clearfix product-overflow">
+<div class="col-md-6 clearfix product-overflow prodpadding">
 
     
     <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
@@ -423,7 +423,7 @@
         </div>
 
         
-        <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
+        <div class="product-img-box" ng-click="goTo('http://www.bella.mn/products/30')">
 
                 <span class="product-image-hover"></span>       
                             <img src="img/product/baraa5.png?h=250" alt="PINK TONE UP">
@@ -437,19 +437,19 @@
             
             <div class="col-md-6 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
                 <div class="glyphicon glyphicon-shopping-cart option ">
-                                            <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
+                                            <form method="POST" action="http://www.bella.mn/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
                         </form>
                                     </div>
                 <span id="card_text">Сагс</span>
             </div>
 
             
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://www.bella.mn/user/orders/addTo/wishlist/30')">
                 <div class="glyphicon glyphicon-heart option"></div>
             </div>
 
             
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://www.bella.mn/products/30')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
             
@@ -457,7 +457,7 @@
         </div>
         
         <h6 class="product-name">
-            <a href="http://localhost/products/30">
+            <a href="http://www.bella.mn/products/30">
                 PINK TONE UP
             </a>
         </h6>
@@ -471,7 +471,7 @@
 
 
 </div>
-<div class="col-md-4 clearfix product-overflow">
+<div class="col-md-6 clearfix product-overflow prodpadding">
 
     
     <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
@@ -484,7 +484,7 @@
         </div>
 
         
-        <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
+        <div class="product-img-box" ng-click="goTo('http://www.bella.mn/products/30')">
 
                 <span class="product-image-hover"></span>       
                             <img src="img/product/baraa2.png?h=250" alt="PINK TONE UP">
@@ -498,19 +498,19 @@
             
             <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
                 <div class="glyphicon glyphicon-shopping-cart option ">
-                                            <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
+                                            <form method="POST" action="http://www.bella.mn/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
                         </form>
                                     </div>
                 <span id="card_text">Сагс</span>
             </div>
 
             
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://www.bella.mn/user/orders/addTo/wishlist/30')">
                 <div class="glyphicon glyphicon-heart option"></div>
             </div>
 
             
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
+            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://www.bella.mn/products/30')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
             
@@ -518,7 +518,7 @@
         </div>
         
         <h6 class="product-name">
-            <a href="http://localhost/products/30">
+            <a href="http://www.bella.mn/products/30">
                 PINK TONE UP
             </a>
         </h6>
@@ -532,128 +532,8 @@
 
 
 </div>
-<div class="col-md-4 clearfix product-overflow">
-
-    
-    <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
-
-        <div class="product-reviews  hide ">
-            
-            <small>
-                Харах
-            </small>
-        </div>
-
-        
-        <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
-
-                <span class="product-image-hover"></span>       
-                            <img src="img/product/baraa5.png?h=250" alt="PINK TONE UP">
-                    </div>
-<!-- 
-        <p class="product-description"></p>
- -->
-        
-        <div class="product-actions actions">
-
-            
-            <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
-                <div class="glyphicon glyphicon-shopping-cart option ">
-                                            <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
-                        </form>
-                                    </div>
-                <span id="card_text">Сагс</span>
-            </div>
-
-            
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
-                <div class="glyphicon glyphicon-heart option"></div>
-            </div>
-
-            
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
-                <div class="glyphicon glyphicon-eye-open option"></div>
-            </div>
-            
-
-        </div>
-        
-        <h6 class="product-name">
-            <a href="http://localhost/products/30">
-                PINK TONE UP
-            </a>
-        </h6>
-
-        <div class="product-price">
-           35,000₮
-        </div>
-
-    </div>
-    
 
 
-</div>
-<div class="col-md-4 clearfix product-overflow">
-
-    
-    <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
-
-        <div class="product-reviews  hide ">
-            
-            <small>
-                Харах
-            </small>
-        </div>
-
-        
-        <div class="product-img-box" ng-click="goTo('http://localhost/products/30')">
-
-                <span class="product-image-hover"></span>       
-                            <img src="img/product/baraa4.png?h=250" alt="PINK TONE UP">
-                    </div>
-<!-- 
-        <p class="product-description"></p>
- -->
-        
-        <div class="product-actions actions">
-
-            
-            <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
-                <div class="glyphicon glyphicon-shopping-cart option ">
-                                            <form method="POST" action="http://localhost/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
-                        </form>
-                                    </div>
-                <span id="card_text">Сагс</span>
-            </div>
-
-            
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart" ng-click="goTo('http://localhost/user/orders/addTo/wishlist/30')">
-                <div class="glyphicon glyphicon-heart option"></div>
-            </div>
-
-            
-            <div class="col-md-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view" ng-click="goTo('http://localhost/products/30')">
-                <div class="glyphicon glyphicon-eye-open option"></div>
-            </div>
-            
-
-        </div>
-        
-        <h6 class="product-name">
-            <a href="http://localhost/products/30">
-                PINK TONE UP
-            </a>
-        </h6>
-
-        <div class="product-price">
-           36,000₮
-        </div>
-
-    </div>
-    
-
-
-</div>
 
                     </div>
                     </div>
