@@ -222,22 +222,11 @@
               <section>
                 <div class="home-cat-trend">
                       
-<<<<<<< HEAD
+
                     <div class="col-lg-2 prodsec"  >
                         <div  class="prodsectobgcolor">
                             <p class="prodsecto">COSMETIC & Tools</p>
-=======
-                    <div class="col-md-2" style="       padding-right: 0;
-    padding-left: 0px;">
-                        <div class="" style="    background-color: #e94444;">
-                            <p style="text-transform: uppercase;
-    font-size: 25px;
-    line-height: 30px;
-    color: #fff;
-    margin-bottom: 0;
-    padding: 15px 20px;
-    word-wrap: break-word;">COSMETIC & Tools</p>
->>>>>>> 520a03c18bacee3b973e413e042fb8acc97917fd
+
                         </div>
                         <div class="row demo" style="background: url(img/product/producthead.png) bottom left no-repeat;">
                         <ul class="prodsectoul">
@@ -283,11 +272,9 @@
                         </ul>
                         </div>
                     </div>
-<<<<<<< HEAD
+
                     <div class="col-lg-10" class="sectionprodborder">
-=======
-                    <div class="col-md-10" style="border-top: 2px solid #e94444; padding: 20px">
->>>>>>> 520a03c18bacee3b973e413e042fb8acc97917fd
+
 
                     <div class="col-md-5 " >
                          <div class="box foo ">   
@@ -298,14 +285,10 @@
                        
 
                     </div>
-<<<<<<< HEAD
+
                     <div class="col-lg-7 prodpadding">
                         <div class="col-lg-4 clearfix product-overflow">
-=======
-                    <div class="col-md-7" style="padding-left: 0px;
-    padding-right: 0px;">
-                        <div class="col-md-4 clearfix product-overflow">
->>>>>>> 520a03c18bacee3b973e413e042fb8acc97917fd
+
 
     
     <div class="product-box clearfix product-overflow ng-scope" ng-controller="ProductBox">
