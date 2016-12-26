@@ -231,8 +231,6 @@
                         <div class="row demo" style="background: url(img/product/producthead.png) bottom left no-repeat;">
                         <ul class="prodsectoul">
 
-                        <li class="prodsectoborder">Tops</li>
-
                             <li>
                                 <a href="http://www.bella.mn/products">Арьс арчилгаа</a>
                                 
