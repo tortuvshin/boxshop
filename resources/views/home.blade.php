@@ -124,25 +124,25 @@
             </div>
                 
              {{-- end carousel --}}
-<div class="product-features" style="box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3); margin-bottom: 20px;">
+<div class="product-features boxshadow" >
 <ul class="nav testtab nav-justified">
-  <li style="border-left: none" class="active"><a href="#tab_a" data-toggle="pill">Өнөөдөр их зарагдсан</a></li>
-  <li style="border-right: none"><a href="#tab_b" data-toggle="pill">7 хоног их зарагдсан </a></li>
+  <li style="" class="active borderleft"><a href="#tab_a" data-toggle="pill">Өнөөдөр их зарагдсан</a></li>
+  <li class="borderright"><a href="#tab_b" data-toggle="pill">7 хоног их зарагдсан </a></li>
   
 </ul>
 
 
     <div id="tab_a" class="tab-pane fade in active topongo">
      
-          <div class="col-md-8" style="padding-left: 0px; padding-right: 0px;">
-              <div class="col-md-6 box foo" style="padding-left: 0px; padding-right: 0px;">
+          <div class="col-md-8 prodpadding" >
+              <div class="col-md-6 box foo prodpadding" >
                
                     <img  src="img/product/baraa.png" >
               
               </div>
-              <div class="col-md-6" style="padding-left: 0px; padding-right: 0px;">
+              <div class="col-md-6 prodpadding" >
                 <div >
-                    <h4  style="margin-top: 0px;">
+                    <h4  class="prodmargin">
                        FOAM
                     </h4>
                  <h3> <b>  30,000₮</b></h3>
@@ -164,7 +164,7 @@
               </div>
               <div class="col-md-6">
                    <div >
-                    <h4  style="margin-top: 0px;">
+                    <h4  class="prodmargin">
                       DR.VITA
                     </h4>
                  <h3> <b>    25,000₮</b></h3>
@@ -181,7 +181,7 @@
               </div>
               <div class="col-md-6">
                     <div >
-                    <h4  style="margin-top: 0px;">
+                    <h4  class="prodmargin">
                         SNOW PACK
                     </h4>
                  <h3> <b>   15,000₮</b></h3>
@@ -222,25 +222,14 @@
               <section>
                 <div class="home-cat-trend">
                       
-                    <div class="col-lg-2" style="       padding-right: 0;
-    padding-left: 0px;">
-                        <div class="" style="    background-color: #e94444;">
-                            <p style="text-transform: uppercase;
-    font-size: 25px;
-    line-height: 30px;
-    color: #fff;
-    margin-bottom: 0;
-    padding: 15px 20px;
-    word-wrap: break-word;">COSMETIC & Tools</p>
+                    <div class="col-lg-2 prodsec"  >
+                        <div  class="prodsectobgcolor">
+                            <p class="prodsecto">COSMETIC & Tools</p>
                         </div>
-                        <div class="row demo" style="background: url(http://demo2.wpdance.com/imgs/wd_glory/supermarket2/supermarket2_product_group4_head.png) bottom left no-repeat;">
-                        <ul style=" padding-top: 14px;
-    padding-left: 0px;
-    margin-bottom: 0;
-    padding-bottom: 220px;
-    border-right: 1px solid #ebebeb;">
+                        <div class="row demo" style="background: url(img/product/producthead.png) bottom left no-repeat;">
+                        <ul class="prodsectoul">
 
-                        <li style="border-color: #ebebeb; ">Tops</li>
+                        <li class="prodsectoborder">Tops</li>
 
                             <li>
                                 <a href="http://localhost/products">Арьс арчилгаа</a>
@@ -281,7 +270,7 @@
                         </ul>
                         </div>
                     </div>
-                    <div class="col-lg-10" style="border-top: 2px solid #e94444; padding: 20px">
+                    <div class="col-lg-10" class="sectionprodborder">
 
                     <div class="col-lg-5 " >
                          <div class="box foo ">   
@@ -292,8 +281,7 @@
                        
 
                     </div>
-                    <div class="col-lg-7" style="padding-left: 0px;
-    padding-right: 0px;">
+                    <div class="col-lg-7 prodpadding">
                         <div class="col-lg-4 clearfix product-overflow">
 
     
