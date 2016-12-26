@@ -141,14 +141,14 @@
     		a {
     			padding-top: 10px !important;
     			color: black ;
+
+                &:hover {
+                    background:@bella-red;
+                }
     		}
     	}
     } 
 }  
-
-.cart .nav li a:hover{
-    background:@bella-red;
-}
 
 .input-group .form-control{
 	width: 100%;
@@ -219,13 +219,15 @@
     list-style: outside none none;
     margin: 0;
     padding: 0;
+
+    li{
+        margin-left: 12px;
+        padding: 11px 18px;
+        position: relative;
+        text-transform: uppercase;
+    }
 }
-.line-menu li{
-    margin-left: 12px;
-    padding: 11px 18px;
-    position: relative;
-    text-transform: uppercase;
-}
+
 .mobile_ {
     margin-left: -15px;
     margin-right: 15px;

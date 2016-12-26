@@ -589,6 +589,7 @@ footer .menu ul li {
 }
 .products-list {
   float: left;
+  padding: 0 3% 0 3%;
 }
 .product-features {
   float: left;
@@ -768,6 +769,10 @@ h6 {
 .btn:hover {
   color: #e94444;
   text-decoration: none;
+}
+#menu-top-category .breadcrumb {
+  padding: 20px 0 !important;
+  margin-bottom: 0 !important;
 }
 .home {
   float: left;
