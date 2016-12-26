@@ -13,8 +13,10 @@
 				<div class="col-md-12 get-time" >
 					<h3>Цаг авах</h3>
 				</div><br>		
-				{!! Form::open(['url'=>'/time', 'class'=>'form-horizontal', 'role'=>'form']) !!}
+<!-- 				<form action="{{ route('times.store') }}" class="time-form" method="post">  		
+ -->
 				<form class="time-form">  		
+
 			  		<div class="col-sm-4">
 				      	<div class="form-group">	
 				      		<select class="form-control" id="" name="sector" placeholder="Үйлчилгээ">
@@ -36,9 +38,9 @@
 			                    </span>
 			                </div>
 			                <script type="text/javascript">
-					            $(function () {
-					                $('#datetimepicker1').datetimepicker();
-					            });
+					            // $(function () {
+					            //     $('#datetimepicker1').datetimepicker();
+					            // });
 					        </script>					  
 						  	
 						</div>
@@ -66,7 +68,6 @@
 					</div><br>
 				</form>
 
-    		{!! Form::close() !!}
 		  </div>
 		</div><br>
 
