@@ -541,49 +541,5 @@
 </section>
 
 
-
-@stop {{-- end content --}}
-
-ght: 376px;">
-                    <ul class="bxslider" id="testimonial-slider" style="width: auto; position: relative;">
-                        <li style="float: none; list-style: none; position: absolute; width: 1130px; z-index: 0; display: block; opacity: 0.918764;">
-                            <div class="testimonial-holder">
-                                <span class="icon-holder">
-<i class="fa fa-quote-right"></i>
-</span>
-                                <p>Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas.Mellentesque habitant morbi tristique et Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas.</p>
-                                <strong class="name">“John Doe”</strong>
-                            </div>
-                        </li>
-                        <li style="float: none; list-style: none; position: absolute; width: 1130px; z-index: 51; display: list-item; opacity: 0.081236;">
-                            <div class="testimonial-holder">
-                                <span class="icon-holder">
-<i class="fa fa-quote-right"></i>
-</span>
-                                <p>Famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas.Mellentesque habitant morbi tristique et Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada .</p>
-                                <strong class="name">“Britney Doe”</strong>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bx-controls bx-has-pager bx-has-controls-direction">
-                    <div class="bx-pager bx-default-pager">
-                        <div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a>
-                        </div>
-                        <div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link active">2</a>
-                        </div>
-                    </div>
-                    <div class="bx-controls-direction">
-                        <a class="bx-prev" href=""> </a>
-                        <a class="bx-next" href=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
 @stop {{-- end content --}}
 
