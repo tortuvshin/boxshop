@@ -4,6 +4,7 @@
     float: left;
     position: relative;
     background: #fff;
+    padding: 0 3% 0 3%;
     border-bottom: 1px solid #e3e3e3;
     
     ul {    
@@ -42,7 +43,9 @@
 }
 
 .header-top-left {
-    height: 100%
+    height: 100%;
+    padding-left: 0;
+
 }
 
 .social-icons {
@@ -69,12 +72,14 @@
     width: 100%;
     float: left;
     height: 120px;
+    padding: 0 3% 0 3%;
     position: relative;
 }
 
 .logo {
     height: 100%;
     float: left;
+    padding-left: 0px;
 }
 
 .cat-controller-nav {
@@ -136,14 +141,14 @@
     		a {
     			padding-top: 10px !important;
     			color: black ;
+
+                &:hover {
+                    background:@bella-red;
+                }
     		}
     	}
     } 
 }  
-
-.cart .nav li a:hover{
-    background:@bella-red;
-}
 
 .input-group .form-control{
 	width: 100%;
@@ -165,9 +170,7 @@
 .logo-img{
 	width: 200px;
     height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    float: left;
 }
 
 .header-bottom-content {
@@ -176,6 +179,7 @@
 	float: left;
 	background-color: @dark-color;
 	position: relative;
+    padding: 0 3% 0 3%;
 
     div {
         padding-right: 0; 
@@ -215,13 +219,15 @@
     list-style: outside none none;
     margin: 0;
     padding: 0;
+
+    li{
+        margin-left: 12px;
+        padding: 11px 18px;
+        position: relative;
+        text-transform: uppercase;
+    }
 }
-.line-menu li{
-    margin-left: 12px;
-    padding: 11px 18px;
-    position: relative;
-    text-transform: uppercase;
-}
+
 .mobile_ {
     margin-left: -15px;
     margin-right: 15px;
