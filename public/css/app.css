@@ -607,11 +607,17 @@ footer .menu ul li {
 }
 .social button {
   color: #fff;
-  background-color: #2795e9;
+  background-color: #3b5998;
+}
+.social button:hover {
+  color: #ffffff !important;
 }
 .social a {
   color: #fff;
   background-color: #2795e9;
+}
+.social:hover {
+  color: #ffffff !important;
 }
 .quantity {
   width: auto;
@@ -649,7 +655,7 @@ footer .menu ul li {
   line-height: 1.5;
   border-radius: 3px;
   color: #000;
-  background-color: #ddd;
+  background-color: #e94444;
 }
 .twitter {
   color: #000;
@@ -677,10 +683,10 @@ footer .menu ul li {
   height: 210px;
 }
 .thumbnail {
-  border: 0px;
   text-align: center;
   margin-bottom: 0px;
   margin-top: 15%;
+  border: 1px solid#e65020;
 }
 h6 a {
   color: #3c3b48;
@@ -777,12 +783,16 @@ h6 {
 .btn.focus,
 .btn:focus,
 .btn:hover {
-  color: #e94444;
+  color: #ffffff ;
   text-decoration: none;
 }
 #menu-top-category .breadcrumb {
   padding: 20px 0 !important;
   margin-bottom: 0 !important;
+}
+.btn {
+  border-radius: 0;
+  background-color: #e94444;
 }
 .home {
   float: left;
