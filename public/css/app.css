@@ -605,12 +605,6 @@ footer .menu ul li {
 .social {
   float: right;
 }
-.social button {
-  background-color: blue;
-}
-.social a {
-  background-color: #5ad6e8;
-}
 .quantity {
   width: auto;
   margin: 0 1px;
@@ -673,39 +667,37 @@ footer .menu ul li {
 .product-img-box img {
   width: 100%;
   height: 210px;
-  cursor: pointer;
 }
 .thumbnail {
+  border: 0px;
   text-align: center;
   margin-bottom: 0px;
   margin-top: 15%;
-  width: 130px;
-  height: 120px;
 }
-.thumbnail h6 a {
+h6 a {
   color: #3c3b48;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
-.thumbnail h6 {
+h6 {
   text-align: center;
   font-size: 12px;
   height: 30px !important;
 }
-.thumbnail .product-box {
+.product-box {
   position: relative;
   margin-bottom: 30px;
 }
-.thumbnail .product-box:hover .product-actions {
+.product-box:hover .product-actions {
   visibility: visible;
   margin-top: -40px;
 }
-.thumbnail .product-box:hover .product-image-hover {
+.product-box:hover .product-image-hover {
   background: rgba(0, 0, 0, 0.15);
 }
-.thumbnail .product-price {
+.product-price {
   font-size: 100%;
   font-weight: 700;
   line-height: 1.3;
@@ -714,7 +706,7 @@ footer .menu ul li {
   font-style: normal;
   text-align: center;
 }
-.thumbnail .product-actions {
+.product-actions {
   width: 100%;
   height: 40px;
   position: absolute;
@@ -724,7 +716,7 @@ footer .menu ul li {
   -webkit-transition: all 200ms ease 0s;
   transition: all 200ms ease 0s;
 }
-.thumbnail .product-actions .wrapper {
+.product-actions .wrapper {
   color: #bbbfc7;
   padding: 4%;
   cursor: pointer;
@@ -732,30 +724,30 @@ footer .menu ul li {
   height: 40px;
   border: 1px #f2f2f2 solid;
 }
-.thumbnail .product-actions .wrapper:hover .glyphicon {
+.product-actions .wrapper:hover .glyphicon {
   color: #e94444;
 }
-.thumbnail .product-actions .wrapper:hover #card_text {
+.product-actions .wrapper:hover #card_text {
   color: #e94444;
 }
-.thumbnail .product-actions .glyphicon-shopping-cart {
+.product-actions .glyphicon-shopping-cart {
   color: #e94444;
   margin-right: 5%;
 }
-.thumbnail .product-actions .glyphicon-heart,
-.thumbnail .product-actions .glyphicon-eye-open {
+.product-actions .glyphicon-heart,
+.product-actions .glyphicon-eye-open {
   color: #e94444;
   width: 100%;
   text-align: center;
 }
-.thumbnail .product-type {
+.product-type {
   color: white;
   -moz-transform: rotate(45deg);
   margin-left: 25px;
   margin-top: 14px;
   position: absolute;
 }
-.thumbnail .product-image-hover {
+.product-image-hover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -763,65 +755,26 @@ footer .menu ul li {
   -webkit-transition: all 0.4s ease 0s;
   background: rgba(0, 0, 0, 0.03);
 }
-.thumbnail .product-name {
+.product-name {
   text-align: center;
   font-size: 14px;
   height: 30px !important;
 }
-.thumbnail .input-group {
+.input-group {
   position: relative;
   display: table;
   border-collapse: separate;
   width: 100%;
 }
-.thumbnail .fa {
-  cursor: pointer;
-  background-color: #7d85b9;
-}
-.thumbnail #menu-top-category .breadcrumb {
-  padding: 20px 0 !important;
-  margin-bottom: 0 !important;
-}
-.social button {
-  background: #3B5997 ;
-  -moz-user-select: none;
-  background: #2A49A5;
-  border: 1px solid #2A49A5;
-  box-shadow: 0 1px #2A49A5 inset;
-  color: white;
-  padding: 3px 5px;
-  text-decoration: none;
-  text-shadow: 0 -1px 0 #2A49A5;
-  font: 12px Verdana, sans-serif;
-  cursor: pointer;
-}
-.social fa {
-  background: #3B5997 ;
-  -moz-user-select: none;
-  background: #2A49A5;
-  border: 1px solid #2A49A5;
-  box-shadow: 0 1px #2A49A5 inset;
-  color: white;
-  padding: 3px 5px;
-  text-decoration: none;
-  text-shadow: 0 -1px 0 #2A49A5;
-  font: 12px Verdana, sans-serif;
-  cursor: pointer;
-}
 .btn.focus,
 .btn:focus,
 .btn:hover {
-  color: #fdfdfd;
+  color: #e94444;
   text-decoration: none;
 }
-.product-image-hover {
-  cursor: pointer;
-}
-.list-inline {
-  padding-left: 0;
-  margin-left: -5px;
-  list-style: none;
-  cursor: pointer;
+#menu-top-category .breadcrumb {
+  padding: 20px 0 !important;
+  margin-bottom: 0 !important;
 }
 .home {
   float: left;

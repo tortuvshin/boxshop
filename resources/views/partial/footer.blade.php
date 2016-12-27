@@ -84,17 +84,10 @@
     text-align: center;"><a href="https://plus.google.com/u/0/#" target="_blank" title="Get updates"><i class="fa fa-google-plus"></i></a>
                                 </li>
 
-                                <li class="icon-pin fa-lg" style="border: 1px solid #f8f8f8;width: 12%;
-    text-align: center;"><a href="http://www.pinterest.com/#" target="_blank" title="See Us"><i class="fa fa-pinterest"></i></a>
-                                </li>
-
+                                
                                 <li class="icon-instagram fa-lg" style="border: 1px solid #f8f8f8;width: 12%;
     text-align: center;"><a href="http://instagram.com/#" target="_blank" title="Follow us"><i class="fa fa-instagram"></i></a>
-                                </li>
-
-                                <li class="icon-linkedin fa-lg" style="border: 1px solid #f8f8f8;width: 12%;
-    text-align: center;"><a href="https://www.linkedin.com/pub/#" target="_blank" title="See us"><i class="fa fa-linkedin"></i></a>
-                                </li>
+                                </li>                            
                             </ul>
                         </div>
                     </li>
@@ -113,29 +106,9 @@
     <div class="fourth-footer-area row ">
 
         <div id="copy-right" class="copy-right col-sm-12">
-            <div class="col-sm-2">
-                © 2016 Bella . All Rights Reserved.
+            <div class="col-sm-8">
+                Зохиогчын эрх хуулиар хамгаалагдсан ©. 2016 он.Вэбсайтыг хөгжүүлсэн "Тагтаа Солюшн" ХХК.
             </div>
-            <div class="copyright col-sm-6">
-                <div class="col-sm-12">
-
-                    <ul id="menu-footer-page" class="menu">
-                        <li class=""><a href="#">About</a>
-                        </li>
-                        <li class=""><a href="#">Blog</a>
-                        </li>
-                        <li class=""><a href="#">Contact</a>
-                        </li>
-                        <li class=""><a href="#">Wishlist</a>
-                        </li>
-                        <li class=""><a href="#">My Account</a>
-                        </li>
-                        <li class=""><a href="#">Eng</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
             <div class="payment col-sm-4">
                 <ul>
                     <li>

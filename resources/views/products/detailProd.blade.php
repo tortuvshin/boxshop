@@ -120,6 +120,13 @@
 					<span class="fa fa-twitter-square "></span>&nbsp;
 									{{ trans('globals.share_on_twitter') }}
 			      </a>
+			      <div class="fb-like" 
+		data-href="http://www.your-domain.com/your-page.html" 
+		data-layout="standard" 
+		data-action="like" 
+		data-show-faces="true">
+	</div>
+
 				</div>
 				
 
