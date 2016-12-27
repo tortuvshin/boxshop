@@ -9,13 +9,9 @@
 						<li class="icon-twitter"><a href="http://twitter.com/#" target="_blank" title="Follow us"><i class="fa fa-twitter"></i></a></li>
 						
 						<li class="icon-google"><a href="https://plus.google.com/u/0/#" target="_blank" title="Get updates"><i class="fa fa-google-plus"></i></a></li>
-						
-						<li class="icon-pin"><a href="http://www.pinterest.com/#" target="_blank" title="See Us"><i class="fa fa-pinterest"></i></a></li>
-						
+					
 						<li class="icon-instagram"><a href="http://instagram.com/#" target="_blank" title="Follow us"><i class="fa fa-instagram"></i></a></li>
 						
-						<li class="icon-linkedin"><a href="https://www.linkedin.com/pub/#" target="_blank" title="See us"><i class="fa fa-linkedin"></i></a></li>
-					</ul>
 				</div>
 			</li>
 		</ul>
