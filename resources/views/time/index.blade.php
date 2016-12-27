@@ -20,16 +20,29 @@
 			  		<div class="col-sm-4">
 				      	<div class="form-group">	
 				      		<select class="form-control" id="" name="sector" placeholder="Үйлчилгээ">
-							    <option>Салбар</option>
-							    <option>2</option>
-							    <option>3</option>
-							    <option>4</option>
+							    <option>Bella</option>
+							    <option>Артист</option>
 							</select><br>			      		
 							<select class="form-control" id="service"  name="service" placeholder="Үйлчилгээ">
 							    <option>Үйлчилгээ</option>
-							    <option>2</option>
-							    <option>3</option>
-							    <option>4</option>
+							    <option>Гоёлын будалт</option>
+							    <option>Энгийн будалт</option>
+							    <option>Хуримын будалт</option>
+							    <option>Хуримын багц</option>
+							    <option>Express будалт</option>
+							    <option>Хөмсөг засалт</option>
+							    <option>Хөмсөг Henna</option>
+							    <option>Хөмсөг будалт</option>
+							    <option>Суурь тавилт</option>
+							    <option>Контур тавилт</option>
+							    <option>Уруулын будалт</option>
+							    <option>Сормуус наах</option>
+							    <option>Хөмсөг тийнт</option>
+							    <option>Тень тавих</option>
+							    <option>Смоки будалт</option>							    
+							    <option>Арьс цэвэрлэх</option>
+							    <option>Маск тавих</option>
+							    <option>Арьс чийгшүүлэх</option>
 							</select><br>
 							<div class='input-group date' id='datetimepicker1'>
 			                    <input type='text' class="form-control" name="service_time" placeholder="Он сар өдөр" />
