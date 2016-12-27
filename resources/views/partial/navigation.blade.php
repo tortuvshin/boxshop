@@ -4,13 +4,13 @@
 			<li id="ew_social-4" class="widget-container widget_social">						
 				<div class="social-icons">
 					<ul>
-						<li class="icon-facebook"><a href="http://www.facebook.com/#" target="_blank" title="Become our fan"><i class="fa fa-facebook"></i></a></li>				
+						<li class="icon-facebook"><a href="https://www.facebook.com/pg/Make-up-artist-Bella-451092605001683/videos/?ref=page_internal" target="_blank" title="Become our fan"><i class="fa fa-facebook"></i></a></li>				
 						
 						<li class="icon-twitter"><a href="http://twitter.com/#" target="_blank" title="Follow us"><i class="fa fa-twitter"></i></a></li>
 						
 						<li class="icon-google"><a href="https://plus.google.com/u/0/#" target="_blank" title="Get updates"><i class="fa fa-google-plus"></i></a></li>
 					
-						<li class="icon-instagram"><a href="http://instagram.com/#" target="_blank" title="Follow us"><i class="fa fa-instagram"></i></a></li>
+						<li class="icon-instagram"><a href="https://www.instagram.com/isabellabellasmakeup/" target="_blank" title="Follow us"><i class="fa fa-instagram"></i></a></li>
 						
 				</div>
 			</li>
