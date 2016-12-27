@@ -116,7 +116,7 @@
 								</button>
 	                  
 	      
-	             <a id="twitter" href="https://twitter.com/intent/tweet?hashtags=antvel&text={{ urlencode($product->name) }}&url={{ Request::url() }}&via=_antvel" class="btn twitter btn-sm full-width">
+	             <a id="twitter" href="https://twitter.com/intent/tweet?hashtags=bela.mn&text={{ urlencode($product->name) }}&url={{ Request::url() }}&via=bella.mn" class="btn twitter btn-sm full-width">
 					<span class="fa fa-twitter-square "></span>&nbsp;
 									{{ trans('globals.share_on_twitter') }}
 			      </a>
@@ -343,9 +343,9 @@
 			$("#facebook").click(function() {
 				$.getScript('//connect.facebook.net/en_US/sdk.js', function(){
 				    FB.init({
-				      appId      : "{{ env('FB_APP_ID') }}",
+				      appId      : '1812565288956111',
 				      xfbml      : true,
-				      version    : 'v2.5',
+				      version    : 'v2.8',
 				      caption    : '{{ $product->name }}',
 				    });
 					FB.ui(
