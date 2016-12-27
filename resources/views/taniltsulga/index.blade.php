@@ -539,7 +539,7 @@
         </div>
     </div>
 </section>
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21393.15251936965!2d106.89736212370993!3d47.91424985478723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96924c0239885f%3A0xa6f4eb660c418885!2sGerege+Tower!5e0!3m2!1smn!2smn!4v1482827093951" width="1400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 @stop {{-- end content --}}
 
