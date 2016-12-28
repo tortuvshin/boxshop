@@ -20,8 +20,8 @@ Route::group(['prefix' => 'home'], function () {
 });
 
 
-  Route::get('contact', 'MailController@getContact');
-    Route::post('contact', 'MailController@postContact');
+  Route::get('tsag', 'MailController@getContact');
+    Route::post('tsag', 'MailController@postContact');
 
 
 require __DIR__ . '/web/users.php';
