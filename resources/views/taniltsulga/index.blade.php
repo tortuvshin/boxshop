@@ -50,7 +50,7 @@
                     <div class="promotion-item">
                         <div class="text">
                             <h3><a href="product-detail.html">Гоёлын будалт </a></h3>
-                            <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академи.</p>
+                            <p>Энэ жилийн тренд нь голдуу саа зонхилсон будалт байгаа. Манай салоны  гоёлын будалт нь дотроо хуримын, art, хүлээн авалтын будалт хийдэг.</p>
                         </div>
                         <div class="thumb">
                             <img src="img/tanilcuulga/promotion1.jpg" alt="">
@@ -62,7 +62,7 @@
                     <div class="promotion-item">
                         <div class="text">
                             <h3><a href="product-detail.html">Энгийн будалт</a></h3>
-                            <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академи</p>
+                            <p>Манай салон нь өдөр тутамдаа зориулж энгийн будалт хийдэг бөгөөд энэ нь дотроо express, бизнес, өдөр тутам гэсэн 3 ангилалаар буддаг.</p>
                         </div>
                         <div class="thumb">
                             <img src="img/tanilcuulga/promotion2.jpg" alt="">
@@ -203,11 +203,11 @@
 
                 <div class="team-item">
                     <figure class="cp-thumb">
-                        <img src="img/tanilcuulga/bella.jpg" alt="">
+                        <img src="img/tanilcuulga/shagai.jpg" alt="">
                        
                     </figure>
                     <div class="team-text">
-                        <h3><a href="#">Белла</a></h3>
+                        <h3><a href="#">Шагай</a></h3>
                     </div>
                 </div>
             </div>
