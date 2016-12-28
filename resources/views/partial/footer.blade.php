@@ -6,14 +6,14 @@
             <br>
             <ul>
                 <ul> <span class="footertext">Mongolian professional makeup artists PERFECT BEAUTY ACADEMY'S "BELLA MAKE UP STUDIO"
-Манай салон нь өдөр тутмын будалт гоёлын, хуримын будалтыг хийнэ. </span> </ul>
+Манай салон нь өдөр тутмын, гоёлын, хуримын, express будалтууд хийнэ. </span> </ul>
                 <br>
                 <br>
-                <li><i class="fa fa-map-marker"></i> <span class="footertext">  249 Ung Van Khiem St., Binh ThanhDist, HCMC</span>
+                <li><i class="fa fa-map-marker"></i> <span class="footertext">  Сүхбаатар дүүрэг, 1-р хороо, Чингисийн өргөн чөлөө-14251, Гэрэгэ тауэр 4-р давхар</span>
                 </li>
                 <li><i class="fa fa-phone"></i> <span class="footertext">  +976 8999 2681</span>
                 </li>
-                <li><i class="fa fa-envelope"> </i><span class="footertext">  info@bella.mn</span>
+                <li><i class="fa fa-envelope"> </i><span class="footertext"> Bolormaa_345@yahoo.com</span>
                 </li>
             </ul>
         </div>

@@ -396,75 +396,8 @@
 </section>
 
 
-<section class="cp_brands-section">
-    <div class="container-fluid">
-        <ul>
-            <li><img src="http://html.crunchpress.com/big-salon/images/brands/brands-img-01.jpg" alt="">
-            </li>
-            <li><img src="http://html.crunchpress.com/big-salon/images/brands/brands-img-02.jpg" alt="">
-            </li>
-            <li><img src="http://html.crunchpress.com/big-salon/images/brands/brands-img-03.jpg" alt="">
-            </li>
-            <li><img src="http://html.crunchpress.com/big-salon/images/brands/brands-img-02.jpg" alt="">
-            </li>
-            <li><img src="http://html.crunchpress.com/big-salon/images/brands/brands-img-01.jpg" alt="">
-            </li>
-            <li><img src="http://html.crunchpress.com/big-salon/images/brands/brands-img-04.jpg" alt="">
-            </li>
-            <li><img src="http://html.crunchpress.com/big-salon/images/brands/brands-img-05.jpg" alt="">
-            </li>
-            <li><img src="http://html.crunchpress.com/big-salon/images/brands/brands-img-01.jpg" alt="">
-            </li>
-        </ul>
-    </div>
-</section>
 
-<section class="cp_testimonial-section pd-tb80">
-    <div class="container">
-        <div class="cp-heding-style1">
-            <h2></h2>
-        </div>
-        <div class="testimonial-slider-holder">
-            <div class="bx-wrapper" style="max-width: 100%;">
-                <div class="bx-viewport" style="text-align: center; width: 100%; overflow: hidden; position: relative; height: 376px;">
-                    <ul class="bxslider" id="testimonial-slider" style="width: auto; position: relative;">
-                        <li style="float: none; list-style: none; position: absolute;  z-index: 0; display: block; opacity: 0.918764;">
-                            <div class="testimonial-holder">
-                                <span class="icon-holder">
-<i class="fa fa-quote-right"></i>
-</span>
-                                <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академитай хамтран ажиллах, туршлага солилцох, сургалт семинар уулзалт зохион байгуулах, дэмжлэг туслалцаа үзүүлэх, мэргэжлийн байгууллага тэдгээрийн уялдаа холбоог нэгтгэх энэ чиглэлээр нийгмийн эмзэг бүлгийн иргэдэд  дэмжлэг туслалцаа үзүүлэх, сургалт зөвлөгөөг нээлттэй хүртээмжтэй хүргэх зорилготойгоор үйл ажиллагаа явуулж буй нийгэмд үйлчилдэг төрийн бус байгууллага юм.</p>
-                                <strong class="name">“John Doe”</strong>
-                            </div>
-                        </li>
-                        <li style="float: none; list-style: none; position: absolute;  z-index: 51; display: list-item; opacity: 0.081236;">
-                            <div class="testimonial-holder">
-                                <span class="icon-holder">
-<i class="fa fa-quote-right"></i>
-</span>
-                                <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академитай хамтран ажиллах, туршлага солилцох, сургалт семинар уулзалт зохион байгуулах, дэмжлэг туслалцаа үзүүлэх, мэргэжлийн байгууллага тэдгээрийн уялдаа холбоог нэгтгэх энэ чиглэлээр нийгмийн эмзэг бүлгийн иргэдэд  дэмжлэг туслалцаа үзүүлэх, сургалт зөвлөгөөг нээлттэй хүртээмжтэй хүргэх зорилготойгоор үйл ажиллагаа явуулж буй нийгэмд үйлчилдэг төрийн бус байгууллага юм .</p>
-                                <strong class="name">“Britney Doe”</strong>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bx-controls bx-has-pager bx-has-controls-direction">
-                    <div class="bx-pager bx-default-pager">
-                        <div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a>
-                        </div>
-                        <div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link active">2</a>
-                        </div>
-                    </div>
-                    <div class="bx-controls-direction">
-                        <a class="bx-prev" href=""> </a>
-                        <a class="bx-next" href=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21393.15251936965!2d106.89736212370993!3d47.91424985478723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96924c0239885f%3A0xa6f4eb660c418885!2sGerege+Tower!5e0!3m2!1smn!2smn!4v1482827093951" width="1400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 @stop {{-- end content --}}
 
