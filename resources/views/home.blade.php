@@ -34,35 +34,31 @@
                     <div class="row">
                         <ul>
                             <li>
-                                <a href="http://www.bella.mn/products">Арьс арчилгаа</a>
+                                <a href="http://www.bella.mn/products?category=1%257C%25D0%2590%25D1%2580%25D1%258C%25D1%2581%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Арьс арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Нүүр будалт</a>
+                                <a href="http://www.bella.mn/products?category=2%257C%25D0%259D%25D2%25AF%25D2%25AF%25D1%2580%2B%25D0%25B1%25D1%2583%25D0%25B4%25D0%25B0%25D0%25BB%25D1%2582">Нүүр будалт</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Үс / бие арчилгаа</a>
+                                <a href="http://www.bella.mn/products?category=3%257C%25D2%25AE%25D1%2581%2B%25D0%25B1%25D0%25B8%25D0%25B5%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Үс / бие арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Үнэртэй ус</a>
+                                <a href="http://www.bella.mn/products?category=4%257C%25D2%25AE%25D0%25BD%25D1%258D%25D1%2580%25D1%2582%25D1%258D%25D0%25B9%2B%25D1%2583%25D1%2581">Үнэртэй ус</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Багц</a>
+                                <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Эрүүл мэнд</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Эрүүл мэнд</a>
+                                <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Багс</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Дижитал бараа</a>
-                                
-                            </li>
-                            <li>
-                                <a href="http://www.bella.mn/products">Хямдралтай бараа</a>
+                                <a href="http://www.bella.mn/products">Бүх бараа</a>
                                 
                             </li>
                         </ul>
@@ -230,41 +226,32 @@
                         </div>
                         <div class="row demo" style="background: url(img/product/producthead.png) bottom left no-repeat;">
                         <ul class="prodsectoul">
-
                             <li>
-                                <a href="http://www.bella.mn/products">Арьс арчилгаа</a>
+                                <a href="http://www.bella.mn/products?category=1%257C%25D0%2590%25D1%2580%25D1%258C%25D1%2581%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Арьс арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Нүүр будалт</a>
+                                <a href="http://www.bella.mn/products?category=2%257C%25D0%259D%25D2%25AF%25D2%25AF%25D1%2580%2B%25D0%25B1%25D1%2583%25D0%25B4%25D0%25B0%25D0%25BB%25D1%2582">Нүүр будалт</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Үс / бие арчилгаа</a>
+                                <a href="http://www.bella.mn/products?category=3%257C%25D2%25AE%25D1%2581%2B%25D0%25B1%25D0%25B8%25D0%25B5%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Үс / бие арчилгаа</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Үнэртэй ус</a>
+                                <a href="http://www.bella.mn/products?category=4%257C%25D2%25AE%25D0%25BD%25D1%258D%25D1%2580%25D1%2582%25D1%258D%25D0%25B9%2B%25D1%2583%25D1%2581">Үнэртэй ус</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Багц</a>
+                                <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Эрүүл мэнд</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Эрүүл мэнд</a>
+                                <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Багс</a>
                                 
                             </li>
                             <li>
-                                <a href="http://www.bella.mn/products">Дижитал бараа</a>
-                                
-                            </li>
-                            <li>
-                                <a href="http://www.bella.mn/products">Хямдралтай бараа</a>
-                                
-                            </li>
-                            <li>
-                                <a href="http://www.bella.mn/products">Үнэртэй ус</a>
+                                <a href="http://www.bella.mn/products">Бүх бараа</a>
                                 
                             </li>
                         </ul>
@@ -308,7 +295,7 @@
         <p class="product-description"></p>
  -->
         
-        <div class="product-actions actions">
+        <div >
 
             
             <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
@@ -333,7 +320,7 @@
         </div>
         
         <h6 class="product-name">
-            <a href="http://www.bella.mn/products/30">
+            <a href="#">
                 PINK TONE UP
             </a>
         </h6>
@@ -369,7 +356,7 @@
         <p class="product-description"></p>
  -->
         
-        <div class="product-actions actions">
+        <div >
 
             
             <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
@@ -394,7 +381,7 @@
         </div>
         
         <h6 class="product-name">
-            <a href="http://www.bella.mn/products/30">
+          <a href="#">
                 PINK TONE UP
             </a>
         </h6>
@@ -430,15 +417,12 @@
         <p class="product-description"></p>
  -->
         
-        <div class="product-actions actions">
+        <div >
 
             
             <div class="col-md-6 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
-                <div class="glyphicon glyphicon-shopping-cart option ">
-                                            <form method="POST" action="http://www.bella.mn/user/orders/addTo/cart/30" accept-charset="UTF-8" id="add-30" class="ng-pristine ng-valid"><input name="_method" type="hidden" value="PUT" autocomplete="off"><input name="_token" type="hidden" value="NT7ohrAq7xknoLgYlANFpBgMvWhx7FCOGwfwLa53" autocomplete="off">
-                        </form>
-                                    </div>
-                <span id="card_text">Сагс</span>
+                
+              
             </div>
 
             
@@ -455,7 +439,7 @@
         </div>
         
         <h6 class="product-name">
-            <a href="http://www.bella.mn/products/30">
+            <a href="#">
                 PINK TONE UP
             </a>
         </h6>
@@ -491,7 +475,7 @@
         <p class="product-description"></p>
  -->
         
-        <div class="product-actions actions">
+        <div >
 
             
             <div class="col-md-6 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-30')">
@@ -516,7 +500,7 @@
         </div>
         
         <h6 class="product-name">
-            <a href="http://www.bella.mn/products/30">
+            <a href="#">
                 PINK TONE UP
             </a>
         </h6>
@@ -554,9 +538,9 @@
                
                     <div class="col-md-12">
                         @if (Auth::check())
-                            <h4 class="home-title-section">{{ trans('store.suggestions.viewed') }}</h4>
+                            <h4 class="home-title-section">Бараанууд</h4>
                         @else
-                            <h4 class="home-title-section">{{ trans('store.suggestions.viewed_unlogged') }}</h4>
+                            <h4 class="home-title-section">Бараанууд</h4>
                         @endif
                     </div>
 

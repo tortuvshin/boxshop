@@ -1202,7 +1202,7 @@ a:focus {
   float: left;
   width: 100%;
   position: relative;
-  background: url(http://html.crunchpress.com/big-salon/images/services/services-bg-img.jpg) top center no-repeat;
+  background: url(../img/tanilcuulga/bg2.jpg) top center no-repeat;
   background-size: cover;
   z-index: 11;
 }
@@ -1684,7 +1684,7 @@ ul.cp-listed li {
 .cp_pricing-section {
   float: left;
   width: 100%;
-  background: url(http://html.crunchpress.com/big-salon/images/pricing/price-bg-img.png) top center #000;
+  background: url(../img/tanilcuulga/bg1.jpg) top center #000;
   background-size: cover;
   background-attachment: fixed;
   position: relative;

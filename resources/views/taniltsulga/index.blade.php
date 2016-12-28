@@ -17,7 +17,7 @@
 
                 <div class="col-md-6">
                     <div class="">
-                        <img src="http://html.crunchpress.com/big-salon/images/about/about-img-01.jpg" alt="">
+                        <img src="img/tanilcuulga/salon.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -42,19 +42,18 @@
     <section class="cp_promotion-section pd-b80">
         <div class="row">
             <div class="cp-heding-style1">
-                <h2>Шинэ урамшуулал</h2>
+                <h2>Будалт</h2>
             </div>
             <div class="row">
                 <div class="col-md-6">
 
                     <div class="promotion-item">
                         <div class="text">
-                            <h3><a href="product-detail.html">Шинэ жилийн урамшуулал </a></h3>
+                            <h3><a href="product-detail.html">Гоёлын будалт </a></h3>
                             <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академи.</p>
-                            <span class="item-discount"><b>20%</b>Хямд</span>
                         </div>
                         <div class="thumb">
-                            <img src="http://html.crunchpress.com/big-salon/images/promotion-img-01.jpg" alt="">
+                            <img src="img/tanilcuulga/promotion1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -62,12 +61,11 @@
 
                     <div class="promotion-item">
                         <div class="text">
-                            <h3><a href="product-detail.html">Мартын 8 урамшуулал</a></h3>
+                            <h3><a href="product-detail.html">Энгийн будалт</a></h3>
                             <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академи</p>
-                            <span class="item-discount"><b>20%</b>Хямд</span>
                         </div>
                         <div class="thumb">
-                            <img src="http://html.crunchpress.com/big-salon/images/promotion-img-02.jpg" alt="">
+                            <img src="img/tanilcuulga/promotion2.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -76,53 +74,17 @@
     </section>
 
 
-    <section class="cp_rates-section pd-b80">
-        <div class="container">
-            <div class="rates-holder">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <div class="text-holder left">
-                            <div class="info-hold">
-                                <h4>Эмэгтэй үс засалт</h4>
-                                <span><b>$40</b></span>
-                            </div>
-                            <div class="info-hold">
-                                <h4>Эмэгтэй үс засалт</h4>
-                                <span><b>$60</b></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <div class="text-holder right">
-                            <div class="info-hold">
-                                <h4>Эмэгтэй үс засалт</h4>
-                                <span><b>$70</b></span>
-                            </div>
-                            <div class="info-hold">
-                                <h4>Эмэгтэй үс засалт</h4>
-                                <span><b>$90</b></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom">
-                <p>Монголын анхны  Мэргэжлийн Нүүр хувиргагч Төгс үзэсгэлэнт Академи нь 2014  онд байгуулагдсан бөгөөд  Монголын гоо сайхан нүүр будах урлагыг дэлхийн түвшинд таниулах гадаад орны мэргэжлийн академитай хамтран ажиллах, туршлага солилцох, сургалт семинар уулзалт зохион байгуулах, дэмжлэг туслалцаа үзүүлэх, мэргэжлийн байгууллага тэдгээрийн уялдаа холбоог нэгтгэх энэ чиглэлээр нийгмийн эмзэг бүлгийн иргэдэд  дэмжлэг туслалцаа үзүүлэх, сургалт зөвлөгөөг нээлттэй хүртээмжтэй хүргэх зорилготойгоор үйл ажиллагаа явуулж буй нийгэмд үйлчилдэг төрийн бус байгууллага юм.</p>
-                <a href="services.html" >Бусад үйлчилгээ</a>
-            </div>
-        </div>
-    </section>
     </div>
     <section class="cp_our-services-section pd-t80">
     <div class="container">
         <div class="cp-heding-style2">
-            <h2>Бидний үйлчилгээ</h2>
+            <h2>Үйлчилгээний төрөл</h2>
         </div>
         <div class="row">
             <div class="col-md-3 col-sm-6">
 
                 <div class="services-item">
-                    <img src="http://html.crunchpress.com/big-salon/images/services/services-item-img-01.jpg" alt="">
+                    <img src="img/tanilcuulga/service2.jpg" alt="">
                     <div class="services-caption">
                         <h3>Энгийн будалт</h3>
                         <span class="cp_linebar-style"></span>
@@ -134,7 +96,7 @@
             <div class="col-md-3 col-sm-6">
 
                 <div class="services-item">
-                    <img src="http://html.crunchpress.com/big-salon/images/services/services-item-img-02.jpg" alt="">
+                    <img src="img/tanilcuulga/service1.jpg" alt="">
                     <div class="services-caption">
                         <h3>Гоёлын будалт</h3>
                         <span class="cp_linebar-style"></span>
@@ -146,7 +108,7 @@
             <div class="col-md-3 col-sm-6">
 
                 <div class="services-item">
-                    <img src="http://html.crunchpress.com/big-salon/images/services/services-item-img-03.jpg" alt="">
+                    <img src="img/tanilcuulga/service3.jpg" alt="">
                     <div class="services-caption">
                         <h3>Ганцааричлсан сургалт</h3>
                         <span class="cp_linebar-style"></span>
@@ -158,7 +120,7 @@
             <div class="col-md-3 col-sm-6">
 
                 <div class="services-item">
-                    <img src="http://html.crunchpress.com/big-salon/images/services/services-item-img-01.jpg" alt="">
+                    <img src="img/tanilcuulga/service4.jpg" alt="">
                     <div class="services-caption">
                         <h3>Групп сургалт</h3>
                         <span class="cp_linebar-style"></span>
@@ -171,64 +133,89 @@
     </div>
 </section>
 
-
-<section class="cp_equipment-section pd-tb80">
+<section class="cp_our-team-section pd-tb80">
     <div class="container">
         <div class="cp-heding-style1">
-            <h2>Тоног төхөөрөмж</h2>
+            <h2>Манай шилдэг артистууд</h2>
         </div>
-        <div class="row pretty-gallery">
-            <div class="col-md-3 col-sm-6">
+        <div class="row">
+            <div class="col-md-2 col-sm-5">
 
-                <div class="box-item">
-                    <div class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/equipment-img-01.png" alt="">
-                        <a href="images/equipment-img-01.png" class="zooming-holder" data-rel="prettyPhoto" rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                <div class="team-item">
+                    <figure class="cp-thumb">
+                        <img src="img/tanilcuulga/bella.jpg" alt="">
+                       
+                    </figure>
+                    <div class="team-text">
+                        <h3><a href="#">Белла</a></h3>
                     </div>
-                    <h3>Black Beauty Salon</h3>
-                    <span>Styling Sofa</span>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-2 col-sm-6">
 
-                <div class="box-item">
-                    <div class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/equipment-img-02.png" alt="">
-                        <a href="images/equipment-img-02.png" class="zooming-holder" data-rel="prettyPhoto" rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                <div class="team-item">
+                    <figure class="cp-thumb">
+                        <img src="img/tanilcuulga/daria.jpg" alt="">
+                     
+                    </figure>
+                    <div class="team-text">
+                        <h3><a href="#">Дариа</a></h3>
                     </div>
-                    <h3>Haircutting Cover</h3>
-                    <span>Styling Gown</span>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-2 col-sm-6">
 
-                <div class="box-item">
-                    <div class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/equipment-img-03.png" alt="">
-                        <a href="images/equipment-img-03.png" class="zooming-holder" data-rel="prettyPhoto" rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                <div class="team-item">
+                    <figure class="cp-thumb">
+                        <img src="img/tanilcuulga/ulzii.jpg" alt="">
+                   
+                    </figure>
+                    <div class="team-text">
+                        <h3><a href="#">Өлзий</a></h3>
                     </div>
-                    <h3>Black Beauty Salon</h3>
-                    <span>Styling Chair</span>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-2 col-sm-6">
 
-                <div class="box-item">
-                    <div class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/equipment-img-04.png" alt="">
-                        <a href="images/equipment-img-04.png" class="zooming-holder" data-rel="prettyPhoto" rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                <div class="team-item">
+                    <figure class="cp-thumb">
+                        <img src="img/tanilcuulga/deegii.jpg" alt="">
+                    
+                    </figure>
+                    <div class="team-text">
+                        <h3><a href="#">Дээгий</a></h3>
                     </div>
-                    <h3>Brushes Holder</h3>
-                    <span>For Salon</span>
                 </div>
             </div>
+            <div class="col-md-2 col-sm-6">
+
+                <div class="team-item">
+                    <figure class="cp-thumb">
+                        <img src="img/tanilcuulga/maralaa.jpg" alt="">
+                        
+                    </figure>
+                    <div class="team-text">
+                        <h3><a href="#">Маралаа</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-5">
+
+                <div class="team-item">
+                    <figure class="cp-thumb">
+                        <img src="img/tanilcuulga/bella.jpg" alt="">
+                       
+                    </figure>
+                    <div class="team-text">
+                        <h3><a href="#">Белла</a></h3>
+                    </div>
+                </div>
+            </div>
+
+        
         </div>
     </div>
 </section>
-
-
-
-
 
 <section class="cp_pricing-section pd-tb80">
     <div class="container">
@@ -240,7 +227,7 @@
 
                 <div class="pricing-item">
                     <div class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/pricing/price-img-01.jpg" alt="">
+                        <img src="img/tanilcuulga/budalt1.jpg" alt="">
                     </div>
                     <div class="pricing-text">
                         <span class="price">Энгийн будалт</span>
@@ -259,7 +246,7 @@
 
                 <div class="pricing-item">
                     <div class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/pricing/price-img-02.jpg" alt="">
+                        <img src="img/tanilcuulga/budalt4.jpg" alt="">
                     </div>
                     <div class="pricing-text">
                         <span class="price">Гоёлын будалт</span>
@@ -278,7 +265,7 @@
 
                 <div class="pricing-item">
                     <div class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/pricing/price-img-03.jpg" alt="">
+                        <img src="img/tanilcuulga/surgalt1.jpg" alt="">
                     </div>
                     <div class="pricing-text">
                         <span class="price">Сургалт</span>
@@ -297,7 +284,7 @@
 
                 <div class="pricing-item">
                     <div class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/pricing/price-img-04.jpg" alt="">
+                        <img src="img/tanilcuulga/budalt2.jpg" alt="">
                     </div>
                     <div class="pricing-text">
                         <span class="price">Групп сургалт</span>
@@ -315,105 +302,43 @@
         </div>
     </div>
 </section>
-
-
-<section class="cp_our-team-section pd-tb80">
+<section class="cp_equipment-section pd-tb80">
     <div class="container">
         <div class="cp-heding-style1">
-            <h2>Манай шилдэг ажилчид</h2>
+            <h2>Манай эвентүүд</h2>
         </div>
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
+        <div class="row pretty-gallery">
+            <div class="col-md-4 col-sm-6">
 
-                <div class="team-item">
-                    <figure class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/team/team-img-01.jpg" alt="">
-                        <figcaption class="caption">
-                            <ul class="cp-social-list">
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <div class="team-text">
-                        <h3><a href="#">Белла</a></h3>
-                        <span>Захирал</span>
+                <div class="box-item">
+                    <div class="cp-thumb">
+                        <img src="img/tanilcuulga/event1.jpg" alt="">
+                        <a href="img/tanilcuulga/event1.jpg" class="zooming-holder" data-rel="prettyPhoto" rel="prettyPhoto"><i class="fa fa-search"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
 
-                <div class="team-item">
-                    <figure class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/team/team-img-02.jpg" alt="">
-                        <figcaption class="caption">
-                            <ul class="cp-social-list">
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <div class="team-text">
-                        <h3><a href="#">Дариймаа</a></h3>
-                        <span>Артист/Загвар зохион бүтээгч</span>
+                <div class="box-item">
+                    <div class="cp-thumb">
+                        <img src="img/tanilcuulga/event2.jpg" alt="">
+                        <a href="img/tanilcuulga/event2.jpg" class="zooming-holder" data-rel="prettyPhoto" rel="prettyPhoto"><i class="fa fa-search"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
 
-                <div class="team-item">
-                    <figure class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/team/team-img-03.jpg" alt="">
-                        <figcaption class="caption">
-                            <ul class="cp-social-list">
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <div class="team-text">
-                        <h3><a href="#">Дэлгэрцэцэг</a></h3>
-                        <span>Артист/Маркетинг менежер</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-
-                <div class="team-item">
-                    <figure class="cp-thumb">
-                        <img src="http://html.crunchpress.com/big-salon/images/team/team-img-04.jpg" alt="">
-                        <figcaption class="caption">
-                            <ul class="cp-social-list">
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                                <li><a href="#"><i class="glyphicon glyphicon-glass"></i></a>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <div class="team-text">
-                        <h3><a href="#">Дөлгөөнзул</a></h3>
-                        <span>Артист/Банкны эдийн засагч,ня-бо</span>
+                <div class="box-item">
+                    <div class="cp-thumb">
+                        <img src="img/tanilcuulga/event3.jpg" alt="">
+                        <a href="img/tanilcuulga/event3.jpg" class="zooming-holder" data-rel="prettyPhoto" rel="prettyPhoto"><i class="fa fa-search"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <section class="cp_achievement-section pd-tb80">
     <div class="container">
@@ -539,7 +464,7 @@
         </div>
     </div>
 </section>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21393.15251936965!2d106.89736212370993!3d47.91424985478723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96924c0239885f%3A0xa6f4eb660c418885!2sGerege+Tower!5e0!3m2!1smn!2smn!4v1482827093951" width="1400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 
 @stop {{-- end content --}}
 
