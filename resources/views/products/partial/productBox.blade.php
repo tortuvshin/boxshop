@@ -68,7 +68,7 @@ if (isset($productSuggestion)) {
 
         <div class="product-price">
             <!-- {!! \Utility::showPrice($product['price']) !!} -->
-            ₮ {{ $product['price'] }}
+            {{ $product['price'] }} ₮
         </div>
 
     </div>

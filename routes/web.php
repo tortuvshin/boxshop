@@ -19,6 +19,11 @@ Route::group(['prefix' => 'home'], function () {
     Route::get('/', 'HomeController@index');
 });
 
+
+  Route::get('contact', 'MailController@getContact');
+    Route::post('contact', 'MailController@postContact');
+
+
 require __DIR__ . '/web/users.php';
 
 require __DIR__ . '/web/business.php';

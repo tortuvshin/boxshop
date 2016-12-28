@@ -106,7 +106,7 @@
 	        <div class=" col-md-6">
 				
 	        <div>
-	        	<h1 class="price">{{ \Utility::showPrice($product->price) }}</h1>
+	        	<h1 class="price">{{ $product['price'] }} ₮</h1>
 	        </div>
 				
 				<div class="social ">
