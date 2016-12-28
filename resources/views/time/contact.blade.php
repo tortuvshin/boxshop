@@ -247,29 +247,7 @@
       /* -------------------------------------
           PRESERVE THESE STYLES IN THE HEAD
       ------------------------------------- */
-      @media all {
-        .ExternalClass {
-          width: 100%; }
-        .ExternalClass,
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td,
-        .ExternalClass div {
-          line-height: 100%; }
-        .apple-link a {
-          color: inherit !important;
-          font-family: inherit !important;
-          font-size: inherit !important;
-          font-weight: inherit !important;
-          line-height: inherit !important;
-          text-decoration: none !important; } 
-        .btn-primary table td:hover {
-          background-color: #34495e !important; }
-        .btn-primary a:hover {
-          background-color: #34495e !important;
-          border-color: #34495e !important; } }
-
+   
     </style>
   </head>
   <body class="">
@@ -290,6 +268,7 @@
                     <tr>
                       <td>
                        <h3>ЦАГ АВАХ ЗАХИАЛГА</h3>
+                       <hr>
                         <p>
                         Артист: {{ $subject }} 
                         </p>
@@ -309,7 +288,7 @@
                         Нэмэлт тайлбар: {{ $bodyMessage }}
                         </p>
                      
-                         <p>Хариу илгээх {{ $email }}</p>
+                         <p>Хариу илгээх:    {{ $email }}</p>
                       </td>
                     </tr>
                   </table>

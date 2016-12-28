@@ -7,7 +7,7 @@
             <li><a class="kk-1" href="{{ route('home') }}">Нүүр</a></li>
             <li><a class="kk-1" href="{{ route('products') }}">Онцлох бараа</a></li>
             <li><a class="kk-1" href="{{ route('mycompany') }}">Танилцуулга</a></li>
-            <li><a class="kk-1" href="{{ route('time') }}">Цаг авах</a></li>
+            <li><a class="kk-1" href="{{ route('tsag') }}">Цаг авах</a></li>
         </ul>
     </div>
 </div>
