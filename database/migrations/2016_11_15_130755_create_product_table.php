@@ -25,9 +25,6 @@ class CreateProductTable extends Migration
             $table->string('name', 100);
             $table->string('description', 500);
             $table->double('price', 10, 2);
-            $table->integer('stock');
-            $table->integer('low_stock')->default(0);
-            $table->string('bar_code')->nullable();
             $table->string('brand', 30)->nullable();
             $table->enum('condition', array_keys(trans('globals.product_conditions')));
             $table->json('tags')->nullable();
