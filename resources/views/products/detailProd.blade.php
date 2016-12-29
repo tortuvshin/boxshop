@@ -140,13 +140,13 @@
 							<li><label class="black_color">{{ ucwords($key) }}:</label>&nbsp;{{  ucwords( is_array($feature) ? implode(' ', $feature) : $feature ) }}</li>
 						@endif
 					@endforeach
-					<li>
+					<!-- <li>
 						@if ($product->stock <= $product->low_stock)
 							<span class = "label label-warning">{{ trans('store.lowStock') }}</span>
 						@else
 							<span class = "label label-success">{{ trans('store.inStock') }}</span>
 						@endif
-					</li>
+					</li> -->
 				</ul>
 				</div>
 				
@@ -170,7 +170,6 @@
 								<label for = "quantity">{{ trans('store.quantity_long') }}:</label>
 									{!! Form::selectRange(
 			                            	'quantity', 1,
-			                            	$product->stock, 1,
 			                                ['class' => 'quantity']
 			                        ) !!}
 		                  	</div>

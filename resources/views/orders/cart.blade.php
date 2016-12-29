@@ -93,12 +93,12 @@
                                             @if ($user)
                                                 <select class="form-control col-lg-6" name="cartQty" id="cartQty" ng-init = "cart['{{ $item['product']['id'] }}'] = '{{ $item['quantity'] }}'" ng-model = "cart['{{ $item['product']['id'] }}']" ng-change = "changeQuantity('{{ $cart['id'] }}', '{{ $item['id'] }}', cart['{{ $item['product']['id'] }}'])" >
 
-                                                    @for ($i=1; $i<$item['product']['stock']; $i++)
+<!--                                                     @for ($i=1; $i<$item['product']['stock']; $i++)
 
                                                     <option ng-selected="'{{ $i }}' == '{{ $item['quantity'] }}' " value="{{ $i }}">{{ $i }}</option>
 
                                                     @endfor
-
+ -->
 
                                                 </select>
                                             @else
@@ -272,12 +272,12 @@
                                                 <span>{{ $item['quantity'] }}</span>
                                             @else
                                                 <select class="form-control col-lg-6" name="quantity" id="quantity">
-
+<!-- 
                                                     @for ($i=0; $i<$item['product']['stock']; $i++)
 
                                                     <option value="{{ $i }}" {{ ($item['quantity'] == $i) ? 'selected' : '' }}>{{ $i }}</option>
 
-                                                    @endfor
+                                                    @endfor -->
 
                                                 </select> <small>{{ trans('store.items') }}</small>
                                             @endif

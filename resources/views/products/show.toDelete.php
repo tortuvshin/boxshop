@@ -85,8 +85,8 @@
                         @if (trim($product->brand)!='')
                             <div class="text-small"><strong>{{ trans('globals.brand') }}: </strong> {{ $product->brand }}</div>
                         @endif
-
-                        <div class="text-small"><strong>{{ trans('store.condition') }}</strong>: {{$product->condition}} <span ng-attr-class="[[product.stock<= product.low_stock && 'label label-warning'|| 'label label-success' ]]"><span ng-show="product.stock <= product.low_stock">{{ trans('store.just') }} {{$product->stock}}</span> {{ trans('store.inStock') }}</span></div>
+<!-- 
+                        <div class="text-small"><strong>{{ trans('store.condition') }}</strong>: {{$product->condition}} <span ng-attr-class="[[product.stock<= product.low_stock && 'label label-warning'|| 'label label-success' ]]"><span ng-show="product.stock <= product.low_stock">{{ trans('store.just') }} {{$product->stock}}</span> {{ trans('store.inStock') }}</span></div> -->
                         @if(!count($product->group))
                             <div class="text-small hidden-xs">
                                 @if (isset($product->features))
@@ -118,10 +118,10 @@
                                     <div class="col-sm-2">
                                         {{ trans('store.quantity') }}:
                                     </div>
-                                    <div class="col-sm-10">
+                                    <!-- <div class="col-sm-10">
                                         {!! Form::selectRange('quantity', 1, $product->stock, 1,
                                                              ['class' => 'form-control ']) !!}
-                                    </div>
+                                    </div> -->
                                 </div>
                                 @if($product->type=='key')
                                     <br/>{{ trans('globals.send_to') }}: {!! Form::email('email',(Auth::check()?Auth::user()->email:null), ['class'=>'form-control',(Auth::check()?'':'disabled')=>(Auth::check()?'':'disabled')]) !!}

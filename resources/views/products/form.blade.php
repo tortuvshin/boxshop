@@ -105,14 +105,14 @@
                     </div>
 
                     <div class="form-group ng-cloak" ng-show="typeItem=='item'">
-                        <div class="col-sm-4">
+                        <!-- <div class="col-sm-4">
                             {!! Form::label('stock',trans('product.globals.stock')) !!}:&nbsp;
                             {!! Form::number('stock',null,['class'=>'form-control','required']) !!}
                         </div>
                         <div class="col-sm-4">
                             {!! Form::label('low_stock',trans('product.inputs_view.low_stock')) !!}:&nbsp;
                             {!! Form::number('low_stock',null,['class'=>'form-control','required']) !!}
-                        </div>
+                        </div> -->
                         <div class="col-sm-4">&nbsp;</div>
                     </div>
 
