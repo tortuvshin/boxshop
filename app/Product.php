@@ -26,13 +26,13 @@ class Product extends Model
         'name',
         'description',
         'price',
-        'stock',
+        // 'stock',
         'features',
-        'barcode',
+        // 'barcode',
         // 'condition',
         'rate_val',
         'rate_count',
-        'low_stock',
+        // 'low_stock',
         'status',
         'parent_id',
     ];
@@ -87,8 +87,7 @@ class Product extends Model
 
     public function scopeActives($query)
     {
-        return $query->where('status', 1)
-                     ->where('stock', '>', 0);
+        return $query->where('status', 1);
     }
 
     public function scopeInactives($query)

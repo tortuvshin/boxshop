@@ -25,19 +25,19 @@ class ProductsController extends Controller
 {
     private $form_rules = [
         'amount'       => 'required|numeric|digits_between:1,11|min:0',
-        'bar_code'     => 'max:255',
+        // 'bar_code'     => 'max:255',
         'category_id'  => 'required',
         // 'condition'    => 'required',
         'description'  => 'required|max:500',
         'key'          => 'required',
         'key_software' => 'required',
         'type'         => 'required',
-        'low_stock'    => 'numeric|digits_between:1,11|min:0',
+        // 'low_stock'    => 'numeric|digits_between:1,11|min:0',
         'name'         => 'required|max:100',
         'price'        => 'required|numeric|digits_between:1,10|min:1',
         'software'     => 'required',
         'software_key' => 'required',
-        'stock'        => 'required|numeric|digits_between:1,11|min:0',
+        // 'stock'        => 'required|numeric|digits_between:1,11|min:0',
     ];
     private $panel = [
         'left'   => ['width' => '3'],
@@ -184,7 +184,7 @@ class ProductsController extends Controller
             switch ($filter) {
                 case 'active': $products = Product::auth()->actives()->where('type', '<>', 'freeproduct')->paginate(12); break;
                 case 'inactive': $products = Product::auth()->inactives()->where('type', '<>', 'freeproduct')->paginate(12); break;
-                case 'low': $products = Product::auth()->whereRaw('stock <= low_stock')->where('type', '<>', 'freeproduct')->paginate(12); break;
+                // case 'low': $products = Product::auth()->whereRaw('stock <= low_stock')->where('type', '<>', 'freeproduct')->paginate(12); break;
                 default: $products = Product::auth()->where('type', '<>', 'freeproduct')->paginate(12); break;
             }
         } else {
@@ -271,20 +271,20 @@ class ProductsController extends Controller
         $product->category_id = $request->input('category_id');
         $product->user_id = \Auth::id();
         $product->description = $request->input('description');
-        $product->bar_code = $request->input('bar_code');
+        // $product->bar_code = $request->input('bar_code');
         $product->brand = $request->input('brand');
         $product->price = $request->input('price');
         // $product->condition = $request->input('condition');
         $product->features = $features;
         $product->type = $request->input('type');
         if ($request->input('type') == 'item') {
-            $product->stock = $request->input('stock');
-            $product->low_stock = $request->input('low_stock');
-            if ($request->input('stock') > 0) {
-                $product->status = $request->input('status');
-            } else {
-                $product->status = 0;
-            }
+            // $product->stock = $request->input('stock');
+            // $product->low_stock = $request->input('low_stock');
+            // if ($request->input('stock') > 0) {
+            //     $product->status = $request->input('status');
+            // } else {
+            //     $product->status = 0;
+            // }
         } else {
             $product->status = $request->input('status');
         }
