@@ -320,7 +320,7 @@ class ProductsController extends Controller
                             $warning = true;
                         }
                     }
-                    $product->stock = $num;
+                    // $product->stock = $num;
                     if ($num == 0) {
                         $product->status = 0;
                     }
@@ -372,8 +372,8 @@ class ProductsController extends Controller
 
         $product = Product::select([
             'id', 'category_id', 'user_id', 'name', 'description',
-            'price', 'stock', 'features', 'rate_val',
-            'rate_count', 'low_stock', 'status', 'type', 'tags', 'products_group', 'brand',
+            'price',  'features', 'rate_val',
+            'rate_count',  'status', 'type', 'tags', 'products_group', 'brand',
         ])->with([
             'group' => function ($query) {
                 $query->select(['id', 'products_group', 'features']);
@@ -522,18 +522,18 @@ class ProductsController extends Controller
         }
         $product->status = $request->input('status');
         $product->description = $request->input('description');
-        $product->bar_code = $request->input('bar_code');
+        // $product->bar_code = $request->input('bar_code');
         $product->brand = $request->input('brand');
         $product->price = $request->input('price');
         $product->features = $features;
         if ($request->input('type') == 'item') {
-            $product->stock = $request->input('stock');
-            $product->low_stock = $request->input('low_stock');
-            if ($request->input('stock') > 0) {
-                $product->status = $request->input('status');
-            } else {
-                $product->status = 0;
-            }
+            // $product->stock = $request->input('stock');
+            // $product->low_stock = $request->input('low_stock');
+            // if ($request->input('stock') > 0) {
+            //     $product->status = $request->input('status');
+            // } else {
+            //     $product->status = 0;
+            // }
         } else {
             $product->status = $request->input('status');
         }
@@ -559,11 +559,11 @@ class ProductsController extends Controller
                                 $warning = true;
                             }
                         }
-                        $stock = count(VirtualProduct::where('product_id', $product->id)->where('status', 'open')->get()->toArray());
-                        $product->stock = $stock;
-                        if ($stock == 0) {
-                            $product->status = 0;
-                        }
+                        // $stock = count(VirtualProduct::where('product_id', $product->id)->where('status', 'open')->get()->toArray());
+                        // $product->stock = $stock;
+                        // if ($stock == 0) {
+                        //     $product->status = 0;
+                        // }
                         $product->save();
                         $message = ' '.trans('product.controller.review_keys');
                         if ($warning) {
@@ -861,21 +861,24 @@ class ProductsController extends Controller
                 unset($rules['key_software']); unset($rules['software_key']);
             break;
             case 'key':
-                unset($rules['amount']); unset($rules['stock']); unset($rules['low_stock']); unset($rules['software']);
+                // unset($rules['amount']); unset($rules['stock']); unset($rules['low_stock']); 
+                unset($rules['software']);
                 unset($rules['key_software']); unset($rules['software_key']);
                 if ($edit) {
                     unset($rules['key']);
                 }
             break;
             case 'software':
-                unset($rules['amount']); unset($rules['stock']); unset($rules['low_stock']); unset($rules['key']);
+                // unset($rules['amount']); unset($rules['stock']); 
+                // unset($rules['low_stock']); unset($rules['key']);
                 unset($rules['key_software']); unset($rules['software_key']);
                 if ($edit) {
                     unset($rules['software']);
                 }
             break;
             case 'software_key':
-                unset($rules['amount']); unset($rules['stock']); unset($rules['low_stock']);
+                // unset($rules['amount']); unset($rules['stock']); 
+                // unset($rules['low_stock']);
                 unset($rules['key']); unset($rules['software']);
                 if ($edit) {
                     unset($rules['key_software']);
@@ -883,7 +886,9 @@ class ProductsController extends Controller
                 }
             break;
             case 'gift_card':
-                unset($rules['stock']); unset($rules['low_stock']); unset($rules['key']); unset($rules['software']);
+                // unset($rules['stock']); 
+                // unset($rules['low_stock']);
+                 unset($rules['key']); unset($rules['software']);
                 unset($rules['key_software']); unset($rules['software_key']);
             break;
             default:
@@ -1223,7 +1228,7 @@ class ProductsController extends Controller
 
             return array_unique($_tags, SORT_STRING);
         } else {
-            $products = Product::select(['id', 'name', 'description', 'features', 'price', 'type', 'stock'])
+            $products = Product::select(['id', 'name', 'description', 'features', 'price', 'type'])
                 ->free()
                 ->orderBy('rate_count', 'desc')
                 ->orderBy('rate_val', 'desc')
