@@ -94,10 +94,10 @@
                             {!! Form::label('brand',trans('product.inputs_view.brand')) !!}:&nbsp;
                             {!! Form::text('brand',null,['class'=>'form-control','required']) !!}
                         </div>
-                        <div class="col-sm-4">
+                        <!-- <div class="col-sm-4">
                             {!! Form::label('bar_code',trans('product.inputs_view.bar_code')) !!}:&nbsp;
                             {!! Form::text('bar_code',null,['class'=>'form-control']) !!}
-                        </div>
+                        </div> -->
                         <div class="col-sm-4">
                             {!! Form::label('price',trans('product.globals.price')) !!}:&nbsp;
                             {!! Form::number('price',null,['class'=>'form-control','step'=>'any','required']) !!}

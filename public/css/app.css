@@ -162,6 +162,12 @@ a.remove:hover {
   max-width: 350px;
   padding-left: 0 !important;
 }
+.category {
+  width: 100% !important;
+}
+.brand {
+  width: 100% !important;
+}
 footer {
   background: #3c3b48;
   margin-top: 60px;
@@ -209,9 +215,6 @@ footer .menu ul li {
 .rows {
   background-color: #2d2c33;
   height: 50px;
-}
-.col-sm-4 {
-  color: white;
 }
 .subscribe_widget form {
   position: relative;
