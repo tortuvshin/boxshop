@@ -77,9 +77,6 @@
                             @endif
                             </small>
                             <p>
-                            {!! \Utility::printBarCode($product) !!}
-                            </p>
-                            <p>
                                 <strong>{{ Utility::showPrice($product->price) }}</strong>
                                 <a class="btn-xs btn-primary" href="{{ action('ProductsController@index') }}/{{ $product->id }}/edit" role="button">{{ trans('globals.edit') }}</a>
                                 <a class="btn-xs btn-default" href="{{ action('ProductsController@index') }}/{{ $product->id }}" role="button">{{ trans('product.globals.view_details') }} &raquo;</a>
