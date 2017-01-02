@@ -794,7 +794,6 @@ h6 {
 .btn.focus,
 .btn:focus,
 .btn:hover {
-  color: #ffffff ;
   text-decoration: none;
 }
 #menu-top-category .breadcrumb {

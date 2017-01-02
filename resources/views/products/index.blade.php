@@ -171,36 +171,34 @@
                         <div class="titlelines"></div>
                         <li>
                             <div class="row">
-                                <div class="col-md-10">
-                                    <form method="GET" action="/products" name="rangepriceForm" novalidate>
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <div class="input-group-addon input-sm">$</div>
-                                                <input class="form-control input-sm" type="number" value="{{ isset($refine['min']) ? $refine['min'] : '' }}" name="min" id="min" placeholder="{{ trans('globals.min_label') }}">
+                                <form method="GET" action="/products" name="rangepriceForm" novalidate>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon input-sm">₮</div>
+                                            <input class="form-control input-sm" type="number" value="{{ isset($refine['min']) ? $refine['min'] : '' }}" name="min" id="min" placeholder="{{ trans('globals.min_label') }}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                             <div class="input-group">
+                                                <div class="input-group-addon input-sm">₮</div>
+                                                <input class="form-control input-sm" type="number" value="{{ isset($refine['max']) ? $refine['max'] : '' }}" name="max" id="max" placeholder="{{ trans('globals.max_label') }}">
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                 <div class="input-group">
-                                                    <div class="input-group-addon input-sm">$</div>
-                                                    <input class="form-control input-sm" type="number" value="{{ isset($refine['max']) ? $refine['max'] : '' }}" name="max" id="max" placeholder="{{ trans('globals.max_label') }}">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-success btn-sm">
-                                                <span class="glyphicon glyphicon-filter"></span>&nbsp;
-                                                {{ trans('globals.go_label') }}
-                                            </button>
-                                        </div>
-                                        @foreach ($refine as $key => $value)
-                                            @if (trim($value)!='' && $key != 'category_name' && $key != 'min' && $key != 'max')
-                                                <?php $value = $key == 'category' ? $value.'|'.urlencode($refine['category_name']) : $value; ?>
-                                                <input type="hidden" name="{{ $key }}" id="{{ $key }}" value="{{ $value }}">
-                                            @endif
-                                        @endforeach
-                                    </form>
-                                </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success btn-sm">
+                                            <span class="glyphicon glyphicon-filter"></span>&nbsp;
+                                            {{ trans('globals.go_label') }}
+                                        </button>
+                                    </div>
+                                    @foreach ($refine as $key => $value)
+                                        @if (trim($value)!='' && $key != 'category_name' && $key != 'min' && $key != 'max')
+                                            <?php $value = $key == 'category' ? $value.'|'.urlencode($refine['category_name']) : $value; ?>
+                                            <input type="hidden" name="{{ $key }}" id="{{ $key }}" value="{{ $value }}">
+                                        @endif
+                                    @endforeach
+                                </form>
                             </div>
                             <div class="col-md-2">&nbsp;</div>
                         </li>
