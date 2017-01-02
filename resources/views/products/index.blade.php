@@ -167,7 +167,8 @@
                     @endforeach
 
                     <ul class="nav navbar-nav list-group price-range">
-                        <h4 class="small breadcrumb">{{ trans('globals.filters.price_range') }}</h4>
+                        <h3>{{ trans('globals.filters.price_range') }}</h3>
+                        <div class="titlelines"></div>
                         <li>
                             <div class="row">
                                 <div class="col-md-10">

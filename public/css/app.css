@@ -12,10 +12,6 @@ body {
 a {
   color: #666666;
 }
-h3 {
-  font-size: 20px;
-  font-weight: 700;
-}
 .header-top-right-area .dropdown-menu li {
   width: 100%;
   line-height: 20px !important;
@@ -162,11 +158,21 @@ a.remove:hover {
   max-width: 350px;
   padding-left: 0 !important;
 }
-.category {
+.brands,
+.category,
+.price-range {
   width: 100% !important;
 }
-.brand {
-  width: 100% !important;
+.brands h3,
+.category h3,
+.price-range h3,
+.brands h4,
+.category h4,
+.price-range h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
 }
 footer {
   background: #3c3b48;
