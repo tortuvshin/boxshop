@@ -108,96 +108,19 @@
         </div>
 
         {{-- end carousel --}}
-        <div class="product-features boxshadow">
-            <ul class="nav testtab nav-justified">
-                <li style="" class="active borderleft"><a href="#tab_a" data-toggle="pill">Өнөөдөр их зарагдсан</a></li>
-                <li class="borderright"><a href="#tab_b" data-toggle="pill">7 хоног их зарагдсан </a></li>
-
-            </ul>
-
-            <div id="tab_a" class="tab-pane fade in active topongo">
-
-                <div class="col-md-8 prodpadding">
-                    <div class="col-md-6 box foo prodpadding">
-
-                        <img src="img/product/baraa.png">
-
-                    </div>
-                    <div class="col-md-6 prodpadding">
-                        <div>
-                            <h4 class="prodmargin">
-                       FOAM
-                    </h4>
-                            <h3> <b>  30,000₮</b></h3>
-                            <hr>
-                            <p>
-                                Paragraph text Nam tristique porta ligula, vel viverra sem eleifend nec. Nulla sed purus augue, eu euismod tellus. Nam mattis eros nec mi sagittis sagittis. Vestibulum suscipit cursus bibendum. Integer at justo eget sem auctor…
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="box foo">
-                                <img src="img/product/baraa32.png">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div>
-                                <h4 class="prodmargin">
-                      DR.VITA
-                    </h4>
-                                <h3> <b>    25,000₮</b></h3>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="box foo">
-                                <img src="img/product/baraa42.png">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div>
-                                <h4 class="prodmargin">
-                        SNOW PACK
-                    </h4>
-                                <h3> <b>   15,000₮</b></h3>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+        <div class="home-bestselling">
+            <div class="col-md-2 bestselling-title">
+              <a href="{{ route('products') }}">
+                <span class="b-title">Онцлох бүтээгдэхүүн</span>
+                <span class="b-shopnow">Дэлгэрэнгүй</span>
+              </a>
             </div>
-            <div id="tab_b" class="tab-pane fade topongo">
-
-                <div class="col-md-8">
-                    <div class="col-md-8">
-                        a
-                    </div>
-                    <div class="col-md-4">
-                        b
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="col-md-6">
-                        a
-                    </div>
-                    <div class="col-md-6">
-                        b
-                    </div>
-                </div>
-
+            <div class="col-md-10 bestselling-product">
+                @foreach ($suggestion['purchased'] as $product)
+                    @include('products.partial.productBox', $product)
+                @endforeach
             </div>
-
-    </div>
+        </div>
 
     <!-- product section start-->
     <section>
@@ -271,72 +194,72 @@
     @parent
 
     @section('center_content')
-        <div class="product-trend" style="">
-        {{-- viewed suggestions --}}
-        <div class="clearfix home-products-wrapper">
-       
-            <div class="col-md-12">
-                @if (Auth::check())
-                    <h4 class="home-title-section">Бараанууд</h4>
-                @else
-                    <h4 class="home-title-section">Бараанууд</h4>
-                @endif
-            </div>
+        <div class="product-trend">
+          {{-- viewed suggestions --}}
+          <div class="clearfix home-products-wrapper">
+         
+              <div class="col-md-12">
+                  @if (Auth::check())
+                      <h4 class="home-title-section">Бараанууд</h4>
+                  @else
+                      <h4 class="home-title-section">Бараанууд</h4>
+                  @endif
+              </div>
 
-            <div class="container-fluid marketing">
-                <div class="row">
-                    @foreach ($suggestion['viewed'] as $product)
-                        @include('products.partial.productBox', $product)
-                    @endforeach
-                </div>
-            </div>
+              <div class="container-fluid marketing">
+                  <div class="row">
+                      @foreach ($suggestion['viewed'] as $product)
+                          @include('products.partial.productBox', $product)
+                      @endforeach
+                  </div>
+              </div>
 
-        </div>
-
-
-
-
-
-        {{-- categories suggestions --}}
-        <div class="clearfix home-products-wrapper">
-
-            <div class="col-md-12">
-                <h4 class="home-title-section">{{ trans('store.suggestions.categories') }}</h4>
-            </div>
-
-            <div class="container-fluid marketing">
-                <div class="row">
-                    @foreach ($suggestion['categories'] as $product)
-                        @include('products.partial.productBox', $product)
-                    @endforeach
-                </div>
-            </div>
-
-        </div>
+          </div>
 
 
 
 
-        {{-- trending suggestions --}}
-        <div class="clearfix home-products-wrapper">
 
-            <div class="col-md-12">
-                @if (Auth::check())
-                    <h4 class="home-title-section">{{ trans('store.suggestions.trends') }}</h4>
-                @else
-                    <h4 class="home-title-section">{{ trans('store.suggestions.trends_unlogged') }}</h4>
-                @endif
-            </div>
+          {{-- categories suggestions --}}
+          <div class="clearfix home-products-wrapper">
 
-            <div class="container-fluid marketing">
-                <div class="row">
-                    @foreach ($suggestion['purchased'] as $product)
-                        @include('products.partial.productBox', $product)
-                    @endforeach
-                </div>
-            </div>
+              <div class="col-md-12">
+                  <h4 class="home-title-section">{{ trans('store.suggestions.categories') }}</h4>
+              </div>
 
-        </div>
+              <div class="container-fluid marketing">
+                  <div class="row">
+                      @foreach ($suggestion['categories'] as $product)
+                          @include('products.partial.productBox', $product)
+                      @endforeach
+                  </div>
+              </div>
+
+          </div>
+
+
+
+
+          {{-- trending suggestions --}}
+          <div class="clearfix home-products-wrapper">
+
+              <div class="col-md-12">
+                  @if (Auth::check())
+                      <h4 class="home-title-section">{{ trans('store.suggestions.trends') }}</h4>
+                  @else
+                      <h4 class="home-title-section">{{ trans('store.suggestions.trends_unlogged') }}</h4>
+                  @endif
+              </div>
+
+              <div class="container-fluid marketing">
+                  <div class="row">
+                      @foreach ($suggestion['purchased'] as $product)
+                          @include('products.partial.productBox', $product)
+                      @endforeach
+                  </div>
+              </div>
+
+          </div>
         </div>
     @stop {{-- end center_content --}}
 
