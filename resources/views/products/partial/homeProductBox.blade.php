@@ -8,6 +8,7 @@ if (isset($productSuggestion)) {
 <div class="col-xs-6 col-sm-6 col-md-6 clearfix product-overflow">
 
     {{-- product box begin --}}
+
     <div class="product-box clearfix product-overflow" ng-controller = "ProductBox">
 
         <div class="product-reviews @if (!$product['rate_val']) hide @endif">

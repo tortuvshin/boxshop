@@ -59,7 +59,7 @@
                   </ol>
 
                   <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
+                  <div class="carousel-inner img-animate" role="listbox">
 
                       <?php $pos = 0; ?>
                           @foreach ($suggestion['carousel'] as $product) {{-- slide items --}}
@@ -112,11 +112,11 @@
 
         <div class="col-lg-3 prodsec">
             <div class="prodsectobgcolor">
-                <p class="prodsecto">COSMETIC & Tools</p>
+                <p class="prodsecto">Нүүр будалт</p>
 
             </div>
-            <div class="row demo" style="background: url(img/product/producthead.png) bottom left no-repeat;">
-                <ul class="prodsectoul">
+            <div class="row trend-cat">
+                <ul>
                     <li>
                         <a href="http://www.bella.mn/products?category=1%257C%25D0%2590%25D1%2580%25D1%258C%25D1%2581%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Арьс арчилгаа</a>
 
@@ -149,15 +149,12 @@
             </div>
         </div>
 
-        <div class="col-lg-9" class="sectionprodborder">
+        <div class="col-lg-9 trend-cat-right" class="sectionprodborder">
 
-            <div class="col-md-5 ">
-                <div class="box foo ">
-
-                    <img alt="Big title goes here" title="Big title goes here" style="    width: 100%;" src="img/product/slidema.png">
-
-                </div>
-
+            <div class="col-md-5 trend-cat-slide">   
+              <div class="img-animate">
+                <img alt="Big title goes here" title="Big title goes here" src="img/product/slidema.png">    
+              </div>             
             </div>
 
             <div class="col-lg-7 prodpadding">
