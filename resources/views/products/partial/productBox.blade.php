@@ -25,7 +25,7 @@ if (isset($productSuggestion)) {
 
                 <span class="product-image-hover"></span>       
             @if (isset($product["features"]["images"][0]))
-                <img  src='{{ $product["features"]["images"][0] }}?h=250' alt="{{ $product['name'] }}">
+                <img  src='{{ $product["features"]["images"][0] }}' alt="{{ $product['name'] }}">
             @else
                 <img  src='/img/no-image.jpg'  alt="{{ $product['name'] }}">
             @endif
