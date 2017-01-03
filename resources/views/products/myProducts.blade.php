@@ -58,7 +58,7 @@
                             <a href="{{ action('ProductsController@index') }}/{{ $product->id }}">
                                 @if (isset($product->features['images'][0]))
                                     <img class="thumbnail"  
-                                         src="{{ $product->features['images'][0] }}?w=100" alt="{{ $product->name }}" 
+                                         src="{{ $product->features['images'][0] }}" alt="{{ $product->name }}" 
                                          width="100" height="100">
                                 @else
                                     <img class="thumbnail" src="/img/no-image.jpg" alt="{{ $product->name }}" width="100" height="100">
