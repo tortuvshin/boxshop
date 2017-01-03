@@ -73,15 +73,16 @@ class Menu
                 ['route' => '/login', 'text' => trans('user.login'), 'divider' => 1],
                 ['route' => '/register', 'text' => trans('user.register')],
             ];
-        } else {  // logeado
+        } 
+        else {  // logeado
             $menu = self::dashboard(true);
 
             //-- Web Panel(Only for admim) --
-            if (\Auth::check() && \Auth::user()->isAdmin()) {
-                $menu = array_merge($menu, [
-                    ['route' => '/admin/dashboard', 'text' => trans('user.wpanel'), 'icon' => 'glyphicon glyphicon-cog', 'divider' => 1],
-                ]);
-            }
+            // if (\Auth::check() && \Auth::user()->isAdmin()) {
+            //     $menu = array_merge($menu, [
+            //         ['route' => '/admin/dashboard', 'text' => trans('user.wpanel'), 'icon' => 'glyphicon glyphicon-cog', 'divider' => 1],
+            //     ]);
+            // }
         }
 
         return $returnArray ? $menu : json_encode($menu);
