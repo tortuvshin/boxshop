@@ -12,99 +12,84 @@
 
         {{-- -------------------------------------------------- --}} {{-- -------------------- carousel -------------------- --}} {{-- -------------------------------------------------- --}}
 
-        <div class="col-md-3 col-sm-2 bella-cat mobile">
-            <script>
-                // $(function() {
-                //     var demo1 = $("#demo1").slippry({
-                //         transition: 'fade',
-                //         //useCSS: false,
-                //         speed: 300,
-                //         //pause: 3000,
-                //         auto: true,
-                //         //preload: 'visible',
-                //         autoHover: false
-                //     });
-                // });
-            </script>
-            <div class="vert-category">
-                <div class="row">
-                    <ul>
-                        <li>
-                            <a href="http://www.bella.mn/products?category=1%257C%25D0%2590%25D1%2580%25D1%258C%25D1%2581%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Арьс арчилгаа</a>
+        <div class="bella-cat mobile">
+          
+          <div class="vert-category col-md-3 col-sm-2 ">
+                  <ul>
+                      <li>
+                          <a href="http://www.bella.mn/products?category=1%257C%25D0%2590%25D1%2580%25D1%258C%25D1%2581%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Арьс арчилгаа</a>
 
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products?category=2%257C%25D0%259D%25D2%25AF%25D2%25AF%25D1%2580%2B%25D0%25B1%25D1%2583%25D0%25B4%25D0%25B0%25D0%25BB%25D1%2582">Нүүр будалт</a>
+                      </li>
+                      <li>
+                          <a href="http://www.bella.mn/products?category=2%257C%25D0%259D%25D2%25AF%25D2%25AF%25D1%2580%2B%25D0%25B1%25D1%2583%25D0%25B4%25D0%25B0%25D0%25BB%25D1%2582">Нүүр будалт</a>
 
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products?category=3%257C%25D2%25AE%25D1%2581%2B%25D0%25B1%25D0%25B8%25D0%25B5%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Үс / бие арчилгаа</a>
+                      </li>
+                      <li>
+                          <a href="http://www.bella.mn/products?category=3%257C%25D2%25AE%25D1%2581%2B%25D0%25B1%25D0%25B8%25D0%25B5%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Үс / бие арчилгаа</a>
 
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products?category=4%257C%25D2%25AE%25D0%25BD%25D1%258D%25D1%2580%25D1%2582%25D1%258D%25D0%25B9%2B%25D1%2583%25D1%2581">Үнэртэй ус</a>
+                      </li>
+                      <li>
+                          <a href="http://www.bella.mn/products?category=4%257C%25D2%25AE%25D0%25BD%25D1%258D%25D1%2580%25D1%2582%25D1%258D%25D0%25B9%2B%25D1%2583%25D1%2581">Үнэртэй ус</a>
 
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Эрүүл мэнд</a>
+                      </li>
+                      <li>
+                          <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Эрүүл мэнд</a>
 
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Багс</a>
+                      </li>
+                      <li>
+                          <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Багс</a>
 
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products">Бүх бараа</a>
+                      </li>
+                      <li>
+                          <a href="http://www.bella.mn/products">Бүх бараа</a>
 
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                      </li>
+                  </ul>
+          </div>
+          <div class="col-md-9 col-sm-10 home-carousel-box">
 
-        <div class="col-md-9 col-sm-10 home-carousel-box">
+              <div id="store-home-carousel" class="carousel slide" data-ride="carousel">
 
-            <div id="store-home-carousel" class="carousel slide" data-ride="carousel">
+                  {{-- indicators --}}
+                  <ol class="carousel-indicators">
+                      @for ($s=0; $s
+                      <count($suggestion[ 'carousel']); $s++) <li data-target="#store-home-carousel" data-slide-to="{{ $s }}" @if ($s==0) class="active" @endif>
+                          </li>
+                          @endfor
+                  </ol>
 
-                {{-- indicators --}}
-                <ol class="carousel-indicators">
-                    @for ($s=0; $s
-                    <count($suggestion[ 'carousel']); $s++) <li data-target="#store-home-carousel" data-slide-to="{{ $s }}" @if ($s==0) class="active" @endif>
-                        </li>
-                        @endfor
-                </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
+                      <?php $pos = 0; ?>
+                          @foreach ($suggestion['carousel'] as $product) {{-- slide items --}}
+                          <div class="item @if ($i++==0) active @endif">
 
-                    <?php $pos = 0; ?>
-                        @foreach ($suggestion['carousel'] as $product) {{-- slide items --}}
-                        <div class="item @if ($i++==0) active @endif">
+                              @if (isset($banner[$pos]))
+                              <img src="{{ $banner[$pos++] }}" alt="{{ $product['name'] }}"> @else
+                              <img src="/img/no-image.jpg" alt="{{ $product['name'] }}"> @endif {{-- panel --}}
+                              <div class="jumbotron {{ $jumbotronClasses[mt_rand(0,1)] }} ">
 
-                            @if (isset($banner[$pos]))
-                            <img src="{{ $banner[$pos++] }}" alt="{{ $product['name'] }}"> @else
-                            <img src="/img/no-image.jpg" alt="{{ $product['name'] }}"> @endif {{-- panel --}}
-                            <div class="jumbotron {{ $jumbotronClasses[mt_rand(0,1)] }} ">
+                                  <h5>{{ $product['name'] }}</h5>
 
-                                <h5>{{ $product['name'] }}</h5>
+                                  <p class="description">{{ str_limit($product['description'], 200,'...') }}</p>
 
-                                <p class="description">{{ str_limit($product['description'], 200,'...') }}</p>
+                                  @if ($product['price'] > 0)
+                                  <p class="price">
+                                      <strong>{!! \Utility::showPrice($product['price']) !!}</strong>
+                                  </p>
+                                  @endif
 
-                                @if ($product['price'] > 0)
-                                <p class="price">
-                                    <strong>{!! \Utility::showPrice($product['price']) !!}</strong>
-                                </p>
-                                @endif
+                                  <hr> f
+                              </div>
 
-                                <hr> f
-                            </div>
+                          </div> {{-- end item --}} @endforeach
 
-                        </div> {{-- end item --}} @endforeach
+                  </div> {{-- end carousel-inner --}}
 
-                </div> {{-- end carousel-inner --}}
+              </div>
 
-            </div>
-
+          </div>
         </div>
 
         {{-- end carousel --}}
@@ -123,68 +108,66 @@
         </div>
 
     <!-- product section start-->
-    <section>
-        <div class="home-cat-trend">
+    <div class="home-cat-trend">
 
-            <div class="col-lg-3 prodsec">
-                <div class="prodsectobgcolor">
-                    <p class="prodsecto">COSMETIC & Tools</p>
+        <div class="col-lg-3 prodsec">
+            <div class="prodsectobgcolor">
+                <p class="prodsecto">COSMETIC & Tools</p>
 
-                </div>
-                <div class="row demo" style="background: url(img/product/producthead.png) bottom left no-repeat;">
-                    <ul class="prodsectoul">
-                        <li>
-                            <a href="http://www.bella.mn/products?category=1%257C%25D0%2590%25D1%2580%25D1%258C%25D1%2581%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Арьс арчилгаа</a>
-
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products?category=2%257C%25D0%259D%25D2%25AF%25D2%25AF%25D1%2580%2B%25D0%25B1%25D1%2583%25D0%25B4%25D0%25B0%25D0%25BB%25D1%2582">Нүүр будалт</a>
-
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products?category=3%257C%25D2%25AE%25D1%2581%2B%25D0%25B1%25D0%25B8%25D0%25B5%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Үс / бие арчилгаа</a>
-
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products?category=4%257C%25D2%25AE%25D0%25BD%25D1%258D%25D1%2580%25D1%2582%25D1%258D%25D0%25B9%2B%25D1%2583%25D1%2581">Үнэртэй ус</a>
-
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Эрүүл мэнд</a>
-
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Багс</a>
-
-                        </li>
-                        <li>
-                            <a href="http://www.bella.mn/products">Бүх бараа</a>
-
-                        </li>
-                    </ul>
-                </div>
             </div>
+            <div class="row demo" style="background: url(img/product/producthead.png) bottom left no-repeat;">
+                <ul class="prodsectoul">
+                    <li>
+                        <a href="http://www.bella.mn/products?category=1%257C%25D0%2590%25D1%2580%25D1%258C%25D1%2581%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Арьс арчилгаа</a>
 
-            <div class="col-lg-9" class="sectionprodborder">
+                    </li>
+                    <li>
+                        <a href="http://www.bella.mn/products?category=2%257C%25D0%259D%25D2%25AF%25D2%25AF%25D1%2580%2B%25D0%25B1%25D1%2583%25D0%25B4%25D0%25B0%25D0%25BB%25D1%2582">Нүүр будалт</a>
 
-                <div class="col-md-5 ">
-                    <div class="box foo ">
+                    </li>
+                    <li>
+                        <a href="http://www.bella.mn/products?category=3%257C%25D2%25AE%25D1%2581%2B%25D0%25B1%25D0%25B8%25D0%25B5%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Үс / бие арчилгаа</a>
 
-                        <img alt="Big title goes here" title="Big title goes here" style="    width: 100%;" src="img/product/slidema.png">
+                    </li>
+                    <li>
+                        <a href="http://www.bella.mn/products?category=4%257C%25D2%25AE%25D0%25BD%25D1%258D%25D1%2580%25D1%2582%25D1%258D%25D0%25B9%2B%25D1%2583%25D1%2581">Үнэртэй ус</a>
 
-                    </div>
+                    </li>
+                    <li>
+                        <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Эрүүл мэнд</a>
 
-                </div>
+                    </li>
+                    <li>
+                        <a href="http://www.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Багс</a>
 
-                <div class="col-lg-7 prodpadding">
-                  @foreach ($suggestion['categories'] as $product)
-                      @include('products.partial.homeProductBox', $product)
-                  @endforeach
-                </div>
+                    </li>
+                    <li>
+                        <a href="http://www.bella.mn/products">Бүх бараа</a>
+
+                    </li>
+                </ul>
             </div>
-
         </div>
-    </section>
+
+        <div class="col-lg-9" class="sectionprodborder">
+
+            <div class="col-md-5 ">
+                <div class="box foo ">
+
+                    <img alt="Big title goes here" title="Big title goes here" style="    width: 100%;" src="img/product/slidema.png">
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-7 prodpadding">
+              @foreach ($suggestion['categories'] as $product)
+                  @include('products.partial.homeProductBox', $product)
+              @endforeach
+            </div>
+        </div>
+
+    </div>
     <!-- product section end-->
 
     {{-- -------------------------------------------------- --}}
@@ -194,69 +177,37 @@
     @parent
 
     @section('center_content')
-        <div class="product-trend">
-     
-          {{-- categories suggestions --}}
-         
-          <div class="home-bestselling">
-            <div class="col-md-2 bestselling-title">
-              <a href="{{ route('products') }}">
-                <span class="b-title">{{ trans('store.suggestions.categories') }}</span>
-                <span class="b-shopnow">Дэлгэрэнгүй</span>
-              </a>
-            </div>
-            <div class="col-md-10 bestselling-product">
-              @foreach ($suggestion['categories'] as $product)
-                  @include('products.partial.productBox', $product)
-              @endforeach
-            </div>
+      <div class="product-trend">
+   
+        {{-- categories suggestions --}}
+       
+        <div class="home-bestselling">
+          <div class="col-md-2 bestselling-title">
+            <a href="{{ route('products') }}">
+              <span class="b-title">Санал болгох бүтээгдэхүүн</span>
+              <span class="b-shopnow">Дэлгэрэнгүй</span>
+            </a>
           </div>
-
-          {{-- trending suggestions --}}
-
-          <div class="home-bestselling">
-            <div class="col-md-2 bestselling-title">
-              <a href="{{ route('products') }}">
-                <span class="b-title">Онцлох бүтээгдэхүүн</span>
-                <span class="b-shopnow">Дэлгэрэнгүй</span>
-              </a>
-            </div>
-            <div class="col-md-10 bestselling-product">
-                @foreach ($suggestion['purchased'] as $product)
-                    @include('products.partial.productBox', $product)
-                @endforeach
-            </div>
-          </div>
-
-               {{-- viewed suggestions --}}
-
-
-          <div class="clearfix home-products-wrapper">
-            <div class="col-md-12">
-                @if (Auth::check())
-                    <h4 class="home-title-section">Бараанууд</h4>
-                @else
-                    <h4 class="home-title-section">Бараанууд</h4>
-                @endif
-            </div>
-
-            <div class="container-fluid marketing">
-                <div class="row">
-                    @foreach ($suggestion['viewed'] as $product)
-                        @include('products.partial.productBox', $product)
-                    @endforeach
-                </div>
-            </div>
+          <div class="col-md-10 bestselling-product">
+            @foreach ($suggestion['categories'] as $product)
+                @include('products.partial.productBox', $product)
+            @endforeach
           </div>
         </div>
+
+        {{-- viewed suggestions --}}
+
+        <div class="home-bestselling">
+          
+          <div class="marketing">
+            @foreach ($suggestion['viewed'] as $product)
+                @include('products.partial.productBox', $product)
+            @endforeach
+          </div>
+        </div>
+      </div>
     @stop {{-- end center_content --}}
 
-
-    {{-- -------------------------------------------------- --}}
-    {{-- -------------------- Left Bar -------------------- --}}
-    {{-- -------------------------------------------------- --}}
 </section> {{-- end products_view --}}
-
-    
 
 @stop {{-- end content --}}
