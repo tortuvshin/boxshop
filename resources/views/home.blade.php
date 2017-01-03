@@ -195,70 +195,58 @@
 
     @section('center_content')
         <div class="product-trend">
-          {{-- viewed suggestions --}}
-          <div class="clearfix home-products-wrapper">
-         
-              <div class="col-md-12">
-                  @if (Auth::check())
-                      <h4 class="home-title-section">Бараанууд</h4>
-                  @else
-                      <h4 class="home-title-section">Бараанууд</h4>
-                  @endif
-              </div>
-
-              <div class="container-fluid marketing">
-                  <div class="row">
-                      @foreach ($suggestion['viewed'] as $product)
-                          @include('products.partial.productBox', $product)
-                      @endforeach
-                  </div>
-              </div>
-
-          </div>
-
-
-
-
-
+     
           {{-- categories suggestions --}}
-          <div class="clearfix home-products-wrapper">
-
-              <div class="col-md-12">
-                  <h4 class="home-title-section">{{ trans('store.suggestions.categories') }}</h4>
-              </div>
-
-              <div class="container-fluid marketing">
-                  <div class="row">
-                      @foreach ($suggestion['categories'] as $product)
-                          @include('products.partial.productBox', $product)
-                      @endforeach
-                  </div>
-              </div>
-
+         
+          <div class="home-bestselling">
+            <div class="col-md-2 bestselling-title">
+              <a href="{{ route('products') }}">
+                <span class="b-title">{{ trans('store.suggestions.categories') }}</span>
+                <span class="b-shopnow">Дэлгэрэнгүй</span>
+              </a>
+            </div>
+            <div class="col-md-10 bestselling-product">
+              @foreach ($suggestion['categories'] as $product)
+                  @include('products.partial.productBox', $product)
+              @endforeach
+            </div>
           </div>
-
-
-
 
           {{-- trending suggestions --}}
+
+          <div class="home-bestselling">
+            <div class="col-md-2 bestselling-title">
+              <a href="{{ route('products') }}">
+                <span class="b-title">Онцлох бүтээгдэхүүн</span>
+                <span class="b-shopnow">Дэлгэрэнгүй</span>
+              </a>
+            </div>
+            <div class="col-md-10 bestselling-product">
+                @foreach ($suggestion['purchased'] as $product)
+                    @include('products.partial.productBox', $product)
+                @endforeach
+            </div>
+          </div>
+
+               {{-- viewed suggestions --}}
+
+
           <div class="clearfix home-products-wrapper">
+            <div class="col-md-12">
+                @if (Auth::check())
+                    <h4 class="home-title-section">Бараанууд</h4>
+                @else
+                    <h4 class="home-title-section">Бараанууд</h4>
+                @endif
+            </div>
 
-              <div class="col-md-12">
-                  @if (Auth::check())
-                      <h4 class="home-title-section">{{ trans('store.suggestions.trends') }}</h4>
-                  @else
-                      <h4 class="home-title-section">{{ trans('store.suggestions.trends_unlogged') }}</h4>
-                  @endif
-              </div>
-
-              <div class="container-fluid marketing">
-                  <div class="row">
-                      @foreach ($suggestion['purchased'] as $product)
-                          @include('products.partial.productBox', $product)
-                      @endforeach
-                  </div>
-              </div>
-
+            <div class="container-fluid marketing">
+                <div class="row">
+                    @foreach ($suggestion['viewed'] as $product)
+                        @include('products.partial.productBox', $product)
+                    @endforeach
+                </div>
+            </div>
           </div>
         </div>
     @stop {{-- end center_content --}}
