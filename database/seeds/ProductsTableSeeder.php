@@ -82,65 +82,6 @@ class ProductsTableSeeder extends Seeder
 
     public function market()
     {
-        $faker = Faker::create();
-        $businesses = Business::get();
-        $numCategories = DB::table('categories')->count();
-        for ($i = 0; $i < 100; $i++) {
-            $price = $faker->numberBetween(1, 99);
-            $tag = $faker->randomElement(['Home-Fix Mongolia Хямдрал',
-                            'Celio: Special Weekend хямдрал урамшуулал зарлалаа',
-                            'Бишрэлт Их Дэлгүүрийн Хар Баасан Гарагийн хямдрал',
-                            'DJI Drone BLACK FRIDAY 2016-аар хямдарчээ',
-                            'Машины ХАРХАЙРЦАГ хямдрал',
-                            'Truvor Mongolia онцгой урамшуулалт худалдаа эхэллээ',
-                            'T-Kitchen брэндийн гал тогооны тавилгын захиалга',
-                            'Шилмэл буйдангийн хямдралтай худалдаа',
-                            'ЭНХ СМАЙЛ шүд эрүү нүүрний эмнэлэг шинэ жилийн хямдрал',
-                            'Монголын хүүхэд хөгжлийн ордон цэцэрлэг онцгой урамшуулал зарлаж байна'
-                            ]);
-            $id = Product::create([
-                'category_id'  => $faker->numberBetween(1, $numCategories),
-                'user_id'      => '3',
-                'status'       => 1,
-                'type'         => 'beaty',
-                'sale_counts'  => $faker->randomNumber(9),
-                'view_counts'  => $faker->randomNumber(9),
-                'name'         => $faker->randomElement(['Home-Fix Mongolia Хямдрал',
-                            'Celio: Special Weekend хямдрал урамшуулал зарлалаа',
-                            'Бишрэлт Их Дэлгүүрийн Хар Баасан Гарагийн хямдрал',
-                            'DJI Drone BLACK FRIDAY 2016-аар хямдарчээ',
-                            'Машины ХАРХАЙРЦАГ хямдрал',
-                            'Truvor Mongolia онцгой урамшуулалт худалдаа эхэллээ',
-                            'T-Kitchen брэндийн гал тогооны тавилгын захиалга',
-                            'Шилмэл буйдангийн хямдралтай худалдаа',
-                            'ЭНХ СМАЙЛ шүд эрүү нүүрний эмнэлэг шинэ жилийн хямдрал',
-                            'Монголын хүүхэд хөгжлийн ордон цэцэрлэг онцгой урамшуулал зарлаж байна']),
-                'description'  => '',
-                'price'        => $price,
-                'brand'        => $faker->randomElement(['Celio', 'Dji', 'Ottie', '16 Brand', 'Son Park', 'Clinique']),
-                'features'     => json_encode([
-                    'images' => [
-                    '/img/seed/'.$faker->numberBetween(1, 8).'.jpg',
-                    '/img/seed/'.$faker->numberBetween(1, 8).'.jpg',
-                    '/img/seed/'.$faker->numberBetween(1, 8).'.jpg',
-                    '/img/seed/'.$faker->numberBetween(1, 8).'.jpg',
-                    '/img/seed/'.$faker->numberBetween(1, 8).'.jpg',
-                    ],
-                ]),
-                'condition' => $faker->randomElement(['new', 'refurbished', 'used']),
-                'tags'      => json_encode($tag.','.$tag.','.$tag),
-            ]);
-            if ($faker->numberBetween(0, 1)) {
-                $percentage = $faker->randomElement([10, 15, 25, 35, 50]);
-                ProductOffer::create([
-                    'product_id' => $id->id,
-                    'day_start'  => $faker->dateTime(),
-                    'day_end'    => $faker->dateTimeBetween('now', '+1 years'),
-                    'percentage' => $percentage,
-                    'price'      => (($percentage * $price) / 100),
-                    'quantity'   => round($stock / 2),
-                ]);
-            }
-        }
+        
     }
 }

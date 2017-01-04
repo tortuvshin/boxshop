@@ -715,6 +715,9 @@ h6 {
   position: relative;
   margin-bottom: 20px;
 }
+.product-box:hover {
+  cursor: pointer;
+}
 .product-box:hover .product-actions {
   visibility: visible;
   margin-top: -40px;
@@ -903,11 +906,9 @@ h6 {
   text-align: center;
   transition: 0.5s;
   cursor: pointer;
-  border: 2px solid #ffffff;
   -webkit-transition: 0.5s;
 }
 .img-animate:hover {
-  border: 2px solid rgba(0, 160, 80, 0);
   color: #FFF;
 }
 .img-animate::before,
@@ -925,13 +926,9 @@ h6 {
   transition: 0.5s;
 }
 .img-animate::before {
-  border-bottom: 3px solid #FFF;
-  border-left: 3px solid #FFF;
   -webkit-transform-origin: 0 100%;
 }
 .img-animate::after {
-  border-top: 3px solid #FFF;
-  border-right: 3px solid #FFF;
   -webkit-transform-origin: 50%;
   opacity: 0.3;
   background: white;

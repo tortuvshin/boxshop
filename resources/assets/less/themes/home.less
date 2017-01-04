@@ -114,12 +114,10 @@
   text-align: center;
   transition: 0.5s;
   cursor: pointer;
-  border: 2px solid #ffffff;
   -webkit-transition:0.5s;
 }
 
 .img-animate:hover {
-  border: 2px solid rgba(0,160,80,0);
   color: #FFF;
 }
 
@@ -136,14 +134,10 @@
   transition: 0.5s;
 }
 .img-animate::before {
-  border-bottom: 3px solid #FFF;
-  border-left: 3px solid #FFF;
   -webkit-transform-origin: 0 100%;
 }
 
 .img-animate::after {
-  border-top: 3px solid #FFF;
-  border-right: 3px solid #FFF;
   -webkit-transform-origin: 50%;
    opacity: 0.3;
    background:white;
@@ -153,8 +147,6 @@
 .img-animate:hover::after, .img-animate:hover::before {
   -webkit-transform: scale(1);
 }
-
-
 
 .trend-cat-right {
   padding-left: 0;
