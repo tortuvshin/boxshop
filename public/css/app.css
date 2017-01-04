@@ -271,6 +271,21 @@ footer .menu ul li {
   float: left;
   margin-left: 5px;
 }
+.footer-right h3 {
+  color: white;
+}
+.footer-right ul {
+  list-style: none;
+  list-style-position: initial;
+}
+.footer-right ul li .social-icons ul {
+  padding-left: 0px;
+}
+.footer-right ul li .social-icons ul li {
+  border: 1px solid #f8f8f8;
+  width: 12%;
+  text-align: center;
+}
 .header-top {
   width: 100%;
   height: 40px;
