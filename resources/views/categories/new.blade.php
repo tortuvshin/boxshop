@@ -91,8 +91,8 @@
 @stop
 @section('scripts')
     @parent
-    {!! Html::script('/js/vendor/file-upload/angular-file-upload-shim.min.js') !!}
-    {!! Html::script('/js/vendor/file-upload/angular-file-upload.min.js') !!}
+    {!! Html::script('/js/lib/file-upload/angular-file-upload-shim.min.js') !!}
+    {!! Html::script('/js/lib/file-upload/angular-file-upload.min.js') !!}
 	<script>
 		(function(app){
             app.controller('CategoryController', ['$scope', '$upload','$timeout','notify',
