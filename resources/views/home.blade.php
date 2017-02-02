@@ -153,7 +153,7 @@
 
             <div class="col-md-5 trend-cat-slide">   
               <div class="img-animate">
-                <img alt="Big title goes here" title="Big title goes here" src="img/product/slidema.png">    
+                <img alt="Bella" title="Bella" src="img/product/slidema.jpg">    
               </div>             
             </div>
 
