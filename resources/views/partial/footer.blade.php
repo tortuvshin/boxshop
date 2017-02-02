@@ -2,7 +2,7 @@
 
     <div class="row footer-row">
         <div class="col-xs-4 col-sm-4 col-md-4 menu">
-            <img class="logo-jpg" src="img/logo.png" style="width: 241.4px; height: 150.6px;">
+            <img class="logo-jpg" src="img/pt-default/logo.png" style="width: 241.4px; height: 150.6px;">
             <br>
             <ul>
                 <ul> <span class="footertext">Mongolian professional makeup artists PERFECT BEAUTY ACADEMY'S "BELLA MAKE UP STUDIO"
