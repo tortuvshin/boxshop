@@ -63,10 +63,10 @@ class HomeController extends Controller
         $jumbotronClasses = ['jumbotron-box-left', 'jumbotron-box-right']; //carousel implementation
 
         $banner = [
-            '/img/banner/01.png',
-            '/img/banner/02.png',
-            '/img/banner/03.png',
-            '/img/banner/04.png',
+            '/img/banner/01.jpg',
+            '/img/banner/02.jpg',
+            '/img/banner/03.jpg',
+            '/img/banner/04.jpg',
         ];
 
         // $this->createTags();
