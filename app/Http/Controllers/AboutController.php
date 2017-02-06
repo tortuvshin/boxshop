@@ -67,9 +67,4 @@ class AboutController extends Controller
     {
         return $this->about('terms');
     }
-
-    public function mycompany() 
-    {
-        return view('taniltsulga/index');
-    }
 }
