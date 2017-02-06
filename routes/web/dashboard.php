@@ -2,8 +2,8 @@
 
 Route::get('categories', 'CategoriesController@index');
 
-Route::group(['prefix' => 'wpanel', 'roles' => 'admin', 'middleware' => ['auth', 'roles']], function () {
-    Route::resource('/', 'WpanelController');
+Route::group(['prefix' => 'dashboard', 'roles' => 'admin', 'middleware' => ['auth', 'roles']], function () {
+    Route::resource('/', 'DashboardController');
 
     Route::resource('category', 'CategoriesController');
 
