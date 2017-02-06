@@ -1,15 +1,9 @@
-/_ide_helper.php
 /vendor/*
 /node_modules/*
 /storage/files/*
-/public/cook/*
-/public/shop2016/*
 .env
 composer.lock
 .idea/
-app/Http/Controllers/.DS_Store
-app/Notifications/.DS_Store
-
 public/css/app.css
 public/css/app.css.map
 public/js/app.js
