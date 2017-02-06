@@ -5,7 +5,7 @@ if (isset($productSuggestion)) {
     $product=$productSuggestion;
 }
  ?>
-<div class="col-xs-6 col-sm-6 col-md-6 clearfix product-overflow">
+<div class="col-xs-12 col-sm-6 col-md-6 clearfix product-overflow">
 
     {{-- product box begin --}}
 
