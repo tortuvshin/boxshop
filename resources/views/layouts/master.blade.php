@@ -19,8 +19,6 @@
 	};
 	</script>
 
-	{{-- Bella CSS files --}}
-	{!! Html::style('/css/lib/bootstrap.min.css') !!}
 	@section('css')
 		{!! Html::style('/css/lib/angular-notify.min.css') !!}
 		{!! Html::style('/css/lib/font-awesome.min.css') !!}
