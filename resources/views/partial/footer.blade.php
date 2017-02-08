@@ -1,12 +1,12 @@
 <div class="col-md-12 f-footer-area">
 
     <div class="row footer-row">
-        <div class="col-xs-4 col-sm-4 col-md-4 menu">
-            <img class="logo-jpg" src="img/pt-default/logo.png" style="width: 241.4px; height: 150.6px;">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+            <img class="logo-jpg" src="img/pt-default/logo.png">
             
         </div>
 
-        <div class="col-xs-4 col-sm-4 col-md-4 enu">
+        <div class="col-xs-4 col-sm-4 col-md-4 menu">
             <h3 class="widget-title heading-title">Холбоо барих</h3>
             <div class="line line-30"></div>
 
