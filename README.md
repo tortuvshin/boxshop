@@ -104,12 +104,18 @@ npm install
 npm install --no-bin-links
 ```
 
-[NODEJS]: https://nodejs.org/en/download/
-[COMPOSER]: https://getcomposer.org/download/
-[RECAPTCHA]: https://www.google.com/recaptcha/admin#list
+Laravel Mix ашиглах
 
+```
+npm run dev
+```
 
 Туршилтын хэрэглэгчийн мэдээлэл
 
 	Хэрэглэгчийн нэр: admin@admin.com
 	Нууц үг: admin
+
+
+[NODEJS]: https://nodejs.org/en/download/
+[COMPOSER]: https://getcomposer.org/download/
+[RECAPTCHA]: https://www.google.com/recaptcha/admin#list
