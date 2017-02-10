@@ -91,13 +91,8 @@ RECAPTCHA_PRIVATE_KEY = ModuRecaptchaPrivateKeyObtained
 
 ***Тайлбар:*** ```APP_DEBUG == true``` буюу debug асаалттай байгаа үед reCaptcha хэрэглэхгүй
 
-## Laravel Elixir ашиглах
- 
- Gulp суулгах:
 
-```
-npm install --global gulp
-```
+
 NPM сангууд суулгах:
 
 ```
@@ -107,11 +102,6 @@ npm install
 Хэрвээ Window үйлдлийн систем  болон VM ашиглаж хөгжүүлэлт хийж байгаа бол дараах коммандыг ажиллуулна: 
 ```
 npm install --no-bin-links
-```
-Gulp ашиглах:
-
-```
-gulp
 ```
 
 [NODEJS]: https://nodejs.org/en/download/
