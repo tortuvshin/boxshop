@@ -8,7 +8,7 @@ class CategoriesTableSeeder extends Seeder
 {
     public function run()
     {
-        $this->bella();
+        $this->boxshop();
     }
 
     public function bella () {
@@ -56,7 +56,7 @@ class CategoriesTableSeeder extends Seeder
         }
     }
 
-    public function market () {
+    public function boxshop () {
         $faker = Faker::create();
         $temptype = $faker->randomElement(['group', 'store']);
         $icons = ['fui-info-circle', 'fui-alert-circle',
