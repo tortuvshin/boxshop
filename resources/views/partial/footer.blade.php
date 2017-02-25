@@ -2,8 +2,7 @@
 
     <div class="row footer-row">
         <div class="col-xs-4 col-sm-4 col-md-4">
-            <img class="logo-jpg" src="img/logo-1.png">
-            
+            <img class="logo-jpg" src="img/box-shop/logo.png">
         </div>
 
         <div class="col-xs-4 col-sm-4 col-md-4 menu">
