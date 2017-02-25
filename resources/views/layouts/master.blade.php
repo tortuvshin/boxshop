@@ -10,7 +10,7 @@
 		<meta name="author" content="">
 	@show
 
-	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="{{{ asset('img/fav-ico.ico') }}}">
 	<title>@section('title'){{ $main_company['website_name']}} @show</title>
 
 	<script type="text/javascript">

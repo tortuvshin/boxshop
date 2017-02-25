@@ -69,19 +69,19 @@
 	</div>
 </div>
 <div class="header-search-row">
-	<a class="logo col-md-3" href="/home">
+	<a class="logo col-md-2" href="/home">
 		@if($main_company['logo'])
 			<span class="navbar-brand-text">
 				<img class="logo-img" src="{{$main_company['logo']}}" alt="">
 			</span>
 		@else
 			<span class="navbar-brand-text">
-				<img src="img/logo-1.png" >
+				<img src="{{{asset(img/logo.png)}}}" >
 			</span>
 		@endif
 
 	</a>
-	<nav ng-controller="CategoriesController" class="cat-controller-nav col-md-9">
+	<nav ng-controller="CategoriesController" class="cat-controller-nav col-md-10">
 	{!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
 	<div class="search-nav">
 

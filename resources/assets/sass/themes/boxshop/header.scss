@@ -1,13 +1,11 @@
 .header-top {
     width: 100%;
     height: 40px;
-    float: left;
     position: relative;
     background: #fff;
     padding: 0 3% 0 3%;
     border-bottom: 1px solid #e3e3e3;
-    
-    ul {    
+    ul {
         padding-left: 0;
         li {
             list-style: none;
@@ -15,9 +13,8 @@
             margin-right: 10px;
             line-height: 40px;
             float: none;
-
             i {
-                color:black;
+                color: black;
                 font-size: inherit;
             }
         }
@@ -32,7 +29,6 @@
         font-size: 10px;
         font-weight: 500;
     }
-
     .dropdown-menu {
         li {
             display: block;
@@ -45,7 +41,6 @@
 .header-top-left {
     height: 100%;
     padding-left: 0;
-
 }
 
 .social-icons {
@@ -71,7 +66,7 @@
 .header-search-row {
     width: 100%;
     float: left;
-    height: 120px;
+    height: 112px;
     padding: 0 3% 0 3%;
     position: relative;
     background-color: white;
@@ -93,18 +88,18 @@
     }
 }
 
-
 .search-nav {
     height: 100%;
-
     a {
         float: left;
     }
-    .categories-search, .search-input, .search-btn, .cart {
+    .categories-search,
+    .search-input,
+    .search-btn,
+    .cart {
         float: left;
         margin-top: 40px;
     }
-
     .search-input {
         width: 50%;
     }
@@ -120,75 +115,68 @@
     border-radius: 0;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     border-radius: 0;
     margin: 0;
     padding: 0 0;
 }
 
-.cart{
-	margin-right: 20px;
+.cart {
+    margin-right: 20px;
     margin-left: 20px;
-
     .nav {
-    	height: 40px;
-    	background-color: $boxshop-blue;
-    	border-radius: 0;
-
-    	li {
-    		height: 40px;
-
-
-    		a {
-    			padding-top: 10px !important;
-    			color: black ;
-
+        height: 40px;
+        background-color: $boxshop-blue;
+        border-radius: 0;
+        li {
+            height: 40px;
+            a {
+                padding-top: 10px !important;
                 &:hover {
-                    background:$boxshop-blue;
+                    background: $boxshop-blue;
                 }
-    		}
-    	}
-    } 
-}  
-
-.input-group .form-control{
-	width: 100%;
-}
-
-.navbar-brand-text {
-	width: 200px;
-	height: 100%; 
-}
-
-.categories-search {
-	button {
-		height: 40px;
-		border-radius: 0;
-
-	}
-}
-
-.logo-img{
-	width: 200px;
-    height: 100%;
-    float: left;
-}
-
-.header-bottom-content {
-	width: 100%;
-	height: auto;
-	float: left;
-	background-color: $dark-color;
-	position: relative;
-    padding: 0 3% 0 3%;
-
-    div {
-        padding-right: 0; 
-        padding-left: 0; 
+            }
+        }
     }
 }
 
-.full-category{
+.input-group .form-control {
+    width: 100%;
+}
+
+.navbar-brand-text {
+    width: 200px;
+    height: 100%;
+}
+
+.categories-search {
+    button {
+        height: 40px;
+        border-radius: 0;
+    }
+}
+
+.logo-img {
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.header-bottom-content {
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: $dark-color;
+    position: relative;
+    padding: 0 3% 0 3%;
+    div {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.full-category {
     background-color: $boxshop-blue;
     color: white;
     cursor: pointer;
@@ -198,8 +186,7 @@
     min-width: 230px;
     padding: 14px 0;
     text-transform: uppercase;
-
-    i{
+    i {
         margin-left: 20px;
         margin-right: 20px;
         font-size: 21px;
@@ -208,21 +195,23 @@
         color: white;
     }
 }
+
 .product-items-box .item-box .title h3 a:hover {
     text-decoration: -moz-anchor-decoration;
 }
+
 .product-item {
     margin: 0 -6px 0 0px !important;
     padding-left: 12px;
     padding-right: 12px;
 }
-.line-menu{
+
+.line-menu {
     display: flex;
     list-style: outside none none;
     margin: 0;
     padding: 0;
-
-    li{
+    li {
         margin-left: 12px;
         padding: 11px 18px;
         position: relative;
@@ -236,11 +225,11 @@
 }
 
 .home-carousel-box {
-	height: 400px;
-	box-shadow: 0 3px 6px 0 rgba(51,51,51,.3);
+    height: 400px;
+    box-shadow: 0 3px 6px 0 rgba(51, 51, 51, .3);
 }
 
-.line-menu li a{
+.line-menu li a {
     color: white;
     display: inline-block;
     margin: 0;
@@ -249,40 +238,49 @@
     width: 120%;
     font-weight: 800;
 }
-.line-menu li a:hover, .line-menu li a.active{
-    color:white;
+
+.line-menu li a:hover,
+.line-menu li a.active {
+    color: white;
 }
 
-.bella-cat{
+.bella-cat {
     position: relative;
 }
-.bella-cat .vert-category{
+
+.bella-cat .vert-category {
     z-index: 10;
     height: 100%;
 }
-.bella-cat .vert-category ul{
+
+.bella-cat .vert-category ul {
     padding: 0;
     list-style: none;
     color: black;
     background-color: white;
     height: 100%;
 }
-.bella-cat .vert-category ul li{
+
+.bella-cat .vert-category ul li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.bella-cat .vert-category ul li a{
-    color: black;
+
+.bella-cat .vert-category ul li a {
+    color: #030303;
     display: block;
     font-size: 13px;
     padding: 15px 0 15px 22px;
 }
-.bella-cat .vert-category:hover ul{
+
+.bella-cat .vert-category:hover ul {
     background-color: #f9f9fa;
 }
-.bella-cat .vert-category:hover ul li a{
-    color:#555 !important;
+
+.bella-cat .vert-category:hover ul li a {
+    color: #555 !important;
 }
-.bella-cat .vert-category ul li:hover a{
+
+.bella-cat .vert-category ul li:hover a {
     color: #f84cb9;
     background: #fff;
 }

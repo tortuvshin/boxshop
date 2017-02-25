@@ -1,35 +1,43 @@
 * {
-	font-family: $font-family-sans-serif;
+    font-family: $font-family-sans-serif;
+    box-sizing: border-box;
 }
-html,body{
-	height: 100%;
-	font-weight: 300;
-	font-family: $font-family-sans-serif;
-	background-color: white;
+
+html,
+body {
+    height: 100%;
+    font-weight: 300;
+    font-family: $font-family-sans-serif;
+    color: #030303 !important;
 }
 
 a {
-	color: #666666;
+    color: #030303 !important;
+    text-decoration: none;
 }
 
-
 .header-top-right-area {
-	.dropdown-menu li {
-		width: 100%;
-		line-height: 20px !important;
-	}
+    .dropdown-menu li {
+        width: 100%;
+        line-height: 20px !important;
+    }
 }
 
 .row {
-     margin-right: 0; 
-     margin-left: 0; 
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .breadcrumb {
-	background-color: white;
+    background-color: #fff;
 }
-.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
- 
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
     background-color: $dark-color;
     border-color: $dark-color;
 }
@@ -40,10 +48,10 @@ a {
 }
 
 .btn {
-	border-radius: 0;
+    border-radius: 0;
 }
 
 footer {
-	width: 100%;
-	float: left;
+    width: 100%;
+    float: left;
 }
