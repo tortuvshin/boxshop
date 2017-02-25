@@ -132,7 +132,7 @@
 
     .nav {
     	height: 40px;
-    	background-color: $bella-red;
+    	background-color: $boxshop-blue;
     	border-radius: 0;
 
     	li {
@@ -144,7 +144,7 @@
     			color: black ;
 
                 &:hover {
-                    background:$bella-red;
+                    background:$boxshop-blue;
                 }
     		}
     	}
@@ -189,7 +189,7 @@
 }
 
 .full-category{
-    background-color: $bella-red;
+    background-color: $boxshop-blue;
     color: white;
     cursor: pointer;
     font-size: 14px;

@@ -35,7 +35,7 @@
 }
 
 .price {
-	color:$bella-red;
+	color:$boxshop-blue;
 }
 .social {
 	float: right;
@@ -207,22 +207,22 @@ h6{
 
         &:hover {
             .glyphicon{
-                color:$bella-red;
+                color:$boxshop-blue;
             }
             #card_text{
-                color:$bella-red;
+                color:$boxshop-blue;
             }
         }
     }
 
     .glyphicon-shopping-cart{
-        color:$bella-red;
+        color:$boxshop-blue;
         margin-right:5%;
 
     }
 
     .glyphicon-heart, .glyphicon-eye-open{
-        color:$bella-red;
+        color:$boxshop-blue;
         width:100%;
         text-align:center;
     }
