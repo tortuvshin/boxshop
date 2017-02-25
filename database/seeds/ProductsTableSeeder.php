@@ -85,7 +85,7 @@ class ProductsTableSeeder extends Seeder
         $faker = Faker::create();
         $businesses = Business::get();
         $numCategories = DB::table('categories')->count();
-        for ($i = 0; $i < 100; $i++) {
+        for ($i = 0; $i < 500; $i++) {
             $price = $faker->numberBetween(1, 99);
             $tag = $faker->randomElement(['16 BRAND DRAW COLOR',
                             'CENTELLA MASK',
@@ -127,11 +127,11 @@ class ProductsTableSeeder extends Seeder
                  , 'Double A', 'Forever 21', 'Libero', 'Maccoffee', 'Puma']),
                 'features'     => json_encode([
                     'images' => [
-                    '/img/boxshop/'.$faker->numberBetween(1, 20).'.jpg',
-                    '/img/boxshop/'.$faker->numberBetween(1, 20).'.jpg',
-                    '/img/boxshop/'.$faker->numberBetween(1, 20).'.jpg',
-                    '/img/boxshop/'.$faker->numberBetween(1, 20).'.jpg',
-                    '/img/boxshop/'.$faker->numberBetween(1, 20).'.jpg',
+                    '/img/boxshop/'.$faker->numberBetween(1, 3).'.jpg',
+                    '/img/boxshop/'.$faker->numberBetween(1, 3).'.jpg',
+                    '/img/boxshop/'.$faker->numberBetween(1, 3).'.jpg',
+                    '/img/boxshop/'.$faker->numberBetween(1, 3).'.jpg',
+                    '/img/boxshop/'.$faker->numberBetween(1, 3).'.jpg',
                     ],
                 ]),
                 'condition' => $faker->randomElement(['new', 'refurbished', 'used']),
