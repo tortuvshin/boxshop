@@ -1,3 +1,51 @@
 body {
     color: #030303;
+    padding: 0;
+    background: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    color: #030303;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.dropdown-menu {
+    li {
+        width: 100%;
+        a {
+            padding: 0 15px;
+            line-height: inherit;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+	padding: 0 10px;
 }

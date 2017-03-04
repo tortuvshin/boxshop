@@ -1,0 +1,11 @@
+$dark: #030303;
+$blue: #47b1e2;
+$white: #fff;
+$golden: #f7bb12;
+.transition {
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transtion: all .3s ease-out;
+    -o-transiton: all .3s ease-out;
+}
