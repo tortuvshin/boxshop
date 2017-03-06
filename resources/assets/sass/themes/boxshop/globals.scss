@@ -47,5 +47,11 @@ h7 {
 }
 
 i {
-	padding: 0 10px;
+    padding: 0 10px;
+}
+
+.container {
+    -webkit-box-shadow: 25px 0px 25px -25px rgba(0, 0, 0, 0.45), -25px 0px 25px -25px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 25px 0px 25px -25px rgba(0, 0, 0, 0.45), -25px 0px 25px -25px rgba(0, 0, 0, 0.45);
+    box-shadow: 25px 0px 25px -25px rgba(0, 0, 0, 0.45), -25px 0px 25px -25px rgba(0, 0, 0, 0.45);
 }

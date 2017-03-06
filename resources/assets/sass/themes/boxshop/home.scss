@@ -1,7 +1,17 @@
-.vert-category {
-    position: absolute;
-    left: 15.1%;
-    z-index: 11;
-    background: #fff;
-    display: none;
+.home-bestselling {
+    padding-top: 10px;
+}
+
+.home-cat-trend {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.b-title {
+    display: block;
+    color: $golden;
+    border-bottom: 1px solid $golden;
+    line-height: 36px;
+    margin: 5px 0 10px 0;
+    text-transform: uppercase;
 }

@@ -1,0 +1,12 @@
+.vert-category {
+    a {
+        display: block;
+        padding: 5px 15px;
+        border-bottom: 1px solid $golden;
+        @extend .transition;
+        &:hover {
+            background: $blue;
+            color: $golden;
+        }
+    }
+}

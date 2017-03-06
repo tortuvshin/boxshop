@@ -22,20 +22,16 @@ if (isset($productSuggestion)) {
         @endif
 
         <div class="product-img-box" ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
-
-                <span class="product-image-hover"></span>       
             @if (isset($product["features"]["images"][0]))
-                <img  src='{{ $product["features"]["images"][0] }}' alt="{{ $product['name'] }}">
+                <div class="product-img-container" style="background: url({{ $product['features']['images'][0] }});">
             @else
-                <img  src='/img/no-image.jpg'  alt="{{ $product['name'] }}">
+                </div>
+                <div class="product-noimg-container" style="background: url({{assset('img/no-image.jpg')}});">
             @endif
+                </div>    
         </div>
-<!-- 
-        <p class="product-description">{{ str_limit($product['description'], 100,'...') }}</p>
- -->
         {{-- actions begin --}}
         <div class="product-actions actions">
-
             {{-- add to cart (only products not free)  --}}
             <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-{{ $product['id'] }}')">
                 <div class = "glyphicon glyphicon-shopping-cart option " >
@@ -56,8 +52,6 @@ if (isset($productSuggestion)) {
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
-            
-
         </div>
         {{-- actions end --}}
         <h6 class="product-name">
@@ -67,10 +61,8 @@ if (isset($productSuggestion)) {
         </h6>
 
         <div class="product-price">
-            <!-- {!! \Utility::showPrice($product['price']) !!} -->
-            {{ $product['price'] }} ₮
+            <span>{{ $product['price'] }} ₮</span>
         </div>
-
     </div>
     {{-- product box end --}}
 

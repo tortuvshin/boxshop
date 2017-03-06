@@ -4,7 +4,7 @@
 @parent
 @stop
 @section('center_content')
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading" ng-init="search=''">

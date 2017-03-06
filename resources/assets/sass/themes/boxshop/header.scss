@@ -33,7 +33,7 @@
             display: inline-block;
             position: relative;
             a {
-                padding: 0 30px;
+                padding: 0 5px;
                 color: $white;
                 display: block;
                 text-transform: uppercase;
@@ -44,8 +44,4 @@
             }
         }
     }
-}
-
-#category:hover .vert-category {
-    display: block;
 }
