@@ -6,10 +6,10 @@
 			<!-- {{ trans('user.your_account') }} -->
 			 <span class="caret"></span>
 		</a>
-	<ul class="dropdown-menu" role="menu" >
+	<div class="dropdown-menu col-xs-12" role="menu" >
 		<?php $menu=\Menu::top(true);?>
 		@foreach ($menu as $item)
-		    <li class="{{isset($item['class'])?$item['class']:''}} {{ Utility::active($item['route']) }}" >
+		    <div class="{{isset($item['class'])?$item['class']:''}} {{ Utility::active($item['route']) }}" >
 				<a href='{{$item['route']}}'>
 					@if (isset($item['icon']))
 						<span class="{{$item['icon']}}"></span>
@@ -19,17 +19,17 @@
 					 <span class="badge">{{$item['cont']}}</span>
 					@endif
 				</a>
-			</li>
+			</div>
 		@endforeach
 		@if (auth()->check())
-			<li>
+			<div>
 				<form action="/logout" method="POST">
 					{{ csrf_field() }}
 					<button type="submit" class="btn btn-success btn-block">
 						<i class="glyphicon glyphicon-log-out"></i>&nbsp;{{ trans('user.logout') }}
 					</button>
 				</form>
-			</li>
+			</div>
 		@endif
-	</ul>
+	</div>
 </li>
