@@ -1,7 +1,7 @@
 .vert-category {
     a {
         display: block;
-        padding: 5px 15px;
+        padding: 15px 15px;
         border-bottom: 1px solid $golden;
         @extend .transition;
         &:hover {
@@ -10,3 +10,4 @@
         }
     }
 }
+

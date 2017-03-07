@@ -3,15 +3,6 @@
 		<div class="navbar-header header-top col-xs-12 col-md-12">
 			<ul class="header-user">
 				@include('user.partial.menu_top')
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="">
-						<span>{{ trans('store.productsInWishList') }}(0)</span>
-					</a>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="{{ route('orders.show_wish_list') }}">{{ trans('store.wish_list') }}</a></li>
-						<li><a href="{{ route('orders.show_list_directory') }}">{{ trans('store.your_wish_lists') }}</a></li>
-					</ul>
-				</li>
 				@if(Auth::user())
 					<li class="dropdown " id="push-notices" ng-controller="PushNoticesController"  ng-click="check()" ng-focus="check()">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -79,7 +70,6 @@
 								</a>
 							</li>
 						@endforeach
-
 					</ul>
 				</span>
 				<input type="hidden" name="category" value="[[refine() || '{{Request::get('category')}}']]"/>
