@@ -33,7 +33,7 @@
 	<![endif]-->
 </head>
 <body>
-
+<div id="fb-root"></div>
 <section class = "@yield('page_class', 'home')">
 
 	{{-- Navigation bar section --}}
@@ -147,6 +147,22 @@
 	{!! Html::script('/js/lib/angular-notify.min.js') !!}
 	{!! Html::script('/js/lib/angular-local-storage.min.js') !!}
 @show
-
 </body>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&version=v2.8&appId=1766388183636585";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+	$(window).bind("load resize", function(){    
+  	var container_width = $('#likebox-wrapper').width();    
+    $('#likebox-wrapper').html('<div class="fb-page" ' + 
+    'data-href="https://www.facebook.com/boxshop.mn/"' +
+    ' data-width="' + container_width + '" data-height="450" data-show-faces="true" ' +
+    'data-header="true"></div>');
+    FB.XFBML.parse( );    
+});
+</script>
 </html>

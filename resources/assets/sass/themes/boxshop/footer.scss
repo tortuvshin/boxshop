@@ -1,7 +1,26 @@
 .footer {
     background: $dark;
     color: #fff;
-    div {
+    padding-bottom: 15px;
+    .f-contact,
+    .newsletter,
+    .f-logo {
         padding-top: 15px;
+    }
+    h3 {
+        padding-bottom: 15px;
+        border-bottom: 1px solid $golden;
+    }
+    ul,
+    #likebox-wrapper {
+        padding-top: 15px;
+    }
+    .f-logo {
+        img {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 15%;
+        }
     }
 }
