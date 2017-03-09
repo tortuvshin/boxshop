@@ -1,0 +1,24 @@
+.login-page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    .form-horizontal {
+        width: 20%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        padding: 10px;
+    }
+    #log-form {
+        width: 100%;
+        line-height: 36px;
+        padding-left: 10px;
+        border: 1px solid $blue;
+        margin: 0px 0px 10px 0px;
+    }
+}
