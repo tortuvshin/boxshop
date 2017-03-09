@@ -9,7 +9,7 @@
 	<div class="dropdown-menu col-xs-12" role="menu" >
 		<?php $menu=\Menu::top(true);?>
 		@foreach ($menu as $item)
-		    <div class="{{isset($item['class'])?$item['class']:''}} {{ Utility::active($item['route']) }}" >
+		    <div class="btn btn-link {{isset($item['class'])?$item['class']:''}} {{ Utility::active($item['route']) }}" >
 				<a href='{{$item['route']}}'>
 					@if (isset($item['icon']))
 						<span class="{{$item['icon']}}"></span>
