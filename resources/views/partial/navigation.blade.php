@@ -1,6 +1,10 @@
 <div class="container">
 	<div class="row">
 		<div class="navbar-header header-top col-xs-12 col-md-12">
+			<div class="partner-shop">
+				<b>Хамтын дэлгүүр - </b>
+				<span>Хамтдаа хөгжье, Хамтдаа хэмнэе</span>
+			</div>
 			<ul class="header-user">
 				@include('user.partial.menu_top')
 				@if(Auth::user())
@@ -39,23 +43,32 @@
 			</ul>
 		</div>
 		<div class="header-search-row col-xs-12 col-md-12">
-			<a class="logo col-md-2" href="/home">
-				@if($main_company['logo'])
-					<span class="navbar-brand-text">
-						<img class="logo-img" src="{{$main_company['logo']}}" alt="">
-					</span>
-				@else
-					<span class="navbar-brand-text">
-						<img src="{{{asset(img/logo.png)}}}" >
-					</span>
-				@endif
+			<a class="logo col-md-3" href="/home">
+				<div>
+					@if($main_company['logo'])
+						<span class="navbar-brand-text">
+							<img class="logo-img" src="{{$main_company['logo']}}" alt="">
+						</span>
+					@else
+						<span class="navbar-brand-text">
+							<img src="{{{asset(img/logo.png)}}}" >
+						</span>
+					@endif
+				</div>
+				<div class="motto">
+					<span class="promotion">Цагаа хэмнэ<br>Зардлаа хэмнэ</span>
+				</div>
 			</a>
-			<nav ng-controller="CategoriesController" class="cat-controller-nav col-md-10">
+			<nav ng-controller="CategoriesController" class="cat-controller-nav col-md-9">
+			<div class="search-contact">
+				<span class="search-tel"><i class="fa fa-phone"></i>7555-7007</span>
+				<span class="search-email"><i class="fa fa-envelope"></i>service@boxshop.mn</span>
+			</div>
 			{!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
 			<div class="search-nav">
 
 				<span class="categories-search">
-					<button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+					<button  type="button" class="category dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 						<span ng-bind="catSelected.name || '{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}'">
 							{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}
 							</span> <span class="caret">
@@ -80,21 +93,18 @@
 					<button class="btn btn-default glyphicon glyphicon-search" type="submit"></button>
 				</span>
 
-
-
 				<div class="cart">
 
 				<ul class="nav navbar-nav">
 					<li class="dropdown">
-						<a href="#cart" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<a href="#cart" class="dropdown-toggle btn btn-success cart-btn" data-toggle="dropdown" role="button" aria-expanded="false">
 							@if(Auth::user()&&Auth::user()->getCartCount())
 							<span class="badge badge-cart">{{ Auth::user()->getCartCount() }} </span>
 							@elseif(!Auth::user() && is_array(Session::get('user.cart_content')) && array_sum(Session::get('user.cart_content')))
 							<span class="badge badge-cart">{{ array_sum(Session::get('user.cart_content')) }} </span>
 							@endif
 
-							<span class="glyphicon glyphicon-shopping-cart" style="font-size: 10px; color: white;"> 0ITEM ₮0.00</span>
-
+							<span class="fa fa-shopping-cart"> 0 БАРАА ₮ 0.00 </span>
 						</a>
 
 			            @if(Auth::user() && Auth::user()->getCartCount() > 0)

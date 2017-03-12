@@ -13,9 +13,21 @@
 
 /* Header middle */
 
-.logo-img {
-    display: block;
-    margin: 0 auto;
+.logo {
+    div {
+        float: left;
+    }
+}
+
+.motto {
+    margin-top: 35px;
+}
+
+.promotion {
+    font-size: 16px;
+    color: #030303;
+    text-transform: uppercase;
+    letter-spacing: -.5px;
 }
 
 .header-search-row {
@@ -26,7 +38,7 @@
 
 .header-bottom-content {
     height: 40px;
-    background: $dark;
+    background: $blue;
     ul {
         line-height: 40px;
         li {
@@ -38,7 +50,7 @@
                 display: block;
                 text-transform: uppercase;
                 &:hover {
-                    background: $blue;
+                    background: $golden;
                     @extend .transition;
                 }
             }
@@ -50,4 +62,57 @@
 .categories-search,
 .search-btn {
     float: left;
+}
+
+.partner-shop {
+    width: auto;
+    float: left;
+}
+
+.category {
+    line-height: 42px;
+    background: #e7e7e7;
+    border: 1px solid #d9d9d9;
+}
+
+#search_value {
+    height: 46px;
+    border-radius: 0;
+    line-height: 46px;
+}
+
+.angucomplete-holder {
+    width: 300px;
+}
+
+.search-btn {
+    button {
+        line-height: 46px;
+        padding: 0;
+        width: 46px;
+        height: 46px;
+        margin-top: -1px;
+    }
+}
+
+.search-contact {
+    padding: 20px 0 5px 0;
+}
+
+.search-email {
+    margin: 0px 5px;
+    border-left: 1px solid #ccc;
+}
+
+.cart {
+    float: right;
+    .cart-btn {
+        height: 46px;
+        line-height: 46px;
+        padding: 0 15px;
+        @extend .transition;
+        &:hover {
+            background: $blue;
+        }
+    }
 }

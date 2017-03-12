@@ -15,3 +15,55 @@
     margin: 5px 0 10px 0;
     text-transform: uppercase;
 }
+
+.motto-1,
+.motto-2,
+.motto-3 {
+    padding: 15px;
+    text-align: center;
+    height: 100px;
+    line-height: 17px;
+    font-size: 16px;
+    i {
+        display: block;
+        font-size: 20px;
+    }
+}
+
+.motto-1 {
+    color: $blue;
+    border: 5px solid $blue;
+}
+
+.motto-2 {
+    color: $golden;
+    border: 5px solid $golden;
+}
+
+.motto-3 {
+    color: $dark;
+    border: 5px solid $dark;
+}
+
+.home-motto {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.home-advantage {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .inner-box {
+        height: 140px;
+        width: 140px;
+        text-align: center;
+        border: 1px solid $blue;
+        border-radius: 50%;
+        padding: 15px;
+        color: $blue;
+        i {
+            display: block;
+            font-size: 40px;
+        }
+    }
+}

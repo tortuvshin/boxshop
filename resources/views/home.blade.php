@@ -88,7 +88,7 @@
                 <div class="row">
                   <div class="col-md-12 col-xs-12 bestselling-title">
                     <a href="{{ route('products') }}">
-                      <span class="b-title">Онцлох бараа</span>
+                      <span class="b-title">Үнэлгээ өндөр</span>
                     </a>
                   </div>
                   <div class="col-md-12 col-xs-12 bestselling-product">
@@ -100,20 +100,40 @@
                   </div>
                 </div>
               </div>
+              <div class="home-motto col-md-12 col-xs-12">
+                <div class="row">
+                  <div class="col-md-4 col-xs-12">
+                    <div class="motto-1">
+                      <i class="fa fa-clock-o"></i>
+                      <span>Цагаа хэмнэ</span> 
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-xs-12">
+                    <div class="motto-2">
+                      <i class="fa fa-money"></i>
+                      <span>Зардлаа хэмнэ</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-xs-12">
+                    <div class="motto-3">
+                      <i class="fa fa-users"></i>
+                      <span>Хамтдаа хөгжье<br>Хамтдаа хэмнэе</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="home-cat-trend col-md-12 col-xs-12">
                 <div class="row">
                       {{-- categories suggestions --}}
                       <div class="home-bestselling col-md-12 col-xs-12">
-                        <div class="col-md-12 col-xs-12 bestselling-title">
                           <a href="{{ route('products') }}">
-                            <span class="b-title">Санал болгох бараа</span>
+                            <span class="b-title">Шинээр нэмэгдсэн</span>
                           </a>
-                        </div>
-                        <div class="col-md-12 col-xs-12 bestselling-product">
+                        <!-- <div class="col-md-12 col-xs-12 bestselling-product">
                           @foreach ($suggestion['categories'] as $product)
                               @include('products.partial.productBox', $product)
                           @endforeach
-                        </div>
+                        </div> -->
                       </div>
 
                       {{-- viewed suggestions --}}
@@ -126,7 +146,47 @@
                 </div>
               </div>
             </div> 
-          </div>{{----- end of row -----}}
-          </div>{{------- End of Home Right -------}}
+        </div>{{----- end of row -----}}
+        <div class="home-advantage col-md-12 col-xs-12">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="inner-box">
+                <i class="fa fa-dollar"></i>
+                <span>Бараа байршуулах<br>0% шимтгэл</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <i class="fa fa-home"></i>
+                <span>Бодит дэлгүүрт<br>бараа байршуулах</span>
+              </div> 
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <i class="fa fa-pie-chart"></i>
+                <span>Барааны тооцоогоо<br>хянах боломж</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <i class="fa fa-money" aria-hidden="true"></i>
+                <span>НӨАТ<br>баримт олгох</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <i class="fa fa-truck"></i>
+                <span>Хүргэлт</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <i class="fa fa-archive"></i>
+                <span>Бараа буцаан<br>олголт</span>
+              </div>
+            </div>
+          </div>
+        </div>{{---- End of advantage -----}}
+      </div>{{------- End of Home Right -------}}
 </section> {{-- end products_view --}}
 @stop {{-- end content --}}
