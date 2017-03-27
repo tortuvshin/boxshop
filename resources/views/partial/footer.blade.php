@@ -1,28 +1,42 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 col-xs-12 footer">
-            <div class="col-md-4 col-xs-12 f-logo">
-                <img class="logo-jpg" src="{{asset('img/boxshop/logo-footer.png')}}">
-            </div>
-            <div class="col-md-4 col-xs-12 f-contact">
-                <h3 class="widget-title heading-title">Холбоо барих</h3>
+            <div class="col-md-3 col-xs-12 footer-section">
+                <h3 class="widget-title heading-title">BOXSHOP.mn</h3>
                 <ul>
-                    <li><i class="fa fa-map-marker"></i> <span class="footertext">11-р хороолол Эвт төвийн 1 давхарт Box Shop (Номин супермаркетийн баруун хойно)</span>
-                    </li>
-                    <li><i class="fa fa-phone"></i> <span class="footertext">7555-7007, 9087-8111</span>
-                    </li>
-                    <li><i class="fa fa-clock-o"></i> <span class="footertext">Цагийн хуваарь: Өдөр бүр 11:00 - 20:00</span>
-                    </li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Бидний тухай</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Дэлгүүрийн танилцуулга</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Эрхэм зори#лго, зорилт</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Холбоо барих</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-12 footer-section">
+                <h3 class="widget-title heading-title">Бидэнтэй хамтрах</h3>
+                <ul>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Суртчилгааны самбар байршуулах</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Сайтад бараа бүтээгдэхүүнээ байршуулах</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Дэлгүүрт бараа бүтээгдэхүүнээ байршуулах</a></li>
                 </ul>
             </div>
 
-            <div class="col-md-4 col-xs-12 newsletter">
-                <h3 class="widget-title heading-title">
-                    Сошиал                
-                </h3>
-                <div id="likebox-wrapper">
-                    <div class="fb-page" data-href="https://www.facebook.com/boxshop.mn/" data-tabs="timeline" data-width="300" data-height="450" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/boxshop.mn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/boxshop.mn/">BOX SHOP</a></blockquote></div>
-                </div>
+            <div class="col-md-3 col-xs-12 footer-section">
+                <h3 class="widget-title heading-title">Хэрэглэгчид</h3>
+                <ul>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Үйлчилгээний нөхцөл</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Нууцлалын баталгаа</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Төлбөрийн хэрэгсэл</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Хүргэлт</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Санал хүсэлт</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-12 footer-section">
+                <h3 class="widget-title heading-title">Тусламж</h3>
+                <ul>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Худалдан авалт</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Бараа буцаалт</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Бараа оруулах</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Асуулт, хариулт</a></li>
+                </ul>
             </div>
         </div>
         <div class="col-md-12 col-xs-12 copyright">

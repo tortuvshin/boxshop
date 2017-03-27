@@ -37,7 +37,7 @@
 }
 
 .header-bottom-content {
-    height: 40px;
+    height: 42px;
     background: $blue;
     ul {
         line-height: 40px;
@@ -49,9 +49,15 @@
                 color: $white;
                 display: block;
                 text-transform: uppercase;
+                font-size: 12px;
                 &:hover {
-                    background: $golden;
+                    background: $btnHover;
                     @extend .transition;
+                }
+            }
+            .special {
+                &:hover {
+                    background: $golden !important;
                 }
             }
         }
