@@ -5980,7 +5980,7 @@ i {
 .home-advantage {
   padding-top: 15px;
   padding-bottom: 15px; }
-  .home-advantage .inner-box {
+  .home-advantage .advantage-bg {
     height: 140px;
     width: 140px;
     text-align: center;
@@ -5988,9 +5988,6 @@ i {
     border-radius: 50%;
     padding: 15px;
     color: #47b1e2; }
-    .home-advantage .inner-box i {
-      display: block;
-      font-size: 40px; }
 
 @media screen and (max-width: 320px) {
   .navbar-header .dropdown-menu {

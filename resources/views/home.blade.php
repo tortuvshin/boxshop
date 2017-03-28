@@ -151,8 +151,8 @@
           <div class="row">
             <div class="col-md-2">
               <div class="inner-box">
-                <i class="fa fa-dollar"></i>
-                <span>Бараа байршуулах<br>0% шимтгэл</span>
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d1.png')}}')"></div>
+                <span class="advantage-desc">Бараа байршуулах<br>0% шимтгэл</span>
               </div>
             </div>
             <div class="col-md-2">
