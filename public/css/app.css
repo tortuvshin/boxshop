@@ -5986,8 +5986,13 @@ i {
     text-align: center;
     border: 1px solid #47b1e2;
     border-radius: 50%;
-    padding: 15px;
-    color: #47b1e2; }
+    background-position: center center !important;
+    background-size: cover !important;
+    display: block;
+    margin: 0 auto; }
+  .home-advantage .inner-box {
+    text-align: center;
+    height: 220px; }
 
 @media screen and (max-width: 320px) {
   .navbar-header .dropdown-menu {

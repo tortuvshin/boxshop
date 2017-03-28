@@ -157,32 +157,50 @@
             </div>
             <div class="col-md-2">
               <div class="inner-box">
-                <i class="fa fa-home"></i>
-                <span>Бодит дэлгүүрт<br>бараа байршуулах</span>
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d2.png')}}')"></div>
+                <span class="advantage-desc"Бодит дэлгүүрт давхар <br>байршуулах боломж</span>
               </div> 
             </div>
             <div class="col-md-2">
               <div class="inner-box">
-                <i class="fa fa-pie-chart"></i>
-                <span>Барааны тооцоогоо<br>хянах боломж</span>
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d3.png')}}')"></div>
+                <span class="advantage-desc">Худалдан авагчдад <br>НӨАТ баримт олгоно</span>
               </div>
             </div>
             <div class="col-md-2">
               <div class="inner-box">
-                <i class="fa fa-money" aria-hidden="true"></i>
-                <span>НӨАТ<br>баримт олгох</span>
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d4.png')}}')"></div>
+                <span class="advantage-desc">Бараа үйлчилгээний <br>үнэлгээний систем</span>
               </div>
             </div>
             <div class="col-md-2">
               <div class="inner-box">
-                <i class="fa fa-truck"></i>
-                <span>Хүргэлт</span>
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d5.png')}}')"></div>
+                <span class="advantage-desc"> Бараа бүтээгэхүүний үлдэгдэл, <br>төлбөр тооцоогоо хянах боломж</span>
               </div>
             </div>
             <div class="col-md-2">
               <div class="inner-box">
-                <i class="fa fa-archive"></i>
-                <span>Бараа буцаан<br>олголт</span>
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d6.png')}}')"></div>
+                <span class="advantage-desc">Мөнгө түгжихгүй,<br>найдвартай шилжүүлэг</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d7.png')}}')"></div>
+                <span class="advantage-desc">Түргэн шуурхай <br>хүргэлтийн үйлчилгээ</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d8.png')}}')"></div>
+                <span class="advantage-desc"> Бараа буцаах, <br> солих боломж</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d9.png')}}')"></div>
+                <span class="advantage-desc">Монголын онцлогт <br>таарсан худалдааны систем</span>
               </div>
             </div>
           </div>
