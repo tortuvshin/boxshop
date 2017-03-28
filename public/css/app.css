@@ -5994,6 +5994,34 @@ i {
     text-align: center;
     height: 220px; }
 
+/*Social bars*/
+.social-bars {
+  position: fixed;
+  top: 250px;
+  right: 5px; }
+  .social-bars .fa {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+    display: block;
+    border-radius: 50%;
+    margin: 10px 0;
+    font-size: 1.8em; }
+    .social-bars .fa:hover {
+      transform: scale(1.1) rotate(360deg); }
+  .social-bars .fa-facebook {
+    background-color: #3C599F; }
+  .social-bars .fa-twitter {
+    background-color: #32CCFE; }
+  .social-bars .fa-youtube {
+    background-color: #C52F30; }
+  .social-bars .fa-instagram {
+    background-color: #A1755C; }
+
 @media screen and (max-width: 320px) {
   .navbar-header .dropdown-menu {
     left: -45%; } }

@@ -46,7 +46,8 @@
 		@section('breadcrumbs')
 		@show
 	</div>
-
+	{{-- Social buttons --}}
+	@include ('partial.social_buttons')
 	{{-- Content page --}}
 	@section('content')
 		@section('panels')

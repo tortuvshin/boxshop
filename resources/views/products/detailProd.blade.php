@@ -3,6 +3,8 @@
 
 @include('partial.message')
 
+@include ('partial.social_buttons')
+
 @section('metaLabels')
     @parent
     @include('partial.social_tags', [

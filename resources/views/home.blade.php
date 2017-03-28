@@ -6,6 +6,8 @@
 
 @section('content')
 
+@include ('partial.social_buttons')
+
 <section class="products_view">
     
     <div class="home-layout container">
@@ -158,7 +160,7 @@
             <div class="col-md-2">
               <div class="inner-box">
                 <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d2.png')}}')"></div>
-                <span class="advantage-desc"Бодит дэлгүүрт давхар <br>байршуулах боломж</span>
+                <span class="advantage-desc">Бодит дэлгүүрт бараагаа <br>байршуулах боломж</span>
               </div> 
             </div>
             <div class="col-md-2">
