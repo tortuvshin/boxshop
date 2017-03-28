@@ -4,10 +4,10 @@
             <div class="col-md-3 col-xs-12 footer-section">
                 <h3 class="widget-title heading-title">BOXSHOP.mn</h3>
                 <ul>
-                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Бидний тухай</a></li>
+                    <li><a href="{{ route('about') }}"><i class="fa fa-circle" aria-hidden="true"></i>Бидний тухай</a></li>
                     <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Дэлгүүрийн танилцуулга</a></li>
-                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Эрхэм зори#лго, зорилт</a></li>
-                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Холбоо барих</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Эрхэм зорилго, зорилт</a></li>
+                    <li><a href="{{ route('contact') }}"><i class="fa fa-circle" aria-hidden="true"></i>Холбоо барих</a></li>
                 </ul>
             </div>
             <div class="col-md-3 col-xs-12 footer-section">

@@ -16,11 +16,11 @@
       <input type="hidden" name="type_of_request" id="type_of_request" value="contact">
     </div>
 
-   <div class="form-group col-lg-6">
+   <div class="form-group col-lg-12">
     {!! Form::label(trans('about.name')) !!}:
     {!! Form::text('name', null,['required','class'=>'form-control ','placeholder'=>trans('about.name_placeholder')]) !!}
   </div>
-  <div class="form-group col-md-8">
+  <div class="form-group col-md-12">
     {!! Form::label(trans('about.email')) !!}:
     {!! Form::text('email', null,['required','class'=>'form-control','placeholder'=>trans('about.email_placeholder')]) !!}
   </div>
