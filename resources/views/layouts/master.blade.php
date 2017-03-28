@@ -48,6 +48,8 @@
 	</div>
 	{{-- Social buttons --}}
 	@include ('partial.social_buttons')
+	{{-- add item --}}
+	@include ('partial.add_item')
 	{{-- Content page --}}
 	@section('content')
 		@section('panels')
