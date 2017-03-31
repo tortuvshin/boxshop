@@ -22,7 +22,7 @@
             <div class="col-md-3 col-xs-12 footer-section">
                 <h3 class="widget-title heading-title">Хэрэглэгчид</h3>
                 <ul>
-                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Үйлчилгээний нөхцөл</a></li>
+                    <li><a href="{{ route('user_service') }}"><i class="fa fa-circle" aria-hidden="true"></i>Үйлчилгээний нөхцөл</a></li>
                     <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Нууцлалын баталгаа</a></li>
                     <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Төлбөрийн хэрэгсэл</a></li>
                     <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Хүргэлт</a></li>
