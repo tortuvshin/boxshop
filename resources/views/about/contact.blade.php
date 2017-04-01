@@ -4,7 +4,7 @@
 
 {{-- NAVBAR --}}
 @section('navigation')
-@include('partial.navigation_basic')
+@include('partial.navigation')
 @endsection
 
 {{-- CONTENT --}}
