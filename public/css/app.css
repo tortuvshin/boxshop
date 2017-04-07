@@ -5995,7 +5995,8 @@ i {
 .social-bars {
   position: fixed;
   top: 250px;
-  right: 5px; }
+  right: 5px;
+  z-index: 10; }
   .social-bars .fa {
     width: 50px;
     height: 50px;
@@ -6018,27 +6019,13 @@ i {
     background-color: #C52F30; }
   .social-bars .fa-instagram {
     background-color: #A1755C; }
+  .social-bars .fa-plus {
+    background-color: #EEC643; }
 
-.add_item {
-  position: fixed;
-  top: 250px;
-  left: 5px; }
-  .add_item .fa {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    color: #FFF;
-    color: rgba(255, 255, 255, 0.8);
-    transition: all 0.3s ease-in-out;
-    display: block;
-    border-radius: 50%;
-    margin: 10px 0;
-    font-size: 1.8em; }
-    .add_item .fa:hover {
-      transform: scale(1.1) rotate(360deg); }
-  .add_item .fa-plus {
-    background: #47b1e2; }
+.list-group-item {
+  width: 100%; }
+  .list-group-item a {
+    text-align: center; }
 
 @media screen and (max-width: 320px) {
   .navbar-header .dropdown-menu {

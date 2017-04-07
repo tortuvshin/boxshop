@@ -3,4 +3,5 @@
     <a href="#"><i class="fa fa-twitter" target="_blank"></i></a>
     <a href="#"><i class="fa fa-youtube" target="_blank"></i></a>
     <a href="#"><i class="fa fa-instagram" target="_blank"></i></a>
+    <a href="#"><i class="fa fa-plus"></i></a>
 </div>

@@ -48,42 +48,43 @@
 	</div>
 	{{-- Social buttons --}}
 	@include ('partial.social_buttons')
-	{{-- add item --}}
-	@include ('partial.add_item')
+	
 	{{-- Content page --}}
 	@section('content')
 		@section('panels')
 
-			<div>
-				<div class="global-panels">
+			<div class="container">
+				<div class="row">
+					<div class="global-panels">
 
-					{{-- left panel --}}
-					@if (isset($panel['left']))
-						{{-- desktops validation --}}
-						<div class="col-sm-{{ $panel['left']['width'] or '3' }} col-md-{{ $panel['left']['width'] or '3' }} {{ $panel['left']['class'] or '' }}">
-							@section('panel_left_content')
-								Left content
+						{{-- left panel --}}
+						@if (isset($panel['left']))
+							{{-- desktops validation --}}
+							<div class="col-sm-{{ $panel['left']['width'] or '3' }} col-md-{{ $panel['left']['width'] or '3' }} {{ $panel['left']['class'] or '' }}">
+								@section('panel_left_content')
+									Left content
+								@show
+							</div>
+						@endif
+
+						{{-- center content --}}
+						<div class="col-xs-12 col-sm-{{ $panel['center']['width'] or '9' }} col-md-{{ $panel['center']['width'] or '9' }}">
+							@section('center_content')
+								Center content
 							@show
 						</div>
-					@endif
 
-					{{-- center content --}}
-					<div class="col-xs-12 col-sm-{{ $panel['center']['width'] or '9' }} col-md-{{ $panel['center']['width'] or '9' }}">
-						@section('center_content')
-							Center content
-						@show
-					</div>
+						{{-- right panel --}}
+						@if (isset($panel['right']))
+							<div class="hidden-xs col-sm-{{ $panel['right']['width'] or '2' }} col-md-{{ $panel['right']['width'] or '2' }} {{ $panel['right']['class'] or '' }}">
+								@section('panel_right_content')
+									Right content
+								@show
+							</div>
+						@endif
 
-					{{-- right panel --}}
-					@if (isset($panel['right']))
-						<div class="hidden-xs col-sm-{{ $panel['right']['width'] or '2' }} col-md-{{ $panel['right']['width'] or '2' }} {{ $panel['right']['class'] or '' }}">
-							@section('panel_right_content')
-								Right content
-							@show
-						</div>
-					@endif
-
-				</div> {{-- globlas panels --}}
+					</div> {{-- globlas panels --}}
+				</div>
 			</div> {{-- container --}}
 
 		@show
