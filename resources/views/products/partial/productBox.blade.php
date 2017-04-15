@@ -8,6 +8,7 @@ if (isset($productSuggestion)) {
 <div class="col-xs-12 col-sm-6 col-md-3 clearfix product-overflow">
 
     {{-- product box begin --}}
+    
     <div class="product-box clearfix product-overflow" ng-controller = "ProductBox">
 
         <div class="product-reviews @if (!$product['rate_val']) hide @endif">
@@ -32,25 +33,21 @@ if (isset($productSuggestion)) {
         </div>
         {{-- actions begin --}}
         <div class="product-actions actions">
-            {{-- add to cart (only products not free)  --}}
-            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-{{ $product['id'] }}')">
-                <div class = "glyphicon glyphicon-shopping-cart option " >
-                    @if ($product['type'] != 'freeproduct')
-                        {!! Form::open(['method' => 'put', 'route' => ['orders.add_to_order','cart', $product['id']], 'id' => 'add-'.$product['id'] ]) !!}
-                        {!! Form::close() !!}
-                    @endif
+            <div class="row">
+                {{-- add to cart (only products not free)  --}}
+                <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-{{ $product['id'] }}')">
+                    <div class = "glyphicon glyphicon-shopping-cart option " >
+                        @if ($product['type'] != 'freeproduct')
+                            {!! Form::open(['method' => 'put', 'route' => ['orders.add_to_order','cart', $product['id']], 'id' => 'add-'.$product['id'] ]) !!}
+                            {!! Form::close() !!}
+                        @endif
+                    </div>
+                    <span id="card_text">Сагс</span>
                 </div>
-                <span id="card_text">Сагс</span>
-            </div>
-
-            {{-- wish list (only products not free) --}}
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart"  ng-click = "goTo('{{ route('orders.add_to_order',['wishlist', $product[($product['type']=='freeproduct')?'parent_id':'id']]) }}')">
-                <div class="glyphicon glyphicon-heart option"></div>
-            </div>
-
-            {{-- view --}}
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
-                <div class="glyphicon glyphicon-eye-open option"></div>
+                {{-- view --}}
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
+                    <div class="glyphicon glyphicon-eye-open option"></div>
+                </div>
             </div>
         </div>
         {{-- actions end --}}
@@ -64,6 +61,7 @@ if (isset($productSuggestion)) {
             <span>{{ $product['price'] }} ₮</span>
         </div>
     </div>
+    
     {{-- product box end --}}
 
 

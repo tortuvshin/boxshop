@@ -8,8 +8,8 @@ if (isset($productSuggestion)) {
 <div class="col-xs-12 col-md-6 clearfix product-overflow">
 
     {{-- product box begin --}}
-
-    <div class="product-box clearfix product-overflow" ng-controller = "ProductBox">
+    <a href = "{{ route('products.show',[$product['id']]) }}">
+        <div class="product-box clearfix product-overflow" ng-controller = "ProductBox">
 
         <div class="product-reviews @if (!$product['rate_val']) hide @endif">
             {!! \Utility::thousandSuffix($product['rate_val']) !!}
@@ -57,9 +57,9 @@ if (isset($productSuggestion)) {
         </div>
         {{-- actions end --}}
         <h6 class="product-name">
-            <a href = "{{ route('products.show',[$product['id']]) }}">
+            
                 {{ $product['name'] }}
-            </a>
+           
         </h6>
 
         <div class="product-price">
@@ -67,7 +67,8 @@ if (isset($productSuggestion)) {
             {{ $product['price'] }} ₮
         </div>
 
-    </div>
+        </div>
+    </a>
     {{-- product box end --}}
 
 
