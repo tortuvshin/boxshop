@@ -56,7 +56,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="global-panels">
-
+					<div class="row">
 						{{-- left panel --}}
 						@if (isset($panel['left']))
 							{{-- desktops validation --}}
@@ -82,7 +82,7 @@
 								@show
 							</div>
 						@endif
-
+					</div>	
 					</div> {{-- globlas panels --}}
 				</div>
 			</div> {{-- container --}}

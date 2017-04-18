@@ -92,7 +92,7 @@
 					<ul class="list-inline" ng-controller = "ProductsGallery">
 					<?php $selector = 0; $gallery = ''; ?>
 					@foreach($product->features['images'] as $image)
-						<li class="col-md-4 col-xs-12">
+						<li class="col-md-2 col-xs-12">
 							<a class="thumbnail">
 								<img  src = "img/no-image.jpg" lazy-img = "{{ $image }}" class="pd-image img-responsive img-rounded" ng-click = "setPortrait('{{ $image }}?w=450')">
 							</a>
