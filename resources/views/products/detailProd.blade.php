@@ -80,10 +80,11 @@
 
 			{{-- Gallery --}}
 			<div class="col-md-6" ng-controller = "ProductsGallery">
-				<img src = "img/no-image.jpg" lazy-img = '[[getPortrait()]]' ng-init = "setPortrait('{{ $product->features['images'][0] }}')" class = "pdimage img-responsive img-rounded" >
+				<div class="thumbnail img-thumb">
+					<img src = "img/no-image.jpg" lazy-img = '[[getPortrait()]]' ng-init = "setPortrait('{{ $product->features['images'][0] }}')" class = "pdimage img-responsive img-rounded" >	
+				</div>
 				
-
-
+				
 				<hr>
 				{{-- Thumbnails --}}
 				<div class="row">
@@ -91,7 +92,7 @@
 					<ul class="list-inline" ng-controller = "ProductsGallery">
 					<?php $selector = 0; $gallery = ''; ?>
 					@foreach($product->features['images'] as $image)
-						<li>
+						<li class="col-md-4 col-xs-12">
 							<a class="thumbnail">
 								<img  src = "img/no-image.jpg" lazy-img = "{{ $image }}" class="pd-image img-responsive img-rounded" ng-click = "setPortrait('{{ $image }}?w=450')">
 							</a>
