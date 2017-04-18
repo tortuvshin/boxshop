@@ -114,8 +114,7 @@
     float: right;
     .cart-btn {
         height: 46px;
-        line-height: 46px;
-        padding: 0 15px;
+        line-height: 1;
         @extend .transition;
         &:hover {
             background: $blue;

@@ -75,8 +75,7 @@
             <br>
         </div>		
 </div>
-<div class="container container-fluid" >
-<br>
+<div class="container" >
 		<div class="row">
 
 			{{-- Gallery --}}
@@ -288,23 +287,20 @@
         </div>
 		<div class="row">
 			<div class="col-md-12">
-				
-		
-			@if (count($product->group))
-                @include('products.group')
-            @else
-	            <section class="products_view">
-                    <div class="container-fluid marketing">
-                        <div class="row">
-                        
-                            @foreach ($suggestions as $productSuggestion)
-                                @include('products.partial.productBox', $productSuggestion)
-                            @endforeach
-                        </div>
-                    </div>
-	            </section>
-            @endif
-            	</div>
+				@if (count($product->group))
+	                @include('products.group')
+	            @else
+		            <section class="products_view">
+	                    <div class="container marketing">
+	                        <div class="row">
+	                            @foreach ($suggestions as $productSuggestion)
+	                                @include('products.partial.productBox', $productSuggestion)
+	                            @endforeach
+	                        </div>
+	                    </div>
+		            </section>
+	            @endif
+        	</div>
 		</div>
 
 	 @stop

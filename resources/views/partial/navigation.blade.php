@@ -67,7 +67,7 @@
 			{!! Form::model(Request::all(),['url'=> action('ProductsController@index'), 'method'=>'GET', 'id'=>'searchForm']) !!}
 			<div class="search-nav">
 
-				<span class="categories-search">
+				<div class="categories-search">
 					<button  type="button" class="category dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 						<span ng-bind="catSelected.name || '{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}'">
 							{{ isset($categories_menu[Request::get('category')]['name']) ? $categories_menu[Request::get('category')]['name'] : trans('store.all_categories') }}
@@ -84,7 +84,7 @@
 							</li>
 						@endforeach
 					</ul>
-				</span>
+				</div>
 				<input type="hidden" name="category" value="[[refine() || '{{Request::get('category')}}']]"/>
 
 				@include('partial.search_box',['angularController' => 'AutoCompleteCtrl', 'idSearch'=>'search'])
@@ -142,7 +142,8 @@
 			            @endif
 					</li>
 				</ul>
-			</div>	
+			</div>
+			<div style="clear: both;"></div>	
 		</div>
 		</div>
 		{!! Form::close() !!}

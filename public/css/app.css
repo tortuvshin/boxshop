@@ -5896,8 +5896,7 @@ i {
   float: right; }
   .cart .cart-btn {
     height: 46px;
-    line-height: 46px;
-    padding: 0 15px; }
+    line-height: 1; }
     .cart .cart-btn:hover {
       background: #47b1e2; }
 
@@ -5938,6 +5937,9 @@ i {
 .product-overflow {
   margin-top: 5px; }
 
+.marketing {
+  margin: 15px 0; }
+
 .home-bestselling {
   padding-top: 10px; }
 
@@ -5976,8 +5978,8 @@ i {
   border: 5px solid #EEC643; }
 
 .motto-3 {
-  color: #030303;
-  border: 5px solid #030303; }
+  color: #C6D4FF;
+  border: 5px solid #C6D4FF; }
 
 .home-motto {
   padding-top: 20px;
