@@ -19,11 +19,6 @@ Route::group(['prefix' => 'home'], function () {
     Route::get('/', 'HomeController@index');
 });
 
-Route::get('tsag', ['uses' => 'MailController@getContact', 'as' => 'tsag']);
-Route::post('tsag', ['uses' => 'MailController@postContact', 'as' => 'tsag']);
-
-
-
 require __DIR__ . '/web/users.php';
 
 require __DIR__ . '/web/business.php';
