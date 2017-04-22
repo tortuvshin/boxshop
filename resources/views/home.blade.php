@@ -12,42 +12,12 @@
     
     <div class="home-layout container">
       <div class="row">
-        <div class="home-left col-xs-12 col-md-3">
+        <!-- <div class="home-left col-xs-12 col-md-3">
           <div class="row">
-            <div class="vert-category col-md-12 col-xs-12">
-                  <ul>
-                      <li>
-                          <a href="#">Эрэгтэй хувцас</a>
-                      </li>
-                      <li>
-                          <a href="#">Эмэгтэй хувцас</a>
-                      </li>
-                      <li>
-                          <a href="#">Хүүхдийн хувцас, хэрэглэл</a>
-                      </li>
-                      <li>
-                          <a href="#">Гоо сайхан</a>
-                      </li>
-                      <li>
-                          <a href="#">Эрүүл мэнд</a>
-                      </li>
-                      <li>
-                          <a href="#">Бичэг хэрэг</a>
-                      </li>
-                      <li>
-                          <a href="#">Бэлэг дурсгал</a>
-                      </li>
-                      <li>
-                          <a href="#">Цахилгаан бараа</a>
-                      </li>
-                      <li>
-                          <a href="#">Гэр ахуй</a>
-                      </li>
-                  </ul>
-            </div>
+            
           </div>
-        </div>
-        <div class="home-right col-xs-12 col-md-9">
+        </div> -->
+        <div class="home-right col-xs-12 col-md-9 pull-right">
           <div class="row">
             <div class="col-md-12 col-xs-12 home-carousel-box">
               <div id="store-home-carousel" class="carousel slide" data-ride="carousel">

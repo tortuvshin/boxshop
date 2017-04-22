@@ -37,10 +37,10 @@
 }
 
 .header-bottom-content {
-    height: 42px;
+    height: 50px;
     background: $blue;
-    ul {
-        line-height: 40px;
+    .line-menu {
+        line-height: 49px;
         li {
             display: inline-block;
             position: relative;
@@ -62,6 +62,15 @@
             }
         }
     }
+}
+
+.category-main {
+    height: 50px;
+    cursor: pointer;
+    line-height: 50px;
+    background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+    color: $white;
+    padding: 0 20px;
 }
 
 .search-input,
@@ -114,4 +123,41 @@
             background: $blue;
         }
     }
+}
+
+
+/* sticky header */
+
+.sticky-header {
+    background: #333 none repeat scroll 0 0;
+    padding: 0 15px !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_titles;
+    -moz-animation-duration: 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-duration: .7s;
+    -moz-animation-duration: .7s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
 }
