@@ -1,6 +1,6 @@
 (function(){
 'use strict';
-var app=angular.module('Bella');
+var app=angular.module('ShopCore');
 
 //Template service
 app.factory('Templates',function(){

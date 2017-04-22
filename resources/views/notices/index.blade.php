@@ -97,6 +97,6 @@
 		app.controller('topCategories',['$scope',function($scope){
 			$scope.actual=({!! json_encode('$listActual') !!});
 		}]);
-		})(angular.module("Bella"));
+		})(angular.module("ShopCore"));
 	</script>
 @stop

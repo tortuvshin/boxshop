@@ -227,9 +227,7 @@
 
 						
 	                    <div class="return-shipping">        
-        <div class="content-quick">
-            <h3 > Дараах утсаар холбогдож дэлгэрэнгүй мэдээллийг авна уу. Утас: 89992681 </h3>
-        </div>
+
 	</div>
 	                    		
 	                    
@@ -335,7 +333,7 @@
             		return PassInfo.getProperty();
             	}
             });
-        })(angular.module("Bella"));
+        })(angular.module("ShopCore"));
         //Social Buttons
         $(document).ready(function() {
 			$("#facebook").click(function() {

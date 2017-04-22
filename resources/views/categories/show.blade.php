@@ -85,7 +85,7 @@
                     return type_list[$scope.category.type];
                 };
             }]);
-        })(angular.module("Bella"))
+        })(angular.module("ShopCore"))
     </script>
 @stop
 

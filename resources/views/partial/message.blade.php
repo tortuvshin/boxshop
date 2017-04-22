@@ -44,7 +44,7 @@ Session::save();
                     notify({duration:5000,messageTemplate:'{!! $e !!}',classes:'alert alert-danger'});
                   @endif
                 }]);
-            })(angular.module("Bella"));
+            })(angular.module("ShopCore"));
         </script>
     @stop
 @endif

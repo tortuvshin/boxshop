@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ App::getLocale() }}" ng-app="Bella">
+<html lang="{{ App::getLocale() }}" ng-app="ShopCore">
 <head>
 	@section('metaLabels')
 		<meta charset="utf-8">
@@ -115,7 +115,7 @@
 
 	/**
 	 * ngModules
-	 * Angularjs modules requires by bella
+	 * Angularjs modules requires by ShopCore
 	 * @type {Array}
 	 */
 	var ngModules = [
@@ -127,7 +127,7 @@
 	@section('before.angular') @show
 
 	(function(){
-		angular.module('Bella',ngModules,
+		angular.module('ShopCore',ngModules,
 		function($interpolateProvider){
 			$interpolateProvider.startSymbol('[[');
 			$interpolateProvider.endSymbol(']]');
@@ -140,14 +140,14 @@
 
 </script>
 
-{{-- bella functions --}}
+{{-- ShopCore functions --}}
 {!! Html::script('/js/app.js') !!}
 
 @section('scripts')
-	{{-- Bella angucomplete-alt.js version --}}
+	{{-- ShopCore angucomplete-alt.js version --}}
 	{!! Html::script('/js/lib/angucomplete-alt.js') !!}
 
-	{{-- Bella-bower components --}}
+	{{-- ShopCore-bower components --}}
 	{!! Html::script('/js/lib/angular-notify.min.js') !!}
 	{!! Html::script('/js/lib/angular-local-storage.min.js') !!}
 @show

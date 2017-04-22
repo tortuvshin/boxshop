@@ -282,6 +282,6 @@
                 }
                 $scope.refresh();
             }]);
-        })(angular.module("Bella"))
+        })(angular.module("ShopCore"))
     </script>
 @stop

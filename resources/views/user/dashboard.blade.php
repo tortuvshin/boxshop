@@ -68,7 +68,7 @@
 <script>
 
 	(function() {
-		var app = angular.module('Bella');
+		var app = angular.module('ShopCore');
 		app.controller('DashboardController',function(){});
 
 	})();

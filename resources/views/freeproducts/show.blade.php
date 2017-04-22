@@ -179,7 +179,7 @@
                     function ($animateProvider) {
                         $animateProvider.classNameFilter(/carousel/);
             }]);
-        })(angular.module("Bella"));
+        })(angular.module("ShopCore"));
 
         //Carousel Free Products
         $('.carousel[data-type="multi"] .item').each(function(){

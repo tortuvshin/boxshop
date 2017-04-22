@@ -74,6 +74,6 @@
         app.controller('FreeProductCreate', ['$scope','$http', function($scope, $http){
             $scope.order=({!! $jsonOrder !!});
         }]);
-    })(angular.module("Bella"));
+    })(angular.module("ShopCore"));
   </script>
 @stop
