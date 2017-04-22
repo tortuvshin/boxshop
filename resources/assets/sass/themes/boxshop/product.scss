@@ -8,10 +8,8 @@
 }
 
 .product-box {
-    padding: 10px;
     background: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0 9px #c7c7c7;
+    box-shadow: 0px 0 5px #c7c7c7;
 }
 
 .product-overflow {
@@ -36,4 +34,21 @@
     img {
         height: 100%;
     }
+}
+
+.add_to_card {
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    background: #47b1e2;
+    color: #fff;
+    display: block;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-actions {
+    position: relative;
 }
