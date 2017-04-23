@@ -3,6 +3,8 @@
 
 @include('partial.message')
 
+@include ('partial.social_buttons')
+
 @section('metaLabels')
     @parent
     @include('partial.social_tags', [
@@ -73,16 +75,16 @@
             <br>
         </div>		
 </div>
-<div class="container container-fluid" >
-<br>
+<div class="container" >
 		<div class="row">
 
 			{{-- Gallery --}}
 			<div class="col-md-6" ng-controller = "ProductsGallery">
-				<img src = "img/no-image.jpg" lazy-img = '[[getPortrait()]]' ng-init = "setPortrait('{{ $product->features['images'][0] }}')" class = "pdimage img-responsive img-rounded" >
+				<div class="thumbnail img-thumb">
+					<img src = "img/no-image.jpg" lazy-img = '[[getPortrait()]]' ng-init = "setPortrait('{{ $product->features['images'][0] }}')" class = "pdimage img-responsive img-rounded" >	
+				</div>
 				
-
-
+				
 				<hr>
 				{{-- Thumbnails --}}
 				<div class="row">
@@ -90,7 +92,7 @@
 					<ul class="list-inline" ng-controller = "ProductsGallery">
 					<?php $selector = 0; $gallery = ''; ?>
 					@foreach($product->features['images'] as $image)
-						<li>
+						<li class="col-md-2 col-xs-12">
 							<a class="thumbnail">
 								<img  src = "img/no-image.jpg" lazy-img = "{{ $image }}" class="pd-image img-responsive img-rounded" ng-click = "setPortrait('{{ $image }}?w=450')">
 							</a>
@@ -225,9 +227,7 @@
 
 						
 	                    <div class="return-shipping">        
-        <div class="content-quick">
-            <h3 > Дараах утсаар холбогдож дэлгэрэнгүй мэдээллийг авна уу. Утас: 89992681 </h3>
-        </div>
+
 	</div>
 	                    		
 	                    
@@ -286,23 +286,20 @@
         </div>
 		<div class="row">
 			<div class="col-md-12">
-				
-		
-			@if (count($product->group))
-                @include('products.group')
-            @else
-	            <section class="products_view">
-                    <div class="container-fluid marketing">
-                        <div class="row">
-                        
-                            @foreach ($suggestions as $productSuggestion)
-                                @include('products.partial.productBox', $productSuggestion)
-                            @endforeach
-                        </div>
-                    </div>
-	            </section>
-            @endif
-            	</div>
+				@if (count($product->group))
+	                @include('products.group')
+	            @else
+		            <section class="products_view">
+	                    <div class="container marketing">
+	                        <div class="row">
+	                            @foreach ($suggestions as $productSuggestion)
+	                                @include('products.partial.productBox', $productSuggestion)
+	                            @endforeach
+	                        </div>
+	                    </div>
+		            </section>
+	            @endif
+        	</div>
 		</div>
 
 	 @stop
@@ -336,7 +333,7 @@
             		return PassInfo.getProperty();
             	}
             });
-        })(angular.module("Bella"));
+        })(angular.module("ShopCore"));
         //Social Buttons
         $(document).ready(function() {
 			$("#facebook").click(function() {

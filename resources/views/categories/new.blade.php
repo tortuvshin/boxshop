@@ -137,7 +137,7 @@
 					}
 				};
 			}]);
-		})(angular.module("Bella"))
+		})(angular.module("ShopCore"))
 	</script>
 @stop
 @section('before.angular') ngModules.push('angularFileUpload'); @stop

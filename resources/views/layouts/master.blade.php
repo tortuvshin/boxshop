@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ App::getLocale() }}" ng-app="Bella">
+<html lang="{{ App::getLocale() }}" ng-app="ShopCore">
 <head>
 	@section('metaLabels')
 		<meta charset="utf-8">
@@ -10,7 +10,7 @@
 		<meta name="author" content="">
 	@show
 
-	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="{{{ asset('img/fav-ico.ico') }}}">
 	<title>@section('title'){{ $main_company['website_name']}} @show</title>
 
 	<script type="text/javascript">
@@ -33,7 +33,7 @@
 	<![endif]-->
 </head>
 <body>
-
+<div id="fb-root"></div>
 <section class = "@yield('page_class', 'home')">
 
 	{{-- Navigation bar section --}}
@@ -46,41 +46,45 @@
 		@section('breadcrumbs')
 		@show
 	</div>
-
+	{{-- Social buttons --}}
+	@include ('partial.social_buttons')
+	
 	{{-- Content page --}}
 	@section('content')
 		@section('panels')
 
-			<div>
-				<div class="global-panels">
+			<div class="container">
+				<div class="row">
+					<div class="global-panels">
+					<div class="row">
+						{{-- left panel --}}
+						@if (isset($panel['left']))
+							{{-- desktops validation --}}
+							<div class="col-sm-{{ $panel['left']['width'] or '3' }} col-md-{{ $panel['left']['width'] or '3' }} {{ $panel['left']['class'] or '' }}">
+								@section('panel_left_content')
+									Left content
+								@show
+							</div>
+						@endif
 
-					{{-- left panel --}}
-					@if (isset($panel['left']))
-						{{-- desktops validation --}}
-						<div class="col-sm-{{ $panel['left']['width'] or '3' }} col-md-{{ $panel['left']['width'] or '3' }} {{ $panel['left']['class'] or '' }}">
-							@section('panel_left_content')
-								Left content
+						{{-- center content --}}
+						<div class="col-xs-12 col-sm-{{ $panel['center']['width'] or '9' }} col-md-{{ $panel['center']['width'] or '9' }}">
+							@section('center_content')
+								Center content
 							@show
 						</div>
-					@endif
 
-					{{-- center content --}}
-					<div class="col-xs-12 col-sm-{{ $panel['center']['width'] or '9' }} col-md-{{ $panel['center']['width'] or '9' }}">
-						@section('center_content')
-							Center content
-						@show
-					</div>
-
-					{{-- right panel --}}
-					@if (isset($panel['right']))
-						<div class="hidden-xs col-sm-{{ $panel['right']['width'] or '2' }} col-md-{{ $panel['right']['width'] or '2' }} {{ $panel['right']['class'] or '' }}">
-							@section('panel_right_content')
-								Right content
-							@show
-						</div>
-					@endif
-
-				</div> {{-- globlas panels --}}
+						{{-- right panel --}}
+						@if (isset($panel['right']))
+							<div class="hidden-xs col-sm-{{ $panel['right']['width'] or '2' }} col-md-{{ $panel['right']['width'] or '2' }} {{ $panel['right']['class'] or '' }}">
+								@section('panel_right_content')
+									Right content
+								@show
+							</div>
+						@endif
+					</div>	
+					</div> {{-- globlas panels --}}
+				</div>
 			</div> {{-- container --}}
 
 		@show
@@ -111,7 +115,7 @@
 
 	/**
 	 * ngModules
-	 * Angularjs modules requires by bella
+	 * Angularjs modules requires by ShopCore
 	 * @type {Array}
 	 */
 	var ngModules = [
@@ -123,7 +127,7 @@
 	@section('before.angular') @show
 
 	(function(){
-		angular.module('Bella',ngModules,
+		angular.module('ShopCore',ngModules,
 		function($interpolateProvider){
 			$interpolateProvider.startSymbol('[[');
 			$interpolateProvider.endSymbol(']]');
@@ -136,17 +140,33 @@
 
 </script>
 
-{{-- bella functions --}}
+{{-- ShopCore functions --}}
 {!! Html::script('/js/app.js') !!}
 
 @section('scripts')
-	{{-- Bella angucomplete-alt.js version --}}
+	{{-- ShopCore angucomplete-alt.js version --}}
 	{!! Html::script('/js/lib/angucomplete-alt.js') !!}
 
-	{{-- Bella-bower components --}}
+	{{-- ShopCore-bower components --}}
 	{!! Html::script('/js/lib/angular-notify.min.js') !!}
 	{!! Html::script('/js/lib/angular-local-storage.min.js') !!}
 @show
-
 </body>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&version=v2.8&appId=1766388183636585";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+	$(window).bind("load resize", function(){    
+  	var container_width = $('#likebox-wrapper').width();    
+    $('#likebox-wrapper').html('<div class="fb-page" ' + 
+    'data-href="https://www.facebook.com/boxshop.mn/"' +
+    ' data-width="' + container_width + '" data-height="450" data-show-faces="true" ' +
+    'data-header="true"></div>');
+    FB.XFBML.parse( );    
+});
+</script>
 </html>

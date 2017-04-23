@@ -1,67 +1,48 @@
-<div class="col-md-12 f-footer-area">
-
-    <div class="row footer-row">
-        <div class="col-xs-4 col-sm-4 col-md-4">
-            <img class="logo-jpg" src="img/pt-default/logo.png">
-            
-        </div>
-
-        <div class="col-xs-4 col-sm-4 col-md-4 menu">
-            <h3 class="widget-title heading-title">Холбоо барих</h3>
-            <div class="line line-30"></div>
-
-            <ul>
-                <li><i class="fa fa-map-marker"></i> <span class="footertext">  Сүхбаатар дүүрэг, 1-р хороо, Чингисийн өргөн чөлөө-14251, Гэрэгэ тауэр 4-р давхар</span>
-                </li>
-                <li><i class="fa fa-phone"></i> <span class="footertext">  +976 8999 2681</span>
-                </li>
-                <li><i class="fa fa-envelope"> </i><span class="footertext"> Bolormaa_345@yahoo.com</span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="col-xs-4 col-sm-4 col-md-4 newsletter">
-            
-            <div class="footer-right">
-                <h3 class="widget-title heading-title">
-                        Сошиал                  </h3>
-                <div class="line line-30"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-xs-12 footer">
+            <div class="col-md-3 col-xs-12 footer-section">
+                <h3 class="widget-title heading-title">BOXSHOP.mn</h3>
                 <ul>
-                    <li>
-                        <div class="social-icons">
-                            <ul>
-                                <li class="icon-facebook fa-lg"><a href="https://www.facebook.com/pg/Make-up-artist-Bella-451092605001683/videos/?ref=page_internal" target="_blank" title="Become our fan"><i class="fa fa-facebook"></i></a>
-                                </li>
+                    <li><a href="{{ route('about') }}"><i class="fa fa-circle" aria-hidden="true"></i>Бидний тухай</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Дэлгүүрийн танилцуулга</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Эрхэм зорилго, зорилт</a></li>
+                    <li><a href="{{ route('contact') }}"><i class="fa fa-circle" aria-hidden="true"></i>Холбоо барих</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-12 footer-section">
+                <h3 class="widget-title heading-title">Бидэнтэй хамтрах</h3>
+                <ul>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Суртчилгааны самбар байршуулах</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Сайтад бараа бүтээгдэхүүнээ байршуулах</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Дэлгүүрт бараа бүтээгдэхүүнээ байршуулах</a></li>
+                </ul>
+            </div>
 
-                                <li class="icon-twitter fa-lg"><a href="http://twitter.com/#" target="_blank" title="Follow us"><i class="fa fa-twitter"></i></a>
-                                </li>
-
-                                <li class="icon-google fa-lg"><a href="https://plus.google.com/u/0/#" target="_blank" title="Get updates"><i class="fa fa-google-plus"></i></a>
-                                </li>
-
-                                <li class="icon-instagram fa-lg"><a href="https://www.instagram.com/isabellabellasmakeup/" target="_blank" title="Follow us"><i class="fa fa-instagram"></i></a>
-                                </li>                            
-                            </ul>
-                        </div>
-                    </li>
+            <div class="col-md-3 col-xs-12 footer-section">
+                <h3 class="widget-title heading-title">Хэрэглэгчид</h3>
+                <ul>
+                    <li><a href="{{ route('user_service') }}"><i class="fa fa-circle" aria-hidden="true"></i>Үйлчилгээний нөхцөл</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Нууцлалын баталгаа</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Төлбөрийн хэрэгсэл</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Хүргэлт</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Санал хүсэлт</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-12 footer-section">
+                <h3 class="widget-title heading-title">Тусламж</h3>
+                <ul>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Худалдан авалт</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Бараа буцаалт</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Бараа оруулах</a></li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i>Асуулт, хариулт</a></li>
                 </ul>
             </div>
         </div>
-
-    </div>
-
-    <div class="fourth-footer-area row ">
-
-        <div id="copy-right" class="copy-right col-sm-12">
-            <div class="col-sm-8">
-                Зохиогчын эрх хуулиар хамгаалагдсан ©. 2016 он. Вэбсайтыг хөгжүүлсэн "Тагтаа Солюшн" ХХК.
-            </div>
-
+        <div class="col-md-12 col-xs-12 copyright">
+            <span>Зохиогчийн эрх хуулиар бүрэн хамгаалагдсан &copy; BOX-SHOP 2017 он</span>
         </div>
-        <!-- end #copyright -->
-
     </div>
-
 </div>
 @section('scripts') @parent
 

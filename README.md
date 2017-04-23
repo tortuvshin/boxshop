@@ -45,6 +45,17 @@ NPM сангууд татах
 npm install
 ```
 
+Хэрвээ Window үйлдлийн систем  болон VM ашиглаж хөгжүүлэлт хийж байгаа бол дараах коммандыг ажиллуулна: 
+```
+npm install --no-bin-links
+```
+
+Laravel Mix ашиглах
+
+```
+npm run dev
+```
+
 ## Тохируулах
 
 Дараа нь .env-example файлыг өөрчилж .env болгон өөрийн өгөгдлийн сан болон серверийг тохируулна
@@ -63,12 +74,6 @@ php artisan db:seed
 	
 ```
 php artisan key:generate
-```
-	
-Frontend хөгжүүлэлтэнд хамааралтай сангуудыг дараах командаар оруулна:
-
-```
-bower install
 ```
 
 reChaptcha код авах: 
@@ -92,24 +97,6 @@ RECAPTCHA_PRIVATE_KEY = ModuRecaptchaPrivateKeyObtained
 ***Тайлбар:*** ```APP_DEBUG == true``` буюу debug асаалттай байгаа үед reCaptcha хэрэглэхгүй
 
 
-
-NPM сангууд суулгах:
-
-```
-npm install 
-```
-
-Хэрвээ Window үйлдлийн систем  болон VM ашиглаж хөгжүүлэлт хийж байгаа бол дараах коммандыг ажиллуулна: 
-```
-npm install --no-bin-links
-```
-
-Laravel Mix ашиглах
-
-```
-npm run dev
-```
-
 Туршилтын хэрэглэгчийн мэдээлэл
 
 	Хэрэглэгчийн нэр: admin@admin.com
@@ -119,3 +106,6 @@ npm run dev
 [NODEJS]: https://nodejs.org/en/download/
 [COMPOSER]: https://getcomposer.org/download/
 [RECAPTCHA]: https://www.google.com/recaptcha/admin#list
+
+
+http://tokithemes.com/aloshop/fr/

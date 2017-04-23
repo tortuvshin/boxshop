@@ -6,205 +6,177 @@
 
 @section('content')
 
+@include ('partial.social_buttons')
+
 <section class="products_view">
-
-    <div class="home-layout">
-
-        {{-- -------------------------------------------------- --}} {{-- -------------------- carousel -------------------- --}} {{-- -------------------------------------------------- --}}
-
-        <div class="bella-cat mobile">
-          
-          <div class="vert-category col-md-3 col-sm-2 ">
-                  <ul>
-                      <li>
-                          <a href="http://www.shop.bella.mn/products?category=1%257C%25D0%2590%25D1%2580%25D1%258C%25D1%2581%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Арьс арчилгаа</a>
-
-                      </li>
-                      <li>
-                          <a href="http://www.shop.bella.mn/products?category=2%257C%25D0%259D%25D2%25AF%25D2%25AF%25D1%2580%2B%25D0%25B1%25D1%2583%25D0%25B4%25D0%25B0%25D0%25BB%25D1%2582">Нүүр будалт</a>
-
-                      </li>
-                      <li>
-                          <a href="http://www.shop.bella.mn/products?category=3%257C%25D2%25AE%25D1%2581%2B%25D0%25B1%25D0%25B8%25D0%25B5%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Үс / бие арчилгаа</a>
-
-                      </li>
-                      <li>
-                          <a href="http://www.shop.bella.mn/products?category=4%257C%25D2%25AE%25D0%25BD%25D1%258D%25D1%2580%25D1%2582%25D1%258D%25D0%25B9%2B%25D1%2583%25D1%2581">Үнэртэй ус</a>
-
-                      </li>
-                      <li>
-                          <a href="http://www.shop.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Эрүүл мэнд</a>
-
-                      </li>
-                      <li>
-                          <a href="http://www.shop.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Багс</a>
-
-                      </li>
-                      <li>
-                          <a href="http://www.shop.bella.mn/products">Бүх бараа</a>
-
-                      </li>
-                  </ul>
+    
+    <div class="home-layout container">
+      <div class="row">
+        <!-- <div class="home-left col-xs-12 col-md-3">
+          <div class="row">
+            
           </div>
-          <div class="col-md-9 col-sm-10 home-carousel-box">
-
+        </div> -->
+        <div class="home-right col-xs-12 col-md-9 pull-right">
+          <div class="row">
+            <div class="col-md-12 col-xs-12 home-carousel-box">
               <div id="store-home-carousel" class="carousel slide" data-ride="carousel">
-
                   {{-- indicators --}}
                   <ol class="carousel-indicators">
                       @for ($s=0; $s
                       <count($suggestion[ 'carousel']); $s++) <li data-target="#store-home-carousel" data-slide-to="{{ $s }}" @if ($s==0) class="active" @endif>
-                          </li>
-                          @endfor
+                        </li>
+                        @endfor
                   </ol>
-
                   <!-- Wrapper for slides -->
-                  <div class="carousel-inner img-animate" role="listbox">
-
+                    <div class="carousel-inner img-animate" role="listbox">
                       <?php $pos = 0; ?>
-                          @foreach ($suggestion['carousel'] as $product) {{-- slide items --}}
-                          <div class="item @if ($i++==0) active @endif">
+                      @foreach ($suggestion['carousel'] as $product) {{-- slide items --}}
+                      <div class="item @if ($i++==0) active @endif">
 
-                              @if (isset($banner[$pos]))
-                              <img src="{{ $banner[$pos++] }}" alt="{{ $product['name'] }}"> @else
-                              <img src="/img/no-image.jpg" alt="{{ $product['name'] }}"> @endif {{-- panel --}}
-                              <div class="jumbotron {{ $jumbotronClasses[mt_rand(0,1)] }} ">
+                          @if (isset($banner[$pos]))
+                          <img src="{{ $banner[$pos++] }}" alt="{{ $product['name'] }}"> @else
+                          <img src="/img/no-image.jpg" alt="{{ $product['name'] }}"> @endif {{-- panel --}}
+                          <div class="jumbotron {{ $jumbotronClasses[mt_rand(0,1)] }} ">
 
-                                  <h5>{{ $product['name'] }}</h5>
+                              <h5>{{ $product['name'] }}</h5>
 
-                                  <p class="description">{{ str_limit($product['description'], 200,'...') }}</p>
+                              <p class="description">{{ str_limit($product['description'], 200,'...') }}</p>
 
-                                  @if ($product['price'] > 0)
-                                  <p class="price">
-                                      <strong>{!! \Utility::showPrice($product['price']) !!}</strong>
-                                  </p>
-                                  @endif
+                              @if ($product['price'] > 0)
+                              <p class="price">
+                                  <strong>{!! \Utility::showPrice($product['price']) !!}</strong>
+                              </p>
+                              @endif
 
-                                  <hr> f
-                              </div>
-
-                          </div> {{-- end item --}} @endforeach
-
-                  </div> {{-- end carousel-inner --}}
-
+                              <hr> f
+                          </div>
+                      </div> {{-- end item --}} 
+                      @endforeach
+                    </div> {{-- end carousel-inner --}}
+                </div>
+              </div> 
+              <div class="home-bestselling col-md-12 col-xs-12">
+                <div class="row">
+                  <div class="col-md-12 col-xs-12 bestselling-title">
+                    <a href="{{ route('products') }}">
+                      <span class="b-title">Үнэлгээ өндөр</span>
+                    </a>
+                  </div>
+                  <div class="col-md-12 col-xs-12 bestselling-product">
+                      <div class="row">
+                        @foreach ($suggestion['purchased'] as $product)
+                          @include('products.partial.productBox', $product)
+                        @endforeach
+                      </div>
+                  </div>
+                </div>
               </div>
+              <div class="home-motto col-md-12 col-xs-12">
+                <div class="row">
+                  <div class="col-md-4 col-xs-12">
+                    <div class="motto-1">
+                      <i class="fa fa-clock-o"></i>
+                      <span>Цагаа хэмнэ</span> 
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-xs-12">
+                    <div class="motto-2">
+                      <i class="fa fa-money"></i>
+                      <span>Зардлаа хэмнэ</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-xs-12">
+                    <div class="motto-3">
+                      <i class="fa fa-users"></i>
+                      <span>Хамтдаа хөгжье<br>Хамтдаа хэмнэе</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-cat-trend col-md-12 col-xs-12">
+                <div class="row">
+                      {{-- categories suggestions --}}
+                      <div class="home-bestselling col-md-12 col-xs-12">
+                          <a href="{{ route('products') }}">
+                            <span class="b-title">Шинээр нэмэгдсэн</span>
+                          </a>
+                        <!-- <div class="col-md-12 col-xs-12 bestselling-product">
+                          @foreach ($suggestion['categories'] as $product)
+                              @include('products.partial.productBox', $product)
+                          @endforeach
+                        </div> -->
+                      </div>
 
+                      {{-- viewed suggestions --}}
+
+                      <div class="home-bestselling col-md-12 col-xs-12">
+                          @foreach ($suggestion['viewed'] as $product)
+                              @include('products.partial.productBox', $product)
+                          @endforeach
+                      </div>
+                </div>
+              </div>
+            </div> 
+        </div>{{----- end of row -----}}
+        <div class="home-advantage col-md-12 col-xs-12">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d1.png')}}')"></div>
+                <span class="advantage-desc">Бараа байршуулах<br>0% шимтгэл</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d2.png')}}')"></div>
+                <span class="advantage-desc">Бодит дэлгүүрт бараагаа <br>байршуулах боломж</span>
+              </div> 
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d3.png')}}')"></div>
+                <span class="advantage-desc">Худалдан авагчдад <br>НӨАТ баримт олгоно</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d4.png')}}')"></div>
+                <span class="advantage-desc">Бараа үйлчилгээний <br>үнэлгээний систем</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d5.png')}}')"></div>
+                <span class="advantage-desc"> Бараа бүтээгэхүүний үлдэгдэл, <br>төлбөр тооцоогоо хянах боломж</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d6.png')}}')"></div>
+                <span class="advantage-desc">Мөнгө түгжихгүй,<br>найдвартай шилжүүлэг</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d7.png')}}')"></div>
+                <span class="advantage-desc">Түргэн шуурхай <br>хүргэлтийн үйлчилгээ</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d8.png')}}')"></div>
+                <span class="advantage-desc"> Бараа буцаах, <br> солих боломж</span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="inner-box">
+                <div class="advantage-bg" style="background: url('{{asset('img/boxshop/d9.png')}}')"></div>
+                <span class="advantage-desc">Монголын онцлогт <br>таарсан худалдааны систем</span>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {{-- end carousel --}}
-        <div class="home-bestselling">
-            <div class="col-md-2 bestselling-title">
-              <a href="{{ route('products') }}">
-                <span class="b-title">Онцлох бүтээгдэхүүн</span>
-                <span class="b-shopnow">Дэлгэрэнгүй</span>
-              </a>
-            </div>
-            <div class="col-md-10 bestselling-product">
-                @foreach ($suggestion['purchased'] as $product)
-                    @include('products.partial.productBox', $product)
-                @endforeach
-            </div>
-        </div>
-
-    <!-- product section start-->
-    <div class="home-cat-trend">
-
-        <div class="col-lg-3 prodsec">
-            <div class="prodsectobgcolor">
-                <p class="prodsecto">Нүүр будалт</p>
-
-            </div>
-            <div class="row trend-cat">
-                <ul>
-                    <li>
-                        <a href="http://www.shop.bella.mn/products?category=1%257C%25D0%2590%25D1%2580%25D1%258C%25D1%2581%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Арьс арчилгаа</a>
-
-                    </li>
-                    <li>
-                        <a href="http://www.shop.bella.mn/products?category=2%257C%25D0%259D%25D2%25AF%25D2%25AF%25D1%2580%2B%25D0%25B1%25D1%2583%25D0%25B4%25D0%25B0%25D0%25BB%25D1%2582">Нүүр будалт</a>
-
-                    </li>
-                    <li>
-                        <a href="http://www.shop.bella.mn/products?category=3%257C%25D2%25AE%25D1%2581%2B%25D0%25B1%25D0%25B8%25D0%25B5%2B%25D0%25B0%25D1%2580%25D1%2587%25D0%25B8%25D0%25BB%25D0%25B3%25D0%25B0%25D0%25B0">Үс / бие арчилгаа</a>
-
-                    </li>
-                    <li>
-                        <a href="http://www.shop.bella.mn/products?category=4%257C%25D2%25AE%25D0%25BD%25D1%258D%25D1%2580%25D1%2582%25D1%258D%25D0%25B9%2B%25D1%2583%25D1%2581">Үнэртэй ус</a>
-
-                    </li>
-                    <li>
-                        <a href="http://www.shop.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Эрүүл мэнд</a>
-
-                    </li>
-                    <li>
-                        <a href="http://www.shop.bella.mn/products?category=5%257C%25D0%25AD%25D1%2580%25D2%25AF%25D2%25AF%25D0%25BB%2B%25D0%25BC%25D1%258D%25D0%25BD%25D0%25B4">Багс</a>
-
-                    </li>
-                    <li>
-                        <a href="http://www.shop.bella.mn/products">Бүх бараа</a>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-lg-9 trend-cat-right" class="sectionprodborder">
-
-            <div class="col-md-5 trend-cat-slide">   
-              <div class="img-animate">
-                <img alt="Bella" title="Bella" src="img/product/slidema.jpg">    
-              </div>             
-            </div>
-
-            <div class="col-lg-7 prodpadding">
-              @foreach ($suggestion['categories'] as $product)
-                  @include('products.partial.homeProductBox', $product)
-              @endforeach
-            </div>
-        </div>
-
-    </div>
-    <!-- product section end-->
-
-    {{-- -------------------------------------------------- --}}
-    {{-- ------------------ Product List ------------------ --}}
-    {{-- -------------------------------------------------- --}}
-
-    @parent
-
-    @section('center_content')
-      <div class="product-trend">
-   
-        {{-- categories suggestions --}}
-       
-        <div class="home-bestselling">
-          <div class="col-md-2 bestselling-title">
-            <a href="{{ route('products') }}">
-              <span class="b-title">Санал болгох бүтээгдэхүүн</span>
-              <span class="b-shopnow">Дэлгэрэнгүй</span>
-            </a>
-          </div>
-          <div class="col-md-10 bestselling-product">
-            @foreach ($suggestion['categories'] as $product)
-                @include('products.partial.productBox', $product)
-            @endforeach
-          </div>
-        </div>
-
-        {{-- viewed suggestions --}}
-
-        <div class="home-bestselling">
-          
-          <div class="marketing">
-            @foreach ($suggestion['viewed'] as $product)
-                @include('products.partial.productBox', $product)
-            @endforeach
-          </div>
-        </div>
-      </div>
-    @stop {{-- end center_content --}}
-
+        </div>{{---- End of advantage -----}}
+      </div>{{------- End of Home Right -------}}
 </section> {{-- end products_view --}}
-
 @stop {{-- end content --}}

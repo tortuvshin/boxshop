@@ -1,246 +1,121 @@
-.home {
-  float: left;
-  position: relative;
-}
-
-.trend-cat ul {
-  padding-left: 0px;
-  border-right: 1px solid #ebebeb;
-
-  li {
-    width: 100%;
-    cursor: pointer;
-    border-bottom: 1px solid #ebebeb;
-    border-width: 1px 0;
-    white-space: inherit;
-    list-style: none;
-
-    a {
-      color: black;
-      display: block;
-      font-size: 13px;
-      padding: 15px 0 15px 22px;
-    }
-  }
-}
-
-
-
-.bella-cat {
-  
-  float: left;
-  width: 100%;
-  background-color: white;
-
-  .vert-category {
-    background-color: white;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    ul{
-      border: 1px solid #ebebeb;
-      li{
-          border-bottom:1px solid #ebebeb;
-          text-transform: uppercase;
-      }
-    }
-  }
-}
-
-.home-carousel-box{
-  box-shadow:none;
-}
-.carousel, .carousel-inner{
-  height:100%;
-  .item{
-    height:100%;
-  }
-}
-.carousel-inner > .item > img {
-  height:100%;
-  }
-
-.glyphicontest {
-    font-size: 25px;
-}
-
-.container-tab{
-  padding-right:0px;
-  padding-left:0px;
-}
-
-.home-carousel-box {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-}
-
-.left-filter {
-  padding-left: 30px;
+.home-bestselling {
+    padding-top: 10px;
 }
 
 .home-cat-trend {
-  float: left;
-  background-color: white;
-  padding-left: 0px;
-  margin-top: 30px;
-  padding-right: 0px;
-  border-top: 3px solid $bella-red;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.product-trend {
-    float: left;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.product-features {
-  float: left;
-  box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3); 
-  margin-bottom: 20px;
-}
-
-.home-layout {
-  float: left;
-  padding: 0 3% 30px 3%;
-  background-color: #eee;
-}
-
-.img-animate {
-  position:relative;
-  vertical-align: middle;
-  display: inline-block;
-  line-height: 60px;
-  text-align: center;
-  transition: 0.5s;
-  cursor: pointer;
-  -webkit-transition:0.5s;
-}
-
-.img-animate:hover {
-  color: #FFF;
-}
-
-.img-animate::before, .img-animate::after {
-  width: 100%;
-  height:100%;
-  z-index: 3;
-  content:'';
-  position: absolute;
-  top:0;
-  left:0;
-  box-sizing: border-box;
-  -webkit-transform: scale(0);
-  transition: 0.5s;
-}
-.img-animate::before {
-  -webkit-transform-origin: 0 100%;
-}
-
-.img-animate::after {
-  -webkit-transform-origin: 50%;
-   opacity: 0.3;
-   background:white;
-   
-}
-
-.img-animate:hover::after, .img-animate:hover::before {
-  -webkit-transform: scale(1);
-}
-
-.trend-cat-right {
-  padding-left: 0;
-
-  .trend-cat-slide {
-    padding-left: 0;
-
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.prodsec {
-    padding-right: 0;
-    padding-left: 0px;
-}
-
-.prodsecto {
+.b-title {
+    display: block;
+    color: $golden;
+    border-bottom: 1px solid $golden;
+    line-height: 36px;
+    margin: 5px 0 10px 0;
     text-transform: uppercase;
-    font-size: 25px;
-    line-height: 30px;
-    color: #fff;
-    margin-bottom: 0;
-    padding: 15px 20px;
-    word-wrap: break-word;
 }
-.prodsectobgcolor {
-  background-color: #e94444;
+
+.motto-1,
+.motto-2,
+.motto-3 {
+    padding: 15px;
+    text-align: center;
+    height: 100px;
+    line-height: 17px;
+    font-size: 16px;
+    i {
+        display: block;
+        font-size: 20px;
+    }
+}
+
+.motto-1 {
+    color: $blue;
+    border: 5px solid $blue;
+}
+
+.motto-2 {
+    color: $golden;
+    border: 5px solid $golden;
+}
+
+.motto-3 {
+    color: $grey;
+    border: 5px solid $grey;
+}
+
+.home-motto {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.home-advantage {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .advantage-bg {
+        height: 140px;
+        width: 140px;
+        text-align: center;
+        border: 1px solid $blue;
+        border-radius: 50%;
+        background-position: center center !important;
+        background-size: cover !important;
+        display: block;
+        margin: 0 auto;
+    }
+    .inner-box {
+        text-align: center;
+        height: 220px;
+    }
 }
 
 
-.prodsectoborder {
-  border-color: #ebebeb;
-}
-.boxshadow {
-  box-shadow: 0 3px 6px 0 rgba(51, 51, 51, 0.3); margin-bottom: 20px;
-}
-.prodmargin {
-  margin-top: 0px;
-}
-.prodpadding {
-  padding: 20px 0 0 0;
-}
-.borderleft {
-  border-left: none
-}
-.borderright {
-  border-right: none
-}
-.sectionprodborder {
-  border-top: 2px solid #e94444; padding: 20px
-}
+/*Social bars*/
 
-
-.home-bestselling {
-  float: left;
-  margin-top: 30px;
-  padding-top: 30px;
-  border-top: 3px solid $bella-red;
-  background-color: white;
-}
-
-.bestselling-title {
-  height: 100%;
-  padding-top: 40px;
-  float: left;
-  text-align: center;
-
-  a {
-    color: $bella-red;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
-  .b-title {
-    display: block;
-    font-size: 30px;
-    margin-bottom: 40px;
-    line-height: 40px;
-  }
-
-  .b-shopnow {
-    display: inline-block;
-    padding: 0 15px;
-    font-size: 15px;
-    line-height: 30px;
-    color: #fff;
-    font-weight: 700;
-    background-color: $bella-red;
-  }
-}
-
-.bestselling-product {
-  float: left;
+.social-bars {
+    position: fixed;
+    top: 250px;
+    right: 5px;
+    z-index: 10;
+    backface-visibility: hidden;
+    .fa {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #FFF;
+        color: rgba(255, 255, 255, 0.8);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        display: block;
+        border-radius: 50%;
+        margin: 10px 0;
+        font-size: 1.8em;
+        &:hover {
+            -webkit-transform: scale(1.1) rotate(360deg);
+            -moz-transform: scale(1.1) rotate(360deg);
+            -ms-transform: scale(1.1) rotate(360deg);
+            -o-transform: scale(1.1) rotate(360deg);
+            transform: scale(1.1) rotate(360deg);
+        }
+    }
+    .fa-facebook {
+        background-color: #3C599F;
+    }
+    .fa-twitter {
+        background-color: #32CCFE;
+    }
+    .fa-youtube {
+        background-color: #C52F30;
+    }
+    .fa-instagram {
+        background-color: #A1755C;
+    }
+    .fa-plus {
+        background-color: $golden;
+    }
 }

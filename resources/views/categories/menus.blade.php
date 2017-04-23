@@ -70,6 +70,6 @@
 	 	    app.controller('topCategories',['$scope',function($scope){
         		$scope.actual=({!! json_encode($actualCategory) !!});
             }]);
-        })(angular.module("Bella"));
+        })(angular.module("ShopCore"));
     </script>
 @stop

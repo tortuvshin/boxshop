@@ -1,8 +1,7 @@
 {
-	"name": "tortuvshin/bella.mn",
-	"description": "Bella",
-	"keywords": ["ecommerce", "laravel","beaty store","store"],
-	"homepage": "http://bella.mn/",
+	"name": "tortuvshin/shop-core",
+	"description": "Multi vendor ecommerce",
+	"keywords": ["ecommerce", "laravel","store"],
 	"license": "MIT",
 	"type": "project",
 	"authors": [
@@ -12,8 +11,8 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/tortuvshin/bella.mn/issues",
-		"source": "https://github.com/tortuvshin/bella.mn"
+		"issues": "https://github.com/tortuvshin/shop-core/issues",
+		"source": "https://github.com/tortuvshin/shop-core"
 	},
 	"require": {
 		"php": ">=5.6.4",

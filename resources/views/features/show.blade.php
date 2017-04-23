@@ -68,8 +68,8 @@
 @stop
 @section('scripts')
     @parent
-    {!! Html::script('/js/vendor/file-upload/angular-file-upload-shim.min.js') !!}
-    {!! Html::script('/js/vendor/file-upload/angular-file-upload.min.js') !!}
+    {!! Html::script('/js/lib/file-upload/angular-file-upload-shim.min.js') !!}
+    {!! Html::script('/js/lib/file-upload/angular-file-upload.min.js') !!}
 
     <script>
         (function(app){
@@ -83,7 +83,7 @@
                     }
                 };
             }]);
-        })(angular.module("Bella"))
+        })(angular.module("ShopCore"))
     </script>
 @stop
 @section('before.angular') ngModules.push('angularFileUpload'); @stop

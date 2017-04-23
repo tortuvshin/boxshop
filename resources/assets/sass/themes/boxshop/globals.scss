@@ -1,49 +1,52 @@
-* {
-	font-family: $font-family-sans-serif;
+body {
+    color: #030303;
+    padding: 0;
+    background: #fafafa;
 }
-html,body{
-	height: 100%;
-	font-weight: 300;
-	font-family: $font-family-sans-serif;
-	background-color: white;
+
+* {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
 }
 
 a {
-	color: #666666;
+    color: #030303;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-
-.header-top-right-area {
-	.dropdown-menu li {
-		width: 100%;
-		line-height: 20px !important;
-	}
+.dropdown-menu {
+    li {
+        width: 100%;
+        a {
+            padding: 0 15px;
+            line-height: inherit;
+        }
+    }
 }
 
-.row {
-     margin-right: 0; 
-     margin-left: 0; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    margin: 0;
+    padding: 0;
 }
 
-.breadcrumb {
-	background-color: white;
-}
-.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
- 
-    background-color: $dark-color;
-    border-color: $dark-color;
+i {
+    padding: 0 10px;
 }
 
-.glyphicon {
-    font-family: 'Glyphicons Halflings' !important;
-    top: 0;
-}
-
-.btn {
-	border-radius: 0;
-}
-
-footer {
-	width: 100%;
-	float: left;
-}

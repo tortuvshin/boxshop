@@ -1,44 +1,35 @@
-.li {
-    padding: 10px 0 0;
-}
-
-#menu-left-category ul{
-	li {
-		width: 100%;
-	 	
-	 	a {
-	 		padding: 0 0 10px 0 !important;
-			text-transform: uppercase;
-	 	}
-		
-		small {
-			float: right;
-		}
-		span {
-			float: right;
-		}
-
-	}
-	small{
-			font-size:17px;
-	}
-}
-
-.categories-panel {
-    max-width: 350px;
-    padding-left: 0 !important;
-}
-
-.brands, .category, .price-range {
-	width: 100% !important;
-
-	h3, h4 {
-		margin-top: 20px;
-    	margin-bottom: 10px;
-    	font-size: 20px;
-    	font-weight: 700;
-	}
+.vert-category {
+    li {
+        width: 100%;
+    }
+    a {
+        display: block;
+        position: relative;
+        padding: 9px 0 9px 55px;
+        border-bottom: 1px solid #f0f0f0;
+        color: #666;
+        @extend .transition;
+        &:hover {
+            &:before {
+                width: 4px;
+                position: absolute;
+                height: 100%;
+                content: "";
+                background: #fb9902;
+                top: 0;
+                left: -4px;
+            }
+        }
+    }
 }
 
 
+/* Product list category */
 
+.vertical-nav {
+    .category {
+        li {
+            width: 100%;
+        }
+    }
+}
