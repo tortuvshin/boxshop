@@ -55,14 +55,6 @@
         background: rgba(0, 0, 0, 0.15);
         cursor:pointer;
         height: 40px;
-        &:hover {
-            .glyphicon{
-                color:$blue;
-            }
-            #card_text{
-                color:$blue;
-            }
-        }
     }
 
     .glyphicon-shopping-cart{
@@ -72,18 +64,29 @@
     }
 
     .glyphicon-heart{
-        color:$boxPink;
+        color: white;
         width:100%;
         text-align:center;
+
+        &:hover {
+            color:$boxPink;
+        }
     }
 
      .glyphicon-eye-open {
-        color: $boxBlue;
+        color: white;
+        width:100%;
+        text-align:center;
+
+        &:hover {
+            color: $boxYellow;
+        }
      }
 }
 
 .add-card {
-    background-color: $boxYellow !important;
+    background-color: $blue !important;
+    text-align: center;
 } 
 
 // rating 
@@ -129,8 +132,12 @@
 
 #menu-top-category {
     .breadcrumb {
-        padding: 20px 0 !important;
-        margin-bottom: 0 !important;
+        padding: 5px !important;
+        margin: 10px !important;
+
+        .total .badge {
+            background-color: $boxGreen !important;
+        }
     }
 }
 
