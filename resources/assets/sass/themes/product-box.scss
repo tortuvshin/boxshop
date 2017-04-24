@@ -35,7 +35,7 @@
 }
 
 .price {
-    color:$bella-red;
+    color:$blue;
 }
 .social {
     float: right;
@@ -148,11 +148,10 @@
 
 
 h6 a{
-    color: $dark-color;
+    color: $dark;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
-    font-family: $font-family-sans-serif;
 }
 h6{
     text-align:center;
@@ -163,18 +162,16 @@ h6{
 .product-box {
     position: relative;
     margin-bottom: 20px;
-
+    border: 1px solid #e8e8e8;
     &:hover {
         cursor: pointer;
         .product-actions {
             visibility:visible;
-            margin-top: -40px;
+            margin-top: -80px;
         }
         .product-image-hover {
             background: rgba(0,0,0,0.15);
         }
-
-
     }
 }
 
@@ -207,22 +204,22 @@ h6{
 
         &:hover {
             .glyphicon{
-                color:$bella-red;
+                color:$blue;
             }
             #card_text{
-                color:$bella-red;
+                color:$blue;
             }
         }
     }
 
     .glyphicon-shopping-cart{
-        color:$bella-red;
+        color:$blue;
         margin-right:5%;
 
     }
 
     .glyphicon-heart, .glyphicon-eye-open{
-        color:$bella-red;
+        color:$blue;
         width:100%;
         text-align:center;
     }
