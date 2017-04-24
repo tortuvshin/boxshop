@@ -4,7 +4,7 @@
         <div class="col-md-3 col-xs-12">
             <div class="category-main"> <span style="float: left;">АНГИЛАЛ</span> <span style="float: right; line-height: 50px; " class="glyphicon glyphicon-align-justify"></span><span style="clear: both;"></span></div>
             <div style="clear: both;"></div>
-            <div class="vert-category">
+          <!--   <div class="vert-category">
                   <ul>
                       <li>
                           <a href="#">Эрэгтэй хувцас</a>
@@ -34,7 +34,7 @@
                           <a href="#">Гэр ахуй</a>
                       </li>
                   </ul>
-            </div>
+            </div> -->
         </div>
         <div class="col-md-9 col-xs-12">
             <ul class="line-menu">
