@@ -8,7 +8,7 @@ if (isset($productSuggestion)) {
 <div class="col-xs-12 col-sm-6 col-md-3 clearfix product-overflow">
 
     {{-- product box begin --}}
-    <div class="product-box clearfix product-overflow" ng-controller = "ProductBox">
+    <div class="product-box clearfix" ng-controller = "ProductBox">
 
         <div class="product-reviews @if (!$product['rate_val']) hide @endif">
             {!! \Utility::thousandSuffix($product['rate_val']) !!}
@@ -62,7 +62,8 @@ if (isset($productSuggestion)) {
             </div>
         </div>
         {{-- actions end --}}
-        <h6 class="product-name">
+        <div class="product-info">
+            <h6 class="product-name">
             <a href = "{{ route('products.show',[$product['id']]) }}">
                 {{ $product['name'] }}
             </a>
@@ -71,6 +72,19 @@ if (isset($productSuggestion)) {
         <div class="product-price">
             <!-- {!! \Utility::showPrice($product['price']) !!} -->
             {{ $product['price'] }} ₮
+        </div>
+
+        <div class="product-reviews-summary short empty">
+            <div class="product-rating">
+                <div class="rating-result-0">
+                    
+                </div>
+            </div>
+            <div class="reviews-actions">
+                <a class="action add" href="http://tokithemes.com/aloshop/fr/vitra-asterisk-wall-clock-1.html#review-form">
+                    0            Үнэлгээ        </a>
+            </div>
+        </div>
         </div>
 
     </div>
