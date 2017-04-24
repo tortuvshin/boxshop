@@ -36,22 +36,20 @@ if (isset($productSuggestion)) {
         {{-- actions begin --}}
         <div class="product-actions actions">
 
-            <div class="col-md-12 wrapper">
+            <div class="col-md-12 actions-head">
                 {{-- wish list (only products not free) --}}
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapper add_to_heart"  ng-click = "goTo('{{ route('orders.add_to_order',['wishlist', $product[($product['type']=='freeproduct')?'parent_id':'id']]) }}')">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add-heart"  ng-click = "goTo('{{ route('orders.add_to_order',['wishlist', $product[($product['type']=='freeproduct')?'parent_id':'id']]) }}')">
                     <div class="glyphicon glyphicon-heart option"></div>
                 </div>
 
                 {{-- view --}}
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 wrapper quick_view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 quick-view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
                     <div class="glyphicon glyphicon-eye-open option"></div>
                 </div>
-                
-
             </div>
             
             {{-- add to cart (only products not free)  --}}
-            <div class="col-lg-12 col-md-12 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-{{ $product['id'] }}')">
+            <div class="col-lg-12 col-md-12 col-sm-4 col-xs-4 actions-head add-card" ng-click="submit('#add-{{ $product['id'] }}')">
                 <div class = "glyphicon glyphicon-shopping-cart option " >
                     @if ($product['type'] != 'freeproduct')
                         {!! Form::open(['method' => 'put', 'route' => ['orders.add_to_order','cart', $product['id']], 'id' => 'add-'.$product['id'] ]) !!}
