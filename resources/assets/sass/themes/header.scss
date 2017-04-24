@@ -38,7 +38,7 @@
 
 .header-bottom-content {
     height: 50px;
-    background: $blue;
+    background: $dark;
     .line-menu {
         line-height: 49px;
         li {
@@ -136,7 +136,7 @@
 /* sticky header */
 
 .sticky-header {
-    background: #333 none repeat scroll 0 0;
+    background: $dark none repeat scroll 0 0;
     padding: 0 15px !important;
     position: fixed;
     top: 0;
@@ -171,7 +171,7 @@
 
 .search-nav {
     float: left;
-    border: 2px solid $dark;
+    border: 2px solid $blue;
     position: relative;
     .category {
         background: #fff;
@@ -197,7 +197,7 @@
     text-transform: uppercase;
     width: 114px;
     right: -2px;
-    background: none 0px 0px repeat scroll $dark;
+    background: none 0px 0px repeat scroll $blue;
     transition: all 0.3s ease-out 0s;
     border: 0;
     outline: 0;

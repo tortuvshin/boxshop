@@ -1,17 +1,21 @@
 .footer {
-    background: $blue;
+    background: $dark;
     color: #fff;
     padding-bottom: 15px;
     .footer-section {
         padding: 15px;
-        font-size: 10px;
+        font-size: 14px;
     }
     h3 {
         padding-bottom: 15px;
         border-bottom: 1px solid $golden;
     }
+    ul {
+        padding-left: 15px;
+    }
     ul li {
         margin: 10px 0;
+        list-style-type: disc;
     }
     ul li a {
         color: #fff !important;
