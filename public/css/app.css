@@ -5868,7 +5868,7 @@ i {
 
 .header-bottom-content {
   height: 50px;
-  background: #030303; }
+  background: #47b1e2; }
   .header-bottom-content .line-menu {
     line-height: 49px; }
     .header-bottom-content .line-menu li {
@@ -6065,24 +6065,44 @@ i {
   margin-top: -80px;
   z-index: 0;
   transition: all 200ms ease 0s; }
-  .product-actions .wrapper {
-    color: #bbbfc7;
+  .product-actions .actions-head {
+    color: white;
     padding: 4%;
+    background: rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    background-color: #Fff;
-    height: 40px;
-    border: 1px #f2f2f2 solid; }
-    .product-actions .wrapper:hover .glyphicon {
+    height: 40px; }
+    .product-actions .actions-head:hover .glyphicon {
       color: #47b1e2; }
-    .product-actions .wrapper:hover #card_text {
+    .product-actions .actions-head:hover #card_text {
       color: #47b1e2; }
   .product-actions .glyphicon-shopping-cart {
-    color: #47b1e2;
+    color: white;
     margin-right: 5%; }
-  .product-actions .glyphicon-heart, .product-actions .glyphicon-eye-open {
-    color: #47b1e2;
+  .product-actions .glyphicon-heart {
+    color: #e32072;
     width: 100%;
     text-align: center; }
+  .product-actions .glyphicon-eye-open {
+    color: #4B6BC6; }
+
+.add-card {
+  background-color: #EDB431 !important; }
+
+.product-reviews-summary {
+  display: table;
+  line-height: 30px; }
+
+.product-rating {
+  background: transparent url(../../img/boxshop/rate-star.png) repeat-x scroll 0 0;
+  height: 14px;
+  width: 70px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+.product-reviews-summary.empty .reviews-actions {
+  display: inline-block;
+  vertical-align: middle; }
 
 .product-reviews-summary {
   display: table;
@@ -6123,6 +6143,12 @@ i {
   padding: 20px 0 !important;
   margin-bottom: 0 !important; }
 
+<<<<<<< HEAD
+=======
+.actions-head, .quick-view, .add-heart {
+  height: 40px; }
+
+>>>>>>> 616bb494527a827ee6270908ee1c1d36c0937628
 .home-bestselling {
   padding-top: 10px; }
 

@@ -49,14 +49,12 @@
     z-index: 0;
     transition: all 200ms ease 0s;
 
-    .wrapper {
-        color:#bbbfc7;
+    .actions-head {
+        color:white;
         padding:4%;
+        background: rgba(0, 0, 0, 0.15);
         cursor:pointer;
-        background-color:#Fff;
         height: 40px;
-        border: 1px #f2f2f2 solid;
-
         &:hover {
             .glyphicon{
                 color:$blue;
@@ -68,17 +66,25 @@
     }
 
     .glyphicon-shopping-cart{
-        color:$blue;
+        color:white;
         margin-right:5%;
 
     }
 
-    .glyphicon-heart, .glyphicon-eye-open{
-        color:$blue;
+    .glyphicon-heart{
+        color:$boxPink;
         width:100%;
         text-align:center;
     }
+
+     .glyphicon-eye-open {
+        color: $boxBlue;
+     }
 }
+
+.add-card {
+    background-color: $boxYellow !important;
+} 
 
 // rating 
 .product-reviews-summary {
@@ -121,10 +127,13 @@
     line-height: 30px;
 }
 
-
 #menu-top-category {
     .breadcrumb {
         padding: 20px 0 !important;
         margin-bottom: 0 !important;
     }
+}
+
+.actions-head, .quick-view, .add-heart {
+    height: 40px;
 }
