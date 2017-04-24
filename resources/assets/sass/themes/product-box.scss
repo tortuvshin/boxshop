@@ -1,10 +1,10 @@
 .pd-image {
-	width: 100px;
-	height: 100px;
+    width: 100px;
+    height: 100px;
 }
 .producttitle {
-	background: url(../img/banner/bg-breadcrumb.jpg);
-	background-position: center center!important;
+    background: url(../img/banner/bg-breadcrumb.jpg);
+    background-position: center center!important;
     background-size: cover !important;
     position: relative;
     z-index: 0;
@@ -13,7 +13,7 @@
     margin-right: -6%;
 }
 .titlecolor {
-	color:white;
+    color:white;
 }
 
 // product
@@ -35,10 +35,10 @@
 }
 
 .price {
-	color:$bella-red;
+    color:$bella-red;
 }
 .social {
-	float: right;
+    float: right;
 
     button {
         color: #fff;
@@ -63,13 +63,13 @@
     margin: 0 1px;
 }
 .breadcrumbstext {
-	.breadcrumb {
-		background-color: transparent !important; 
+    .breadcrumb {
+        background-color: transparent !important; 
 
-		a {
-			color: white;
-		}
-	}
+        a {
+            color: white;
+        }
+    }
 }
 .breadcrumb > .active {
     color: white;
@@ -86,11 +86,11 @@
     padding-top: 30px;
     margin-top: 24px;
 
-	.content-quick {
+    .content-quick {
         border: 1px dashed #ed7952;
         padding: 29px 19px 29px 78px;
 
-	}
+    }
 }
 
 .nav > li > a:hover, .nav > li > a:focus {

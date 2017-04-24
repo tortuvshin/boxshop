@@ -52,8 +52,6 @@ if (isset($productSuggestion)) {
             <div class="col-md-4 col-xs-4 wrapper quick_view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
-            
-
         </div>
         {{-- actions end --}}
         <h6 class="product-name">
