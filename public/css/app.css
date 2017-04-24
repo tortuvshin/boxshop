@@ -5808,7 +5808,7 @@ i {
   margin-bottom: 10px; }
 
 footer {
-  background: #030303;
+  background: #333;
   color: #fff;
   padding: 45px 0 0;
   float: left;
@@ -5833,7 +5833,7 @@ footer {
       color: #EDB431 !important; }
 
 .copyright {
-  background: #41292C;
+  background: #5A5A66;
   color: #fff;
   padding: 35px 0 25px;
   font-size: 12px; }
@@ -5869,7 +5869,7 @@ footer {
 
 .header-bottom-content {
   height: 50px;
-  background: #030303; }
+  background: #333; }
   .header-bottom-content .line-menu {
     line-height: 49px; }
     .header-bottom-content .line-menu li {
@@ -5888,7 +5888,7 @@ footer {
         position: relative;
         margin: 0; }
         .header-bottom-content .line-menu li a:hover {
-          background: #41292C; }
+          background: #5A5A66; }
       .header-bottom-content .line-menu li .special:hover {
         background: #EDB431 !important; }
 
@@ -5948,7 +5948,7 @@ footer {
 
 /* sticky header */
 .sticky-header {
-  background: #030303 none repeat scroll 0 0;
+  background: #333 none repeat scroll 0 0;
   padding: 0 15px !important;
   position: fixed;
   top: 0;
@@ -5982,7 +5982,7 @@ footer {
 
 .search-nav {
   float: left;
-  border: 2px solid #030303;
+  border: 2px solid #333;
   position: relative; }
   .search-nav .category {
     background: #fff;
@@ -6005,7 +6005,7 @@ footer {
   text-transform: uppercase;
   width: 114px;
   right: -2px;
-  background: none 0px 0px repeat scroll #030303;
+  background: none 0px 0px repeat scroll #333;
   transition: all 0.3s ease-out 0s;
   border: 0;
   outline: 0; }
