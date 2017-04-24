@@ -5888,9 +5888,14 @@ i {
   float: left; }
 
 #search_value {
-  height: 46px;
+  height: 36px;
   border-radius: 0;
-  line-height: 46px; }
+  line-height: 36px;
+  border: 0;
+  padding-left: 35px; }
+  #search_value:focus {
+    border: 0 !important;
+    box-shadow: 0 !important; }
 
 .angucomplete-holder {
   width: 300px; }
@@ -5912,8 +5917,9 @@ i {
 .cart {
   float: right; }
   .cart .cart-btn {
-    height: 46px;
-    line-height: 1; }
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px; }
     .cart .cart-btn:hover {
       background: #47b1e2; }
 
@@ -5950,6 +5956,36 @@ i {
   -moz-animation-delay: 0s;
   -webkit-animation-timing-function: ease-out;
   -moz-animation-timing-function: ease-out; }
+
+.search-nav {
+  float: left;
+  border: 2px solid #030303;
+  position: relative; }
+  .search-nav .category {
+    background: #fff;
+    border: 0;
+    height: 36px;
+    outline: 0; }
+  .search-nav .search-ico {
+    position: absolute;
+    left: 130px;
+    z-index: 1;
+    line-height: 36px;
+    font-size: 18px;
+    padding: 0 5px;
+    color: #999999; }
+
+.search-btn {
+  color: white;
+  font-weight: 700;
+  height: 36px;
+  text-transform: uppercase;
+  width: 114px;
+  right: -2px;
+  background: none 0px 0px repeat scroll #333333;
+  transition: all 0.3s ease-out 0s;
+  border: 0;
+  outline: 0; }
 
 .login-page {
   position: absolute;
