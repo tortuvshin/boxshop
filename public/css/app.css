@@ -5731,7 +5731,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.transition, .vert-category a, .footer ul li a:hover, .header-bottom-content .line-menu li a:hover, .cart .cart-btn {
+.transition, .vert-category a, footer ul li a:hover, .header-bottom-content .line-menu li a:hover, .cart .cart-btn {
   transition: all .3s ease-out;
   -webkit-transition: all .3s ease-out;
   -moz-transition: all .3s ease-out;
@@ -5813,31 +5813,38 @@ i {
 .vertical-nav .category li {
   width: 100%; }
 
-.footer {
+footer {
   background: #030303;
   color: #fff;
-  padding-bottom: 15px; }
-  .footer .footer-section {
+  padding: 45px 0 0;
+  float: left;
+  width: 100%; }
+  footer .footer-section {
     padding: 15px;
     font-size: 14px; }
-  .footer h3 {
-    padding-bottom: 15px;
-    border-bottom: 1px solid #EEC643; }
-  .footer ul {
+  footer h3 {
+    color: #EDB431;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    text-transform: uppercase; }
+  footer ul {
     padding-left: 15px; }
-  .footer ul li {
+  footer ul li {
     margin: 10px 0;
     list-style-type: disc; }
-  .footer ul li a {
+  footer ul li a {
     color: #fff !important; }
-    .footer ul li a:hover {
-      color: #EEC643 !important; }
+    footer ul li a:hover {
+      color: #EDB431 !important; }
 
 .copyright {
-  background: #C6D4FF;
-  color: #030303;
-  line-height: 36px;
+  background: #41292C;
+  color: #fff;
+  padding: 35px 0 25px;
   font-size: 12px; }
+  .copyright span {
+    float: left; }
 
 .navbar-header {
   background: #fafafa;
@@ -5868,30 +5875,37 @@ i {
 
 .header-bottom-content {
   height: 50px;
-  background: #47b1e2; }
+  background: #030303; }
   .header-bottom-content .line-menu {
     line-height: 49px; }
     .header-bottom-content .line-menu li {
       display: inline-block;
       position: relative; }
       .header-bottom-content .line-menu li a {
-        padding: 0 5px;
-        color: #F7FFF7;
+        color: #fff;
         display: block;
+        font-weight: 700;
+        height: 50px;
+        word-spacing: 5px;
+        line-height: 50px;
+        padding: 0 20px;
         text-transform: uppercase;
-        font-size: 12px; }
+        transition: all .3s ease-out 0s;
+        position: relative;
+        margin: 0; }
         .header-bottom-content .line-menu li a:hover {
-          background: #83C9F4; }
+          background: #41292C; }
       .header-bottom-content .line-menu li .special:hover {
-        background: #EEC643 !important; }
+        background: #EDB431 !important; }
 
 .category-main {
   height: 50px;
   cursor: pointer;
   line-height: 50px;
   background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
-  color: #F7FFF7;
-  padding: 0 20px; }
+  color: #fff;
+  padding: 0 20px;
+  font-weight: 700; }
 
 .search-input,
 .categories-search,
@@ -5974,7 +5988,7 @@ i {
 
 .search-nav {
   float: left;
-  border: 2px solid #47b1e2;
+  border: 2px solid #030303;
   position: relative; }
   .search-nav .category {
     background: #fff;
@@ -5997,7 +6011,7 @@ i {
   text-transform: uppercase;
   width: 114px;
   right: -2px;
-  background: none 0px 0px repeat scroll #47b1e2;
+  background: none 0px 0px repeat scroll #030303;
   transition: all 0.3s ease-out 0s;
   border: 0;
   outline: 0; }
@@ -6104,22 +6118,6 @@ i {
   display: inline-block;
   vertical-align: middle; }
 
-.product-reviews-summary {
-  display: table;
-  line-height: 30px; }
-
-.product-rating {
-  background: transparent url(../../img/boxshop/rate-star.png) repeat-x scroll 0 0;
-  height: 14px;
-  width: 70px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px; }
-
-.product-reviews-summary.empty .reviews-actions {
-  display: inline-block;
-  vertical-align: middle; }
-
 .product-type {
   color: white;
   -moz-transform: rotate(45deg);
@@ -6143,12 +6141,9 @@ i {
   padding: 20px 0 !important;
   margin-bottom: 0 !important; }
 
-<<<<<<< HEAD
-=======
 .actions-head, .quick-view, .add-heart {
   height: 40px; }
 
->>>>>>> 616bb494527a827ee6270908ee1c1d36c0937628
 .home-bestselling {
   padding-top: 10px; }
 
@@ -6196,7 +6191,8 @@ i {
 
 .home-advantage {
   padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  background: #fafafa; }
   .home-advantage .advantage-bg {
     height: 140px;
     width: 140px;

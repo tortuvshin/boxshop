@@ -1,14 +1,19 @@
-.footer {
+footer {
     background: $dark;
     color: #fff;
-    padding-bottom: 15px;
+    padding: 45px 0 0;
+    float: left;
+    width: 100%;
     .footer-section {
         padding: 15px;
         font-size: 14px;
     }
     h3 {
-        padding-bottom: 15px;
-        border-bottom: 1px solid $golden;
+        color: $boxYellow;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 0 20px;
+        text-transform: uppercase;
     }
     ul {
         padding-left: 15px;
@@ -20,15 +25,18 @@
     ul li a {
         color: #fff !important;
         &:hover {
-            color: $golden !important;
+            color: $boxYellow !important;
             @extend .transition;
         }
     }
 }
 
 .copyright {
-    background: $grey;
-    color: $dark;
-    line-height: 36px;
+    background: $darkGrey;
+    color: #fff;
+    padding: 35px 0 25px;
     font-size: 12px;
+    span {
+        float: left;
+    }
 }

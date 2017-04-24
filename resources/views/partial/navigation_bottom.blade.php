@@ -41,10 +41,8 @@
                 <li><a class="kk-1" href="{{ route('home') }}">Нүүр</a></li>
                 <li><a class="kk-1" href="javascript:void(0);" id="category">Мэдээ мэдээлэл</a></li>
                 <li><a class="kk-1" href="{{ route('products') }}">Барааны жагсаалт</a></li>
-                <li><a class="kk-1 special" href="#">Дэлгүүр нээх</a></li>
                 <li><a class="kk-1" href="#">Дэлгүүрүүд</a></li>
                 <li><a class="kk-1" href="#">Брэндүүд</a></li>
-                <li><a class="kk-1" href="#">Бидний тухай</a></li>
             </ul>
         </div>
     </div> 
