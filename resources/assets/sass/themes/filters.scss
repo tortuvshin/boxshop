@@ -12,7 +12,12 @@
     		width: 100%;
 
     		a {
-    			padding: 0 !important;
+    			padding: 5px !important;
+    			padding-left: 10px !important;
+
+    			small {
+    				float: right;
+    			}
     		}
     	}
 

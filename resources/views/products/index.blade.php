@@ -10,40 +10,42 @@
 
 @section('content')
 <div class="products-list">
-    <div id="menu-top-category">
-         <ol class="breadcrumb">
-            <li class="total">
-                <span class="badge">{{ $products->total() }}</span> <small> {{ trans('globals.searchResults') }} </small>
-            </li>
-            <?php $filterSelected = []; ?>
-            @foreach ($refine as $key => $value)
-                @if (trim($value)!='' && $key != 'category_name' && $key != 'page')
-                    <li>
-                        <small>
-                            <?php
-                                switch ($key)
-                                {
-                                    case 'max': $breadcrumb = trans('globals.max_price_label'); break;
-                                    case 'min': $breadcrumb = trans('globals.min_price_label'); break;
-                                    case 'category': $breadcrumb = $key; $value = $refine['category_name']; break;
-                                    case 'search': $breadcrumb = trans('globals.result_for'); break;
-                                    default: $breadcrumb = $key; break;
-                                }
-                                $filterSelected[$key] = [
-                                    'label' => ucwords($value),
-                                    'url' => "/products?".\Utility::removeFromUrlQueryString($refine, $key)
-                                ];
-                            ?>
-                            <strong>{{ ucwords($breadcrumb) }}:</strong>&nbsp;{{ ucwords($value) }}
-                            <a href="/products?{{ \Utility::removeFromUrlQueryString($refine, $key) }}">
-                                <span class="glyphicon glyphicon-remove"></span>
-                            </a>
-                        </small>
-                    </li>
-                @endif
-            @endforeach
+    <div class="container">
+        <div id="menu-top-category">
+             <ol class="breadcrumb">
+                <li class="total">
+                    <span class="badge">{{ $products->total() }}</span> <small> {{ trans('globals.searchResults') }} </small>
+                </li>
+                <?php $filterSelected = []; ?>
+                @foreach ($refine as $key => $value)
+                    @if (trim($value)!='' && $key != 'category_name' && $key != 'page')
+                        <li>
+                            <small>
+                                <?php
+                                    switch ($key)
+                                    {
+                                        case 'max': $breadcrumb = trans('globals.max_price_label'); break;
+                                        case 'min': $breadcrumb = trans('globals.min_price_label'); break;
+                                        case 'category': $breadcrumb = $key; $value = $refine['category_name']; break;
+                                        case 'search': $breadcrumb = trans('globals.result_for'); break;
+                                        default: $breadcrumb = $key; break;
+                                    }
+                                    $filterSelected[$key] = [
+                                        'label' => ucwords($value),
+                                        'url' => "/products?".\Utility::removeFromUrlQueryString($refine, $key)
+                                    ];
+                                ?>
+                                <strong>{{ ucwords($breadcrumb) }}:</strong>&nbsp;{{ ucwords($value) }}
+                                <a href="/products?{{ \Utility::removeFromUrlQueryString($refine, $key) }}">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </a>
+                            </small>
+                        </li>
+                    @endif
+                @endforeach
 
-         </ol>
+             </ol>
+        </div>
     </div>
 
     @parent
