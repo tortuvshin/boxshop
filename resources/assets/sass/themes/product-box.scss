@@ -1,0 +1,146 @@
+.product-overflow {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.product-img-box {
+    img {
+        width: 100%;
+        height: 300px;
+    }
+    position:relative;
+}
+
+.product-box {
+    position: relative;
+    margin-bottom: 10px;
+    border: 1px solid #e8e8e8;
+    &:hover {
+        cursor: pointer;
+        .product-actions {
+            visibility:visible;
+            margin-top: -80px;
+        }
+        .product-image-hover {
+            background: rgba(0,0,0,0.15);
+        }
+    }
+}
+
+.product-info {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.product-price{
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 30px;
+    color: $boxPink;
+    font-style: normal;
+}
+
+.product-actions {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    visibility: hidden;
+    margin-top: -80px;
+    z-index: 0;
+    transition: all 200ms ease 0s;
+
+    .actions-head {
+        color:white;
+        padding:4%;
+        background: rgba(0, 0, 0, 0.15);
+        cursor:pointer;
+        height: 40px;
+    }
+
+    .glyphicon-shopping-cart{
+        color:white;
+        margin-right:5%;
+
+    }
+
+    .glyphicon-heart{
+        color: white;
+        width:100%;
+        text-align:center;
+
+        &:hover {
+            color:$boxPink;
+        }
+    }
+
+     .glyphicon-eye-open {
+        color: white;
+        width:100%;
+        text-align:center;
+
+        &:hover {
+            color: $boxYellow;
+        }
+     }
+}
+
+.add-card {
+    background-color: $blue !important;
+    text-align: center;
+} 
+
+// rating 
+.product-reviews-summary {
+    display: table;
+    line-height: 30px;
+}
+
+.product-rating {
+    background: rgba(0,0,0,0) url(../../img/boxshop/rate-star.png) repeat-x scroll 0 0;
+    height: 14px;
+    width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.product-reviews-summary.empty .reviews-actions {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.product-type{
+    color:white;
+    -moz-transform: rotate(45deg);
+    margin-left: 25px;
+    margin-top: 14px;
+    position:absolute;
+}
+
+.product-image-hover{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:1;
+    -webkit-transition: all 0.4s ease 0s;
+    background: rgba(0,0,0,0.03);
+}
+.product-name{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#menu-top-category {
+    .breadcrumb {
+        padding: 5px !important;
+        margin: 10px !important;
+
+        .total .badge {
+            background-color: $boxGreen !important;
+        }
+    }
+}
+
+.actions-head, .quick-view, .add-heart {
+    height: 40px;
+}

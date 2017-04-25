@@ -1,0 +1,29 @@
+#menu-left-category {
+	.category, .brands, .price-range {
+    	border: 1px solid #e8e8e8;
+
+    	h3 {
+    		padding: 10px;
+    		font-weight: 600;
+    	}
+
+    	li {
+    		float: left;
+    		width: 100%;
+
+    		a {
+    			padding: 5px !important;
+    			padding-left: 10px !important;
+
+    			small {
+    				float: right;
+    			}
+    		}
+    	}
+
+    	& > small {
+    		float: left;
+    		width: 100%;
+    	}
+	}
+}

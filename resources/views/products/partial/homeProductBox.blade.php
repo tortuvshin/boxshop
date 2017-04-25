@@ -5,11 +5,10 @@ if (isset($productSuggestion)) {
     $product=$productSuggestion;
 }
  ?>
-<div class="col-xs-12 col-md-6 clearfix product-overflow">
+<div class="col-xs-12 col-sm-6 col-md-3 clearfix product-overflow">
 
     {{-- product box begin --}}
-    <a href = "{{ route('products.show',[$product['id']]) }}">
-        <div class="product-box clearfix product-overflow" ng-controller = "ProductBox">
+    <div class="product-box clearfix product-overflow" ng-controller = "ProductBox">
 
         <div class="product-reviews @if (!$product['rate_val']) hide @endif">
             {!! \Utility::thousandSuffix($product['rate_val']) !!}
@@ -22,18 +21,23 @@ if (isset($productSuggestion)) {
             <div class="free-products-box-sign"><span>{{ trans('globals.free') }}</span></div>
         @endif
 
-        <div class="product-img-box" ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">       
+        <div class="product-img-box" ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
+
+                <span class="product-image-hover"></span>       
             @if (isset($product["features"]["images"][0]))
-                <div class="product-img-container" style="background: url({{ $product["features"]["images"][0] }}');></div>
+                <img  src='{{ $product["features"]["images"][0] }}' alt="{{ $product['name'] }}">
             @else
-                <div class="product-noimg-container" style="background: url({{assset('img/no-image.jpg')}});"></div>
+                <img  src='/img/no-image.jpg'  alt="{{ $product['name'] }}">
             @endif
         </div>
+<!-- 
+        <p class="product-description">{{ str_limit($product['description'], 100,'...') }}</p>
+ -->
         {{-- actions begin --}}
         <div class="product-actions actions">
 
             {{-- add to cart (only products not free)  --}}
-            <div class="col-md-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-{{ $product['id'] }}')">
+            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4 wrapper add_to_card" ng-click="submit('#add-{{ $product['id'] }}')">
                 <div class = "glyphicon glyphicon-shopping-cart option " >
                     @if ($product['type'] != 'freeproduct')
                         {!! Form::open(['method' => 'put', 'route' => ['orders.add_to_order','cart', $product['id']], 'id' => 'add-'.$product['id'] ]) !!}
@@ -44,12 +48,12 @@ if (isset($productSuggestion)) {
             </div>
 
             {{-- wish list (only products not free) --}}
-            <div class="col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart"  ng-click = "goTo('{{ route('orders.add_to_order',['wishlist', $product[($product['type']=='freeproduct')?'parent_id':'id']]) }}')">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper add_to_heart"  ng-click = "goTo('{{ route('orders.add_to_order',['wishlist', $product[($product['type']=='freeproduct')?'parent_id':'id']]) }}')">
                 <div class="glyphicon glyphicon-heart option"></div>
             </div>
 
             {{-- view --}}
-            <div class="col-md-4 col-xs-4 wrapper quick_view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
                 <div class="glyphicon glyphicon-eye-open option"></div>
             </div>
             
@@ -57,9 +61,9 @@ if (isset($productSuggestion)) {
         </div>
         {{-- actions end --}}
         <h6 class="product-name">
-            
+            <a href = "{{ route('products.show',[$product['id']]) }}">
                 {{ $product['name'] }}
-           
+            </a>
         </h6>
 
         <div class="product-price">
@@ -67,8 +71,7 @@ if (isset($productSuggestion)) {
             {{ $product['price'] }} ₮
         </div>
 
-        </div>
-    </a>
+    </div>
     {{-- product box end --}}
 
 

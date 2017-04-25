@@ -8,8 +8,7 @@ if (isset($productSuggestion)) {
 <div class="col-xs-12 col-sm-6 col-md-3 clearfix product-overflow">
 
     {{-- product box begin --}}
-    
-    <div class="product-box clearfix product-overflow" ng-controller = "ProductBox">
+    <div class="product-box clearfix" ng-controller = "ProductBox">
 
         <div class="product-reviews @if (!$product['rate_val']) hide @endif">
             {!! \Utility::thousandSuffix($product['rate_val']) !!}
@@ -23,46 +22,70 @@ if (isset($productSuggestion)) {
         @endif
 
         <div class="product-img-box" ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
+
+                <span class="product-image-hover"></span>       
             @if (isset($product["features"]["images"][0]))
-                <div class="product-img-container" style="background: url({{ $product['features']['images'][0] }});">
+                <img  src='{{ $product["features"]["images"][0] }}' alt="{{ $product['name'] }}">
             @else
-                </div>
-                <div class="product-noimg-container" style="background: url({{assset('img/no-image.jpg')}});">
+                <img  src='/img/no-image.jpg'  alt="{{ $product['name'] }}">
             @endif
+        </div>
+<!-- 
+        <p class="product-description">{{ str_limit($product['description'], 100,'...') }}</p>
+ -->
+        {{-- actions begin --}}
+        <div class="product-actions actions">
+
+            <div class="col-md-12 actions-head">
+                {{-- wish list (only products not free) --}}
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 add-heart"  ng-click = "goTo('{{ route('orders.add_to_order',['wishlist', $product[($product['type']=='freeproduct')?'parent_id':'id']]) }}')">
+                    <div class="glyphicon glyphicon-heart option"></div>
                 </div>
-            {{-- actions begin --}}
-            <div class="product-actions actions">
-                <div class="row">
-                    {{-- view --}}
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 wrapper quick_view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
-                        <div class="glyphicon glyphicon-eye-open option"></div>
-                    </div>
-                    {{-- add to cart (only products not free)  --}}
-                    <div class="add_to_card" ng-click="submit('#add-{{ $product['id'] }}')">
-                        <div class = "glyphicon glyphicon-shopping-cart option " >
-                            @if ($product['type'] != 'freeproduct')
-                                {!! Form::open(['method' => 'put', 'route' => ['orders.add_to_order','cart', $product['id']], 'id' => 'add-'.$product['id'] ]) !!}
-                                {!! Form::close() !!}
-                            @endif
-                        </div>
-                        <span id="card_text">Сагсанд хийх</span>
-                    </div>
+
+                {{-- view --}}
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 quick-view " ng-click = "goTo('{{ route('products.show',[$product['id']]) }}')">
+                    <div class="glyphicon glyphicon-eye-open option"></div>
                 </div>
             </div>
-            {{-- actions end --}}    
+            
+            {{-- add to cart (only products not free)  --}}
+            <div class="col-lg-12 col-md-12 col-sm-4 col-xs-4 actions-head add-card" ng-click="submit('#add-{{ $product['id'] }}')">
+                <div class = "glyphicon glyphicon-shopping-cart option " >
+                    @if ($product['type'] != 'freeproduct')
+                        {!! Form::open(['method' => 'put', 'route' => ['orders.add_to_order','cart', $product['id']], 'id' => 'add-'.$product['id'] ]) !!}
+                        {!! Form::close() !!}
+                    @endif
+                </div>
+                <span id="card_text">Сагсанд хийх</span>
+            </div>
         </div>
-        
-        <h6 class="product-name">
+        {{-- actions end --}}
+        <div class="product-info">
+            <h6 class="product-name">
             <a href = "{{ route('products.show',[$product['id']]) }}">
                 {{ $product['name'] }}
             </a>
         </h6>
 
         <div class="product-price">
-            <span>{{ $product['price'] }} ₮</span>
+            <!-- {!! \Utility::showPrice($product['price']) !!} -->
+            {{ $product['price'] }} ₮
         </div>
+
+        <div class="product-reviews-summary short empty">
+            <div class="product-rating">
+                <div class="rating-result-0">
+                    
+                </div>
+            </div>
+            <div class="reviews-actions">
+                <a class="action add" href="http://tokithemes.com/aloshop/fr/vitra-asterisk-wall-clock-1.html#review-form">
+                    0            Үнэлгээ        </a>
+            </div>
+        </div>
+        </div>
+
     </div>
-    
     {{-- product box end --}}
 
 

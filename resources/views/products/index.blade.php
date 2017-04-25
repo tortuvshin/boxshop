@@ -10,40 +10,42 @@
 
 @section('content')
 <div class="products-list">
-    <div id="menu-top-category">
-         <ol class="breadcrumb">
-            <li class="total">
-                <span class="badge">{{ $products->total() }}</span> <small> {{ trans('globals.searchResults') }} </small>
-            </li>
-            <?php $filterSelected = []; ?>
-            @foreach ($refine as $key => $value)
-                @if (trim($value)!='' && $key != 'category_name' && $key != 'page')
-                    <li>
-                        <small>
-                            <?php
-                                switch ($key)
-                                {
-                                    case 'max': $breadcrumb = trans('globals.max_price_label'); break;
-                                    case 'min': $breadcrumb = trans('globals.min_price_label'); break;
-                                    case 'category': $breadcrumb = $key; $value = $refine['category_name']; break;
-                                    case 'search': $breadcrumb = trans('globals.result_for'); break;
-                                    default: $breadcrumb = $key; break;
-                                }
-                                $filterSelected[$key] = [
-                                    'label' => ucwords($value),
-                                    'url' => "/products?".\Utility::removeFromUrlQueryString($refine, $key)
-                                ];
-                            ?>
-                            <strong>{{ ucwords($breadcrumb) }}:</strong>&nbsp;{{ ucwords($value) }}
-                            <a href="/products?{{ \Utility::removeFromUrlQueryString($refine, $key) }}">
-                                <span class="glyphicon glyphicon-remove"></span>
-                            </a>
-                        </small>
-                    </li>
-                @endif
-            @endforeach
+    <div class="container">
+        <div id="menu-top-category">
+             <ol class="breadcrumb">
+                <li class="total">
+                    <span class="badge">{{ $products->total() }}</span> <small> {{ trans('globals.searchResults') }} </small>
+                </li>
+                <?php $filterSelected = []; ?>
+                @foreach ($refine as $key => $value)
+                    @if (trim($value)!='' && $key != 'category_name' && $key != 'page')
+                        <li>
+                            <small>
+                                <?php
+                                    switch ($key)
+                                    {
+                                        case 'max': $breadcrumb = trans('globals.max_price_label'); break;
+                                        case 'min': $breadcrumb = trans('globals.min_price_label'); break;
+                                        case 'category': $breadcrumb = $key; $value = $refine['category_name']; break;
+                                        case 'search': $breadcrumb = trans('globals.result_for'); break;
+                                        default: $breadcrumb = $key; break;
+                                    }
+                                    $filterSelected[$key] = [
+                                        'label' => ucwords($value),
+                                        'url' => "/products?".\Utility::removeFromUrlQueryString($refine, $key)
+                                    ];
+                                ?>
+                                <strong>{{ ucwords($breadcrumb) }}:</strong>&nbsp;{{ ucwords($value) }}
+                                <a href="/products?{{ \Utility::removeFromUrlQueryString($refine, $key) }}">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </a>
+                            </small>
+                        </li>
+                    @endif
+                @endforeach
 
-         </ol>
+             </ol>
+        </div>
     </div>
 
     @parent
@@ -79,11 +81,10 @@
                         <ul class="nav navbar-nav {{ $key }}" >
                             <h3 class="  @if($key=='categories') no_margin_top @endif">{{ trans('globals.filters.'.$key) }}</h3>
                          
-                            <div class="titlelines"></div>
                             <?php $i=0; ?>
                             @if($key=='category')
                                 @foreach ($filter as $id => $item)
-                                    <?php if (5<$i++){ break; } ?>
+                                    <?php if (7<$i++){ break; } ?>
                                     <li>
                                         <a href="/products?{{ \Utility::getUrlQueryString($refine, 'category', urlencode($item['id'].'|'.$item['name'])) }}">
                                             {{ ucfirst($item['name']) }} <small><span class="">({{ $item['qty'] }})</span></small>
@@ -94,7 +95,7 @@
                             @else
 
                                 @foreach ($filter as $item => $count)
-                                    <?php if (5<$i++){ break; } ?>
+                                    <?php if (7<$i++){ break; } ?>
                                     <li>
                                         <a href="/products?{{ \Utility::getUrlQueryString($refine, $key, urlencode($item)) }}">
                                           {{ ucfirst($item) }} <span class="">({{ $count }})</span>
@@ -144,8 +145,8 @@
                         </script>
 
                         {{-- end see more     --}}
-                        @if ($i > 6)
-                            <small ng-controller="ModalCtrl" ng-click="modalOpen({templateUrl:'{{ $key }}-snippet', size: 'md'})" >
+                        @if ($i > 8)
+                            <small class="cate-more" ng-controller="ModalCtrl" ng-click="modalOpen({templateUrl:'{{ $key }}-snippet', size: 'md'})" >
                                 <a href="javascript:void(0)">
                                     <span class="glyphicon glyphicon-zoom-in"></span>&nbsp;
                                     {{ trans('globals.see_more') }}
@@ -170,36 +171,34 @@
                         <h3>{{ trans('globals.filters.price_range') }}</h3>
                         <div class="titlelines"></div>
                         <li>
-                            <div class="row">
-                                <form method="GET" action="/products" name="rangepriceForm" novalidate>
-                                    <div class="form-group">
-                                        <div class="input-group">
+                            <form method="GET" action="/products" name="rangepriceForm" novalidate>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-addon input-sm">₮</div>
+                                        <input class="form-control input-sm" type="number" value="{{ isset($refine['min']) ? $refine['min'] : '' }}" name="min" id="min" placeholder="{{ trans('globals.min_label') }}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                         <div class="input-group">
                                             <div class="input-group-addon input-sm">₮</div>
-                                            <input class="form-control input-sm" type="number" value="{{ isset($refine['min']) ? $refine['min'] : '' }}" name="min" id="min" placeholder="{{ trans('globals.min_label') }}">
+                                            <input class="form-control input-sm" type="number" value="{{ isset($refine['max']) ? $refine['max'] : '' }}" name="max" id="max" placeholder="{{ trans('globals.max_label') }}">
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                             <div class="input-group">
-                                                <div class="input-group-addon input-sm">₮</div>
-                                                <input class="form-control input-sm" type="number" value="{{ isset($refine['max']) ? $refine['max'] : '' }}" name="max" id="max" placeholder="{{ trans('globals.max_label') }}">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-success btn-sm">
-                                            <span class="glyphicon glyphicon-filter"></span>&nbsp;
-                                            {{ trans('globals.go_label') }}
-                                        </button>
-                                    </div>
-                                    @foreach ($refine as $key => $value)
-                                        @if (trim($value)!='' && $key != 'category_name' && $key != 'min' && $key != 'max')
-                                            <?php $value = $key == 'category' ? $value.'|'.urlencode($refine['category_name']) : $value; ?>
-                                            <input type="hidden" name="{{ $key }}" id="{{ $key }}" value="{{ $value }}">
-                                        @endif
-                                    @endforeach
-                                </form>
-                            </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success btn-sm">
+                                        <span class="glyphicon glyphicon-filter"></span>&nbsp;
+                                        {{ trans('globals.go_label') }}
+                                    </button>
+                                </div>
+                                @foreach ($refine as $key => $value)
+                                    @if (trim($value)!='' && $key != 'category_name' && $key != 'min' && $key != 'max')
+                                        <?php $value = $key == 'category' ? $value.'|'.urlencode($refine['category_name']) : $value; ?>
+                                        <input type="hidden" name="{{ $key }}" id="{{ $key }}" value="{{ $value }}">
+                                    @endif
+                                @endforeach
+                            </form>
                             <div class="col-md-2">&nbsp;</div>
                         </li>
                     </ul>

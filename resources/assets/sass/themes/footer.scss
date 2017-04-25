@@ -1,0 +1,42 @@
+footer {
+    background: $dark;
+    color: #fff;
+    padding: 45px 0 0;
+    float: left;
+    width: 100%;
+    .footer-section {
+        padding: 15px;
+        font-size: 14px;
+    }
+    h3 {
+        color: $boxYellow;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 0 20px;
+        text-transform: uppercase;
+    }
+    ul {
+        padding-left: 15px;
+    }
+    ul li {
+        margin: 10px 0;
+        list-style-type: disc;
+    }
+    ul li a {
+        color: #fff !important;
+        &:hover {
+            color: $boxYellow !important;
+            @extend .transition;
+        }
+    }
+}
+
+.copyright {
+    background: $darkGrey;
+    color: #fff;
+    padding: 35px 0 25px;
+    font-size: 12px;
+    span {
+        float: left;
+    }
+}
