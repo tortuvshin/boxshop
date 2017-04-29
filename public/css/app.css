@@ -6183,32 +6183,38 @@ footer {
 .motto-1,
 .motto-2,
 .motto-3 {
-  padding: 15px;
   text-align: center;
-  height: 100px;
-  line-height: 17px;
-  font-size: 16px; }
+  line-height: 20px;
+  font-size: 20px; }
   .motto-1 i,
   .motto-2 i,
   .motto-3 i {
     display: block;
-    font-size: 20px; }
+    font-size: 50px;
+    float: left;
+    width: 74px; }
+  .motto-1 span,
+  .motto-2 span,
+  .motto-3 span {
+    line-height: 47px; }
 
-.motto-1 {
-  color: #47b1e2;
-  border: 5px solid #47b1e2; }
+.motto-3 span {
+  line-height: 1 !important; }
 
+.motto-1,
 .motto-2 {
-  color: #EEC643;
-  border: 5px solid #EEC643; }
+  border-right: 1px solid #fff; }
 
+.motto-1,
+.motto-2,
 .motto-3 {
-  color: #C6D4FF;
-  border: 5px solid #C6D4FF; }
+  color: #fff; }
 
 .home-motto {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  background: #EDB431 none repeat scroll 0 0;
+  color: #fff;
+  margin-top: 30px;
+  padding: 20px 0; }
 
 .home-advantage {
   padding-top: 15px;
