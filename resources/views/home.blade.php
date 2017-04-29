@@ -119,7 +119,20 @@
               <div class="row">
                 <a href="{{ route('products') }}">
                   <span class="b-title">Брэндүүд</span>
-                </a>  
+                </a>
+                 <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">brand 1</div>
+                        <div class="swiper-slide">brand 2</div>
+                        <div class="swiper-slide">brand 3</div>
+                        <div class="swiper-slide">brand 4</div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
               </div>
             </div>
         </div>{{----- end of row -----}}

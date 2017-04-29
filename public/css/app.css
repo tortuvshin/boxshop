@@ -6266,6 +6266,24 @@ footer {
   .social-bars .fa-plus {
     background-color: #EEC643; }
 
+/* Swiper */
+.swiper-container {
+  width: 100%;
+  height: 130px;
+  margin: 20px auto; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 #menu-left-category .category, #menu-left-category .brands, #menu-left-category .price-range {
   border: 1px solid #e8e8e8; }
   #menu-left-category .category h3, #menu-left-category .brands h3, #menu-left-category .price-range h3 {
