@@ -48,8 +48,6 @@
                                   <strong>{!! \Utility::showPrice($product['price']) !!}</strong>
                               </p>
                               @endif
-
-                              <hr> f
                           </div>
                       </div> {{-- end item --}} 
                       @endforeach

@@ -5896,7 +5896,7 @@ footer {
   height: 50px;
   cursor: pointer;
   line-height: 50px;
-  background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+  background: #5A5A66 none repeat scroll 0 0;
   color: #fff;
   padding: 0 20px;
   font-weight: 700; }
@@ -5940,11 +5940,33 @@ footer {
 .cart {
   float: right; }
   .cart .cart-btn {
-    height: 36px;
-    line-height: 36px;
-    padding: 0 15px; }
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 46px;
+    background: transparent;
+    border: 2px solid #EDB431;
+    color: #EDB431;
+    padding: 0;
+    font-size: 25px;
+    position: relative;
+    bottom: 10px; }
+    .cart .cart-btn span {
+      background: #333 none repeat scroll 0 0;
+      border-radius: 10px;
+      color: #fff;
+      display: block;
+      font-size: 10px;
+      height: 17px;
+      line-height: 16px;
+      position: absolute;
+      right: -17px;
+      text-align: center;
+      top: 0;
+      width: 28px; }
     .cart .cart-btn:hover {
-      background: #47b1e2; }
+      background: transparent; }
 
 /* sticky header */
 .sticky-header {
