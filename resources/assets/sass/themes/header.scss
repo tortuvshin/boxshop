@@ -165,6 +165,29 @@
 
 /* sticky header */
 
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
 .sticky-header {
     background: $dark none repeat scroll 0 0;
     padding: 0 15px !important;
@@ -173,7 +196,7 @@
     left: 0;
     z-index: 9999;
     width: 100%;
-    -webkit-animation-name: fadeInDown;
+    -webkit-animation-name: fadeIn;
     -webkit-animation-duration: 5s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
@@ -231,4 +254,10 @@
     transition: all 0.3s ease-out 0s;
     border: 0;
     outline: 0;
+}
+
+#logoText {
+    background: url(../public/img/logoScroll.png) no-repeat;
+    height: 100%;
+    background-position: 14px;
 }

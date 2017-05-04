@@ -1,4 +1,8 @@
 .vert-category {
+    position: absolute;
+    width: 90%;
+    background: #fff;
+    z-index: 1;
     li {
         width: 100%;
     }
@@ -19,6 +23,78 @@
                 top: 0;
                 left: -4px;
             }
+        }
+    }
+    a.man {
+        background: url(../public/img/category/cat/suit.png) no-repeat;
+        background-position: 10px 7px;
+        &:hover {
+            background: url(../public/img/category/cathover/suit.png) no-repeat;
+            background-position: 10px 7px;
+        }
+    }
+    a.woman {
+        background: url(../public/img/category/cat/dress.png) no-repeat;
+        background-position: 10px 7px;
+        &:hover {
+            background: url(../public/img/category/cathover/dress.png) no-repeat;
+            background-position: 10px 7px;
+        }
+    }
+    a.child {
+        background: url(../public/img/category/cat/star.png) no-repeat;
+        background-position: 10px 7px;
+        &:hover {
+            background: url(../public/img/category/cathover/star.png) no-repeat;
+            background-position: 10px 7px;
+        }
+    }
+    a.beauty {
+        background: url(../public/img/category/cat/cosmetics.png) no-repeat;
+        background-position: 10px 7px;
+        &:hover {
+            background: url(../public/img/category/cathover/cosmetics.png) no-repeat;
+            background-position: 10px 7px;
+        }
+    }
+    a.health {
+        background: url(../public/img/category/cat/heartbeat.png) no-repeat;
+        background-position: 10px 7px;
+        &:hover {
+            background: url(../public/img/category/cathover/heartbeat.png) no-repeat;
+            background-position: 10px 7px;
+        }
+    }
+    a.doc {
+        background: url(../public/img/category/cat/contract.png) no-repeat;
+        background-position: 10px 7px;
+        &:hover {
+            background: url(../public/img/category/cathover/contract.png) no-repeat;
+            background-position: 10px 7px;
+        }
+    }
+    a.souv {
+        background: url(../public/img/category/cat/gift.png) no-repeat;
+        background-position: 10px 7px;
+        &:hover {
+            background: url(../public/img/category/cathover/gift.png) no-repeat;
+            background-position: 10px 7px;
+        }
+    }
+    a.elect {
+        background: url(../public/img/category/cat/responsive.png) no-repeat;
+        background-position: 10px 7px;
+        &:hover {
+            background: url(../public/img/category/cathover/responsive.png) no-repeat;
+            background-position: 10px 7px;
+        }
+    }
+    a.household {
+        background: url(../public/img/category/cat/house.png) no-repeat;
+        background-position: 10px 7px;
+        &:hover {
+            background: url(../public/img/category/cathover/house.png) no-repeat;
+            background-position: 10px 7px;
         }
     }
 }

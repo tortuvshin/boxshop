@@ -2,39 +2,41 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3 col-xs-12">
-            <div class="category-main"> <span style="float: left;">АНГИЛАЛ</span> <span style="float: right; line-height: 50px; " class="glyphicon glyphicon-align-justify"></span><span style="clear: both;"></span></div>
+            <div class="category-main"> <span style="float: left;">АНГИЛАЛ</span> <span style="float: right; line-height: 50px; " class="glyphicon glyphicon-align-justify"></span><span style="clear: both;"></span>
+            <div id="logoText"></div></div>
+
             <div style="clear: both;"></div>
-          <!--   <div class="vert-category">
+            <div class="vert-category">
                   <ul>
                       <li>
-                          <a href="#">Эрэгтэй хувцас</a>
+                          <a href="#" class="man">Эрэгтэй хувцас</a>
                       </li>
                       <li>
-                          <a href="#">Эмэгтэй хувцас</a>
+                          <a href="#" class="woman">Эмэгтэй хувцас</a>
                       </li>
                       <li>
-                          <a href="#">Хүүхдийн хувцас, хэрэглэл</a>
+                          <a href="#" class="child">Хүүхдийн хувцас, хэрэглэл</a>
                       </li>
                       <li>
-                          <a href="#">Гоо сайхан</a>
+                          <a href="#" class="beauty">Гоо сайхан</a>
                       </li>
                       <li>
-                          <a href="#">Эрүүл мэнд</a>
+                          <a href="#" class="health">Эрүүл мэнд</a>
                       </li>
                       <li>
-                          <a href="#">Бичэг хэрэг</a>
+                          <a href="#" class="doc">Бичэг хэрэг</a>
                       </li>
                       <li>
-                          <a href="#">Бэлэг дурсгал</a>
+                          <a href="#" class="souv">Бэлэг дурсгал</a>
                       </li>
                       <li>
-                          <a href="#">Цахилгаан бараа</a>
+                          <a href="#" class="elect">Цахилгаан бараа</a>
                       </li>
                       <li>
-                          <a href="#">Гэр ахуй</a>
+                          <a href="#" class="household">Гэр ахуй</a>
                       </li>
                   </ul>
-            </div> -->
+            </div>
         </div>
         <div class="col-md-9 col-xs-12">
             <ul class="line-menu">

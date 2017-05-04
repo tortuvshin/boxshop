@@ -196,4 +196,10 @@
         </div>{{---- End of advantage -----}}
       </div>{{------- End of Home Right -------}}
 </section> {{-- end products_view --}}
+@section ('scrpits')
+@parent
+<script type="text/javascript">
+</script>
+
+@stop
 @stop {{-- end content --}}

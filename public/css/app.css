@@ -5779,23 +5779,81 @@ h7 {
 i {
   padding: 0 10px; }
 
-.vert-category li {
-  width: 100%; }
-
-.vert-category a {
-  display: block;
-  position: relative;
-  padding: 9px 0 9px 55px;
-  border-bottom: 1px solid #f0f0f0;
-  color: #666; }
-  .vert-category a:hover:before {
-    width: 4px;
-    position: absolute;
-    height: 100%;
-    content: "";
-    background: #fb9902;
-    top: 0;
-    left: -4px; }
+.vert-category {
+  position: absolute;
+  width: 90%;
+  background: #fff;
+  z-index: 1; }
+  .vert-category li {
+    width: 100%; }
+  .vert-category a {
+    display: block;
+    position: relative;
+    padding: 9px 0 9px 55px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #666; }
+    .vert-category a:hover:before {
+      width: 4px;
+      position: absolute;
+      height: 100%;
+      content: "";
+      background: #fb9902;
+      top: 0;
+      left: -4px; }
+  .vert-category a.man {
+    background: url(../public/img/category/cat/suit.png) no-repeat;
+    background-position: 10px 7px; }
+    .vert-category a.man:hover {
+      background: url(../public/img/category/cathover/suit.png) no-repeat;
+      background-position: 10px 7px; }
+  .vert-category a.woman {
+    background: url(../public/img/category/cat/dress.png) no-repeat;
+    background-position: 10px 7px; }
+    .vert-category a.woman:hover {
+      background: url(../public/img/category/cathover/dress.png) no-repeat;
+      background-position: 10px 7px; }
+  .vert-category a.child {
+    background: url(../public/img/category/cat/star.png) no-repeat;
+    background-position: 10px 7px; }
+    .vert-category a.child:hover {
+      background: url(../public/img/category/cathover/star.png) no-repeat;
+      background-position: 10px 7px; }
+  .vert-category a.beauty {
+    background: url(../public/img/category/cat/cosmetics.png) no-repeat;
+    background-position: 10px 7px; }
+    .vert-category a.beauty:hover {
+      background: url(../public/img/category/cathover/cosmetics.png) no-repeat;
+      background-position: 10px 7px; }
+  .vert-category a.health {
+    background: url(../public/img/category/cat/heartbeat.png) no-repeat;
+    background-position: 10px 7px; }
+    .vert-category a.health:hover {
+      background: url(../public/img/category/cathover/heartbeat.png) no-repeat;
+      background-position: 10px 7px; }
+  .vert-category a.doc {
+    background: url(../public/img/category/cat/contract.png) no-repeat;
+    background-position: 10px 7px; }
+    .vert-category a.doc:hover {
+      background: url(../public/img/category/cathover/contract.png) no-repeat;
+      background-position: 10px 7px; }
+  .vert-category a.souv {
+    background: url(../public/img/category/cat/gift.png) no-repeat;
+    background-position: 10px 7px; }
+    .vert-category a.souv:hover {
+      background: url(../public/img/category/cathover/gift.png) no-repeat;
+      background-position: 10px 7px; }
+  .vert-category a.elect {
+    background: url(../public/img/category/cat/responsive.png) no-repeat;
+    background-position: 10px 7px; }
+    .vert-category a.elect:hover {
+      background: url(../public/img/category/cathover/responsive.png) no-repeat;
+      background-position: 10px 7px; }
+  .vert-category a.household {
+    background: url(../public/img/category/cat/house.png) no-repeat;
+    background-position: 10px 7px; }
+    .vert-category a.household:hover {
+      background: url(../public/img/category/cathover/house.png) no-repeat;
+      background-position: 10px 7px; }
 
 /* Product list category */
 .vertical-nav .category li {
@@ -5969,6 +6027,16 @@ footer {
       background: transparent; }
 
 /* sticky header */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.fadeIn {
+  animation-name: fadeIn; }
+
 .sticky-header {
   background: #333 none repeat scroll 0 0;
   padding: 0 15px !important;
@@ -5977,7 +6045,7 @@ footer {
   left: 0;
   z-index: 9999;
   width: 100%;
-  -webkit-animation-name: fadeInDown;
+  -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 5s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -6031,6 +6099,11 @@ footer {
   transition: all 0.3s ease-out 0s;
   border: 0;
   outline: 0; }
+
+#logoText {
+  background: url(../public/img/logoScroll.png) no-repeat;
+  height: 100%;
+  background-position: 14px; }
 
 .login-page {
   position: absolute;

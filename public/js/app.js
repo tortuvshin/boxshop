@@ -602,18 +602,6 @@ $(document).ready(function() {
     // Body scroll 0
 
 });
-
-$(window).scroll(function() {
-
-    if ($(this).scrollTop() > 300) {
-        $('.header-bottom-content').addClass('sticky-header');
-        $('.vert-category').hide('fast');
-    } else {
-        $('.header-bottom-content').removeClass('sticky-header');
-        $('.vert-category').show('fast');
-    }
-});
-
 // Initiliaze swiper
 $(document).ready(function() {
     var swiper = new Swiper('.swiper-container', {
@@ -627,6 +615,20 @@ $(document).ready(function() {
         autoplay: 2500,
         autoplayDisableOnInteraction: false
     });
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 300) {
+        $('.header-bottom-content').addClass('sticky-header');
+        $('.vert-category').hide('fast');
+        $('.category-main').children().hide();
+        $('#logoText').show();
+    } else {
+        $('.header-bottom-content').removeClass('sticky-header');
+        $('.vert-category').show('fast');
+        $('.category-main').children().show();
+        $('#logoText').hide();
+    }
 });
 
 //# sourceMappingURL=app.js.map
