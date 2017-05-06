@@ -1,9 +1,19 @@
 @extends('layouts.master')
 
-@section('title')@parent - {{ trans('globals.home') }} @stop
+@section('title')
+
+@parent - {{ trans('globals.home') }} @stop
 
 @include('partial.message')
 
+@section('css')
+@parent
+    <style type="text/css">
+        .vert-category {
+            visibility: visible;
+        }
+    </style>
+@stop
 @section('content')
 
 @include ('partial.social_buttons')

@@ -6,11 +6,7 @@
 
 @section('css')
     @parent
-    <style type="text/css">
-        .vert-category {
-            visibility: hidden;
-        }
-    </style>
+
 @stop
 
 @section('content')

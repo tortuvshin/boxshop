@@ -9,6 +9,7 @@ $(document).ready(function() {
 });
 // Initiliaze swiper
 $(document).ready(function() {
+     $('#logoText').hide();
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next',
