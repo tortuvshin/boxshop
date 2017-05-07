@@ -109,11 +109,11 @@
                           <a href="{{ route('products') }}">
                             <span class="b-title">Шинээр нэмэгдсэн</span>
                           </a>
-                       <!--  <div class="col-md-12 col-xs-12 bestselling-product">
+                        <div class="col-md-12 col-xs-12 bestselling-product">
                           @foreach ($suggestion['categories'] as $product)
                               @include('products.partial.productBox', $product)
                           @endforeach
-                        </div> -->
+                        </div>
                       </div>
 
                       {{-- viewed suggestions --}}
