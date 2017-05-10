@@ -5731,6 +5731,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/*@import "node_modules/normalize.scss/normalize";*/
 .transition, .vert-category a, footer ul li a:hover, .header-bottom-content .line-menu li a:hover, .cart .cart-btn {
   transition: all .3s ease-out;
   -webkit-transition: all .3s ease-out;
