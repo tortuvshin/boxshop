@@ -9,13 +9,15 @@
   "devDependencies": {
     "axios": "^0.15.3",
     "bootstrap-sass": "^3.3.7",
-    "gulp": "^3.9.1",
+    "gulp": "^3.8.11",
     "gulp-sass": "^3.1.0",
     "jquery": "^3.1.1",
     "lodash": "^4.17.4",
     "webpack": "^2.1.0-beta.24",
-    "gulp": "^3.8.11",
     "gulp-util": "^3.0.4",
     "laravel-elixir": "*"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
