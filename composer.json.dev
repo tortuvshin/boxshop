@@ -27,7 +27,7 @@
 		"predis/predis": "^1.0",
 		"davejamesmiller/laravel-breadcrumbs": "3.*",
 		"milon/barcode": "5.*",
-		"antvel/shop": "dev-master",
+		"antvel/shop": "dev-master",лл
 		"laravel/tinker": "~1.0",
 		"laravel/dusk": "^1.0"
 	},
