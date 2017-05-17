@@ -277,6 +277,60 @@ class FreeProductsController extends Controller
             return redirect(route('products'));
         }
     }
+
+     public function myFreeProducts(Request $request)
+    {
+        $filter = $request->get('filter');
+        $user = \Auth::user();
+        if ($filter && $filter != '') {
+            switch (strtolower($filter)) {
+                case 'active': $freeproducts = FreeProduct::auth()->where('status', '1')->with('orders')->paginate(8); break;
+                case 'inactive': $freeproducts = FreeProduct::auth()->where('status', '0')->with('orders')->paginate(8); break;
+                case 'participations':
+                    $userholdings = FreeProductParticipant::where('user_id', $user->id)->select('freeproduct_id')->get()->toArray();
+                    $freeproducts = FreeProduct::whereIn('id', $userholdings)->with('orders')->paginate(8);
+                    break;
+                default: $freeproducts = FreeProduct::auth()->with('orders')->paginate(8); break;
+            }
+        } else {
+            $freeproducts = FreeProduct::auth()->with('orders')->paginate(8);
+        }
+        $panel = ['left' => ['width' => '2'],    'center' => ['width' => '10']];
+        $route = route('freeproducts.my_free_products');
+        return view('freeproducts.index', compact('panel', 'freeproducts', 'filter', 'route'));
+    }
+    /**
+     * build the free prodcuts tree where parent will be a free product and children are the products list associated.
+     *
+     * @param [array]   $select [array to ask for products table field]
+     * @param [integer] $limit  [to control the request limit]
+     */
+    public static function getParentAndChildren($select = ['id', 'description'], $limit = 5)
+    {
+        $events = FreeProduct::
+            select($select)
+            ->where('status', '1')
+            ->with('orders')
+            ->get()
+            ->take($limit);
+        $list = [];
+        $events->each(function ($event) use (&$list, $select) {
+            foreach ($select as $value) {
+                $list[$event->id][$value] = $event->$value;
+            }
+            $products = FreeProduct::
+                find($event->id)
+                ->products
+                ->take(6)
+                ->toArray();
+            if ($products) {
+                $list[$event->id]['products'] = $products;
+            }
+            unset($products);
+        });
+        return $list;
+    }
+    
     /**
      * Show the form for editing the specified resource.
      *
