@@ -206,6 +206,77 @@ class FreeProductsController extends Controller
         }
     }
 
+
+    /**
+     * Subscription free product, validating the conditions and validity of the same.
+     *
+     * @param int $id
+     *
+     * @return Response
+     */
+    public function subscribe($id)
+    {
+        $freeproduct = FreeProduct::find($id);
+        $user = \Auth::user();
+        if ($freeproduct) {
+            //It validates that the user has a registered address in the store. Of winning, this address will be used to create you an order (will contain the product to win)
+            $useraddress = Address::where('user_id', $user->id)->orderBy('default', 'DESC')->first();
+            if ($useraddress) {
+                //It verifies that the product is in effect free
+                $dateactual = date('Y-m-d');
+                if (($freeproduct->start_date >= $dateactual) && ($freeproduct->end_date >= $dateactual)) {
+                    //It has enough points to participate
+                    if ($user->current_points > $freeproduct->participation_cost) {
+                        //Total of Participants
+                        $totalparticipants = FreeProductParticipant::where('freeproduct_id', $id)->count();
+                        //Total equity investments in the product user free
+                        $userholdings = FreeProductParticipant::MyParticipations($id)->count();
+                        //Validate that there is still quota to participate
+                        if ($freeproduct->max_participants > $totalparticipants) {
+                            //Then, the user is not participating or not exceeding the number of shares in the free product
+                            if ($freeproduct->max_participations_per_user > $userholdings) {
+                                //Subtract points because of user participation
+                                $negativeTotal = -1 * $freeproduct->participation_cost;
+                                //12 is the action type id for free product checkout
+                                $pointsModified = $user->modifyPoints($negativeTotal, 12, $id);
+                                if ($pointsModified) {
+                                    //If you meet these conditions, the user is registered as a participant free product
+                                    $newparticipant = new FreeProductParticipant();
+                                    $newparticipant->freeproduct_id = $id;
+                                    $newparticipant->user_id = $user->id;
+                                    $newparticipant->status = 'registered';
+                                    $newparticipant->save();
+                                    //Report by email to the participant
+                                    $data = ['freeproduct_id' => $id];
+                                    Mail::queue('emails.freeproducts.participate', $data, function ($message) use ($user) {
+                                        $message->to($user->email)->subject(trans('email.free_products_participation.subject'));
+                                    });
+                                    //It is sent to the view (dashboard) where the user can view their participation in it.
+                                    Session::flash('message', trans('freeproduct.congratulations_participate'));
+                                    return redirect()->route('freeproducts.show', [$freeproduct->id]);
+                                } else {
+                                }
+                            } else {
+                                Session::flash('message', trans('freeproduct.max_participations_for_user'));
+                            }
+                        } else {
+                            Session::flash('message', trans('freeproduct.participations_not_available'));
+                        }
+                    } else {
+                        Session::flash('message', trans('freeproduct.not_enough_point'));
+                    }
+                } else {
+                    Session::flash('message', trans('freeproduct.freeproduct_not_available'));
+                }
+            } else {
+                Session::flash('message', trans('freeproduct.address_not_registered'));
+            }
+            return redirect()->route('freeproducts.show', [$id]);
+        } else {
+            Session::flash('message', trans('freeproduct.freeproduct_not_exist'));
+            return redirect(route('products'));
+        }
+    }
     /**
      * Show the form for editing the specified resource.
      *
