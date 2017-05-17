@@ -30,6 +30,45 @@ class FreeProductsController extends Controller
         'draw_date'                   => 'required|date|after:end_date',
     ];
 
+    private $panel = [
+                'center' => ['width' => '12'],
+            ];
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
+    public function index(Request $request)
+    {
+        $user = \Auth::user();
+        $filter = $request->get('filter');
+        if ($filter && $filter != '') {
+            switch (strtolower($filter)) {
+                case 'active': $freeproducts = FreeProduct::getListWithPaginate(8, 1); break;
+                case 'inactive': $freeproducts = FreeProduct::getListWithPaginate(8, 0); break;
+                case 'participations':
+                    //$userholdings = FreeProductParticipant::where('user_id', $user->id)->select('freeproduct_id')->get()->toArray();
+                    //$freeproducts=FreeProduct::whereIn('id', $userholdings)->with('orders')->paginate(8);
+                    $freeproducts = FreeProduct::with('orders')
+                                    ->join('freeproduct_participants as p', function ($join) {
+                                        $join->on('freeproducts.id', '=', 'p.freeproduct_id')
+                                        ->where('p.user_id', '=', \Auth::user()->id);
+                                    })
+                                    //->where('p.user_id', '=', $user->id);
+                                    ->select('freeproducts.*', 'p.status as status_holding')
+                                    ->paginate(8);
+                    //dd($freeproducts->toSql());
+                    break;
+                default: $freeproducts = FreeProduct::getListWithPaginate(8); break;
+            }
+        } else {
+            $freeproducts = FreeProduct::getListWithPaginate(8);
+        }
+        $panel = $this->panel;
+        $route = route('freeproducts.search');
+        return view('freeproducts.index', compact('panel', 'freeproducts', 'filter', 'route'));
+    }
+    
     /**
      * Show the form for editing the specified resource.
      *
