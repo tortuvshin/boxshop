@@ -68,6 +68,43 @@ class FreeProductsController extends Controller
         $route = route('freeproducts.search');
         return view('freeproducts.index', compact('panel', 'freeproducts', 'filter', 'route'));
     }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Response
+     */
+    public function create($orderId)
+    {
+        $order = Order::whereId($orderId)->select('id', 'type')->first();
+        $user = \Auth::user();
+        if ($user) {
+            //If a user is not trusted, send the error. Avoiding direct access routes to action by invalid user
+            if (!$user->isTrusted()) {
+                return redirect()->route('orders.show_cart', [$order->id])->withErrors(trans('freeproduct.unauthorized_access'));
+            }
+            //You can create free product from a sort order cart or wish list
+            if (($order->type != 'cart') && ($order->type != 'wishlist')) {
+                return redirect()->route('orders.show_cart', [$order->id])->withErrors(trans('freeproduct.order_type_invalid'));
+            }
+            //As is authorized to create, I check order detail
+            $order_content = OrderDetail::where('order_id', $order->id)->get();
+            //Sumatorial the total order to validate that the free product creator has enough points for the transaction
+            $total_points = 0;
+            foreach ($order_content as $orderDetail) {
+                $product = Product::whereId($orderDetail->product_id)->select('id', 'price')->first();
+                $total_points += $orderDetail->quantity * $product->price;
+            }
+            if ($user->current_points < $total_points) {
+                return redirect()->route('orders.show_cart')->withErrors(['main_error' => [trans('store.cart_view.insufficient_funds')]]);
+            }
+            $jsonOrder = json_encode($order_content->toArray());
+            $panel = $this->panel;
+            return view('freeproducts.create', compact('jsonOrder', 'panel', 'orderId'));
+        } else {
+            return redirect()->route('products')->withErrors(trans('freeproduct.unauthorized_access'));
+        }
+    }
     
     /**
      * Show the form for editing the specified resource.
