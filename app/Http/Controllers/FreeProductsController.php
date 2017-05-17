@@ -105,7 +105,107 @@ class FreeProductsController extends Controller
             return redirect()->route('products')->withErrors(trans('freeproduct.unauthorized_access'));
         }
     }
-    
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @return Response
+     */
+    public function store(Request $request)
+    {
+        try {
+            $validator = Validator::make($request->all(), $this->form_rules);
+            if ($validator->fails()) {
+                return redirect()->route('freeproducts.create', [$request->input('order_id')])
+                ->withErrors($validator->errors())->withInput();
+            }
+            //As is not defined that way is going to deliver products for every winner, I will confirm that the total winning is equal to total products in the cart
+            $cart_detail = OrderDetail::where('order_id', $request->input('order_id'))->get();
+            if ($request->input('draw_number') > $cart_detail->count()) {
+                return redirect()->route('freeproducts.create', [$request->input('order_id')])
+                                     ->withErrors(trans('freeproduct.drawnumber_exceed_total_products'))->withInput();
+            } else {
+                //Process the order. The process is the same as with a shopping cart. The address is not requested
+                //Direction is taken as the one with the user by default. Not having, it notifies the user to create a.
+                $errors = Order::placeOrders('freeproduct');
+                if ($errors) {
+                    return redirect()->route('freeproducts.create', [$request->input('order_id')])
+                                     ->withErrors($errors)->withInput();
+                } else {
+                    $user = \Auth::user();
+                    //Save Free Product
+                    $freeproduct = new FreeProduct();
+                    $freeproduct->user_id = $user->id;
+                    $freeproduct->description = $request->input('description');
+                    $freeproduct->start_date = $request->input('start_date');
+                    $freeproduct->end_date = $request->input('end_date');
+                    $freeproduct->participation_cost = $request->input('participation_cost');
+                    $freeproduct->min_participants = $request->input('min_participants');
+                    $freeproduct->max_participants = $request->input('max_participants');
+                    $freeproduct->max_participations_per_user = $request->input('max_participations_per_user');
+                    $freeproduct->draw_number = $request->input('draw_number');
+                    $freeproduct->draw_date = $request->input('draw_date');
+                    $freeproduct->save();
+                    //Because the method placeOrders products generates orders for each vendor, you need to associate these orders to free product
+                    $orders = Order::ofType('freeproduct')->ofStatus('paid')->where('user_id', $user->id)->get();
+                    if ($orders) {
+                        foreach ($orders as $order) {
+                            //Each order products are searched and a duplicate of the same is made, marking them as a free product. This will allow the product goes on the results of the advanced search
+                            $order_detail = OrderDetail::where('order_id', $order->id)->get();
+                            if ($order_detail) {
+                                foreach ($order_detail as $detail) {
+                                    $product = Product::find($detail->product_id);
+                                    $productactual = $product->toArray();
+                                    unset($productactual['id']);
+                                    unset($productactual['num_of_reviews']);
+                                    $productactual['user_id'] = $user->id;
+                                    $productactual['stock'] = $detail->quantity;
+                                    $productactual['type'] = 'freeproduct';
+                                    $productactual['parent_id'] = $product->id;
+                                    $newproduct = Product::create($productactual);
+                                }
+                            }
+                            if (!FreeProductOrder::where('order_id', $order->id)->first()) {
+                                //order registration as a free product
+                                $order_to_fp = new FreeProductOrder();
+                                $order_to_fp->freeproduct_id = $freeproduct->id;
+                                $order_to_fp->order_id = $order->id;
+                                $order_to_fp->save();
+                            }
+                        }
+                    }
+                    //Send message process Ok and redirect
+                    Session::flash('message', trans('freeproduct.saved_successfully'));
+                    return redirect()->route('freeproducts.show', [$freeproduct->id]);
+                }
+            }
+        } catch (ModelNotFoundException $e) {
+            Log::error($e);
+            return redirect()->back()->withErrors(['induced_error' => [trans('freeproduct.error_exception')]])->withInput();
+        }
+    }
+    /**
+     * Return the product data free query view.
+     *
+     * @param int $id of freeproduct
+     *
+     * @return View
+     */
+    public function show($id)
+    {
+        $freeproduct = FreeProduct::with('orders')->find($id);
+        if ($freeproduct) {
+            //Get Total equity investments in the product user free
+            $userholdings = FreeProductParticipant::MyParticipations($id)->count();
+            $isParticipating = ($freeproduct->max_participations_per_user > $userholdings) ? 0 : 1;
+            $panel = $this->panel;
+            return view('freeproducts.show', compact('freeproduct', 'isParticipating', 'panel'));
+        } else {
+            Session::flash('message', trans('freeproduct.freeproduct_not_exist'));
+            return redirect(route('products'));
+        }
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
