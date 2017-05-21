@@ -84,5 +84,46 @@ class VirtualProductOrdersController extends Controller
         }
         return ['message' => trans('globals.error_not_available')];
     }
+
+    public function modalSeeKeysPurchased()
+    {
+        return view('orders.showKeysPurchased');
+    }
+    public function showKeyVirtualProductPurchased($idProduct, $idOrder, Request $request)
+    {
+        if (!$request->wantsJson()) {
+            return ['message' => trans('globals.error_not_available')];
+        }
+        $product = Product::find($idProduct);
+        $order = Order::find($idOrder);
+        $virtual = VirtualProduct::select('id')->where('product_id', $idProduct)->get()->toArray();
+        if (!$product || !$order || !count($virtual)) {
+            return ['message' => trans('globals.error_not_available'), 'id' => false];
+        }
+        if ($order->user_id != \Auth::id()) {
+            return ['message' => trans('globals.error_not_available'), 'my' => false];
+        }
+        $virtualOrder = VirtualProductOrder::where('order_id', $order->id)->whereIn('virtual_product_id', $virtual)->get();
+        if (!count($virtualOrder)) {
+            return ['message' => trans('globals.error_not_available'), 'order' => false];
+        }
+        $user = User::find(\Auth::id());
+        $return = ['info' => [
+            'name' => $product->name,
+            'des'  => $product->description,
+            'num'  => count($virtualOrder),
+        ]];
+        foreach ($virtualOrder as $row) {
+            if (isset($return['users'][$row['email']])) {
+                $key = VirtualProduct::find($row['virtual_product_id']);
+                $return['users'][$row['email']]['keys'][] = $key['key'];
+            } else {
+                $key = VirtualProduct::find($row['virtual_product_id']);
+                $return['users'][$row['email']]['keys'][0] = $key['key'];
+                $return['users'][$row['email']]['title'] = ($row['email'] == $user['email']) ? 'Your Keys' : 'Keys sent to '.$row['email'];
+            }
+        }
+        return $return;
+    }
     
 }
