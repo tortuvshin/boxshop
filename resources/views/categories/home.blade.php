@@ -4,12 +4,12 @@
 @parent
 @stop
 @section('center_content')
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading" ng-init="search=''">
                 <h6><span class="glyphicon glyphicon-tasks"></span> {{ trans('product.globals.categories') }}
-                <a href="{{ route('wpanel.category.create') }}" class="btn btn-default btn-md pull-right">{{ trans('store.new_category') }}</a>
+                <a href="{{ route('category.create') }}" class="btn btn-default btn-md pull-right">{{ trans('store.new_category') }}</a>
                 </h6>
             </div>
             <div class="panel-body" style="min-height:500px;">

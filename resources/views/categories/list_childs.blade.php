@@ -18,7 +18,7 @@
                 @endif
              </div>
             <div class="col-md-2"><span class="label label-default visible-xs-inline">{{ trans('globals.type') }}:</span> {{ $cat->type }}</div>
-            <div class="col-md-2"><a href="{{ route('wpanel.category.edit',$cat->id) }}">Edit</a></div>
+            <div class="col-md-2"><a href="{{ route('category.edit',$cat->id) }}">Edit</a></div>
         </div>
     </li>
     @if($cat->hasChildren())

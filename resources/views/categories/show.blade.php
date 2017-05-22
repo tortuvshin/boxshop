@@ -79,7 +79,7 @@
                     return status_list[($scope.category.status!==undefined&&$scope.category.status)||1];
                 };
                 $scope.link=function(){
-                    return '{{ route('wpanel.category.edit','ID') }}'.replace('ID',$scope.category.id);
+                    return '{{ route('category.edit','ID') }}'.replace('ID',$scope.category.id);
                 };
                 $scope.type=function(){
                     return type_list[$scope.category.type];

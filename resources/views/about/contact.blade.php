@@ -4,12 +4,12 @@
 
 {{-- NAVBAR --}}
 @section('navigation')
-@include('partial.navigation')
+  @include('partial.navigation_basic')
 @endsection
 
 {{-- CONTENT --}}
 @section('content')
-<div class="container">
+<div class="container-fluid">
   <div class="row col-md-12">
     <div class="panel panel-default">
 

@@ -2,7 +2,7 @@
 @section('page_class')@parent- {{ trans('about.contact_us') }}@endsection
 {{-- NAVBAR --}}
 @section('navigation')
-@include('partial.navigation')
+@include('partial.navigation_basic')
 @endsection
 {{-- CONTENT --}}
 @section('content')
