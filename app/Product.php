@@ -74,8 +74,8 @@ class Product extends Model
     }
     public function scopeActives($query)
     {
-        return $query->where('status', 1)
-                     ->where('stock', '>', 0);
+        return $query->where('status', 1);
+                     // ->where('stock', '>', 0);
     }
     public function scopeInactives($query)
     {
