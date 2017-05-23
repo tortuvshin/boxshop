@@ -26,6 +26,7 @@
 		{!! Html::style('/css/lib/angucomplete-alt.css') !!}
 		{!! Html::style('/css/lib/swiper.min.css') !!}
 		{!! Html::style('/css/app.css') !!}
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	@show
 
 	<!--[if lt IE 9]>
@@ -89,7 +90,7 @@
 					</div> {{-- globlas panels --}}
 				</div>
 			</div> {{-- container --}}
-
+			<a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
 		@show
 	@show
 
