@@ -10,7 +10,7 @@
         <div class="panel panel-default">
             <div class="panel-heading" ng-init="search=''">
                 <h6><span class="glyphicon glyphicon-th-list"></span> {{ trans('product.globals.features') }}
-                <a href="{{ route('wpanel.productsdetails.create') }}" class="btn btn-default btn-md pull-right">{{ trans('features.new_feature') }}</a>
+                <a href="{{ route('productsdetails.create') }}" class="btn btn-default btn-md pull-right">{{ trans('features.new_feature') }}</a>
                 </h6>
             </div>
             <div class="panel-body" style="min-height:500px;">
@@ -30,11 +30,11 @@
                     <li class="list-group-item">
                         <div class="row">
                             <div class="col-md-1">{{ $row['id'] }}</div>
-                            <div class="col-md-4"><a href="{{ route('wpanel.productsdetails.show',$row['id']) }}">{{ $row['name'] }}</a></div>
+                            <div class="col-md-4"><a href="{{ route('productsdetails.show',$row['id']) }}">{{ $row['name'] }}</a></div>
                             <div class="col-md-2">{{ $row['status'] }}</div>
                             <div class="col-md-2">{{ $row['input_type'] }}</div>
                             <div class="col-md-2">{{ $row['type_products'] }}</div>
-                            <div class="col-md-1"><a href="{{ route('wpanel.productsdetails.edit',$row['id']) }}">{{ trans('globals.edit') }}</a></div>
+                            <div class="col-md-1"><a href="{{ route('productsdetails.edit',$row['id']) }}">{{ trans('globals.edit') }}</a></div>
                         </div>
                     </li>
                     @endforeach

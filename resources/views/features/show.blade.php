@@ -11,8 +11,8 @@
                     <div class="panel-heading" ng-init="search=''">
                         <h3>
                             <a href="wpanel/features">{{ trans('product.globals.features') }}</a>
-                            <a href="{{ route('wpanel.productsdetails.create') }}" class="btn btn-default btn-md pull-right visible-lg-inline">{{ trans('features.new_feature') }}</a>
-                            <a href="{{ route('wpanel.productsdetails.create') }}" class="btn btn-default btn-md visible-xs-block">{{ trans('features.new_feature') }}</a>
+                            <a href="{{ route('productsdetails.create') }}" class="btn btn-default btn-md pull-right visible-lg-inline">{{ trans('features.new_feature') }}</a>
+                            <a href="{{ route('productsdetails.create') }}" class="btn btn-default btn-md visible-xs-block">{{ trans('features.new_feature') }}</a>
                         </h3>
                     </div>
                     <ul class="list-group">
@@ -20,7 +20,7 @@
                             <div class="row">
                                 <div class="col-md-6">{{ trans('product.inputs_view.name') }}</div>
                                 <div class="col-md-3">{{ $feature['name'] }}</div>
-                                <div class="col-md-3"><a href="{{ route('wpanel.productsdetails.edit',$feature['id']) }}" class="btn btn-default btn-md pull-right">{{ trans('globals.edit') }}</a></div>
+                                <div class="col-md-3"><a href="{{ route('productsdetails.edit',$feature['id']) }}" class="btn btn-default btn-md pull-right">{{ trans('globals.edit') }}</a></div>
                             </div>
                         </li>
                         <li class="list-group-item">

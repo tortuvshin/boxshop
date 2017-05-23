@@ -21,7 +21,8 @@
 				  <li><a data-toggle="tab" href="#terms_of_service">{{ trans('company.terms_of_service')}}</a></li>
 				  <li><a data-toggle="tab" href="#modules">{{ trans('company.modules')}}</a></li>
 				</ul>
-				{!! Form::model($company, ['route'=>['wpanel.profile.update',$company], 'method'=>'PUT','role'=>'form']) !!}
+
+				{!! Form::model($company, ['url'=>'/wpanel/profile/' . $company->id, 'method'=>'PUT','role'=>'form']) !!}
 
 				<div id="my-tab-content" class="tab-content">
 			        <div class="tab-pane active" id="profile">
