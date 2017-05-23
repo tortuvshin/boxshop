@@ -35,7 +35,7 @@
 	<![endif]-->
 </head>
 <body>
-<div id="fb-root"></div>
+
 <section class = "@yield('page_class', 'home')">
 
 	{{-- Navigation bar section --}}
@@ -44,53 +44,49 @@
 	@show
 
 	{{-- Breadcrumbs section --}}
-	<div>
+	<div class="container">
 		@section('breadcrumbs')
+			<div class="row">&nbsp;</div>
 		@show
 	</div>
-	{{-- Social buttons --}}
-	@include ('partial.social_buttons')
-	
+
 	{{-- Content page --}}
 	@section('content')
 		@section('panels')
 
 			<div class="container">
-				<div class="row">
-					<div class="global-panels">
-					<div class="row">
-						{{-- left panel --}}
-						@if (isset($panel['left']))
-							{{-- desktops validation --}}
-							<div class="col-sm-{{ $panel['left']['width'] or '3' }} col-md-{{ $panel['left']['width'] or '3' }} {{ $panel['left']['class'] or '' }}">
-								@section('panel_left_content')
-									Left content
-								@show
-							</div>
-						@endif
+				<div class="row">&nbsp;</div>
+				<div class="row global-panels">
 
-						{{-- center content --}}
-						<div class="col-xs-12 col-sm-{{ $panel['center']['width'] or '9' }} col-md-{{ $panel['center']['width'] or '9' }}">
-							@section('center_content')
-								Center content
+					{{-- left panel --}}
+					@if (isset($panel['left']))
+						{{-- desktops validation --}}
+						<div class="col-sm-{{ $panel['left']['width'] or '2' }} col-md-{{ $panel['left']['width'] or '2' }} {{ $panel['left']['class'] or '' }}">
+							@section('panel_left_content')
+								Left content
 							@show
 						</div>
+					@endif
 
-						{{-- right panel --}}
-						@if (isset($panel['right']))
-							<div class="hidden-xs col-sm-{{ $panel['right']['width'] or '2' }} col-md-{{ $panel['right']['width'] or '2' }} {{ $panel['right']['class'] or '' }}">
-								@section('panel_right_content')
-									Right content
-								@show
-							</div>
-						@endif
+					{{-- center content --}}
+					<div class="col-xs-12 col-sm-{{ $panel['center']['width'] or '10' }} col-md-{{ $panel['center']['width'] or '10' }}">
+						@section('center_content')
+							Center content
+						@show
+					</div>
 
-						<div id="back-top"></div>
-					</div>	
-					</div> {{-- globlas panels --}}
-				</div>
+					{{-- right panel --}}
+					@if (isset($panel['right']))
+						<div class="hidden-xs col-sm-{{ $panel['right']['width'] or '2' }} col-md-{{ $panel['right']['width'] or '2' }} {{ $panel['right']['class'] or '' }}">
+							@section('panel_right_content')
+								Right content
+							@show
+						</div>
+					@endif
+
+				</div> {{-- globlas panels --}}
 			</div> {{-- container --}}
-			<a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
+            <a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
 		@show
 	@show
 

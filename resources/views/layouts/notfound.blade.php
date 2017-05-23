@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="{{ App::getLocale() }}" ng-app="Bella">
+<html lang="{{ App::getLocale() }}" ng-app="ShopCore">
 
 <head>
 	<meta charset="utf-8">
 	<title>@section('title'){{ $main_company['website_name']}} @show</title>
 
-	{!! Html::style('/css/vendor/bootstrap.css') !!}
+	{!! Html::style('/css/lib/bootstrap.css') !!}
 	
 	@section('css')
 		{!! Html::style('/css/app.css') !!}
