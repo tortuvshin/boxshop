@@ -5731,6 +5731,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/*@import "node_modules/normalize.scss/normalize";*/
 .transition, .vert-category a, footer ul li a:hover, .header-bottom-content .line-menu li a:hover, .cart .cart-btn {
   transition: all .3s ease-out;
   -webkit-transition: all .3s ease-out;
@@ -5779,23 +5780,65 @@ h7 {
 i {
   padding: 0 10px; }
 
-.vert-category li {
-  width: 100%; }
-
-.vert-category a {
-  display: block;
-  position: relative;
-  padding: 9px 0 9px 55px;
-  border-bottom: 1px solid #f0f0f0;
-  color: #666; }
-  .vert-category a:hover:before {
-    width: 4px;
-    position: absolute;
-    height: 100%;
-    content: "";
-    background: #fb9902;
-    top: 0;
-    left: -4px; }
+.vert-category {
+  position: absolute;
+  width: 90%;
+  background: #fff;
+  z-index: 1;
+  visibility: hidden; }
+  .vert-category li {
+    width: 100%; }
+  .vert-category a {
+    display: block;
+    position: relative;
+    padding: 9px 0 9px 55px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #666;
+    background-position: 10px 7px !important; }
+    .vert-category a:hover:before {
+      width: 4px;
+      position: absolute;
+      height: 100%;
+      content: "";
+      background: #fb9902;
+      top: 0;
+      left: -4px; }
+  .vert-category a.man {
+    background: url(../public/img/category/cat/suit.png) no-repeat; }
+    .vert-category a.man:hover {
+      background: url(../public/img/category/cathover/suit.png) no-repeat; }
+  .vert-category a.woman {
+    background: url(../public/img/category/cat/dress.png) no-repeat; }
+    .vert-category a.woman:hover {
+      background: url(../public/img/category/cathover/dress.png) no-repeat; }
+  .vert-category a.child {
+    background: url(../public/img/category/cat/star.png) no-repeat; }
+    .vert-category a.child:hover {
+      background: url(../public/img/category/cathover/star.png) no-repeat; }
+  .vert-category a.beauty {
+    background: url(../public/img/category/cat/cosmetics.png) no-repeat; }
+    .vert-category a.beauty:hover {
+      background: url(../public/img/category/cathover/cosmetics.png) no-repeat; }
+  .vert-category a.health {
+    background: url(../public/img/category/cat/heartbeat.png) no-repeat; }
+    .vert-category a.health:hover {
+      background: url(../public/img/category/cathover/heartbeat.png) no-repeat; }
+  .vert-category a.doc {
+    background: url(../public/img/category/cat/contract.png) no-repeat; }
+    .vert-category a.doc:hover {
+      background: url(../public/img/category/cathover/contract.png) no-repeat; }
+  .vert-category a.souv {
+    background: url(../public/img/category/cat/gift.png) no-repeat; }
+    .vert-category a.souv:hover {
+      background: url(../public/img/category/cathover/gift.png) no-repeat; }
+  .vert-category a.elect {
+    background: url(../public/img/category/cat/responsive.png) no-repeat; }
+    .vert-category a.elect:hover {
+      background: url(../public/img/category/cathover/responsive.png) no-repeat; }
+  .vert-category a.household {
+    background: url(../public/img/category/cat/house.png) no-repeat; }
+    .vert-category a.household:hover {
+      background: url(../public/img/category/cathover/house.png) no-repeat; }
 
 /* Product list category */
 .vertical-nav .category li {
@@ -5896,7 +5939,7 @@ footer {
   height: 50px;
   cursor: pointer;
   line-height: 50px;
-  background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+  background: #5A5A66 none repeat scroll 0 0;
   color: #fff;
   padding: 0 20px;
   font-weight: 700; }
@@ -5940,13 +5983,45 @@ footer {
 .cart {
   float: right; }
   .cart .cart-btn {
-    height: 36px;
-    line-height: 36px;
-    padding: 0 15px; }
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 46px;
+    background: transparent;
+    border: 2px solid #EDB431;
+    color: #EDB431;
+    padding: 0;
+    font-size: 25px;
+    position: relative;
+    bottom: 10px; }
+    .cart .cart-btn span {
+      background: #333 none repeat scroll 0 0;
+      border-radius: 10px;
+      color: #fff;
+      display: block;
+      font-size: 10px;
+      height: 17px;
+      line-height: 16px;
+      position: absolute;
+      right: -17px;
+      text-align: center;
+      top: 0;
+      width: 28px; }
     .cart .cart-btn:hover {
-      background: #47b1e2; }
+      background: transparent; }
 
 /* sticky header */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.fadeIn {
+  animation-name: fadeIn; }
+
 .sticky-header {
   background: #333 none repeat scroll 0 0;
   padding: 0 15px !important;
@@ -5955,7 +6030,7 @@ footer {
   left: 0;
   z-index: 9999;
   width: 100%;
-  -webkit-animation-name: fadeInDown;
+  -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 5s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -6009,6 +6084,12 @@ footer {
   transition: all 0.3s ease-out 0s;
   border: 0;
   outline: 0; }
+
+#logoText {
+  background: url(../public/img/logoScroll.png) no-repeat;
+  height: 100%;
+  background-position: 14px;
+  display: none; }
 
 .login-page {
   position: absolute;
@@ -6144,7 +6225,13 @@ footer {
   height: 40px; }
 
 .home-bestselling {
-  padding-top: 10px; }
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.bestselling-product {
+  padding-left: 0px;
+  padding-right: 0px; }
 
 .home-cat-trend {
   padding-top: 10px;
@@ -6161,32 +6248,38 @@ footer {
 .motto-1,
 .motto-2,
 .motto-3 {
-  padding: 15px;
   text-align: center;
-  height: 100px;
-  line-height: 17px;
-  font-size: 16px; }
+  line-height: 20px;
+  font-size: 20px; }
   .motto-1 i,
   .motto-2 i,
   .motto-3 i {
     display: block;
-    font-size: 20px; }
+    font-size: 50px;
+    float: left;
+    width: 74px; }
+  .motto-1 span,
+  .motto-2 span,
+  .motto-3 span {
+    line-height: 47px; }
 
-.motto-1 {
-  color: #47b1e2;
-  border: 5px solid #47b1e2; }
+.motto-3 span {
+  line-height: 1 !important; }
 
+.motto-1,
 .motto-2 {
-  color: #EEC643;
-  border: 5px solid #EEC643; }
+  border-right: 1px solid #fff; }
 
+.motto-1,
+.motto-2,
 .motto-3 {
-  color: #C6D4FF;
-  border: 5px solid #C6D4FF; }
+  color: #fff; }
 
 .home-motto {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  background: #EDB431 none repeat scroll 0 0;
+  color: #fff;
+  margin-top: 30px;
+  padding: 20px 0; }
 
 .home-advantage {
   padding-top: 15px;
@@ -6237,6 +6330,24 @@ footer {
     background-color: #A1755C; }
   .social-bars .fa-plus {
     background-color: #EEC643; }
+
+/* Swiper */
+.swiper-container {
+  width: 100%;
+  height: 130px;
+  margin: 20px auto; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 #menu-left-category .category, #menu-left-category .brands, #menu-left-category .price-range {
   border: 1px solid #e8e8e8; }

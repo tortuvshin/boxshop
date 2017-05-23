@@ -1,9 +1,19 @@
 @extends('layouts.master')
 
-@section('title')@parent - {{ trans('globals.home') }} @stop
+@section('title')
+
+@parent - {{ trans('globals.home') }} @stop
 
 @include('partial.message')
 
+@section('css')
+@parent
+    <style type="text/css">
+        .vert-category {
+            visibility: visible;
+        }
+    </style>
+@stop
 @section('content')
 
 @include ('partial.social_buttons')
@@ -48,8 +58,6 @@
                                   <strong>{!! \Utility::showPrice($product['price']) !!}</strong>
                               </p>
                               @endif
-
-                              <hr> f
                           </div>
                       </div> {{-- end item --}} 
                       @endforeach
@@ -101,11 +109,11 @@
                           <a href="{{ route('products') }}">
                             <span class="b-title">Шинээр нэмэгдсэн</span>
                           </a>
-                        <!-- <div class="col-md-12 col-xs-12 bestselling-product">
+                        <div class="col-md-12 col-xs-12 bestselling-product">
                           @foreach ($suggestion['categories'] as $product)
                               @include('products.partial.productBox', $product)
                           @endforeach
-                        </div> -->
+                        </div>
                       </div>
 
                       {{-- viewed suggestions --}}
@@ -117,7 +125,26 @@
                       </div>
                 </div>
               </div>
-            </div> 
+            <div class="brands col-md-12 col-xs-12">
+              <div class="row">
+                <a href="{{ route('products') }}">
+                  <span class="b-title">Брэндүүд</span>
+                </a>
+                 <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">brand 1</div>
+                        <div class="swiper-slide">brand 2</div>
+                        <div class="swiper-slide">brand 3</div>
+                        <div class="swiper-slide">brand 4</div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+              </div>
+            </div>
         </div>{{----- end of row -----}}
         <div class="home-advantage col-md-12 col-xs-12">
           <div class="row">
@@ -179,4 +206,10 @@
         </div>{{---- End of advantage -----}}
       </div>{{------- End of Home Right -------}}
 </section> {{-- end products_view --}}
+@section ('scrpits')
+@parent
+<script type="text/javascript">
+</script>
+
+@stop
 @stop {{-- end content --}}

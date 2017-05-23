@@ -24,6 +24,7 @@
 		{!! Html::style('/css/lib/font-awesome.min.css') !!}
 		{!! Html::style('/css/lib/carousel.css') !!}
 		{!! Html::style('/css/lib/angucomplete-alt.css') !!}
+		{!! Html::style('/css/lib/swiper.min.css') !!}
 		{!! Html::style('/css/app.css') !!}
 	@show
 
@@ -110,6 +111,7 @@
 {!! Html::script('/js/lib/bootstrap.min.js') !!}
 {!! Html::script('/js/lib/xtForms/xtForm.js') !!}
 {!! Html::script('/js/lib/xtForms/xtForm.tpl.min.js') !!}
+{!! Html::script('/js/lib/swiper.min.js') !!}
 
 <script>
 

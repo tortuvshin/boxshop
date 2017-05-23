@@ -6,6 +6,7 @@
 
 @section('css')
     @parent
+
 @stop
 
 @section('content')
@@ -262,4 +263,3 @@
     @stop
     </div>
 @stop
-

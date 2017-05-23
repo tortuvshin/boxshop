@@ -100,14 +100,14 @@
 
 					<ul class="nav navbar-nav">
 						<li class="dropdown">
-							<a href="#cart" class="dropdown-toggle btn btn-success cart-btn" data-toggle="dropdown" role="button" aria-expanded="false">
+							<a href="#cart" class="dropdown-toggle cart-btn" data-toggle="dropdown" role="button" aria-expanded="false">
 								@if(Auth::user()&&Auth::user()->getCartCount())
 								<span class="badge badge-cart">{{ Auth::user()->getCartCount() }} </span>
 								@elseif(!Auth::user() && is_array(Session::get('user.cart_content')) && array_sum(Session::get('user.cart_content')))
 								<span class="badge badge-cart">{{ array_sum(Session::get('user.cart_content')) }} </span>
 								@endif
-
-								<span class="fa fa-shopping-cart"> 0 БАРАА ₮ 0.00 </span>
+								<i class="fa fa-shopping-cart"></i>
+								<span> 0 </span>
 							</a>
 
 				            @if(Auth::user() && Auth::user()->getCartCount() > 0)

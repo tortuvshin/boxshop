@@ -1,5 +1,12 @@
 .home-bestselling {
     padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.bestselling-product {
+    padding-left: 0px;
+    padding-right: 0px;   
 }
 
 .home-cat-trend {
@@ -19,35 +26,42 @@
 .motto-1,
 .motto-2,
 .motto-3 {
-    padding: 15px;
     text-align: center;
-    height: 100px;
-    line-height: 17px;
-    font-size: 16px;
+    line-height: 20px;
+    font-size: 20px;
     i {
         display: block;
-        font-size: 20px;
+        font-size: 50px;
+        float: left;
+        width: 74px;
+    }
+    span {
+        line-height: 47px;
     }
 }
 
-.motto-1 {
-    color: $blue;
-    border: 5px solid $blue;
-}
-
-.motto-2 {
-    color: $golden;
-    border: 5px solid $golden;
-}
-
 .motto-3 {
-    color: $grey;
-    border: 5px solid $grey;
+    span {
+        line-height: 1 !important;
+    }
+}
+
+.motto-1,
+.motto-2 {
+    border-right: 1px solid $white;
+}
+
+.motto-1,
+.motto-2,
+.motto-3 {
+    color: $white;
 }
 
 .home-motto {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background: $boxYellow none repeat scroll 0 0;
+    color: #fff;
+    margin-top: 30px;
+    padding: 20px 0;
 }
 
 .home-advantage {
@@ -119,4 +133,32 @@
     .fa-plus {
         background-color: $golden;
     }
+}
+
+
+/* Swiper */
+
+.swiper-container {
+    width: 100%;
+    height: 130px;
+    margin: 20px auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
