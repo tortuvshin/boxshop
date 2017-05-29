@@ -24,7 +24,7 @@
                           <a href="#" class="health">Эрүүл мэнд</a>
                       </li>
                       <li>
-                          <a href="#" class="doc">Бичэг хэрэг</a>
+                          <a href="#" class="doc">Бичиг хэрэг</a>
                       </li>
                       <li>
                           <a href="#" class="souv">Бэлэг дурсгал</a>
