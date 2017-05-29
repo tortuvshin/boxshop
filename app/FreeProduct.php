@@ -7,10 +7,14 @@ use Illuminate\Pagination\LengthAwarePaginator as Paginator;
 class FreeProduct extends Model
 {
     /**
+     * The database table used by the model.
+     *
      * @var string
      */
     protected $table = 'freeproducts';
     /**
+     * The attributes that are mass assignable.
+     *
      * @var array
      */
     protected $fillable = [
@@ -27,7 +31,11 @@ class FreeProduct extends Model
         'status',
     ];
     protected $products;
-    
+    /**
+     * Relationship for list of commands associated with freeproducts. This is done by table freeproduct_order.
+     *
+     * @return Collection List Ids Orders
+     */
     public function Orders()
     {
         return $this->belongsToMany('App\Order', 'freeproduct_order', 'freeproduct_id')->withTimestamps();
@@ -40,7 +48,11 @@ class FreeProduct extends Model
     {
         return $query->where('start_date', '<=', $date)->where('end_date', '>=', $date);
     }
-
+    /**
+     * Returns all products contained in the orders associated with a freeproduct.
+     *
+     * @return freeproducts collection of all the products contained in the orders associated with freeproduct, but defined as a property of the model
+     */
     public static function getWithProducts(Collection $items)
     {
         $freeproducts = $items->each(function ($item, $key) {

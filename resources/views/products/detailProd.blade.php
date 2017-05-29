@@ -70,10 +70,10 @@
 	<div class="producttitle"  >
 	<div class="titlecolor text-center" >
 	<br>
-            <h1>{{ $product->name }}</h1>
-             <div class="breadcrumbstext">{!! Breadcrumbs::render('productDetail', $product) !!}</div>
-            <br>
-        </div>		
+        <h1>{{ $product->name }}</h1>
+         <div class="breadcrumbstext">{!! Breadcrumbs::render('productDetail', $product) !!}</div>
+        <br>
+    </div>		
 </div>
 <div class="container" >
 		<div class="row">

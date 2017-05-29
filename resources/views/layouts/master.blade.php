@@ -83,6 +83,8 @@
 								@show
 							</div>
 						@endif
+
+						<div id="back-top"></div>
 					</div>	
 					</div> {{-- globlas panels --}}
 				</div>

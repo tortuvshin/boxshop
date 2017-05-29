@@ -1,10 +1,9 @@
 <?php
-
 namespace app\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-class DashboardController extends Controller
+class FreeProductParticipantsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,14 +11,9 @@ class DashboardController extends Controller
      * @return Response
      */
     public function index()
-    {   
-        $panel = [
-            'left'   => ['width' => '2'],
-            'center' => ['width' => '10'],
-        ];
-        return view('dashboard.home', compact('panel'));
+    {
+        //
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -29,7 +23,6 @@ class DashboardController extends Controller
     {
         //
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -39,7 +32,6 @@ class DashboardController extends Controller
     {
         //
     }
-
     /**
      * Display the specified resource.
      *
@@ -51,7 +43,6 @@ class DashboardController extends Controller
     {
         //
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -63,7 +54,6 @@ class DashboardController extends Controller
     {
         //
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -75,7 +65,6 @@ class DashboardController extends Controller
     {
         //
     }
-
     /**
      * Remove the specified resource from storage.
      *
