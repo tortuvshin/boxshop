@@ -5731,7 +5731,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-/*@import "node_modules/normalize.scss/normalize";*/
 .transition, .vert-category a, footer ul li a:hover, .header-bottom-content .line-menu li a:hover, .cart .cart-btn {
   transition: all .3s ease-out;
   -webkit-transition: all .3s ease-out;
@@ -5779,6 +5778,20 @@ h7 {
 
 i {
   padding: 0 10px; }
+
+#back-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  z-index: 9999;
+  right: 10px;
+  bottom: 32px;
+  display: none;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  background: #fe9c00;
+  cursor: pointer; }
 
 .vert-category {
   position: absolute;
@@ -6348,6 +6361,50 @@ footer {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center; }
+
+#top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  display: none;
+  transition: all 0.3s ease; }
+
+#top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  transition: all 0.3s ease; }
+
+#top:hover {
+  background: rgba(0, 0, 0, 0.9); }
+
+#top:hover i {
+  color: #fff;
+  top: 5px; }
+
+/* Extra Things */
+body {
+  background-image: url(https://subtlepatterns.com/patterns/geometry.png);
+  font-family: 'Open Sans', sans-serif; }
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 50px; }
+
+h3 i {
+  color: #c6c6c6; }
 
 #menu-left-category .category, #menu-left-category .brands, #menu-left-category .price-range {
   border: 1px solid #e8e8e8; }

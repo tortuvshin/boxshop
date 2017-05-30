@@ -36,3 +36,18 @@ $(window).scroll(function() {
         $('#logoText').hide();
     }
 });
+
+
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {    
+        $('#top').fadeIn("fast");       
+    } else {
+        $('#top').fadeOut("fast");      
+    }
+});
+$('#top').click(function() {            
+    $('body,html').animate({
+        scrollTop : 0                  
+    }, 500);
+});
