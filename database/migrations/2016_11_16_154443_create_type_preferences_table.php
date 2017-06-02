@@ -14,6 +14,7 @@ class CreateTypePreferencesTable extends Migration
      public function up()
     {
         Schema::create('type_preferences', function (Blueprint $table) {
+            $table->engine = "InnoDB";
             $table->increments('id');
             $table->string('name');
             $table->enum('type', array_keys(trans('globals.type_preferences')));

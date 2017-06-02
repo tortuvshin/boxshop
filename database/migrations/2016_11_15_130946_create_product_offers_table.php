@@ -15,6 +15,7 @@ class CreateProductOffersTable extends Migration
     {
         //
         Schema::create('product_offers', function (Blueprint $table) {
+            $table->engine = "InnoDB";
             $table->increments('id');
             $table->integer('product_id')->unsigned();
             $table->dateTime('day_start');

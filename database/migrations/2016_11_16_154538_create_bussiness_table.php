@@ -14,6 +14,7 @@ class CreateBussinessTable extends Migration
     public function up()
     {
         Schema::create('businesses', function (Blueprint $table) {
+            $table->engine = "InnoDB";
             $table->integer('user_id')->unsigned()->primary();
             $table->string('business_name');
             $table->date('creation_date');

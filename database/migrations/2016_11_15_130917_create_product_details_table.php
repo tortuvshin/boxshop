@@ -15,6 +15,7 @@ class CreateProductDetailsTable extends Migration
     {
         //
         Schema::create('product_details', function (Blueprint $table) {
+            $table->engine = "InnoDB";
             $table->increments('id');
             $table->string('name', 100);
             $table->enum('input_type', ['text', 'select', 'radio', 'checkbox', 'image', 'document']);

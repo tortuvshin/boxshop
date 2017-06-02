@@ -15,6 +15,7 @@ class CreateAddressesTable extends Migration
     {
         //
         Schema::create('addresses', function (Blueprint $table) {
+            $table->engine = "InnoDB";
             $table->increments('id');
             $table->integer('user_id')->unsigned()->nullable();
             $table->boolean('default')->default(1);
