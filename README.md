@@ -89,9 +89,9 @@ RECAPTCHA_PUBLIC_KEY, and RECAPTCHA_PRIVATE_KEY
 reCaptcha кодуудаа .env файлд оруулна. Жишээ нь: 
 
 ```
-RECAPTCHA_PUBLIC_KEY = ModuRecaptchaPublicKeyObtained
+RECAPTCHA_PUBLIC_KEY = RecaptchaPublicKeyObtained
 
-RECAPTCHA_PRIVATE_KEY = ModuRecaptchaPrivateKeyObtained
+RECAPTCHA_PRIVATE_KEY = RecaptchaPrivateKeyObtained
 ```
 
 ***Тайлбар:*** ```APP_DEBUG == true``` буюу debug асаалттай байгаа үед reCaptcha хэрэглэхгүй
@@ -106,6 +106,3 @@ RECAPTCHA_PRIVATE_KEY = ModuRecaptchaPrivateKeyObtained
 [NODEJS]: https://nodejs.org/en/download/
 [COMPOSER]: https://getcomposer.org/download/
 [RECAPTCHA]: https://www.google.com/recaptcha/admin#list
-
-
-http://tokithemes.com/aloshop/fr/
