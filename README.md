@@ -1,4 +1,10 @@
-## Цахим худалдааны систем
+<p align="center">
+<a href="http://boxshop.mn/">
+<img src="https://github.com/tortuvshin/boxshop/blob/master/public/img/logo.png"/>
+</a><br>
+	<b>Цахим худалдааны систем</b>
+</p>
+
 
 Энэхүү онлайн худалдааны системийг Laravel 5.4. хувилбар дээр хөгжүүлж байна.
 
