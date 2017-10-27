@@ -2,13 +2,12 @@
 <a href="http://boxshop.mn/">
 <img src="https://github.com/tortuvshin/boxshop/blob/master/public/img/logo.png"/>
 </a><br>
-	<b>Цахим худалдааны систем</b>
+	<b>Laravel Ecommerce Platform</b>
 </p>
 
+This is a e-commerce platform I made mostly using Laravel 5.4
 
-Энэхүү онлайн худалдааны системийг Laravel 5.4. хувилбар дээр хөгжүүлж байна.
-
-## Сэрвэрийн үзүүлэлт
+## Requirements
 
 	PHP >= 5.6.4
 	MySQL >= 5.7
@@ -20,94 +19,64 @@
 
 
 <a name="installation"></a>
-## Суулгах
+## Install
 
-Дараах коммандыг ажиллуулж энэхүү төслийг clone хийж авна:
+Clone repo
 
 ```
 git clone https://github.com/tortuvshin/ecommerce.git
 ```
 
-Composer татаж суулгана
+Install Composer
 
 ```
-[Composer татах](https://getcomposer.org/download/)
+[Download Composer](https://getcomposer.org/download/)
 ```
 
-Дараа нь, энэхүү төслийг татаж авсан хавтаст орж composer update/install комманд ажиллуулна
+composer update/install 
 
 ```
 composer install
 ```
 
-Nodejs татаж суулгана 
+Install Nodejs
 
 ```
 https://nodejs.org/en/download/
 ```
 
-NPM сангууд татах
+NPM dependencies
 ```
 npm install
 ```
 
-Хэрвээ Window үйлдлийн систем  болон VM ашиглаж хөгжүүлэлт хийж байгаа бол дараах коммандыг ажиллуулна: 
-```
-npm install --no-bin-links
-```
-
-Laravel Mix ашиглах
+Using Laravel Mix 
 
 ```
 npm run dev
 ```
 
-## Тохируулах
+## How to setting 
 
-Дараа нь .env-example файлыг өөрчилж .env болгон өөрийн өгөгдлийн сан болон серверийг тохируулна
-
-Өгөгдлийн санг үүсгэж тохируулсаны дараа дараах коммандаар хүснэгтүүдийг үүсгэнэ:
+Go into .env file and change Database and Email credentials.
 
 ```
 php artisan migrate
 ```
 
-Туршилтын өгөгдөл дараах коммандаар оруулна:
-
 ```
 php artisan db:seed
 ```
 	
+Generating a New Application Key
 ```
 php artisan key:generate
 ```
 
-reChaptcha код авах: 
-
-```
-https://www.google.com/recaptcha/admin#list
-```
-
-```
-RECAPTCHA_PUBLIC_KEY, and RECAPTCHA_PRIVATE_KEY
-```
-
-reCaptcha кодуудаа .env файлд оруулна. Жишээ нь: 
-
-```
-RECAPTCHA_PUBLIC_KEY = RecaptchaPublicKeyObtained
-
-RECAPTCHA_PRIVATE_KEY = RecaptchaPrivateKeyObtained
-```
-
-***Тайлбар:*** ```APP_DEBUG == true``` буюу debug асаалттай байгаа үед reCaptcha хэрэглэхгүй
-
-
-Туршилтын хэрэглэгчийн мэдээлэл
-
-	Хэрэглэгчийн нэр: admin@admin.com
-	Нууц үг: admin
-
+### Demo
+	http://www.boxshop.mn/
+	username: admin@admin.com
+	password: password
 
 [NODEJS]: https://nodejs.org/en/download/
 [COMPOSER]: https://getcomposer.org/download/
