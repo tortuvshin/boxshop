@@ -1,5 +1,5 @@
 <p align="center">
-<a href="http://boxshop.mn/">
+<a href="https://github.com/tortuvshin/boxshop">
 <img src="https://github.com/tortuvshin/boxshop/blob/master/public/img/logo.png"/>
 </a><br>
 	<b>Laravel Ecommerce Platform</b>
@@ -46,7 +46,7 @@ This is a e-commerce platform I made mostly using Laravel 5.4
 Clone repo
 
 ```
-git clone https://github.com/tortuvshin/ecommerce.git
+git clone https://github.com/tortuvshin/boxshop.git
 ```
 
 Install Composer
@@ -94,11 +94,6 @@ Generating a New Application Key
 ```
 php artisan key:generate
 ```
-
-### Demo
-	http://www.boxshop.mn/
-	username: admin@admin.com
-	password: password
 
 [NODEJS]: https://nodejs.org/en/download/
 [COMPOSER]: https://getcomposer.org/download/
