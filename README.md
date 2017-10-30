@@ -12,7 +12,7 @@
      <a href="https://github.com/tortuvshin/boxshop/fork">
         <img src="https://img.shields.io/github/forks/tortuvshin/boxshop.svg?style=social&label=Fork"
             alt="Forks"></a>
-    <a href="https://github.com/tortuvshin/boxshop/star">
+    <a href="https://github.com/tortuvshin/boxshop/stargers">
         <img src="https://img.shields.io/github/stars/tortuvshin/boxshop.svg?style=social&label=Stars"
             alt="Stars"></a>
     <a href="https://github.com/tortuvshin/">
