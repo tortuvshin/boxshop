@@ -5,6 +5,28 @@
 	<b>Laravel Ecommerce Platform</b>
 </p>
 
+<p align="center">
+    <a href="https://github.com/tortuvshin/boxshop/issues">
+        <img src="https://img.shields.io/github/issues/tortuvshin/boxshop.svg"
+            alt="Issues"></a>
+     <a href="https://github.com/tortuvshin/boxshop/network">
+        <img src="https://img.shields.io/github/forks/tortuvshin/boxshop.svg?style=social&label=Fork"
+            alt="Forks"></a>
+    <a href="https://github.com/tortuvshin/boxshop/stargazers">
+        <img src="https://img.shields.io/github/stars/tortuvshin/boxshop.svg?style=social&label=Stars"
+            alt="Stars"></a>
+    <a href="https://github.com/tortuvshin/followers">
+        <img src="https://img.shields.io/github/followers/tortuvshin.svg?style=social&label=Follow"
+            alt="Followers"></a>
+    <a href="https://raw.githubusercontent.com/tortuvshin/boxshop/master/LICENSE">
+        <img src="https://img.shields.io/badge/license-MIT-blue.svg"
+            alt="LICENSE"></a>
+    <a href="https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D">
+        <img src="https://img.shields.io/twitter/url/https/github.com/tortuvshin/boxshop.svg?style=social"
+            alt="Tweet"></a>
+</p>
+
+
 This is a e-commerce platform I made mostly using Laravel 5.4
 
 ## Requirements
