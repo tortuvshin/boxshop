@@ -12,10 +12,10 @@
      <a href="https://github.com/tortuvshin/boxshop/fork">
         <img src="https://img.shields.io/github/forks/tortuvshin/boxshop.svg?style=social&label=Fork"
             alt="Forks"></a>
-    <a href="https://github.com/tortuvshin/boxshop/stargazers">
+    <a href="https://github.com/tortuvshin/boxshop/star">
         <img src="https://img.shields.io/github/stars/tortuvshin/boxshop.svg?style=social&label=Stars"
             alt="Stars"></a>
-    <a href="https://github.com/tortuvshin/followers">
+    <a href="https://github.com/tortuvshin/">
         <img src="https://img.shields.io/github/followers/tortuvshin.svg?style=social&label=Follow"
             alt="Followers"></a>
     <a href="https://raw.githubusercontent.com/tortuvshin/boxshop/master/LICENSE">
