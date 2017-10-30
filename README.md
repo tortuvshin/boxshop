@@ -9,7 +9,7 @@
     <a href="https://github.com/tortuvshin/boxshop/issues">
         <img src="https://img.shields.io/github/issues/tortuvshin/boxshop.svg"
             alt="Issues"></a>
-     <a href="https://github.com/tortuvshin/boxshop/network">
+     <a href="https://github.com/tortuvshin/boxshop/fork">
         <img src="https://img.shields.io/github/forks/tortuvshin/boxshop.svg?style=social&label=Fork"
             alt="Forks"></a>
     <a href="https://github.com/tortuvshin/boxshop/stargazers">
